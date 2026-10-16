@@ -5,17 +5,17 @@
   "codex": {
     "cliVersion": "0.163.0",
     "nativeValidation": {
-      "method": "Isolated temporary CODEX_HOME and cwd; app-server initialize then plugin/read against the repository local marketplace. An initial two-skill fixture also established direct-directory array support.",
-      "result": "Actual KLCode 0.1.0 source package returns 118 unique skill identities: 103 canonical workflows plus 15 explicit aliases. The requirements entrypoint reuses the canonical skill to prevent a name collision.",
-      "marketplaceSource": { "source": "local", "path": "./" },
+      "method": "Isolated temporary CODEX_HOME and cwd; app-server initialize then plugin/read against a generated local release marketplace. Earlier source discovery used the then-local source catalog; source catalogs now reference GitHub and are not used by the offline probe.",
+      "result": "KLCode 0.1.0 returns 118 unique skill identities: 103 canonical workflows plus 15 explicit aliases. The requirements entrypoint reuses the canonical skill to prevent a name collision.",
+      "marketplaceSource": { "source": "local", "path": "./plugins/klcode" },
       "skills": 118,
       "uniqueSkills": 118,
       "hookEvents": ["postToolUse", "preToolUse", "sessionStart", "stop"],
       "pluginInstalled": false,
       "pluginEnabled": false,
       "modelRequests": 0,
-      "reproduce": "node plugin/native-validate.cjs --codex <absolute-codex.exe> --package <absolute-package-root>",
-      "scope": "Native read-only source discovery only; not live lifecycle execution, desktop UI verification or installed-package validation."
+      "reproduce": "node plugin/native-validate.cjs --codex <absolute-codex.exe> --package <absolute-release-root>/plugins/klcode --marketplace <absolute-release-root>/.agents/plugins/marketplace.json",
+      "scope": "Native read-only local package discovery only; not GitHub installation, live lifecycle execution, desktop UI verification or installed-package validation."
     },
     "launcherFixtures": {
       "result": "passed",

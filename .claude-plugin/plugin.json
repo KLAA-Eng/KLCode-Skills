@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "KLCode team workflows: 103 curated skills, shared rules, focused commands and optional project-scoped Windows hooks.",
   "author": {
-    "name": "KLCode"
+    "name": "KLAA-Eng",
+    "url": "https://github.com/KLAA-Eng"
   },
   "displayName": "KLCode",
   "defaultEnabled": false,
@@ -170,5 +171,7 @@
     "./plugin/agents/claude/csharp-reviewer.md",
     "./plugin/agents/claude/cpp-reviewer.md"
   ],
-  "hooks": "./hooks/claude-hooks.json"
+  "hooks": "./hooks/claude-hooks.json",
+  "repository": "https://github.com/KLAA-Eng/KLCode-Skills",
+  "homepage": "https://github.com/KLAA-Eng/KLCode-Skills"
 }

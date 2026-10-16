@@ -4,6 +4,8 @@
 
 This repository maintains the development team's curated skills and the KLCode plugin package for native Windows Claude Code and Codex desktop/CLI. Keep the collection focused, maintainable and traceable to its sources.
 
+The canonical repository is [KLAA-Eng/KLCode-Skills](https://github.com/KLAA-Eng/KLCode-Skills). `plugin/catalog.json` owns distribution identity; keep host manifests, GitHub-backed source marketplaces and the [installation guide](plugin/README.md#install-from-github-later) aligned. Generated release marketplaces remain local for offline validation. Updating distribution metadata does not authorize pushing, installation or activation.
+
 ## Current phase
 
 - The owner's initial cleanup and the agreed relevance-based removal pass are complete.

@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "KLCode team workflows: 103 curated skills, shared rules, focused commands and optional project-scoped Windows hooks.",
   "author": {
-    "name": "KLCode"
+    "name": "KLAA-Eng",
+    "url": "https://github.com/KLAA-Eng"
   },
   "skills": [
     "./skills/engineering/implementation",
@@ -129,7 +130,10 @@
   "interface": {
     "displayName": "KLCode",
     "shortDescription": "Curated team development workflows and optional project hooks.",
-    "developerName": "KLCode",
-    "category": "Coding"
-  }
+    "developerName": "KLAA-Eng",
+    "category": "Coding",
+    "websiteURL": "https://github.com/KLAA-Eng/KLCode-Skills"
+  },
+  "repository": "https://github.com/KLAA-Eng/KLCode-Skills",
+  "homepage": "https://github.com/KLAA-Eng/KLCode-Skills"
 }

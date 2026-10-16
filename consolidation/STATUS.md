@@ -15,7 +15,7 @@ The integrator validated all 103 skills and 209 historical source assignments, d
 
 ## Subsequent rule integration
 
-The [rule integration review](RULES-REVIEW.md) records the later audit, revised testing/review defaults and selected canonical root rules. Its [validation record](rules-validation.json) supplements the historical consolidation validation above. Rule links and explicit consumers are now checked by the repository validator; hook activation and plugin packaging remain deferred.
+The [rule integration review](RULES-REVIEW.md) records the later audit, revised testing/review defaults and selected canonical root rules. Its [validation record](rules-validation.json) supplements the historical consolidation validation above. Rule links and explicit consumers are now checked by the repository validator. Plugin packaging was deferred during that phase and is completed below; hook activation remains deferred.
 
 ## Subsequent plugin wiring
 

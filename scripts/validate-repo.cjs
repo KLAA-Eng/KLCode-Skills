@@ -94,7 +94,7 @@ try {
   ruleFiles = (coverage.rules || []).map(rule => path.resolve(root, rule.path)).filter(p => within(p) && fs.existsSync(p));
 } catch (e) { if (!partial) errors.push(`Cannot load selected rules: ${e.message}`); }
 const repositoryDocs = ['README.md', 'AGENTS.md', 'THIRD_PARTY_NOTICES.md', 'skills/glossary.md', 'rules/README.md', 'consolidation/STATUS.md', 'consolidation/WORKING-AGREEMENT.md', 'consolidation/RULES-REVIEW.md', 'docs/plans/plugin-wiring.md'].map(p => path.resolve(root, p)).filter(p => fs.existsSync(p));
-const pluginFiles = ['plugin', 'commands', 'hooks'].flatMap(p => files(path.join(root, p)));
+const pluginFiles = ['plugin', 'commands', 'hooks', '.claude-plugin', '.codex-plugin'].flatMap(p => files(path.join(root, p)));
 const inspected = [...new Set([...canonicalFiles, ...supportFiles, ...ruleFiles, ...pluginFiles, ...files(path.join(root, 'scripts')), ...repositoryDocs])];
 for (const filename of inspected) {
   if (filename.endsWith('.md')) {

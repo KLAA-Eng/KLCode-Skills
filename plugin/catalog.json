@@ -165,5 +165,14 @@
       "skill": "skills/languages/cpp-development",
       "source_prompt": "support/languages/agents/cpp-reviewer.md"
     }
-  ]
+  ],
+  "repository": {
+    "github": "KLAA-Eng/KLCode-Skills",
+    "url": "https://github.com/KLAA-Eng/KLCode-Skills",
+    "git": "https://github.com/KLAA-Eng/KLCode-Skills.git",
+    "owner": {
+      "name": "KLAA-Eng",
+      "url": "https://github.com/KLAA-Eng"
+    }
+  }
 }

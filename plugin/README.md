@@ -55,12 +55,35 @@ Checks have bounded input, output, time and local state. Status records contain 
 
 Advisory failures report a gap and continue. An executing explicit blocking guard denies its affected call on input/configuration failure. Native hook launch errors, skipped/untrusted hooks and unsupported tool paths can still prevent enforcement, especially in Codex. These guards never replace host permissions. Claude supports additional host-level failure behavior on recent releases; it is not silently enabled here. See the [Claude hook reference](https://code.claude.com/docs/en/hooks), [Codex hook reference](https://learn.chatgpt.com/docs/hooks) and [recorded host capabilities](host-capabilities.json).
 
-## Distribution and later activation
+## Install from GitHub later
 
-The repository's marketplace metadata and the generated release support private team distribution. A generated release can be stored in a private Git repository without including developer configuration. Use the source/release marketplace root when adding it to a host after installation is authorized. Keep version `0.1.0` consistent in the catalog and both manifests; validation detects drift.
+The canonical repository is [KLAA-Eng/KLCode-Skills](https://github.com/KLAA-Eng/KLCode-Skills), on its default `main` branch. Both source marketplace catalogs reference that GitHub repository. The marketplace is `klcode-team` and the plugin is `klcode`. Team members need Git access to the repository if it is private. The ownership transfer and default branch were verified with a read-only Git remote query; no publication or push was performed.
 
-Activation is a separate action: install through the chosen private/local marketplace, enable the selected plugin scope, review native hook trust, and deliberately opt the chosen project into hooks. This phase does none of those actions. No target-project configuration, home settings, observers, transcript analytics, learning services or remote repository state is changed.
+After installation is authorized, run the following in PowerShell for the selected host. These commands register and install the plugin and may enable its skills; they are documentation, not part of validation.
 
-Validation can inspect discovery without installation using `node plugin/native-validate.cjs --codex <absolute-codex.exe> --package <absolute-package-root> --marketplace <absolute-marketplace.json>`. It uses an isolated temporary Codex home and only initializes the protocol and reads plugin metadata. Current evidence and limits are recorded in [host-capabilities.json](host-capabilities.json). Offline fixtures and parser discovery do not prove installed lifecycle behavior. Claude-native validation requires an available Claude executable; it was unavailable in this environment.
+Claude Code:
+
+```powershell
+claude plugin marketplace add KLAA-Eng/KLCode-Skills
+claude plugin install klcode@klcode-team
+```
+
+Codex CLI:
+
+```powershell
+codex plugin marketplace add KLAA-Eng/KLCode-Skills
+codex plugin add klcode@klcode-team
+codex plugin list --json
+```
+
+Codex desktop users can use its plugin marketplace UI for the same repository and plugin where their client/account supports repository marketplaces. Restart the client after installation when prompted. See the official [Claude marketplace guide](https://code.claude.com/docs/en/plugin-marketplaces), [Codex developer commands](https://learn.chatgpt.com/docs/developer-commands) and [Codex plugins guide](https://learn.chatgpt.com/docs/plugins). GitHub installs use the remote branch contents, so local changes must be committed and separately pushed before teammates can receive them. No release tag is implied by the package version.
+
+Project hooks require separate review of native hook trust and an explicit project opt-in. Keep `hooks.enabled: false` until that activation is requested. This phase installs, enables and trusts nothing. No target-project configuration, home settings, observers, transcript analytics, learning services or remote repository state is changed.
+
+## Offline release validation
+
+`node plugin/cli.cjs build` emits a separate release root with local marketplace entries pointing to `plugins/klcode`. These deliberately avoid fetching GitHub. Keep version `0.1.0` and repository identity consistent in the catalog and both manifests; validation detects drift.
+
+Inspect native discovery without installation using `node plugin/native-validate.cjs --codex <absolute-codex.exe> --package <release-root>/plugins/klcode --marketplace <release-root>/.agents/plugins/marketplace.json`. Use absolute paths and quote paths containing spaces. The helper requires a local marketplace; the GitHub-backed source catalog is intentionally rejected. It uses an isolated temporary Codex home and only initializes the protocol and reads plugin metadata. Current evidence and limits are recorded in [host-capabilities.json](host-capabilities.json). Offline fixtures and parser discovery do not prove GitHub installation or installed lifecycle behavior. Claude-native validation requires an available Claude executable; it was unavailable in this environment.
 
 Some retained workflows require vendor hosts, external packages or POSIX-only media protections. Packaging preserves those workflows and their stated limits; it does not certify them as native Windows capabilities. See the [skill glossary](../skills/glossary.md), [rules](../rules/README.md) and [third-party notices](../THIRD_PARTY_NOTICES.md).

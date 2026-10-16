@@ -2,6 +2,8 @@
 
 Skills being curated for the development team, primarily for KL&A-Tools (pyRevit) and strHub, with supporting planning, research, documentation, and review workflows.
 
+Canonical repository: [KLAA-Eng/KLCode-Skills](https://github.com/KLAA-Eng/KLCode-Skills). For later installation from GitHub in Claude Code or Codex, use the [plugin installation guide](plugin/README.md#install-from-github-later). The marketplace is `klcode-team`; the plugin is `klcode`. Installation and activation remain deferred.
+
 ## Curated workflows
 
 The collection consolidates 209 source skills into 103 canonical workflows, organized by the job they perform.
@@ -33,9 +35,9 @@ node plugin/cli.cjs doctor --project .
 node plugin/cli.cjs build
 ```
 
-Builds are written under `.scratch/dist/` with a SHA-256 file index and private marketplace catalogs. `doctor` reports current configuration and prerequisites without executing project checks. Normal hook launchers require `node.exe` on PATH.
+Builds are written under `.scratch/dist/` with a SHA-256 file index and local offline marketplace catalogs. The source marketplace catalogs reference GitHub. `doctor` reports current configuration and prerequisites without executing project checks. Normal hook launchers require `node.exe` on PATH.
 
-The [plugin validation record](consolidation/plugin-validation.json) records 27 passing tests, 118 official skill metadata checks, nine TOML templates, and isolated native Codex discovery of source and release packages. Claude-native and installed lifecycle checks were not performed. Installation, hook trust, activation and publication remain separate; this implementation enabled none of them.
+The initial [plugin validation record](consolidation/plugin-validation.json) records 27 passing tests, 118 official skill metadata checks, nine TOML templates, and isolated native Codex discovery of source and release packages. The later [GitHub ownership audit](docs/plans/plugin-wiring.md#github-ownership-and-final-accuracy-audit--2026-10-16) records 31 passing tests and the updated distribution/link checks. Claude-native and installed lifecycle checks were not performed. Installation, hook trust, activation and publication remain separate; this implementation enabled none of them.
 
 ## Shared defaults
 

@@ -54,6 +54,16 @@ function validatePackage(root) {
   try {
     const manifest = json(path.join(root, "consolidation/manifest.json"));
     const catalog = json(path.join(root, "plugin/catalog.json"));
+    const repository = catalog.repository;
+    if (
+      !repository ||
+      !/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repository.github || "") ||
+      repository.url !== "https://github.com/" + repository.github ||
+      repository.git !== repository.url + ".git" ||
+      repository.owner?.name !== repository.github.split("/")[0] ||
+      repository.owner?.url !== "https://github.com/" + repository.owner.name
+    )
+      errors.push("Catalog repository identity is invalid");
     const aliases = catalog.commands.filter((c) => c.kind !== "canonical");
     const coverage = json(path.join(root, "rules/coverage.json"));
     counts.canonical_skills = manifest.skills.length;
@@ -96,6 +106,16 @@ function validatePackage(root) {
         descriptor.version !== catalog.version
       )
         errors.push(host + " plugin identity/version differs from catalog");
+      if (
+        descriptor.author?.name !== repository?.owner?.name ||
+        descriptor.author?.url !== repository?.owner?.url ||
+        descriptor.repository !== repository?.url ||
+        descriptor.homepage !== repository?.url ||
+        (host === "codex" &&
+          (descriptor.interface?.developerName !== repository?.owner?.name ||
+            descriptor.interface?.websiteURL !== repository?.url))
+      )
+        errors.push(host + " repository/owner metadata differs from catalog");
       const expected =
         host === "claude"
           ? canonical
@@ -165,6 +185,49 @@ function validatePackage(root) {
       if (descriptor.mcpServers || descriptor.apps)
         errors.push(host + " unexpectedly declares services");
     }
+    const claudeMarketplace = json(
+      path.join(root, ".claude-plugin/marketplace.json"),
+    );
+    const claudeEntry = claudeMarketplace.plugins?.[0];
+    if (
+      claudeMarketplace.name !== "klcode-team" ||
+      claudeMarketplace.owner?.name !== repository?.owner?.name ||
+      claudeMarketplace.owner?.url !== repository?.owner?.url ||
+      claudeMarketplace.plugins?.length !== 1 ||
+      claudeEntry?.name !== catalog.name ||
+      claudeEntry?.version !== catalog.version ||
+      claudeEntry?.defaultEnabled !== false ||
+      claudeEntry?.source?.source !== "github" ||
+      claudeEntry?.source?.repo !== repository?.github ||
+      claudeEntry?.repository !== repository?.url ||
+      claudeEntry?.homepage !== repository?.url
+    )
+      errors.push("Claude marketplace differs from repository catalog");
+    const codexMarketplace = json(
+      path.join(root, "plugin/marketplace.codex.json"),
+    );
+    const codexEntry = codexMarketplace.plugins?.[0];
+    if (
+      codexMarketplace.name !== "klcode-team" ||
+      codexMarketplace.interface?.displayName !== "KLCode Team" ||
+      codexMarketplace.plugins?.length !== 1 ||
+      codexEntry?.name !== catalog.name ||
+      codexEntry?.source?.source !== "url" ||
+      codexEntry?.source?.url !== repository?.git ||
+      codexEntry?.policy?.installation !== "AVAILABLE" ||
+      codexEntry?.policy?.authentication !== "ON_INSTALL" ||
+      codexEntry?.category !== "Coding"
+    )
+      errors.push("Codex marketplace differs from repository catalog");
+    const codexSourcePath = path.join(root, ".agents/plugins/marketplace.json");
+    if (fs.existsSync(codexSourcePath)) {
+      const source = json(codexSourcePath);
+      if (JSON.stringify(source) !== JSON.stringify(codexMarketplace))
+        errors.push("Codex marketplace copies differ");
+      if (source.plugins?.[0]?.source?.url !== repository?.git)
+        errors.push("Codex marketplace source differs from repository catalog");
+    } else if (!fs.existsSync(path.join(root, "package-index.json")))
+      errors.push("Missing source Codex marketplace catalog");
     const indexPath = path.join(root, "package-index.json");
     if (fs.existsSync(indexPath)) {
       const index = json(indexPath),
@@ -222,6 +285,7 @@ function buildPackage(root) {
     "README.md",
     "AGENTS.md",
     "THIRD_PARTY_NOTICES.md",
+    "docs/plans/plugin-wiring.md",
   ])
     if (fs.existsSync(path.join(root, file))) inputs.add(file);
   const dist = safePath(root, ".scratch/dist", { missing: true });
@@ -257,20 +321,25 @@ function buildPackage(root) {
   };
   write(".claude-plugin/marketplace.json", {
     name: "klcode-team",
-    owner: { name: "KLCode" },
+    owner: catalog.repository.owner,
     plugins: [
       {
         name: catalog.name,
         source: "./plugins/" + catalog.name,
         version: catalog.version,
+        repository: catalog.repository.url,
+        homepage: catalog.repository.url,
+        defaultEnabled: false,
       },
     ],
   });
   write(".agents/plugins/marketplace.json", {
     name: "klcode-team",
+    interface: { displayName: "KLCode Team" },
     plugins: [
       {
         name: catalog.name,
+        category: "Coding",
         source: { source: "local", path: "./plugins/" + catalog.name },
         policy: { installation: "AVAILABLE", authentication: "ON_INSTALL" },
       },

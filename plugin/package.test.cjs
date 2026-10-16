@@ -10,6 +10,12 @@ const {
   setupProject,
   doctor,
 } = require("./package.cjs");
+const repository = {
+  github: "KLAA-Eng/KLCode-Skills",
+  url: "https://github.com/KLAA-Eng/KLCode-Skills",
+  git: "https://github.com/KLAA-Eng/KLCode-Skills.git",
+  owner: { name: "KLAA-Eng", url: "https://github.com/KLAA-Eng" },
+};
 
 function fixture(t) {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "klcode-package-test-"));
@@ -34,6 +40,7 @@ function fixture(t) {
     schema_version: 1,
     name: "klcode",
     version: "0.1.0",
+    repository,
     commands: [],
     agents: [],
   });
@@ -56,6 +63,9 @@ function fixture(t) {
   write(".claude-plugin/plugin.json", {
     name: "klcode",
     version: "0.1.0",
+    author: repository.owner,
+    repository: repository.url,
+    homepage: repository.url,
     skills: ["./" + canonical],
     commands: {},
     agents: [],
@@ -64,11 +74,46 @@ function fixture(t) {
   write(".codex-plugin/plugin.json", {
     name: "klcode",
     version: "0.1.0",
+    author: repository.owner,
+    repository: repository.url,
+    homepage: repository.url,
+    interface: {
+      developerName: repository.owner.name,
+      websiteURL: repository.url,
+    },
     skills: ["./" + canonical],
     hooks: "./hooks/codex-hooks.json",
   });
   write("hooks/claude-hooks.json", { hooks: {} });
   write("hooks/codex-hooks.json", { hooks: {} });
+  write(".claude-plugin/marketplace.json", {
+    name: "klcode-team",
+    owner: repository.owner,
+    plugins: [
+      {
+        name: "klcode",
+        version: "0.1.0",
+        source: { source: "github", repo: repository.github },
+        repository: repository.url,
+        homepage: repository.url,
+        defaultEnabled: false,
+      },
+    ],
+  });
+  const codexMarketplace = {
+    name: "klcode-team",
+    interface: { displayName: "KLCode Team" },
+    plugins: [
+      {
+        name: "klcode",
+        source: { source: "url", url: repository.git },
+        policy: { installation: "AVAILABLE", authentication: "ON_INSTALL" },
+        category: "Coding",
+      },
+    ],
+  };
+  write(".agents/plugins/marketplace.json", codexMarketplace);
+  write("plugin/marketplace.codex.json", codexMarketplace);
   t.after(() => {
     const target = path.resolve(root);
     assert.ok(target.startsWith(path.resolve(os.tmpdir()) + path.sep));
@@ -96,6 +141,83 @@ test("rejects version drift and missing hook declarations", (t) => {
   const errors = validatePackage(f.root).errors.join("\n");
   assert.match(errors, /identity/);
   assert.match(errors, /Missing/);
+});
+
+test("rejects repository and ownership drift in host descriptors", (t) => {
+  const f = fixture(t);
+  for (const host of ["claude", "codex"]) {
+    const file = "." + host + "-plugin/plugin.json";
+    const descriptor = JSON.parse(
+      fs.readFileSync(path.join(f.root, file), "utf8"),
+    );
+    descriptor.author = {
+      name: "Old Owner",
+      url: "https://github.com/old-owner",
+    };
+    descriptor.repository = "https://github.com/old-owner/old-repo";
+    descriptor.homepage = descriptor.repository;
+    f.write(file, descriptor);
+    const errors = validatePackage(f.root).errors.join("\n");
+    assert.match(
+      errors,
+      new RegExp(host + " repository/owner metadata differs"),
+    );
+  }
+});
+
+test("rejects inconsistent central repository identity", (t) => {
+  const f = fixture(t);
+  const file = "plugin/catalog.json";
+  const catalog = JSON.parse(fs.readFileSync(path.join(f.root, file), "utf8"));
+  catalog.repository.git = "https://github.com/old-owner/old-repo.git";
+  f.write(file, catalog);
+  assert.match(
+    validatePackage(f.root).errors.join("\n"),
+    /Catalog repository identity is invalid/,
+  );
+  delete catalog.repository;
+  f.write(file, catalog);
+  assert.match(
+    validatePackage(f.root).errors.join("\n"),
+    /Catalog repository identity is invalid/,
+  );
+});
+
+test("requires a source Codex marketplace while permitting packaged omission", (t) => {
+  const f = fixture(t);
+  fs.unlinkSync(path.join(f.root, ".agents/plugins/marketplace.json"));
+  assert.match(
+    validatePackage(f.root).errors.join("\n"),
+    /Missing source Codex marketplace/,
+  );
+});
+
+test("rejects stale marketplace sources and mismatched Codex catalog copies", (t) => {
+  const f = fixture(t);
+  const claudeFile = ".claude-plugin/marketplace.json";
+  const claude = JSON.parse(
+    fs.readFileSync(path.join(f.root, claudeFile), "utf8"),
+  );
+  claude.plugins[0].source.repo = "old-owner/old-repo";
+  f.write(claudeFile, claude);
+  assert.match(
+    validatePackage(f.root).errors.join("\n"),
+    /Claude marketplace.*catalog/,
+  );
+  const codexFile = ".agents/plugins/marketplace.json";
+  const codex = JSON.parse(
+    fs.readFileSync(path.join(f.root, codexFile), "utf8"),
+  );
+  codex.plugins[0].source.url = "https://github.com/old-owner/old-repo.git";
+  f.write(codexFile, codex);
+  assert.match(
+    validatePackage(f.root).errors.join("\n"),
+    /Codex marketplace.*catalog/,
+  );
+  assert.match(
+    validatePackage(f.root).errors.join("\n"),
+    /Codex marketplace copies differ/,
+  );
 });
 test("rejects escaped export roots", (t) => {
   const f = fixture(t);
@@ -140,8 +262,16 @@ test("rejects duplicate skill identities even when export paths differ", (t) => 
     /duplicate.*identity/i,
   );
 });
-test("build excludes unselected rules, local settings, state, Git and package tests", (t) => {
+test("build preserves linked plugin ledger and excludes unselected rules and private files", (t) => {
   const f = fixture(t);
+  f.write(
+    "consolidation/STATUS.md",
+    "See [plugin wiring](../docs/plans/plugin-wiring.md).\n",
+  );
+  f.write(
+    "docs/plans/plugin-wiring.md",
+    "# Plugin wiring\nValidated; activation deferred.\n",
+  );
   f.write(".klcode/config.local.json", "private override");
   f.write(".klcode/state/session.json", "private state");
   f.write(".git/config", "private git config");
@@ -149,6 +279,34 @@ test("build excludes unselected rules, local settings, state, Git and package te
   f.write("support/__pycache__/cache.pyc", "cache");
   const built = buildPackage(f.root);
   assert.equal(validatePackage(built.packageRoot).status, "passed");
+  assert.equal(
+    fs.readFileSync(
+      path.join(built.packageRoot, "docs/plans/plugin-wiring.md"),
+      "utf8",
+    ),
+    "# Plugin wiring\nValidated; activation deferred.\n",
+  );
+  const claudeMarketplace = JSON.parse(
+    fs.readFileSync(
+      path.join(built.releaseRoot, ".claude-plugin/marketplace.json"),
+      "utf8",
+    ),
+  );
+  assert.deepEqual(claudeMarketplace.owner, repository.owner);
+  assert.equal(claudeMarketplace.plugins[0].source, "./plugins/klcode");
+  assert.equal(claudeMarketplace.plugins[0].repository, repository.url);
+  const codexMarketplace = JSON.parse(
+    fs.readFileSync(
+      path.join(built.releaseRoot, ".agents/plugins/marketplace.json"),
+      "utf8",
+    ),
+  );
+  assert.deepEqual(codexMarketplace.plugins[0].source, {
+    source: "local",
+    path: "./plugins/klcode",
+  });
+  assert.equal(codexMarketplace.plugins[0].category, "Coding");
+  assert.equal(codexMarketplace.interface.displayName, "KLCode Team");
   for (const excluded of [
     "rules/rust",
     ".klcode",

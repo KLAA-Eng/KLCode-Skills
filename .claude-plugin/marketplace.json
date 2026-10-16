@@ -1,15 +1,21 @@
 {
   "name": "klcode-team",
   "owner": {
-    "name": "KLCode"
+    "name": "KLAA-Eng",
+    "url": "https://github.com/KLAA-Eng"
   },
   "plugins": [
     {
       "name": "klcode",
-      "source": "./",
+      "source": {
+        "source": "github",
+        "repo": "KLAA-Eng/KLCode-Skills"
+      },
       "description": "KLCode team workflows: 103 curated skills, shared rules, focused commands and optional project-scoped Windows hooks.",
       "version": "0.1.0",
-      "defaultEnabled": false
+      "defaultEnabled": false,
+      "repository": "https://github.com/KLAA-Eng/KLCode-Skills",
+      "homepage": "https://github.com/KLAA-Eng/KLCode-Skills"
     }
   ]
 }

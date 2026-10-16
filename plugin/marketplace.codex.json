@@ -1,16 +1,20 @@
 {
   "name": "klcode-team",
+  "interface": {
+    "displayName": "KLCode Team"
+  },
   "plugins": [
     {
       "name": "klcode",
       "source": {
-        "source": "local",
-        "path": "./"
+        "source": "url",
+        "url": "https://github.com/KLAA-Eng/KLCode-Skills.git"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
-      }
+      },
+      "category": "Coding"
     }
   ]
 }
