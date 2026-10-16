@@ -19,6 +19,8 @@ The collection consolidates 209 source skills into 103 canonical workflows, orga
 
 Each workflow has a `SKILL.md` entrypoint, focused supporting resources and `SOURCES.md` provenance. All eleven retained Taste workflows survive: ten in UI/design and `complete-output` in tooling. Ranking-pipeline guidance is an architecture reference; Python installer guidance remains separately callable.
 
+See the [skills and workflow glossary](skills/glossary.md) for the complete linked catalog, common workflow routes and terminology.
+
 ## Shared defaults
 
 - Scale planning, tests and review to the task's risk. Test-first development is explicitly available; fixed coverage and routine approval gates are not universal requirements.
