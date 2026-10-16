@@ -116,6 +116,6 @@ src/integrations/
 
 ## Related Skills
 
-- `backend-patterns`
+- `api-design`
 - `mcp-server-patterns`
 - `github-ops`

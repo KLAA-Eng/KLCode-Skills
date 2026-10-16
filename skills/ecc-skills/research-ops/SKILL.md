@@ -9,16 +9,14 @@ metadata:
 
 Use this when the user asks to research something current, compare options, enrich people or companies, or turn repeated lookups into a monitored workflow.
 
-This is the operator wrapper around the repo's research stack. It is not a replacement for `deep-research`, `exa-search`, or `market-research`; it tells you when and how to use them together.
+This is the operator wrapper around the repo's research stack. Start with local evidence and available search tools, then choose the lightest useful research method.
 
 ## Skill Stack
 
 Pull these ECC-native skills into the workflow when relevant:
 
-- `exa-search` for fast current-web discovery
-- `deep-research` for multi-source synthesis with citations
-- `market-research` when the end result should be a recommendation or ranked decision
-- `lead-intelligence` when the task is people/company targeting instead of generic research
+- `search-first` for discovery and reuse research
+- `scientific-thinking-literature-review` for systematic multi-source synthesis with citations
 - `knowledge-ops` when the result should be stored in durable context afterward
 
 ## When to Use
@@ -61,10 +59,9 @@ Choose the right lane before searching:
 
 ### 3. Take the lightest useful evidence path first
 
-- use `exa-search` for fast discovery
-- escalate to `deep-research` when synthesis or multiple sources matter
-- use `market-research` when the outcome should end in a recommendation
-- hand off to `lead-intelligence` when the real ask is target ranking or warm-path discovery
+- use available web search or direct primary sources for fast discovery; no particular hosted search provider is required
+- use `scientific-thinking-literature-review` when systematic synthesis or multiple sources matter
+- when the outcome is a recommendation, compare options against the user's criteria and cite the evidence for each tradeoff
 
 ### 4. Report with explicit evidence boundaries
 

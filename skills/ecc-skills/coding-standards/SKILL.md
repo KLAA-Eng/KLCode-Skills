@@ -11,8 +11,8 @@ Baseline coding conventions applicable across projects.
 
 This skill is the shared floor, not the detailed framework playbook.
 
-- Use `frontend-patterns` for React, state, forms, rendering, and UI architecture.
-- Use `backend-patterns` or `api-design` for repository/service layers, endpoint design, validation, and server-specific concerns.
+- Use `design-system` for UI consistency and `frontend-a11y` for accessible web interfaces; follow the repository's existing component and state patterns.
+- Use `api-design` for endpoint design and validation, and follow the repository's existing service-layer architecture.
 - Use `rules/common/coding-style.md` when you need the shortest reusable rule layer instead of a full skill walkthrough.
 
 ## When to Activate

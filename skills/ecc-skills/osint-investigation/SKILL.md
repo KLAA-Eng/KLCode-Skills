@@ -357,7 +357,7 @@ original inventory → geometric falsifier → independent object/viewpoint chec
 ## Related Skills
 
 - [research-ops](../research-ops/SKILL.md): route broader research requests.
-- [deep-research](../deep-research/SKILL.md): discover and synthesize background sources.
+- [scientific-thinking-literature-review](../scientific-thinking-literature-review/SKILL.md): synthesize background sources with a systematic evidence log.
 - [exa-search](../exa-search/SKILL.md): optional discovery when configured.
 - [security-review](../security-review/SKILL.md): application security review, separate from passive OSINT.
 

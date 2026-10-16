@@ -6,8 +6,9 @@ This repository contains skills being curated for the development team. The goal
 
 ## Current phase
 
-- The owner is performing an initial cleanup of the imported skills.
-- Consolidation and removal of overlapping skills will follow that cleanup.
+- The owner's initial cleanup and the agreed relevance-based removal pass are complete.
+- Consolidation and removal of overlapping skills are next.
+- Import required agents, commands, and hooks after the final skill list is settled. Missing infrastructure alone is not a reason to remove a skill.
 - Claude and Codex plugin packaging will be addressed after consolidation.
 - Keep changes scoped to the current request. Do not proactively reorganize, consolidate, delete skills, or add plugin configuration.
 

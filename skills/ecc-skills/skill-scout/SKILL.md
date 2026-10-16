@@ -113,7 +113,7 @@ finds no close match.
 | # | Skill | Source | Why it matches | Gap |
 | --- | --- | --- | --- | --- |
 | 1 | article-writing | Local ECC | Drafts articles and guides | Not focused on release notes |
-| 2 | content-engine | Local ECC | Multi-format content workflow | Heavier than needed |
+| 2 | documentation-lookup | Local ECC | Finds authoritative technical references | Does not draft release notes |
 | 3 | blog-writer | GitHub | Blog writing skill with recent commits | Needs security review |
 ```
 

@@ -113,7 +113,7 @@ Map intent + scope + tech stack (from Phase 0) to specific ECC components.
 | Testing | /tdd, /e2e, /test-coverage | tdd-workflow, e2e-testing | tdd-guide, e2e-runner |
 | Review | /code-review | security-review | code-reviewer, security-reviewer |
 | Documentation | /update-docs, /update-codemaps | — | doc-updater |
-| Infrastructure | /plan, /verify | docker-patterns, deployment-patterns, database-migrations | architect |
+| Infrastructure | /plan, /verify | production-audit, database-migrations | architect |
 | Design (MEDIUM-HIGH) | /plan | — | planner, architect |
 | Design (EPIC) | — | blueprint (invoke as skill) | planner, architect |
 
@@ -125,10 +125,10 @@ Map intent + scope + tech stack (from Phase 0) to specific ECC components.
 | Go | golang-patterns, golang-testing | go-reviewer, go-build-resolver |
 | Spring Boot / Java | springboot-patterns, springboot-tdd, springboot-security, springboot-verification, java-coding-standards, jpa-patterns | java-reviewer |
 | Quarkus / Java | quarkus-patterns, quarkus-tdd, quarkus-security, quarkus-verification, java-coding-standards, jpa-patterns | java-reviewer |
-| Kotlin / Android | kotlin-coroutines-flows, compose-multiplatform-patterns, android-clean-architecture | kotlin-reviewer |
-| TypeScript / React | frontend-patterns, backend-patterns, coding-standards | code-reviewer |
+| Kotlin / Android | coding-standards (follow the project's existing framework conventions) | code-reviewer |
+| JavaScript / TypeScript / Web UI | coding-standards, design-system, frontend-a11y | code-reviewer |
 | Swift / iOS | swiftui-patterns, swift-concurrency-6-2, swift-actor-persistence, swift-protocol-di-testing | code-reviewer |
-| PostgreSQL | postgres-patterns, database-migrations | database-reviewer |
+| Database changes | database-migrations | database-reviewer |
 | Perl | perl-patterns, perl-testing, perl-security | code-reviewer |
 | C++ | cpp-coding-standards, cpp-testing | code-reviewer |
 | Other / Unlisted | coding-standards (universal) | code-reviewer |
