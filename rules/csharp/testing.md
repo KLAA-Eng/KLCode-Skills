@@ -1,46 +1,14 @@
----
-paths:
-  - "**/*.cs"
-  - "**/*.csx"
-  - "**/*.csproj"
----
 # C# Testing
 
-> This file extends [common/testing.md](../common/testing.md) with C#-specific content.
+Extends [shared testing](../common/testing.md).
 
-## Test Framework
+## Framework and organization
+Keep existing xUnit, NUnit, MSTest or compatible host tests. Assertion/mocking packages are optional; check compatibility/licensing. Follow project layout, separate unit/integration/host tests and name behavior with useful arrange/act/assert structure.
 
-- Prefer **xUnit** for unit and integration tests
-- Use **AwesomeAssertions** for readable assertions
-- Use **Moq** or **NSubstitute** for mocking dependencies
-- Use **Testcontainers** when integration tests need real infrastructure
-
-## Test Organization
-
-- Mirror `src/` structure under `tests/`
-- Separate unit, integration, and end-to-end coverage clearly
-- Name tests by behavior, not implementation details
-
-```csharp
-public sealed class OrderServiceTests
-{
-    [Fact]
-    public async Task FindByIdAsync_ReturnsOrder_WhenOrderExists()
-    {
-        // Arrange
-        // Act
-        // Assert
-    }
-}
-```
-
-## ASP.NET Core Integration Tests
-
-- Use `WebApplicationFactory<TEntryPoint>` for API integration coverage
-- Test auth, validation, and serialization through HTTP, not by bypassing middleware
+## Integration
+Use WebApplicationFactory only for ASP.NET Core, exercising middleware/auth/validation/serialization through HTTP. Testcontainers is optional and needs its runtime. Revit, native UI and COM integrations need the actual environment or an explicit limitation.
 
 ## Coverage
+Default to test-first for new testable logic and bug fixes with practical exceptions. Target 80% for new or substantially changed testable code, with meaningful domain, validation, authorization and failure-path checks. Explain impractical coverage; this is not a repository gate. Run relevant dotnet test or legacy tooling for the actual target.
 
-- Target 80%+ line coverage
-- Focus coverage on domain logic, validation, auth, and failure paths
-- Run `dotnet test` in CI with coverage collection enabled where available
+Use [dotnet development](../../skills/languages/dotnet-development/SKILL.md).

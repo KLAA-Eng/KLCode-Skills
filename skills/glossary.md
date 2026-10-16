@@ -6,14 +6,14 @@ A linked catalog of **103 canonical skills across eight categories**, plus commo
 
 Choose the skill matching the deliverable you need. A **skill** is a callable workflow entrypoint; a **workflow** can use one skill or combine several. Start at the relevant step: a small, clear change can enter implementation directly. The routes below are examples, not mandatory stage gates.
 
-Use checks proportional to risk. Local implementation commits belong at meaningful verified milestones; remote actions follow the task's authorization. Agent systems, persistent memory, continuous learning and visual style alternatives are explicitly selected. A prompt, hook recipe or supporting script being present does not mean it is registered, installed or running.
+Use checks proportional to risk and follow the [shared rules](../rules/README.md) for test-first defaults, changed-code coverage and substantive independent review. Local implementation commits belong at meaningful verified milestones; remote actions follow the task's authorization. Autonomous agent systems, persistent memory, continuous learning and visual style alternatives are explicitly selected. A prompt, hook recipe or supporting script being present does not mean it is registered, installed or running.
 
 ## Common workflow routes
 
 | Outcome | Suggested route and boundaries |
 |---|---|
 | Clarify and build a feature | [grilling](planning/grilling/SKILL.md) → [requirements](planning/requirements/SKILL.md) → [implementation-planning](planning/implementation-planning/SKILL.md) → [implementation](engineering/implementation/SKILL.md) → [verification](engineering/verification/SKILL.md) → [code-review](engineering/code-review/SKILL.md). Skip discovery or planning already settled by existing evidence. |
-| Fix a defect | [debugging](engineering/debugging/SKILL.md) → [implementation](engineering/implementation/SKILL.md) → [verification](engineering/verification/SKILL.md) → [code-review](engineering/code-review/SKILL.md). Use [test-first-development](engineering/test-first-development/SKILL.md) when selected or useful for reproducing the regression. Diagnosis-only is a valid deliverable. |
+| Fix a defect | [debugging](engineering/debugging/SKILL.md) → [implementation](engineering/implementation/SKILL.md) → [verification](engineering/verification/SKILL.md) → [code-review](engineering/code-review/SKILL.md). Default to [test-first-development](engineering/test-first-development/SKILL.md) for testable bug fixes, with the shared practical exceptions. Diagnosis-only is a valid deliverable. |
 | Improve architecture or refactor | [change-impact](planning/change-impact/SKILL.md) → [architecture-assessment](planning/architecture-assessment/SKILL.md) → [architecture-design](planning/architecture-design/SKILL.md) → [refactoring](engineering/refactoring/SKILL.md) → [verification](engineering/verification/SKILL.md) → [code-review](engineering/code-review/SKILL.md). Select only the applicable steps; preserve behavior unless a behavior change was requested. |
 | Plan long-running work | Use [multi-session-planning](planning/multi-session-planning/SKILL.md) for settled work spanning sessions or PRs; use [decision-exploration](planning/decision-exploration/SKILL.md) when the work is still resolving decisions. [prototyping](planning/prototyping/SKILL.md) can supply evidence for those decisions. |
 | Research and choose an approach | [solution-discovery](knowledge/solution-discovery/SKILL.md) → [technical-research](knowledge/technical-research/SKILL.md). Use [literature-review](knowledge/literature-review/SKILL.md) for systematic source synthesis and [scholarly-evaluation](knowledge/scholarly-evaluation/SKILL.md) to assess an existing research artifact. |
@@ -152,7 +152,7 @@ Explicitly selected coordination, evaluation, context, learning and unattended-o
 | [agent-cost-report](agents/agent-cost-report/SKILL.md) | Report observed coding-agent usage and cost from selected local records, deduplicating cumulative session snapshots; optionally create a shareable usage card. |
 | [agent-evaluation](agents/agent-evaluation/SKILL.md) | Evaluate coding-agent reliability using reproducible tasks, capability and regression checks, cost and elapsed-time evidence. Use when explicitly benchmarking agents or harness changes. |
 | [agent-loop-design](agents/agent-loop-design/SKILL.md) | Design or review an explicitly requested iterative agent harness with measurable completion, independent evaluation, budgets and stop conditions. |
-| [agent-orchestration](agents/agent-orchestration/SKILL.md) | Coordinate an explicitly selected multi-agent engineering workflow with scoped ownership, dependency lanes, integration and evidence. |
+| [agent-orchestration](agents/agent-orchestration/SKILL.md) | Coordinate multi-agent engineering work or substantive independent review with scoped ownership, dependency lanes, integration and evidence. |
 | [agent-tool-design](agents/agent-tool-design/SKILL.md) | Design agent tools, action spaces, observations and error recovery. Use when building or changing an agent harness tool interface. |
 | [autonomous-operation](agents/autonomous-operation/SKILL.md) | Design or configure explicitly requested unattended or scheduled agent operation with persistent state, bounded authority and recovery. |
 | [context-budget](agents/context-budget/SKILL.md) | Route live context requests to native harness meters; audit installed discovery overhead only when explicitly requested. |
@@ -229,6 +229,7 @@ Record interfaces, compose videos, measure styles and edit footage.
 | Term | Meaning in this repository |
 |---|---|
 | Canonical skill | The single maintained entrypoint for a distinct job, under `skills/<category>/<name>/SKILL.md`. |
+| Shared rule | A canonical standard under `rules/`, linked from applicable skills. See the [selected rule sets](../rules/README.md) and [coverage inventory](../rules/coverage.json). |
 | Workflow route | A suggested combination of skills selected for the current outcome; it is not an automatic execution pipeline. |
 | Mode | A distinct way to use a skill without adding a competing entrypoint. |
 | Reference | Focused detail read only when relevant to the selected task or mode. |
@@ -253,6 +254,7 @@ Record interfaces, compose videos, measure styles and edit footage.
 | Durable project knowledge | `docs/knowledge/` |
 | Skill-specific references, scripts and assets | Alongside the skill's `SKILL.md` |
 | Category-shared agents, commands, hooks and helpers | `support/<category>/` |
+| Canonical shared rules and rule-source coverage | `rules/` |
 
 Current task and repository instructions take precedence over these defaults. Project-specific variants and Claude/Codex plugin lifecycle wiring remain separate work.
 

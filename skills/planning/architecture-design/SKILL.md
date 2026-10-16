@@ -14,3 +14,5 @@ Prefer substantial behavior behind a small understandable interface. An interfac
 5. Record the selected shape and tradeoffs under `docs/plans/<topic>-design.md`; durable rationale belongs in [decision records](../../knowledge/architecture-decisions/SKILL.md). Hand implementation to its own workflow.
 
 Use existing domain vocabulary without banning common technical terms. The adapted [architect brief](../../../support/planning/agents/architect.md) is available for delegation.
+
+Apply the relevant shared rules: [common / coding style](../../../rules/common/coding-style.md), [common / patterns](../../../rules/common/patterns.md).

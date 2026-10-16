@@ -1,28 +1,10 @@
----
-paths:
-  - "**/*.ts"
-  - "**/*.tsx"
-  - "**/*.js"
-  - "**/*.jsx"
----
-# TypeScript/JavaScript Security
+# TypeScript and JavaScript Security
 
-> This file extends [common/security.md](../common/security.md) with TypeScript/JavaScript specific content.
+Extends [shared security](../common/security.md).
 
-## Secret Management
+## Secrets and boundaries
+Keep secrets on the server or approved native credential boundary. process.env is a Node example, not a browser secret store: bundlers may inline environment values into public assets. Fail safely for missing server config and never log secrets.
 
-```typescript
-// NEVER: Hardcoded secrets
-const apiKey = "sk-proj-xxxxx"
+Validate external values at runtime, avoid unsafe dynamic execution and use safe DOM APIs. In webviews restrict bridge methods, origins and file access to required operations.
 
-// ALWAYS: Environment variables
-const apiKey = process.env.API_KEY
-
-if (!apiKey) {
-  throw new Error('API_KEY not configured')
-}
-```
-
-## Agent Support
-
-- Use **security-reviewer** skill for comprehensive security audits
+Use [application security](../../skills/engineering/application-security/SKILL.md) for review and [web security](../web/security.md) for browser surfaces; the upstream security-reviewer skill is not a prerequisite.

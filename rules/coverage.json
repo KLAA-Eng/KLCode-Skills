@@ -1,0 +1,2938 @@
+{
+  "schema_version": 1,
+  "scope": "Finite audit of named upstream rules/core/policy candidates and retained style/topic resources across all six repositories; not every imperative in every upstream file.",
+  "policy_record": "consolidation/RULES-REVIEW.md",
+  "activation": "Portable skill-linked documents; no hook registration, plugin installation or lifecycle activation. Unselected rule families remain reference material.",
+  "selected_directories": [
+    "common",
+    "python",
+    "csharp",
+    "cpp",
+    "typescript",
+    "web",
+    "react"
+  ],
+  "audit_records": [
+    "consolidation/rules-common-audit.json",
+    "consolidation/rules-language-web-audit.json",
+    "consolidation/rules-other-sources-audit.json"
+  ],
+  "sources": [
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/README.md",
+      "sha256": "b105cab4c71eaf7986dce93d4b2e098efbc9487c01617e300f5c17a2ede6f797",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/README.md"
+      ],
+      "rationale": "Replace ECC install scripts and host namespaces with selected portable rules, explicit skill links, approved defaults, traceability and deferred activation. ECC install.sh is not bundled or required."
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/angular/coding-style.md",
+      "sha256": "07ff77e554dad197c179c0fbd6b70dcbedbe4e038e95e60da0475134a5be856c",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "angular-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/angular/hooks.md",
+      "sha256": "321620abd2771d766149f5d38edc6b0f6a70fc49cdf4467bf3d81985668fa088",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "angular-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/angular/patterns.md",
+      "sha256": "dfe588461b1d1b4d63826559c89a22dec3a61de606db5ce249b01c5cceb6b887",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "angular-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/angular/security.md",
+      "sha256": "95aa06285fa05dfac872ec631057361ec8864d69dbf7be933c8d72c16aea5155",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "angular-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/angular/testing.md",
+      "sha256": "db8e50e1a0eadf989399c69923ff939b857a82f2b7deedc6cfeef21f182ed0cb",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "angular-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/arkts/coding-style.md",
+      "sha256": "6b7bd08dc321bc5acba53467918fe2ea8c24d8347ee41c91a2ad89969b2a071b",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "arkts-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/arkts/hooks.md",
+      "sha256": "58bc4133ecdf5bd81fd32fb228206a552445cddb0e868228d829fd390a807b2c",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "arkts-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/arkts/patterns.md",
+      "sha256": "0b475545842fcee0777c98dbace9bac552a71c581f9630648fe28e2d5d0e1394",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "arkts-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/arkts/security.md",
+      "sha256": "68c2c51e2741e9e25878e82bae0a6364c261c0d9d2ac0052c5580218355d7eee",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "arkts-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/arkts/testing.md",
+      "sha256": "bbb059fbb062231bc992d890c3ad4d772d61b8a7cba37b113ca74bfb07e4b3b9",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "arkts-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/agents.md",
+      "sha256": "999178beefe41112856cc4949781558d9eb76177522e65ef0a69e777421e4418",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/agents.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "audit_records": [
+        "consolidation/rules-common-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/code-review.md",
+      "sha256": "275fcc2c05f51389cd0d050e704d45b1920210882eaab89d47f449bd3b2b6e98",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/code-review.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "audit_records": [
+        "consolidation/rules-common-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/coding-style.md",
+      "sha256": "3c069a2460702e1715e6b21408287401f1faa8d343045c98534d59fbd22a0e56",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/coding-style.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "audit_records": [
+        "consolidation/rules-common-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/development-workflow.md",
+      "sha256": "54beaad49cd4cdde7ae6b8c730c4f7acf599d16f4b11e1cb7602ff1f0867c85d",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/development-workflow.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "audit_records": [
+        "consolidation/rules-common-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/git-workflow.md",
+      "sha256": "e9b98f7a651e09aa8226e62b0a326f3625c6afd8177d0ea64289f9f012a579da",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/git-workflow.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "audit_records": [
+        "consolidation/rules-common-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/hooks.md",
+      "sha256": "915c6e9c05eae855ced408a3c1f7823135e84021639f8670929339834b92d59a",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/hooks.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "audit_records": [
+        "consolidation/rules-common-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/patterns.md",
+      "sha256": "8a32c0552c8b309e961ef3f68a56ae84b0b1d411c17f23675ec26b685dea5e9a",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/patterns.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "audit_records": [
+        "consolidation/rules-common-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/performance.md",
+      "sha256": "39fd4c549823b4e10aefc4d427242ae8ac9e045ecf37affb087dc77f5faeba49",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/performance.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "audit_records": [
+        "consolidation/rules-common-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/security.md",
+      "sha256": "58f0acc56331b8d554dd036b8a1d5b2305a908e3960ff1e2d7e55223d5918bc3",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/security.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "audit_records": [
+        "consolidation/rules-common-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/testing.md",
+      "sha256": "09314a247342c12698deb308c2d0ffcf80b58341274bb8f9bba63fa03ce33323",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/testing.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "audit_records": [
+        "consolidation/rules-common-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/cpp/coding-style.md",
+      "sha256": "3d25db0df6aa37cd58117d927020102b4e991fb820b9a6ff193058f0652be611",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/cpp/coding-style.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/cpp/hooks.md",
+      "sha256": "51c511ea9706f53399649a52030484e14317b26f717488807a1faa2a2b9e0331",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/cpp/hooks.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/cpp/patterns.md",
+      "sha256": "0d4ad5083495eb234e43f65ed6e097494c06cf6886774d870fa27e6f11ffb27c",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/cpp/patterns.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/cpp/security.md",
+      "sha256": "16ca65265e3202d59046a70bd925d8f882d7f8494152e4839f1e5b89a6c5a2cd",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/cpp/security.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/cpp/testing.md",
+      "sha256": "07f8098577dbcf2bdefb24721ec571badd7c646fbe760cc2a2293455515da5dd",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/cpp/testing.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/csharp/coding-style.md",
+      "sha256": "355de4ecd0690f7dbaa78e2fe24c9b82a153247c9f23adfa6de5a49a812ae3ce",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/csharp/coding-style.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/csharp/hooks.md",
+      "sha256": "9975e503eedc5a9a02a8ba8cee8fbee804210632db0ec00b2185ef225e3dfa82",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/csharp/hooks.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/csharp/patterns.md",
+      "sha256": "05ed05365fd93ac93245244878229106eefb88164db43555d14d8bbd4999023f",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/csharp/patterns.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/csharp/security.md",
+      "sha256": "94b105e20d72ba2fbe457a42e9232001dd5dd338e816a091094b0d518280eb07",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/csharp/security.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/csharp/testing.md",
+      "sha256": "06a7a6d57766c365483b70fcf95925ae35d4e97d06884443602a3f5bf696de85",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/csharp/testing.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/dart/coding-style.md",
+      "sha256": "acf278be79dae9fdc323cf81059ec05fff32751617eef9bb5be3a2bdc9175f6b",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "dart-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/dart/hooks.md",
+      "sha256": "8dbf2a2cbedb962fbfed379749baddcad9164779159411ae248a42c0ebc2e9fc",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "dart-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/dart/patterns.md",
+      "sha256": "6fc60f9f286b04f61462e2b9e469a12a715097e71e48c1194e222795fc29160e",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "dart-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/dart/security.md",
+      "sha256": "7945724035a5fe77f9b89e15fe28b5b8c405b625a3d9fb27cfae7c590df1fa2a",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "dart-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/dart/testing.md",
+      "sha256": "b2d645c8e6da1958d913c82cf408013ada2ea14962126e1575566cea55465cf2",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "dart-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/fsharp/coding-style.md",
+      "sha256": "d1088a64bc2c3a46e9c00b17c8a8df4d94aba2a199881c21af7b004380d005ef",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "fsharp-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/fsharp/hooks.md",
+      "sha256": "c6b9cc1afef1f8556d13c6703a13662724b413b316bfbcc832be236a998596cf",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "fsharp-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/fsharp/patterns.md",
+      "sha256": "a120871213cce220eb41ccf5699707ac1d711f387a8e3ccc6b1b7810701429b4",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "fsharp-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/fsharp/security.md",
+      "sha256": "021f0fd447be83c7f8ad47e1bcbe28ac2f15fc8a2ff9a42199ac229bc8f405b3",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "fsharp-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/fsharp/testing.md",
+      "sha256": "254b49f908e575a6216d7eac2b7b6a3234bb7ab3c32a8d263dc22f8e109f6616",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "fsharp-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/golang/coding-style.md",
+      "sha256": "c32f6a2715297a1637b35567bb2e65054b4b28064b4d91fad26ad688f758243d",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "golang-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/golang/hooks.md",
+      "sha256": "518fe31d4baa4a10e2f5ae341ececb7063bbc794ef44c4cdefd7dcf75ab50cc3",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "golang-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/golang/patterns.md",
+      "sha256": "aca279088c39a43e8b1371d61abbb5da15206c5f52cce52443252d47ad5c5ddb",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "golang-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/golang/security.md",
+      "sha256": "72ff9516083e017b718f76e7a6f6838611fa3c02b810b3572fef7d605b38d033",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "golang-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/golang/testing.md",
+      "sha256": "b0fcde8be4ce98e34fe872cc2ecca63cab8c8cd87d5faa1e1667ee82f3707d74",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "golang-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/java/coding-style.md",
+      "sha256": "4ce94d84b6d23615ae5843892bb434dcccd3173938cfffb2701a61c17d1e9a67",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "java-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/java/hooks.md",
+      "sha256": "b3c2e5aa683bb14a804dc9a5b59c255e5de763d35abc94daac17c859cdb6fad7",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "java-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/java/patterns.md",
+      "sha256": "11f26e27624feecf828ac91dcb53389e08fa88ae6755dce5cf7d6ba84d36f9e2",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "java-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/java/security.md",
+      "sha256": "e13c649b301a3d43d365a1a2ee5444b85043c2c8258543a52c52513fc86c732a",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "java-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/java/testing.md",
+      "sha256": "0af52504a7c8258dbfe9cbeeec9fd88d18e0fa5492e5ed2900ff5a97e9051497",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "java-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/kotlin/coding-style.md",
+      "sha256": "63c86f8bb5366901f3233f2b71880c4e9c0bde794bf2276745f2d2f6706d99c2",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "kotlin-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/kotlin/hooks.md",
+      "sha256": "f5f703d6395984d4bbbdef4df9ee7875879a77551d3cc75acdf8b1054d09142c",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "kotlin-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/kotlin/patterns.md",
+      "sha256": "1c043217f0a9b7a5f013ce6dbfe0ef065d56ee6afcb30010f99ccdaf22349805",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "kotlin-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/kotlin/security.md",
+      "sha256": "f2cb2185afce33a401fc815fc28581eae21f5f75382cad2082b27557d9cd18ac",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "kotlin-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/kotlin/testing.md",
+      "sha256": "441d35861a1297cabd698b7f3886c5f0bdc59727cb99fde135f8ecb06025f6e7",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "kotlin-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/nuxt/coding-style.md",
+      "sha256": "33dc74dddf4c7eddeb46c9c8c3ba2014cd432c5a82becbbf445caf999f272bb4",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "nuxt-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/nuxt/hooks.md",
+      "sha256": "ccfc501f38cc67d82d3aaf646f1aa97d7d09eee907e31679027c99abb3b18872",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "nuxt-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/nuxt/patterns.md",
+      "sha256": "752177f220353824ae7c7a6eb9ecaa9e2638bb20233fcb8cb37d1bad0bbc79d2",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "nuxt-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/nuxt/security.md",
+      "sha256": "a8ef6f1cf0f5e059a05b06d904be9bab49ee9736be3a85444e12d278c3786f78",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "nuxt-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/nuxt/testing.md",
+      "sha256": "2c1c9fd0006083515eb8ace54007602f1091df0b0fa35ff5d231ba64109cecbc",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "nuxt-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/perl/coding-style.md",
+      "sha256": "4f134e0da0e332280e6c6803c5dec6edb38088c42f4bb6270c27e81f579a853a",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "perl-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/perl/hooks.md",
+      "sha256": "a71f48f8b6068436a5b47c4f32291208ebd5d6b311b2ad1d393c1a0ad96c764d",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "perl-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/perl/patterns.md",
+      "sha256": "55a86b5bca376dc511bd9b4fa2d0b29985f4d7576aae715d68b760afe0628169",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "perl-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/perl/security.md",
+      "sha256": "c3d0311c2bd9b0fbe94d079e410561fa6a918180925f86c29dfadd06d32a00b5",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "perl-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/perl/testing.md",
+      "sha256": "4e8377928b5da585aebeaa278e3f293365d84df7819cb44d8efb1b5dc4631e68",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "perl-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/php/coding-style.md",
+      "sha256": "e6492b2e6f90a957a2f4664f2e01640fcc5ff77a81ab44c9cee42f3590be8b59",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "php-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/php/hooks.md",
+      "sha256": "624c6126b5c245aaf9af301f71f46a2b059baf94ef3de5c6bdb5dbf859ec0090",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "php-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/php/patterns.md",
+      "sha256": "f370b0af1e12d067fb4263ad829f62fedbc37e6e9aedf698d3939b6ee69cd1ea",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "php-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/php/security.md",
+      "sha256": "c3ab3949fab80c9bde6d0f6925984dbd094e66b6a790c4cba29f6d74dd07d2b2",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "php-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/php/testing.md",
+      "sha256": "027a2fb6619fd671060a6d8283ee6cae2898eee20f26557f75626fc2d18ffdf9",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "php-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/python/coding-style.md",
+      "sha256": "f9d6d7a39c5f5ea809579fecac591f390fa9264c088c7e209d464d5244747003",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/python/coding-style.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/python/fastapi.md",
+      "sha256": "e796ecbe93c4d50de6ab34ab1d8fc35db5e6bac03144cbaef09939ae5c3b6e2a",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/python/fastapi.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/python/hooks.md",
+      "sha256": "7ebd12233f6917905d5653a63afe2361450ed732fd965de55055ed5ffd3c14a7",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/python/hooks.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/python/patterns.md",
+      "sha256": "d9cab9b536321ea7efc6180668fd48820deaf571400db732f0ca17bdda92b7d0",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/python/patterns.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/python/security.md",
+      "sha256": "6bbbb6c800cdfef23c3f9a5055ce31096a7724b51f0d528935f6c32970639453",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/python/security.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/python/testing.md",
+      "sha256": "92655aa5047ee456501ad6605c428680bac6433965f89ce531fe79627004e8c6",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/python/testing.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/accessibility.md",
+      "sha256": "7cd8adb29406c0f07e6628334bf417e8df3d71a2781c2f830b5b74177b2b8222",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/coding-style.md",
+      "sha256": "121c3c1d837828d2a648bcab8f0134fcc711f2fabdfffbdf5a095d60fdeb650f",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/hooks.md",
+      "sha256": "b9b2d1a70bb621b4e6899f76c23b7573ce89d27cc16773b2e5ca03edc8fdc00a",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/patterns.md",
+      "sha256": "61ecf0979f22ba323cf03ad29fd98e67671a848127add4b12e3727f3ef76ae9f",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/performance.md",
+      "sha256": "66b87fce7da71f511b1382e52fd5becf3b4edaf6b4dd7a26a68de20b9e451f5d",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/production-readiness.md",
+      "sha256": "e4afb1ec82bf7fa541c07c40a71602f76f3a0cb76cc47731c98d5570f2019886",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/security.md",
+      "sha256": "92819918373143837edd33da97af6873562d632d3970b66bfa4d3f4f5cbe5dbd",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/testing.md",
+      "sha256": "989d2103a46e512dc7c20a7452c8c23b0301b55b0998fb92733f21721dba9382",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react/coding-style.md",
+      "sha256": "f799684887ae82e5ebd615a59fb9aff6207328513d13052f00e97e11ac8bb008",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/react/coding-style.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react/hooks.md",
+      "sha256": "64154bbbc881d4b6660376581babae009351ef38f7602ca2d26a640ed253d774",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/react/hooks.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react/patterns.md",
+      "sha256": "36071a93eb6f4be12718f912eae4c31eb68006134a53cc1d76101944d582c2ea",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/react/patterns.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react/security.md",
+      "sha256": "52bf239b4b12409417e723e32ff7e1172c39c42d13fa9625eda75a45bd446cec",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/react/security.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react/testing.md",
+      "sha256": "ae5d05b9e4f706f73f741c3591e880b873da49a7efd02253a381960245bf655f",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/react/testing.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/ruby/coding-style.md",
+      "sha256": "8dfa64f79717a61637f94a8c1f29cbf03cb87b5c3cb4511f96a3f3ad3ca77ce1",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "ruby-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/ruby/hooks.md",
+      "sha256": "70d673bc40b8b1dc04d1b1a0530486506dce22712684561e3c750347a84f6b24",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "ruby-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/ruby/patterns.md",
+      "sha256": "93060ad41a3f84daeceb05333e35fb84cf5982f39251f9f6d17fedb090988721",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "ruby-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/ruby/security.md",
+      "sha256": "15802886a80d1ab0d7da6c4c0233eca08ee0f3828d388e82a77a882fcbef6af5",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "ruby-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/ruby/testing.md",
+      "sha256": "1719ae4872c19937c723b4f09b886536fef759dd9c58eab166f04b63a1c97573",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "ruby-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/rust/coding-style.md",
+      "sha256": "01c056bef1bf3b7ca7cfc516986c1d05bcd341c620d2a09ce75acdc2ed539f5f",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "rust-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/rust/hooks.md",
+      "sha256": "a7494896f1c8838f31cd72846f435e6388f91bf94e0d91eb226dd9b5b684ca55",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "rust-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/rust/patterns.md",
+      "sha256": "08a09f7cf61991f4bdb69e388a9df546ea490c5c822aebcdd066e227cb06e16b",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "rust-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/rust/security.md",
+      "sha256": "09c5225869c09fc605f8495ae2c3728093e3b652dcc0ab55a9186946f5c67995",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "rust-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/rust/testing.md",
+      "sha256": "54987d858918a433aea954c272c519d7ccb113834013fb79cc77ef7e6d571c8e",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "rust-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/swift/coding-style.md",
+      "sha256": "187d44050ed492076640f504a3fe7eb132ddabad262099d698a5b703b89d2659",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "swift-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/swift/hooks.md",
+      "sha256": "654da388192df405927c5e4cea2f588d01cd349ba7ba30a813a4aa7c3d3a4661",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "swift-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/swift/patterns.md",
+      "sha256": "4381cb9fa1c1ec01a600a96d80e320385148728748fb702822f9ac1c3c079860",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "swift-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/swift/security.md",
+      "sha256": "345a471220b7f448d991b9d28a0a047165aa7480a1ed758703d0c74041239b3a",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "swift-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/swift/testing.md",
+      "sha256": "9a44133b6a8afd496a79bd4e8211985f44cb4a24f83c45b64160d26411e434e9",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "swift-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/typescript/coding-style.md",
+      "sha256": "cb6fbe555d700a65d466fc27377fbb66d6da0e2bcf4411656918f6a45402af1a",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/typescript/coding-style.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/typescript/hooks.md",
+      "sha256": "930bbe5d5a66e0022a55c87d5a17765d1633669620f9a3be6815f3ab4ddcd6b4",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/typescript/hooks.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/typescript/patterns.md",
+      "sha256": "20870f78aa32429fe13f35b415e9f6f8f7809e39c460cf8146d181b7306159fd",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/typescript/patterns.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/typescript/security.md",
+      "sha256": "86b14a5a56f4e61750ab30ca50bd264f52f90f5358303f3028d41030a4c50f18",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/typescript/security.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/typescript/testing.md",
+      "sha256": "92e3d02b4fff30899bc1a2af043d74941adbf3b2c0e972d2fcd2c68c9c2ea70b",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/typescript/testing.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/vue/coding-style.md",
+      "sha256": "c5b8b3068e8c758bc7d3ccd0172fdc3cb510da412b873f025541b3d7499b3737",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "vue-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/vue/hooks.md",
+      "sha256": "f73294ea23030ded563f2907996f5bb53d9b297eb152d3e866be25ba00adaef8",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "vue-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/vue/patterns.md",
+      "sha256": "57ab797198376c01323c775674e5a5a25a50a254ff6724730bb733187a5ff1f5",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "vue-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/vue/security.md",
+      "sha256": "4f2abdce6ac21dfd3afb9b4e847ac4496a7896c169cf42083bfdd7c360601ca6",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "vue-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/vue/testing.md",
+      "sha256": "b02edf47b4088db53f96fd49c4e92aea14e4b27051f80bb5a4b49cb4060037ff",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "vue-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/web/coding-style.md",
+      "sha256": "a1ff88858d73c943ebd2145b7aff40b1adabbc3a083529eeae888acb7aa79863",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/web/coding-style.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/web/design-quality.md",
+      "sha256": "ca0654b7fe31136031df8bb0a67e441949af6760ae6fda9656e4db7f171e512a",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/web/design-quality.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/web/hooks.md",
+      "sha256": "fc6bc015d5c3206f357ac5f8e9ed781b17f518070c749a6b4294f7b6d1eaa2ed",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/web/hooks.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/web/patterns.md",
+      "sha256": "334fa10d5a31ebda261e0a6bcfe58310fced2cfd371fd18ce8955496e256c15a",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/web/patterns.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/web/performance.md",
+      "sha256": "73df4d1664cc5942eaf8d33bfe75a2c9de933e6cd6035fe2d42fec0635866297",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/web/performance.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/web/security.md",
+      "sha256": "565851f9df7029baeb220cdc195bd89e5c81eb58ba3de74df9ab48f7c8ba5ff5",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/web/security.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/web/testing.md",
+      "sha256": "1ce7194c30b5cd668d9e2ced138bd2c3807e6ad546c07f8f876522a77a2eae9a",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/web/testing.md"
+      ],
+      "rationale": "Adapted upstream guidance to approved shared defaults and actual project/runtime/toolchain; preserved applicable security, behavior and resource-handling detail without forcing framework/package adoption. Explicit skill links replace missing upstream workflows; hook activation remains deferred.",
+      "audit_records": [
+        "consolidation/rules-language-web-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/3d.md",
+      "sha256": "d5f3f412ba540d10a98f330dea3cd949d4fc4f9a6bf0d9788cf3f2b21a90f3f4",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/3d.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/animations.md",
+      "sha256": "3b2a9055f720fb5da70af86d4d43ab5722b6229f2c3f7c70100972df0fe4863b",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/video/remotion-video/rules/animations.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate. The only normalized difference is fixing the TSX import to include interpolate and useVideoConfig already used by the example; frame-driven animation/CSS prohibition behavior is preserved.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/assets.md",
+      "sha256": "664160a48fe6ef76c9b25ea51b3796d39d371cb3632f380b014492412902ad42",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/assets.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/assets/charts-bar-chart.tsx",
+      "sha256": "6e5e219c596c8515336570a5bc89c233e32e695d5816dec88eb929e798eeea61",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/assets/charts-bar-chart.tsx",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/assets/text-animations-typewriter.tsx",
+      "sha256": "92b5f47d6d18387a0aa008ce9dceefd30f673ae5879e16892bd4b4ea97f5dddb",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/assets/text-animations-typewriter.tsx",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/assets/text-animations-word-highlight.tsx",
+      "sha256": "5dbba688b875baaa62555c7a243f54739e81edbf34148c87048594a210c3ec2c",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/assets/text-animations-word-highlight.tsx",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/audio.md",
+      "sha256": "06d859b2f463d0e0e823655548e314b59a1d6321377857fca52a09c629170b12",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/audio.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/calculate-metadata.md",
+      "sha256": "b258c788fb3337187245c814f2fd4ddf10f7330ec97cb8117202a0145d4d27a6",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/calculate-metadata.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/can-decode.md",
+      "sha256": "fb3f9933e45103d72530915b72a844b3454c6acc03289db5efe8f4541b088fad",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/can-decode.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/charts.md",
+      "sha256": "67b51782c36f656af9c6e87fae77e70e8bb073495987670cb18c18a97add5584",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/charts.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/compositions.md",
+      "sha256": "8939e6ce84d00e98f1813d781b554729d637b932b86fbbbbf6a3b3b34943220f",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/compositions.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/display-captions.md",
+      "sha256": "96abde72e0bcb88cdc5871b80b5d6eb0c6aedf0ea9611e6c5157cb0ee980ba99",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/display-captions.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/extract-frames.md",
+      "sha256": "b7a63f6509a1a33d624f36d3f6772abbc364b0c883520803f3701c26541e7cd7",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/extract-frames.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/fonts.md",
+      "sha256": "1749e4cf82e8b157d4b0a26f46721152d3ef9e5e9a1686753b8bb6a1be83ddbc",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/fonts.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/get-audio-duration.md",
+      "sha256": "d5098e8d20b227464e3519c761cba1e03396c77da636d1893c7be3061a0a8e40",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/get-audio-duration.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/get-video-dimensions.md",
+      "sha256": "839867aa115e09a719096a902a6ad5e304135f2053cce9928776fb4fcb5bf3e1",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/get-video-dimensions.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/get-video-duration.md",
+      "sha256": "7b31fab3cbf9b0771bae41e2c41c9abed2b59d495ffac7160e562fdf86848726",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/get-video-duration.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/gifs.md",
+      "sha256": "53d9d658e3093dba4a798945d5c1b7004688ed96a09521cfb22b4cec418a8ae7",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/gifs.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/images.md",
+      "sha256": "91d32f6e528b1f1cddc9a0cf70d0faa74491e3a2fe4a32933da0e21010e9aa74",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/images.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/import-srt-captions.md",
+      "sha256": "38d33be5439714a2ddb577d8c8a6b7bf09bd10f66c0540415fb70536d4374e87",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/import-srt-captions.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/lottie.md",
+      "sha256": "327673644c436b9f0b52f03ef2f2a6a9cf75d9e18d3384b88969b86942e2b8a1",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/lottie.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/measuring-dom-nodes.md",
+      "sha256": "4017103b03f14a041ac433be78c521ec2e9961629fae419c8b196d349637585b",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/measuring-dom-nodes.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/measuring-text.md",
+      "sha256": "88905cbd701e247306645c19f18e01aebe27c4eb0178a4e5d0377687f5ac1478",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/measuring-text.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/sequencing.md",
+      "sha256": "a6bc2ecf64c43d2c496c4a10f00d78151e23dd73f5ec73a09d950436eb5bcee1",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/sequencing.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/tailwind.md",
+      "sha256": "e6025d703b69d9b4f9b240a80bbe4619872013ebd57c4511912d4be1a1c048a7",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/tailwind.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/text-animations.md",
+      "sha256": "40ac6b1bccf1c57d9edd46c74e847ec6e86fe775d3ef4fd14e1338f4a2606171",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/text-animations.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/timing.md",
+      "sha256": "25d44384f42a2bbf4806e2e1aa6bd0acd0b1bd52160341f0f16dd1332b2a5d3d",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/timing.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/transcribe-captions.md",
+      "sha256": "c3324f7dc728cdb8d6a28ff664581b6a7ec2f1bae10727316b2b596d77d3df62",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/transcribe-captions.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/transitions.md",
+      "sha256": "1b105c06bb968f9ea03678178047da59b82a216e7a879b96d8ec821a8b6dea1e",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/transitions.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/trimming.md",
+      "sha256": "9f71fc28200d18a4e75e727cc81506ee30b4e6bf73ca735686dfd55f4bcaee70",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/trimming.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/videos.md",
+      "sha256": "6c663a2325df97483c123cc7f26c4db3eca3fcd38135bf7719d2969ce942c489",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/videos.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": ".claude/rules/skills-contributing.md",
+      "sha256": "6f8ff659388c3b957322ac46f788ff16d996e5c751f71a6c1e59e4761c437bbd",
+      "disposition": "already-covered",
+      "destinations": [
+        "skills/tooling/skill-maintenance/SKILL.md"
+      ],
+      "rationale": "Catalog/overlap check, extending suitable skills, unique behavior, reference updates and validation are present. Upstream gh PR search and exact anatomy document remain upstream maintainer policies.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "AGENTS.md",
+      "sha256": "a12bac68c447f8043a75c2259175b36a57a37617a5ab92900ab1e3e9afa381be",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Own scope notice explicitly restricts this file to maintaining addyosmani/agent-skills and says not to copy elsewhere. Exact anatomy, upstream PR process, mandatory 1% skill invocation, OpenCode routing and persona restrictions are not shared team defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "CLAUDE.md",
+      "sha256": "f03b7aaf2c08ab93e70a020442634a09f518286ff1beb7b8353dde92533ff9b0",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Own scope notice explicitly restricts this file to maintaining addyosmani/agent-skills and says not to copy elsewhere. Exact anatomy, upstream PR process, mandatory 1% skill invocation, OpenCode routing and persona restrictions are not shared team defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/accessibility-checklist.md",
+      "sha256": "61c759d94d52296231f5f310b92b401f56c44e4430dc3cc95ebac5d7b1d5ffac",
+      "disposition": "adapted",
+      "destinations": [
+        "support/ui/references/accessibility-checklist.md",
+        "skills/ui/interface-accessibility/SKILL.md"
+      ],
+      "rationale": "Preserved selected specialist reference. Web controls/budgets, code examples and named tools apply only to relevant supported surfaces; product requirements, actual runtime and truthful evidence govern applicability.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/definition-of-done.md",
+      "sha256": "d1c75d2ae65d2c7a9cd01f93fa8de63e00e75f2fe5d08be224d576157054dcee",
+      "disposition": "already-covered",
+      "destinations": [
+        "skills/engineering/verification/SKILL.md",
+        "skills/engineering/release-readiness/references/readiness-checklist.md"
+      ],
+      "rationale": "Acceptance, runtime evidence, regressions, documentation, integration, compatibility, security and recovery are selected by canonical verification/release workflows. Every-change full launch checklist and universal human merge/deploy approval are not imported; actual task authorization and release authority control remote actions.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/observability-checklist.md",
+      "sha256": "25fcd0e854596a5ab6f11b002050d245bf78f5ae0fcbd1df699b89451ae0e1e8",
+      "disposition": "already-covered",
+      "destinations": [
+        "skills/engineering/observability/SKILL.md",
+        "skills/engineering/observability/references/instrumentation-patterns.md"
+      ],
+      "rationale": "Question-led instrumentation, stable events, correlation/entry points, redaction, bounded metrics, traces, actionable alerts and telemetry proof preserved. Aggregators, dashboards, every-endpoint RED and on-call launch requirements depend on actual product needs.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/orchestration-patterns.md",
+      "sha256": "61e543d86f19f86b83074f8c1c769455c7085a2c72dd47b1da21a8c63785be4a",
+      "disposition": "already-covered",
+      "destinations": [
+        "skills/agents/agent-orchestration/SKILL.md",
+        "skills/agents/agent-orchestration/references/coordination.md"
+      ],
+      "rationale": "Independent bounded lanes, single ownership, disjoint writes, focused specialist context and integrator synthesis represented. Upstream exclusive user/command orchestration and fixed host no-nesting statements not universalized; active host and authorization control delegation.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/performance-checklist.md",
+      "sha256": "fffc38b8f3b328a973aab8b1a2efdd72b65710d8f4b57f28f8374ddae7f8a88b",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/engineering/performance-optimization/references/performance-checklist.md",
+        "skills/engineering/performance-optimization/SKILL.md"
+      ],
+      "rationale": "Preserved selected specialist reference. Web controls/budgets, code examples and named tools apply only to relevant supported surfaces; product requirements, actual runtime and truthful evidence govern applicability.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/security-checklist.md",
+      "sha256": "37774056502fe8970dcd2fd27dca5fa31f2a55232649fc3056c89c3af7d62755",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/engineering/application-security/references/security-checklist.md",
+        "skills/engineering/application-security/SKILL.md"
+      ],
+      "rationale": "Preserved selected specialist reference. Web controls/budgets, code examples and named tools apply only to relevant supported surfaces; product requirements, actual runtime and truthful evidence govern applicability.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/testing-patterns.md",
+      "sha256": "f0bf05acd0edcadc27297ad5b74f104c8103ccfedba1a05cd6d6ae4af8364c56",
+      "disposition": "already-covered",
+      "destinations": [
+        "skills/engineering/test-first-development/SKILL.md",
+        "skills/engineering/test-first-development/references/test-design.md",
+        "skills/engineering/test-first-development/references/mocking.md"
+      ],
+      "rationale": "Observable behavior, independent expectations, boundary mocks, relevant error/edge/async checks are covered. Exact Jest/React/Supertest/Playwright cookbook not imported and those frameworks not required.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "AGENTS.md",
+      "sha256": "26d6fb4959aa6be640cc5467821607bc196b44a1fb8903cc09d9bbf3823582be",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream maintainer routing, private/public product boundaries, brand voice and build/distribution/host imports are repository-specific; neither paths nor always-on persona become team defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "CLAUDE.md",
+      "sha256": "a90879c1c898d2abe2fd6dae300b036d5d7ee56146d0054c4dc98bde8a17f819",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream maintainer routing, private/public product boundaries, brand voice and build/distribution/host imports are repository-specific; neither paths nor always-on persona become team defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "GEMINI.md",
+      "sha256": "e611f50fb4f68fe20c87632b30a476bf5ee1513b63fa23cd1de2cc57bff4de4f",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream maintainer routing, private/public product boundaries, brand voice and build/distribution/host imports are repository-specific; neither paths nor always-on persona become team defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "skills/activation-rule.mjs",
+      "sha256": "8adeea2f3f235b205321142b7b7348baeb32a62b0ec7d540c89d529d1da48af9",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Always-on terse persona and OpenClaw/IDE bootstrap are outside retained default skills; host activation deferred. No universal article dropping, sentence limits, fragments or language switches.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "skills/native/native-core.md",
+      "sha256": "7e7ea4db5cc8ac6c6fc12c20bfbc17b622b52bc4a71e3d3a7c6d913c6e294a3e",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/implementation-core.md",
+        "support/engineering/rules/implementation-core.md",
+        "skills/engineering/implementation/SKILL.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "audit_records": [
+        "consolidation/rules-common-audit.json",
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "src/rules/caveman-activate.md",
+      "sha256": "ef99681346ed2ff1932e1264fb5cdf1b5bb8ba54d62f7f205eebbd9973979802",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Always-on terse persona and OpenClaw/IDE bootstrap are outside retained default skills; host activation deferred. No universal article dropping, sentence limits, fragments or language switches.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "src/rules/caveman-openclaw-bootstrap.md",
+      "sha256": "c769ae1e97d387293f8c680639cba21e550eb3017f17522caf6ca8ac38bf966e",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Always-on terse persona and OpenClaw/IDE bootstrap are outside retained default skills; host activation deferred. No universal article dropping, sentence limits, fragments or language switches.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": ".agents/adr/0001-explicit-setup-pointer-only-for-hard-dependencies.md",
+      "sha256": "b6f21d955eeabd31eb6de189abb488a7b38d660f01c95912964432cf90dd5ff4",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/development-workflow.md"
+      ],
+      "rationale": "Preserve the distinction between hard prerequisites and optional context; report required missing configuration and degrade gracefully when optional context is absent. Do not import the upstream repo-specific setup command or issue-tracker requirements.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": ".agents/adr/0002-ship-as-a-claude-code-plugin.md",
+      "sha256": "93bb18f7a1c928338af9dcbde8c78a34a0f43b38593d0476310c763ef5aad5d8",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Historical upstream distribution decisions and evolving host-version findings are not shared workflow rules. Plugin packaging is deferred; verify current official host capabilities in that phase rather than treating dated upstream conclusions as active instructions.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": ".agents/install-block.md",
+      "sha256": "f44f48c36a49ee13bca0374d6c9206409e18633dd7b4135229af1b2a6b0683f1",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream bucket promotion, aihero.dev publishing, exact invocation metadata, Skill-tool-only cross-calls and marketplace update policy are repo/host-specific. KLCode maintains its own catalog and portable links; host metadata/activation evaluation remains later plugin work.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": ".agents/invocation.md",
+      "sha256": "12770081fb55728caedf70f477d78895be181dfcff2b1af0af594861ec152eeb",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream bucket promotion, aihero.dev publishing, exact invocation metadata, Skill-tool-only cross-calls and marketplace update policy are repo/host-specific. KLCode maintains its own catalog and portable links; host metadata/activation evaluation remains later plugin work.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": ".agents/writing-docs.md",
+      "sha256": "ad2e51a77be7a9404cf46cc9732f645dfae145a4683165f860c8fe25136dded3",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream bucket promotion, aihero.dev publishing, exact invocation metadata, Skill-tool-only cross-calls and marketplace update policy are repo/host-specific. KLCode maintains its own catalog and portable links; host metadata/activation evaluation remains later plugin work.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": "AGENTS.md",
+      "sha256": "6ebdb617a8104a7756d0cf36578ab01103dc9f07e4dc6feb751296b9c402faf7",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream bucket promotion, aihero.dev publishing, exact invocation metadata, Skill-tool-only cross-calls and marketplace update policy are repo/host-specific. KLCode maintains its own catalog and portable links; host metadata/activation evaluation remains later plugin work.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": "CLAUDE.md",
+      "sha256": "27dda2d839544e8a432e0cd215e46f14e39990ec4208c2e5d5778a80593a0639",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream bucket promotion, aihero.dev publishing, exact invocation metadata, Skill-tool-only cross-calls and marketplace update policy are repo/host-specific. KLCode maintains its own catalog and portable links; host metadata/activation evaluation remains later plugin work.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.scientific-skills",
+      "source_path": "AGENTS.md",
+      "sha256": "0d29c5ce3d401c23b0fcc48818e8cf2887ae2706824a655de6132172e743141a",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Scientific repository maintainer scope, version/manifest conventions, external provider-backed scanner and isolated scientific-package test harness are not portable team defaults. KLCode keeps its own validators, attribution and honest prerequisite/evidence reporting.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.scientific-skills",
+      "source_path": "skills/paper-lookup/references/core.md",
+      "sha256": "8cd052adfcc9abc3374e25b9ee7ab25f3bc0c4000a02cf89fa438882a5d46a2c",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Discovery false positive: CORE names a third-party research API, not coding policy. It needs external service access; paper-lookup is not a retained skill.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/brandkit/SKILL.md",
+      "sha256": "cfa1a800ef2e7a60d04b232b0195e11beef5c6801127665514cbbd8652f27b83",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/brandkit/SKILL.md",
+        "skills/ui/brandkit/references/board-and-modes.md",
+        "skills/ui/brandkit/references/brand-board-specification.md",
+        "skills/ui/brandkit/references/logo-and-strategy.md",
+        "skills/ui/brandkit/references/prompt-and-content.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/brutalist-skill/SKILL.md",
+      "sha256": "bd9c7fd04ae149531eb6bd0d4e8dceee57aa6877fcef3d67ced90e68e755affa",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/industrial-brutalist-ui/SKILL.md",
+        "skills/ui/industrial-brutalist-ui/references/industrial-specification.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/gpt-tasteskill/SKILL.md",
+      "sha256": "2638d6d69f886a6d03378ab84bf5325577bbbe56153cd4703e2761578297a74f",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/cinematic-web-design/SKILL.md",
+        "skills/ui/cinematic-web-design/references/cinematic-specification.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/image-to-code-skill/SKILL.md",
+      "sha256": "2944189b448e2a77cbbf55014030b1890a9ec5891acc9fa97fb8c215e0008407",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/image-to-website/SKILL.md",
+        "skills/ui/image-to-website/references/extraction.md",
+        "skills/ui/image-to-website/references/image-first-specification.md",
+        "skills/ui/image-to-website/references/layout-fidelity.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/imagegen-frontend-mobile/SKILL.md",
+      "sha256": "3cadf1bfbe836d377832d090e5db8479f98903453a4d1342be9636178755f9dd",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Not a retained historical source in consolidation manifest. Do not add mobile or archived/experimental alternate modes during shared-rule integration; retain eleven selected Taste modes.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/imagegen-frontend-web/SKILL.md",
+      "sha256": "23e6d27ab410e97fe5e844d18db97c8e674d317abd8567f4c7726ee16f56da6e",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-design-images/SKILL.md",
+        "skills/ui/website-design-images/references/composition-library.md",
+        "skills/ui/website-design-images/references/image-direction-specification.md",
+        "skills/ui/website-design-images/references/material-and-continuity.md",
+        "skills/ui/website-design-images/references/page-packs.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/minimalist-skill/SKILL.md",
+      "sha256": "c3230cbad9d8b0c0477b4299f7bcd3304dca9e5d33dd37cef774e767be165fce",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/minimalist-ui/SKILL.md",
+        "skills/ui/minimalist-ui/references/minimalist-specification.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/output-skill/SKILL.md",
+      "sha256": "7b2275b591af7760b36a2dfb1dbcf3c99c5054c52298a1066c4979f39ed947d9",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/tooling/complete-output/SKILL.md",
+        "skills/tooling/complete-output/references/complete-deliverables.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/redesign-skill/SKILL.md",
+      "sha256": "089b2735a58eaf4c2dd760dbe89d2ad6bb87d90e7b2ea4dd4cdd900f213c98d9",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/interface-redesign/SKILL.md",
+        "skills/ui/interface-redesign/references/redesign-audit.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/soft-skill/SKILL.md",
+      "sha256": "2d11cdcefc8bf319429ee17d94d69a390802e2acf7163662d1eacbcf5be3ff79",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/premium-web-design/SKILL.md",
+        "skills/ui/premium-web-design/references/premium-specification.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/stitch-skill/SKILL.md",
+      "sha256": "56e41363d61ff565dbba8c8c05c3d8e6538ccd6f49180a504737edfcdbfff409",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/stitch-design-system/SKILL.md",
+        "skills/ui/stitch-design-system/references/stitch-semantic-specification.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill-v1/SKILL.md",
+      "sha256": "48ef62d95507bf60f4dac488906d06dac207569f695459a1f835ed519137d3f5",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Not a retained historical source in consolidation manifest. Do not add mobile or archived/experimental alternate modes during shared-rule integration; retain eleven selected Taste modes.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill-v2-experimental/SKILL.md",
+      "sha256": "c5a562fc0eca345c081994199b1eef4a7a2a2a1cf24586e86bf5953a0dcfccbe",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Not a retained historical source in consolidation manifest. Do not add mobile or archived/experimental alternate modes during shared-rule integration; retain eleven selected Taste modes.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/SKILL.md",
+      "sha256": "fcf8ac6e5a55f3cc067e16e3d651670d59c4ab0980743051c3438f54141a031e",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/SKILL.md",
+        "skills/ui/website-art-direction/references/art-direction-protocol.md",
+        "skills/ui/website-art-direction/references/colour.md",
+        "skills/ui/website-art-direction/references/copy.md",
+        "skills/ui/website-art-direction/references/critique.md",
+        "skills/ui/website-art-direction/references/imagery.md",
+        "skills/ui/website-art-direction/references/layout.md",
+        "skills/ui/website-art-direction/references/motion.md",
+        "skills/ui/website-art-direction/references/research.md",
+        "skills/ui/website-art-direction/references/tells.md",
+        "skills/ui/website-art-direction/references/type.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/colour.md",
+      "sha256": "fa634ab3a4e0f9159b12c1d5450f708e1baec2d4285dd05999c758da9d70bbc1",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/colour.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/copy.md",
+      "sha256": "6de6cef4451a98660b4a4641d2c5f79f5281c18cd11016ef321d4a56e6c9cee2",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/copy.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/critique.md",
+      "sha256": "4cddba4e2ab476dadffb29e246da003f9d244c3b88542956aefb787d412a80da",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/critique.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/imagery.md",
+      "sha256": "65ab7d1990a7c3a3c084b0f2ea619ed52d6fbbb3cb71dd7cef31261db2d4650d",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/imagery.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/layout.md",
+      "sha256": "fb04a529d85af1fa7311f6ab8fab18f09cb32d7aad177577f9214156d62c0ac1",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/layout.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/motion.md",
+      "sha256": "272bbbb3682a0b674c2a2b59eaa5c8b630c6e3475f04db50b73f62912a680c4d",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/motion.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/research.md",
+      "sha256": "938fd3204deea0e7039396f8570a6343f22010ce1acafa6ea5c9d0ae525cd94d",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/research.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/tells.md",
+      "sha256": "77ef3b25e1a66d7fee2096bf2fa648f30bd5dd73fc3e00161cef483aeb46031e",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/tells.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/type.md",
+      "sha256": "2419a8fb73ba97ae2ea81aa361a6ec6b95da64641fe1830e6937bb5b73f54168",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/type.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "audit_records": [
+        "consolidation/rules-other-sources-audit.json"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "path": "rules/common/agents.md",
+      "consumers": [
+        "skills/engineering/implementation/SKILL.md",
+        "skills/agents/agent-orchestration/SKILL.md",
+        "skills/agents/review-team/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/common/code-review.md",
+      "consumers": [
+        "skills/engineering/implementation/SKILL.md",
+        "skills/engineering/debugging/SKILL.md",
+        "skills/engineering/code-review/SKILL.md",
+        "skills/engineering/refactoring/SKILL.md",
+        "skills/engineering/verification/SKILL.md",
+        "skills/engineering/commit-preparation/SKILL.md",
+        "skills/engineering/release-readiness/SKILL.md",
+        "skills/engineering/migration/SKILL.md",
+        "skills/engineering/connector-development/SKILL.md",
+        "skills/engineering/mcp-development/SKILL.md",
+        "skills/engineering/data-collection/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/common/coding-style.md",
+      "consumers": [
+        "skills/engineering/implementation/SKILL.md",
+        "skills/engineering/interface-design/SKILL.md",
+        "skills/planning/domain-modeling/SKILL.md",
+        "skills/planning/architecture-design/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/common/development-workflow.md",
+      "consumers": [
+        "skills/engineering/implementation/SKILL.md",
+        "skills/engineering/debugging/SKILL.md",
+        "skills/engineering/refactoring/SKILL.md",
+        "skills/engineering/migration/SKILL.md",
+        "skills/engineering/connector-development/SKILL.md",
+        "skills/engineering/mcp-development/SKILL.md",
+        "skills/engineering/data-collection/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/common/git-workflow.md",
+      "consumers": [
+        "skills/engineering/commit-preparation/SKILL.md",
+        "skills/engineering/git-workflow/SKILL.md",
+        "skills/tooling/github-operations/SKILL.md",
+        "skills/tooling/public-release-preparation/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/common/hooks.md",
+      "consumers": [
+        "skills/tooling/quality-automation/SKILL.md",
+        "skills/tooling/operation-guardrails/SKILL.md",
+        "skills/agents/hook-rules/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/common/implementation-core.md",
+      "consumers": [
+        "skills/engineering/implementation/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/common/patterns.md",
+      "consumers": [
+        "skills/engineering/implementation/SKILL.md",
+        "skills/engineering/interface-design/SKILL.md",
+        "skills/planning/domain-modeling/SKILL.md",
+        "skills/planning/architecture-design/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/common/performance.md",
+      "consumers": [
+        "skills/engineering/performance-optimization/SKILL.md",
+        "skills/agents/context-budget/SKILL.md",
+        "skills/engineering/llm-cost-optimization/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/common/security.md",
+      "consumers": [
+        "skills/engineering/application-security/SKILL.md",
+        "skills/tooling/operation-guardrails/SKILL.md",
+        "skills/tooling/agent-configuration-security/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/common/testing.md",
+      "consumers": [
+        "skills/engineering/implementation/SKILL.md",
+        "skills/engineering/debugging/SKILL.md",
+        "skills/engineering/test-first-development/SKILL.md",
+        "skills/engineering/refactoring/SKILL.md",
+        "skills/engineering/verification/SKILL.md",
+        "skills/engineering/migration/SKILL.md",
+        "skills/engineering/test-governance/SKILL.md",
+        "skills/engineering/connector-development/SKILL.md",
+        "skills/engineering/browser-testing/SKILL.md",
+        "skills/engineering/desktop-testing/SKILL.md",
+        "skills/engineering/mcp-development/SKILL.md",
+        "skills/engineering/data-collection/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/python/coding-style.md",
+      "consumers": [
+        "skills/languages/python-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/python/fastapi.md",
+      "consumers": [
+        "skills/languages/python-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/python/hooks.md",
+      "consumers": [
+        "skills/languages/python-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/python/patterns.md",
+      "consumers": [
+        "skills/languages/python-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/python/security.md",
+      "consumers": [
+        "skills/languages/python-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/python/testing.md",
+      "consumers": [
+        "skills/languages/python-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/csharp/coding-style.md",
+      "consumers": [
+        "skills/languages/dotnet-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/csharp/hooks.md",
+      "consumers": [
+        "skills/languages/dotnet-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/csharp/patterns.md",
+      "consumers": [
+        "skills/languages/dotnet-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/csharp/security.md",
+      "consumers": [
+        "skills/languages/dotnet-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/csharp/testing.md",
+      "consumers": [
+        "skills/languages/dotnet-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/cpp/coding-style.md",
+      "consumers": [
+        "skills/languages/cpp-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/cpp/hooks.md",
+      "consumers": [
+        "skills/languages/cpp-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/cpp/patterns.md",
+      "consumers": [
+        "skills/languages/cpp-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/cpp/security.md",
+      "consumers": [
+        "skills/languages/cpp-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/cpp/testing.md",
+      "consumers": [
+        "skills/languages/cpp-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/typescript/coding-style.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md",
+        "skills/video/remotion-video/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/typescript/hooks.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/typescript/patterns.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/typescript/security.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/typescript/testing.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md",
+        "skills/video/remotion-video/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/web/coding-style.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md",
+        "skills/ui/interface-accessibility/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/web/design-quality.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/web/hooks.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/web/patterns.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/web/performance.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/web/security.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/web/testing.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md",
+        "skills/ui/interface-accessibility/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/react/coding-style.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md",
+        "skills/video/remotion-video/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/react/hooks.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md",
+        "skills/video/remotion-video/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/react/patterns.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md",
+        "skills/video/remotion-video/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/react/security.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md",
+        "skills/video/remotion-video/SKILL.md"
+      ]
+    },
+    {
+      "path": "rules/react/testing.md",
+      "consumers": [
+        "skills/ui/interface-development/SKILL.md",
+        "skills/video/remotion-video/SKILL.md"
+      ]
+    }
+  ],
+  "upstream_inventory": [
+    {
+      "source_repo": "ref.ECC",
+      "directory": "rules",
+      "extensions": [
+        ".md"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "directory": "skills/remotion-video-creation/rules",
+      "extensions": [
+        ".md",
+        ".tsx"
+      ]
+    },
+    {
+      "source_repo": "ref.caveman",
+      "directory": "src/rules",
+      "extensions": [
+        ".md"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "directory": ".claude/rules",
+      "extensions": [
+        ".md"
+      ]
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "directory": ".agents",
+      "extensions": [
+        ".md"
+      ]
+    }
+  ],
+  "discovery_limits": "--upstream verifies every recorded fingerprint and detects new candidates in declared upstream_inventory trees. Other root policies, style entrypoints and selected references were individually audited; selection and limits are in the audit records.",
+  "summary": {
+    "source_files": 202,
+    "by_repository": {
+      "ref.ECC": 153,
+      "ref.agent-skills": 10,
+      "ref.caveman": 7,
+      "ref.matt-skills": 7,
+      "ref.scientific-skills": 2,
+      "ref.taste-skill": 23
+    },
+    "by_disposition": {
+      "adapted": 70,
+      "excluded": 97,
+      "incorporated": 30,
+      "already-covered": 5
+    },
+    "selected_rule_files": 44,
+    "consuming_skills": 37
+  }
+}

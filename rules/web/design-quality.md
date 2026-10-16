@@ -1,75 +1,17 @@
----
-paths:
-  - "**/*.css"
-  - "**/*.scss"
-  - "**/*.sass"
-  - "**/*.less"
-  - "**/*.html"
-  - "**/*.tsx"
-  - "**/*.jsx"
-  - "**/*.vue"
-  - "**/*.svelte"
----
-> This file extends [common/patterns.md](../common/patterns.md) with web-specific design-quality guidance.
+# Web Design Quality
 
-# Web Design Quality Standards
+Extends [shared patterns](../common/patterns.md).
 
-## Anti-Template Policy
+## Shared quality
+Fit the actual job/audience with hierarchy, readable typography, semantic color, suitable density and coherent spacing. Provide useful hover/focus/active/disabled and applicable loading/empty/error/success feedback. Preserve accessible controls, contrast, keyboard operation and reduced motion.
 
-Do not ship generic template-looking UI. Frontend output should look intentional, opinionated, and specific to the product.
+## Before implementation
+Inspect existing components and local references, define purpose/primary action and visual direction, then reuse tokens/components. External references help new design exploration but are not mandatory for every edit.
 
-### Banned Patterns
+## Optional aesthetics
+Minimalism, native controls, uniform grids, library defaults, system fonts and restrained palettes are valid deliberate choices. Depth, texture, editorial/bento layouts, luxury, scrollytelling and 3D are opt-in styles, never a required four-feature checklist. Choose themes for product needs.
 
-- Default card grids with uniform spacing and no hierarchy
-- Stock hero section with centered headline, gradient blob, and generic CTA
-- Unmodified library defaults passed off as finished design
-- Flat layouts with no layering, depth, or motion
-- Uniform radius, spacing, and shadows across every component
-- Safe gray-on-white styling with one decorative accent color
-- Dashboard-by-numbers layouts with sidebar + cards + charts and no point of view
-- Default font stacks used without a deliberate reason
+## Verification
+Inspect real renders at relevant sizes, content extremes, states and supported themes. Resolve observed hierarchy/wrapping/interaction issues and report unavailable checks.
 
-### Required Qualities
-
-Every meaningful frontend surface should demonstrate at least four of these:
-
-1. Clear hierarchy through scale contrast
-2. Intentional rhythm in spacing, not uniform padding everywhere
-3. Depth or layering through overlap, shadows, surfaces, or motion
-4. Typography with character and a real pairing strategy
-5. Color used semantically, not just decoratively
-6. Hover, focus, and active states that feel designed
-7. Grid-breaking editorial or bento composition where appropriate
-8. Texture, grain, or atmosphere when it fits the visual direction
-9. Motion that clarifies flow instead of distracting from it
-10. Data visualization treated as part of the design system, not an afterthought
-
-## Before Writing Frontend Code
-
-1. Pick a specific style direction. Avoid vague defaults like "clean minimal".
-2. Define a palette intentionally.
-3. Choose typography deliberately.
-4. Gather at least a small set of real references.
-5. Use ECC design/frontend skills where relevant.
-
-## Worthwhile Style Directions
-
-- Editorial / magazine
-- Neo-brutalism
-- Glassmorphism with real depth
-- Dark luxury or light luxury with disciplined contrast
-- Bento layouts
-- Scrollytelling
-- 3D integration
-- Swiss / International
-- Retro-futurism
-
-Do not default to dark mode automatically. Choose the visual direction the product actually wants.
-
-## Component Checklist
-
-- [ ] Does it avoid looking like a default Tailwind or shadcn template?
-- [ ] Does it have intentional hover/focus/active states?
-- [ ] Does it use hierarchy rather than uniform emphasis?
-- [ ] Would this look believable in a real product screenshot?
-- [ ] If it supports both themes, do both light and dark feel intentional?
+Use [interface development](../../skills/ui/interface-development/SKILL.md); select a [UI style workflow](../../skills/glossary.md) only for an agreed direction.

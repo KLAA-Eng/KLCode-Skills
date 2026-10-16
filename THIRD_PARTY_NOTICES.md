@@ -14,3 +14,5 @@ This collection adapts material from the following repositories. Original notice
 The separately maintained [OSINT investigation](skills/knowledge/osint-investigation/SOURCES.md) adaptation carries CC-BY-SA-4.0 attribution and licensing. Its terms are not replaced by ECC's root MIT license. Other resource-specific notices remain with their files.
 
 See [source-lock.json](consolidation/source-lock.json) for the six reference checkout revisions and hashes of the 209 curated source entrypoints used during consolidation. Source repositories were read as references and were not modified. New organization, names, workflow defaults and dependency adaptations are documented in the manifest and category handoffs.
+
+The subsequent [rules audit](rules/coverage.json) records rule-source fingerprints, adaptations and exclusions across those repositories. Root-level ECC rules retain the ECC MIT attribution above; the adapted implementation core retains its Caveman provenance and notices.

@@ -21,8 +21,10 @@
     "knowledge": "docs/knowledge/",
     "commits": "automatic local commits at meaningful verified milestones; remote actions follow task scope",
     "interviews": "independent frontier per round; single-question mode on request",
-    "infrastructure": "agent systems, persistent memory, learning and style alternatives explicitly selected",
-    "dependencies": "Import required supporting files now; adapt paths and workflow names; do not auto-install or enable global configuration"
+    "infrastructure": "autonomous systems, persistent memory, learning and styles explicitly selected; substantive independent review when available and authorized",
+    "dependencies": "Import required supporting files now; adapt paths and workflow names; do not auto-install or enable global configuration",
+    "testing": "test-first default for new testable logic and bug fixes with practical exceptions;80% target for new/substantially changed testable code; explicit project requirements prevail",
+    "rules": "rules/ is canonical; selected common/language rules linked from applicable skills; provenance and exclusions in rules/coverage.json; activation deferred"
   },
   "skills": [
     {

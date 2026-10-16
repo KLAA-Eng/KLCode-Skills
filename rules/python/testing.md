@@ -1,38 +1,14 @@
----
-paths:
-  - "**/*.py"
-  - "**/*.pyi"
----
 # Python Testing
 
-> This file extends [common/testing.md](../common/testing.md) with Python specific content.
+Extends [shared testing](../common/testing.md).
 
 ## Framework
-
-Use **pytest** as the testing framework.
+Keep the existing compatible framework. pytest is suitable where supported; unittest or a host harness can be necessary for IronPython or embedded environments.
 
 ## Coverage
+Default to test-first for new testable logic and bug fixes, with practical exceptions from the shared rule. Target 80% for new or substantially changed testable code, not a repository gate. When pytest-cov is installed, adapt `python -m pytest --cov=<package> --cov-report=term-missing` to the actual interpreter and package. Explain exclusions and unmeasurable host code.
 
-```bash
-pytest --cov=src --cov-report=term-missing
-```
+## Organization
+Name tests by behavior. Separate pure logic, integration and host checks; register pytest unit/integration markers when used. Isolate filesystem, network, time and external effects at realistic boundaries.
 
-## Test Organization
-
-Use `pytest.mark` for test categorization:
-
-```python
-import pytest
-
-@pytest.mark.unit
-def test_calculate_total():
-    ...
-
-@pytest.mark.integration
-def test_database_connection():
-    ...
-```
-
-## Reference
-
-See skill: `python-testing` for detailed pytest patterns and fixtures.
+Use [Python development](../../skills/languages/python-development/SKILL.md). A different interpreter's pass does not prove host behavior.

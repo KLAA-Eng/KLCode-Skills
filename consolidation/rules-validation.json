@@ -1,0 +1,56 @@
+{
+  "status": "passed-for-recorded-scope",
+  "date": "2026-10-16",
+  "scope": "Portable rule documentation, skill routing, finite source coverage and validation; no host activation or live application execution.",
+  "rule_coverage": {
+    "status": "passed",
+    "selected_rules": 44,
+    "consuming_skills": 37,
+    "explicit_consumer_links": 97,
+    "audited_sources": 202,
+    "verified_source_fingerprints": 202,
+    "enumerated_upstream_candidates": 161,
+    "reference_repositories": 6
+  },
+  "repository": {
+    "status": "passed",
+    "partial": false,
+    "checks": {
+      "expectedSkills": 103,
+      "checkedSkills": 103,
+      "markdown": 559,
+      "localLinks": 1078,
+      "scriptImports": 97,
+      "syntaxChecks": 108,
+      "dependencyFiles": 609,
+      "ruleSources": 202,
+      "selectedRules": 44
+    },
+    "warnings": [],
+    "errors": []
+  },
+  "validator_tests": {
+    "status": "passed",
+    "tests": 10,
+    "failures": 0,
+    "line_coverage_percent": 90.58,
+    "branch_coverage_percent": 62.82,
+    "metric_scope": "new scripts/validate-rules.cjs through its local behavioral suite"
+  },
+  "python_and_metadata": {
+    "status": "passed",
+    "python_scripts": 115,
+    "official_skill_validations": 103
+  },
+  "independent_review": {
+    "common_rules": "passed after React routing and non-rendered consumer link fixes",
+    "language_web_react_rules": "passed",
+    "aggregate": "passed; independent reviewer reran the live inventory/fingerprint check and all10 regression tests"
+  },
+  "git_diff_check": "passed for working and staged task changes before the milestone commit",
+  "limits": [
+    "Finite source/section audit; not every upstream imperative or generated mirror.",
+    "Unselected ECC language/framework rule files remain untouched reference material.",
+    "No hooks/plugin activation, remote mutation, vendor GUI, browser/media rendering or provider calls."
+  ]
+}

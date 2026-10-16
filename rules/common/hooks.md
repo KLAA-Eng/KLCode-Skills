@@ -1,30 +1,15 @@
-# Hooks System
+# Hooks and Permissions
 
-## Hook Types
+Hooks may validate before an action, check after it, or verify completion at a host lifecycle boundary. Event names and guarantees depend on the host; Claude-specific PreToolUse, PostToolUse, and Stop names are not portable activation APIs.
 
-- **PreToolUse**: Before tool execution (validation, parameter modification)
-- **PostToolUse**: After tool execution (auto-format, checks)
-- **Stop**: When session ends (final verification)
+## Activation is separate
 
-## Auto-Accept Permissions
+These rules do not register hooks, change settings, enable auto-accept, or install commands. Read [hook rules](../../skills/agents/hook-rules/SKILL.md) and [operation guardrails](../../skills/tooling/operation-guardrails/SKILL.md) before selecting an optional integration. Claude/Codex lifecycle wiring is a later phase.
 
-Use with caution:
-- Enable for trusted, well-defined plans
-- Disable for exploratory work
-- Never use dangerously-skip-permissions flag
-- Configure `permissions.allow` rules in `~/.claude/settings.json` (or a project's `.claude/settings.json`) instead
+Permissions remain controlled by active user, host, and repository instructions. When configuration is requested, prefer narrow scoped permissions. Do not disable safeguards or use bypass flags as a shortcut. Hooks do not prove action authorization or successful checks.
 
-## TodoWrite Best Practices
+## Progress tracking
 
-Use TodoWrite tool to:
-- Track progress on multi-step tasks
-- Verify understanding of instructions
-- Enable real-time steering
-- Show granular implementation steps
+Use an available plan/task tool or existing task ledger for multi-step work. Keep steps actionable, update from evidence, and expose missing dependencies and changed direction. No particular TodoWrite tool is required.
 
-Todo list reveals:
-- Out of order steps
-- Missing items
-- Extra unnecessary items
-- Wrong granularity
-- Misinterpreted requirements
+Adapted from ECC common rules; see [source coverage](../../consolidation/rules-common-audit.json).

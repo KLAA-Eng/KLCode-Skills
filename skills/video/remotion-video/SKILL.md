@@ -12,3 +12,7 @@ Read only relevant rule files from [the rule index](references/rule-index.md). C
 Use the dedicated rules for media/audio, captions/transcription, type, charts, transitions or 3D as required. Three.js/React Three Fiber/Lottie/Whisper-related tools are conditional external dependencies, not bundled services. Example TSX assets are in rules/assets/; inspect imports before reuse.
 
 Verify the actual composition duration, dimensions, frame boundaries, audio sync, media decode and final rendered file when tooling is available. Studio playback alone is not a completed render. If dependencies/browser/renderers are unavailable, report that boundary without claiming a video was produced.
+
+For React composition code, apply [react / coding style](../../../rules/react/coding-style.md), [react / hooks](../../../rules/react/hooks.md), [react / patterns](../../../rules/react/patterns.md), [react / security](../../../rules/react/security.md), [react / testing](../../../rules/react/testing.md).
+
+For JavaScript/TypeScript logic, apply [typescript / coding style](../../../rules/typescript/coding-style.md), [typescript / testing](../../../rules/typescript/testing.md).

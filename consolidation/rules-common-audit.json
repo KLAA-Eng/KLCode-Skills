@@ -1,0 +1,586 @@
+{
+  "scope": "ECC rules/common (all 10 upstream files) plus existing Caveman native-core shared rule; source hashes are upstream originals, destinations are adapted canonical files.",
+  "policy": "Owner approved test-first default with exceptions,80% changed-code target, substantive independent review when available/permitted,50/800/4 review prompts, contextual immutability, local-first research and runtime authority. Activation deferred.",
+  "sources": [
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/agents.md",
+      "sha256": "999178beefe41112856cc4949781558d9eb76177522e65ef0a69e777421e4418",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/agents.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "sections": [
+        {
+          "section": "Available Agents",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/agents.md"
+          ],
+          "rationale": "Use canonical roles and native delegation; omit ECC installation names, full-roster claims, and irrelevant Rust/HarmonyOS roles."
+        },
+        {
+          "section": "Immediate Agent Usage",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/agents.md"
+          ],
+          "rationale": "Substantive code receives separate review when available/permitted; other specialists are conditional, not automatic host authorization."
+        },
+        {
+          "section": "Parallel Task Execution",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/agents.md"
+          ],
+          "rationale": "Independent work may run in parallel when useful; dependent work is sequential and scopes are disjoint."
+        },
+        {
+          "section": "Delegation Completion Contract",
+          "disposition": "incorporated",
+          "destinations": [
+            "rules/common/agents.md"
+          ],
+          "rationale": "Delegator collects and integrates results; no fire-and-forget or unnecessary recursive delegation."
+        },
+        {
+          "section": "Multi-Perspective Analysis",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/agents.md"
+          ],
+          "rationale": "Choose perspectives for actual uncertainty rather than a fixed roster."
+        }
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/code-review.md",
+      "sha256": "275fcc2c05f51389cd0d050e704d45b1920210882eaab89d47f449bd3b2b6e98",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/code-review.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "sections": [
+        {
+          "section": "Purpose / When to Review",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/code-review.md"
+          ],
+          "rationale": "Review substantive work independently when available/permitted; small low-risk edits can self-review. Early review may inspect incomplete work honestly."
+        },
+        {
+          "section": "Pre-Review Requirements",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/code-review.md"
+          ],
+          "rationale": "Run relevant available checks and resolve conflicts for completion; no forced branch updates, full CI prerequisite, or ban on diagnostic review."
+        },
+        {
+          "section": "Review Checklist",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/code-review.md"
+          ],
+          "rationale": "Review compatibility and behavior; 50/800/4 are assessment prompts; changed-code coverage uses approved target."
+        },
+        {
+          "section": "Security Review Triggers",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/code-review.md"
+          ],
+          "rationale": "Focused review required for auth, secrets, permissions, untrusted input; other boundaries are risk-relevant, not universal STOP triggers."
+        },
+        {
+          "section": "Review Severity Levels / Approval Criteria",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/code-review.md"
+          ],
+          "rationale": "Critical hazards block affected completion; fix high correctness/security defects rather than approve with warnings; medium/low are proportional."
+        },
+        {
+          "section": "Agent Usage",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/code-review.md"
+          ],
+          "rationale": "Native canonical role selection replaces assumed installed provider agents."
+        },
+        {
+          "section": "Review Workflow",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/code-review.md"
+          ],
+          "rationale": "Pin full requested diff, inspect boundaries, run relevant checks, assess changed-code coverage, review and report limits."
+        },
+        {
+          "section": "Common Issues to Catch",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/code-review.md"
+          ],
+          "rationale": "Security and workload issues retained conditionally; neither automatic splitting nor caching."
+        },
+        {
+          "section": "Integration with Other Rules",
+          "disposition": "incorporated",
+          "destinations": [
+            "rules/common/code-review.md"
+          ],
+          "rationale": "Local canonical testing/security/Git/agent links retained."
+        }
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/coding-style.md",
+      "sha256": "3c069a2460702e1715e6b21408287401f1faa8d343045c98534d59fbd22a0e56",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/coding-style.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "sections": [
+        {
+          "section": "Immutability",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/coding-style.md"
+          ],
+          "rationale": "Prefer immutable shared/concurrent state; deliberate host/UI/performance/convention mutation allowed."
+        },
+        {
+          "section": "Core Principles: KISS / DRY / YAGNI",
+          "disposition": "incorporated",
+          "destinations": [
+            "rules/common/coding-style.md"
+          ],
+          "rationale": "Simple solutions, real duplication, no speculative abstractions."
+        },
+        {
+          "section": "File Organization",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/coding-style.md"
+          ],
+          "rationale": "Cohesion and project conventions replace mandatory many-small-files preference and typical 200-400 line sizing;800 remains review prompt."
+        },
+        {
+          "section": "Error Handling",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/coding-style.md"
+          ],
+          "rationale": "Recover/report at appropriate layer, otherwise propagate; avoid catch-and-log at every layer."
+        },
+        {
+          "section": "Input Validation",
+          "disposition": "incorporated",
+          "destinations": [
+            "rules/common/coding-style.md"
+          ],
+          "rationale": "Compatible validation at trust boundaries, clear errors, external-data skepticism."
+        },
+        {
+          "section": "Naming Conventions",
+          "disposition": "incorporated",
+          "destinations": [
+            "rules/common/coding-style.md"
+          ],
+          "rationale": "Descriptive names with language/framework convention authority."
+        },
+        {
+          "section": "Code Smells / Code Quality Checklist",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/coding-style.md"
+          ],
+          "rationale": "Maintainability assessment replaces hard 50/800/4 and no-mutation checklist; meaningful constants rather than banning all literals."
+        }
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/development-workflow.md",
+      "sha256": "54beaad49cd4cdde7ae6b8c730c4f7acf599d16f4b11e1cb7602ff1f0867c85d",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/development-workflow.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "sections": [
+        {
+          "section": "Research & Reuse",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/development-workflow.md"
+          ],
+          "rationale": "Repository first, primary docs when uncertain; GitHub/registry/cloud searches conditional, no mandatory third-party service or adoption."
+        },
+        {
+          "section": "Plan First",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/development-workflow.md"
+          ],
+          "rationale": "Plan proportionally in agreed artifact locations; no obligatory five-document bundle or planner spawn."
+        },
+        {
+          "section": "TDD Approach",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/development-workflow.md"
+          ],
+          "rationale": "Default test-first for testable code/bugs with explicit exceptions and80% changed-code target."
+        },
+        {
+          "section": "Code Review",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/development-workflow.md"
+          ],
+          "rationale": "Separate substantive review when available/permitted; focused security for sensitive changes."
+        },
+        {
+          "section": "Commit & Push",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/development-workflow.md"
+          ],
+          "rationale": "Verified scoped local milestones; remote writes require task authorization and repo conventions."
+        },
+        {
+          "section": "Pre-Review Checks",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/development-workflow.md"
+          ],
+          "rationale": "Relevant available checks for completion; incomplete diagnostic review allowed and status disclosed."
+        }
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/git-workflow.md",
+      "sha256": "e9b98f7a651e09aa8226e62b0a326f3625c6afd8177d0ea64289f9f012a579da",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/git-workflow.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "sections": [
+        {
+          "section": "Commit Message Format",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/git-workflow.md"
+          ],
+          "rationale": "Use project conventions, conventional type fallback; preserve configured attribution without ECC-specific settings assumptions."
+        },
+        {
+          "section": "Pull Request Workflow",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/git-workflow.md"
+          ],
+          "rationale": "Full branch/merge-base review, actual validation and pending limits; upstream push only when authorized."
+        },
+        {
+          "section": "Development process link",
+          "disposition": "incorporated",
+          "destinations": [
+            "rules/common/git-workflow.md"
+          ],
+          "rationale": "Canonical workflow link retained."
+        }
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/hooks.md",
+      "sha256": "915c6e9c05eae855ced408a3c1f7823135e84021639f8670929339834b92d59a",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/hooks.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "sections": [
+        {
+          "section": "Hook Types",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/hooks.md"
+          ],
+          "rationale": "Portable before/after/completion concepts; provider event names described without registration."
+        },
+        {
+          "section": "Auto-Accept Permissions",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/hooks.md"
+          ],
+          "rationale": "Host permissions authoritative; no activation, narrow scopes when requested, no bypass shortcuts."
+        },
+        {
+          "section": "TodoWrite Best Practices",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/hooks.md"
+          ],
+          "rationale": "Evidence-driven plan/task ledger; no mandatory tool or host setting."
+        }
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/patterns.md",
+      "sha256": "8a32c0552c8b309e961ef3f68a56ae84b0b1d411c17f23675ec26b685dea5e9a",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/patterns.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "sections": [
+        {
+          "section": "Skeleton Projects",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/patterns.md"
+          ],
+          "rationale": "Local reuse first; evaluate compatible/licensed foundations when needed, no automatic clone or agent dispatch."
+        },
+        {
+          "section": "Repository Pattern",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/patterns.md"
+          ],
+          "rationale": "Domain-specific storage/adapter boundaries conditional; universal CRUD not mandated."
+        },
+        {
+          "section": "API Response Format",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/patterns.md"
+          ],
+          "rationale": "Consistent errors/pagination where applicable; preserve existing protocol rather than impose envelopes."
+        }
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/performance.md",
+      "sha256": "39fd4c549823b4e10aefc4d427242ae8ac9e045ecf37affb087dc77f5faeba49",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/performance.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "sections": [
+        {
+          "section": "Model Selection Strategy",
+          "disposition": "excluded",
+          "destinations": [
+            "rules/common/performance.md"
+          ],
+          "rationale": "Unverified dated provider rankings and cost ratios excluded; retain host-neutral capability/cost selection."
+        },
+        {
+          "section": "Context Window Management",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/performance.md"
+          ],
+          "rationale": "Preserve headroom and capture handoff evidence; no fixed20% guarantee."
+        },
+        {
+          "section": "Extended Thinking + Plan Mode",
+          "disposition": "excluded",
+          "destinations": [
+            "rules/common/performance.md"
+          ],
+          "rationale": "Provider/version-specific settings and model claims excluded from portable defaults; use supported authorized controls."
+        },
+        {
+          "section": "Complex tasks / split roles",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/performance.md"
+          ],
+          "rationale": "Structured planning and critique proportional to uncertainty; delegation conditional."
+        },
+        {
+          "section": "Build Troubleshooting",
+          "disposition": "incorporated",
+          "destinations": [
+            "rules/common/performance.md"
+          ],
+          "rationale": "Read diagnostics, isolate, fix incrementally, rerun with existing toolchain."
+        }
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/security.md",
+      "sha256": "58f0acc56331b8d554dd036b8a1d5b2305a908e3960ff1e2d7e55223d5918bc3",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/security.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "sections": [
+        {
+          "section": "Mandatory Security Checks",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/security.md"
+          ],
+          "rationale": "Review changed boundaries; web XSS/CSRF/rate controls only when applicable, not all commits/endpoints."
+        },
+        {
+          "section": "Secret Management",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/security.md"
+          ],
+          "rationale": "No committed/logged secrets; environment/OS/approved mechanisms; cloud secret service optional; validate configuration appropriately."
+        },
+        {
+          "section": "Security Response Protocol",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/security.md"
+          ],
+          "rationale": "Stop affected unsafe action, preserve evidence, fix hazards, assess related scope; owner-authorized rotation and unrelated safe work continue."
+        }
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/common/testing.md",
+      "sha256": "09314a247342c12698deb308c2d0ffcf80b58341274bb8f9bba63fa03ce33323",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/testing.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "sections": [
+        {
+          "section": "Minimum Test Coverage",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/testing.md"
+          ],
+          "rationale": "80% target for new/substantially changed testable code, not repository minimum; identify metric/scope and explain impracticality."
+        },
+        {
+          "section": "Test Types (ALL required)",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/testing.md"
+          ],
+          "rationale": "Choose unit/integration/end-to-end based on changed contract and risk; no universal all-types mandate."
+        },
+        {
+          "section": "Test-Driven Development",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/testing.md"
+          ],
+          "rationale": "Test-first default with documented practical exceptions; verify intended red then green/refactor."
+        },
+        {
+          "section": "Troubleshooting Test Failures",
+          "disposition": "incorporated",
+          "destinations": [
+            "rules/common/testing.md"
+          ],
+          "rationale": "Check isolation/fakes/expectations/environment; fix actual cause rather than weaken correct tests."
+        },
+        {
+          "section": "Agent Support",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/testing.md"
+          ],
+          "rationale": "Test specialist conditional on need, availability, authorization; no installed-agent assumption."
+        },
+        {
+          "section": "Test Structure (AAA Pattern)",
+          "disposition": "incorporated",
+          "destinations": [
+            "rules/common/testing.md"
+          ],
+          "rationale": "Arrange-Act-Assert retained without requiring TypeScript examples."
+        },
+        {
+          "section": "Test Naming",
+          "disposition": "incorporated",
+          "destinations": [
+            "rules/common/testing.md"
+          ],
+          "rationale": "Names describe observable behavior; provider-specific example dependencies unnecessary."
+        }
+      ]
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "skills/native/native-core.md",
+      "sha256": "7e7ea4db5cc8ac6c6fc12c20bfbc17b622b52bc4a71e3d3a7c6d913c6e294a3e",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/implementation-core.md"
+      ],
+      "rationale": "Canonical portable team defaults implementing the owner's approved rule decisions; no hook activation or plugin registration.",
+      "sections": [
+        {
+          "section": "Priority and implementation alternatives",
+          "disposition": "incorporated",
+          "destinations": [
+            "rules/common/implementation-core.md"
+          ],
+          "rationale": "Existing behavior, responsible layer, platform, small implementation, coherent refactor order preserved."
+        },
+        {
+          "section": "System complexity / reuse / root cause",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/implementation-core.md"
+          ],
+          "rationale": "System fit retained; consolidation explicitly limited to authorized task."
+        },
+        {
+          "section": "Avoid speculation / tradeoffs",
+          "disposition": "incorporated",
+          "destinations": [
+            "rules/common/implementation-core.md"
+          ],
+          "rationale": "No unnecessary scaffolding, explain new dependency/public surface lifecycle tradeoffs."
+        },
+        {
+          "section": "Safety and material choices",
+          "disposition": "adapted",
+          "destinations": [
+            "rules/common/implementation-core.md"
+          ],
+          "rationale": "Safeguards retained; material unresolved choices clarified without new routine approval gates."
+        },
+        {
+          "section": "Proof and finish",
+          "disposition": "incorporated",
+          "destinations": [
+            "rules/common/implementation-core.md"
+          ],
+          "rationale": "Smallest sufficient proof and honest risks; links to canonical testing/review."
+        }
+      ]
+    }
+  ]
+}

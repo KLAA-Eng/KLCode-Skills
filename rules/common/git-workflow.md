@@ -1,24 +1,17 @@
 # Git Workflow
 
-## Commit Message Format
-```
-<type>: <description>
+Inspect branch, worktree, upstream, contribution rules, and existing edits. Preserve unrelated changes and the project's branch/release model.
 
-<optional body>
-```
+## Local milestones
 
-Types: feat, fix, refactor, docs, test, chore, perf, ci
+Commit meaningful verified milestones during authorized implementation, not every red/green stage. Stage task-owned paths or hunks and inspect the staged diff. Diagnose failed checks rather than bypassing them. Follow repository message conventions; absent one, use a concise type and description: feat, fix, refactor, docs, test, chore, perf, or ci. Respect configured attribution without changing global settings.
 
-Note: ECC-managed installs set `"includeCoAuthoredBy": false` in `~/.claude/settings.json`, so commits carry no `Co-Authored-By` trailer by default. To keep Claude attribution, set `"includeCoAuthoredBy": true` or configure `attribution`; ECC never overwrites an explicit choice.
+## Remote actions
 
-## Pull Request Workflow
+When PR creation is in scope, review full branch history and the merge-base diff. Explain the problem, resulting behavior, actual validation, pending checks, and material limits. Follow repository templates and target-branch policy. Establish the upstream when pushing a new authorized branch.
 
-When creating PRs:
-1. Analyze full commit history (not just latest commit)
-2. Use `git diff [base-branch]...HEAD` to see all changes
-3. Draft comprehensive PR summary
-4. Include test plan with TODOs
-5. Push with `-u` flag if new branch
+Pushes, PR publication/merge, tags, releases, and published-history rewrites follow existing task authorization. Never discard user work merely to clean the tree.
 
-> For the full development process (planning, TDD, code review) before git operations,
-> see [development-workflow.md](./development-workflow.md).
+Read [development workflow](development-workflow.md), [commit preparation](../../skills/engineering/commit-preparation/SKILL.md), and [Git workflow skill](../../skills/engineering/git-workflow/SKILL.md).
+
+Adapted from ECC common rules; see [source coverage](../../consolidation/rules-common-audit.json).

@@ -23,17 +23,18 @@ See the [skills and workflow glossary](skills/glossary.md) for the complete link
 
 ## Shared defaults
 
-- Scale planning, tests and review to the task's risk. Test-first development is explicitly available; fixed coverage and routine approval gates are not universal requirements.
+- Default to test-first development for new testable logic and bug fixes, with practical exceptions. Target 80% coverage for new or substantially changed testable code; explain measurement gaps instead of imposing a repository-wide gate.
+- Obtain independent review for substantive changes when delegation is available and authorized, and focused security review for sensitive changes. Treat size and nesting limits as review prompts.
 - Use `docs/specs/`, `docs/plans/`, `docs/decisions/` and `docs/knowledge/` as default artifact locations, with one authoritative task ledger per initiative.
 - Make local implementation commits at meaningful verified milestones, keeping unrelated changes outside them. Remote mutations follow the requested task scope.
 - Keep requirements, planning, implementation and verification independently callable.
 - Ask independent interview questions together each round; support one-at-a-time interviewing on request.
-- Select agent infrastructure, persistent memory, continuous learning and visual styles explicitly. Style alternatives do not apply simultaneously.
+- Select autonomous agent infrastructure, persistent memory, continuous learning and visual styles explicitly. Independent review follows the shared review policy; style alternatives do not apply simultaneously.
 - Honor current task and repository instructions. Project-specific variants are a later phase.
 
 ## Supporting files
 
-Required upstream agents, commands, hooks, scripts, rules, templates and assets have been imported and adapted alongside the grouped skills. Category-shared files live under [support/](support/README.md); each category has a `dependencies.json` inventory recording source, consumer, activation and prerequisites. Skill-specific helpers remain within their skill.
+Imported agents, commands, hooks, scripts, templates and assets support the grouped skills. Category-shared files live under [support/](support/README.md); each category has a `dependencies.json` inventory recording source, consumer, activation and prerequisites. Skill-specific helpers remain within their skill. Canonical shared rules live under [rules/](rules/README.md), with explicit skill links and a source-by-source [coverage inventory](rules/coverage.json). Unselected upstream rule families are retained as reference material.
 
 Agent and command files are usable prompt definitions. Hook recipes remain unregistered until the appropriate host integration is configured. External SDKs, CLIs, GUI hosts, media tools and optional service credentials are recorded prerequisites; the collection does not silently install packages or activate global settings.
 

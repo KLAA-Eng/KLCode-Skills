@@ -1,25 +1,12 @@
----
-paths:
-  - "**/*.cs"
-  - "**/*.csx"
-  - "**/*.csproj"
-  - "**/*.sln"
-  - "**/Directory.Build.props"
-  - "**/Directory.Build.targets"
----
-# C# Hooks
+# csharp Check and Hook Guidance
 
-> This file extends [common/hooks.md](../common/hooks.md) with C#-specific content.
+Extends [shared hooks](../common/hooks.md).
 
-## PostToolUse Hooks
+## Deferred activation
+These checks are not registered hooks or instructions to modify global Claude/Codex settings. Host lifecycle configuration is a later phase. Use existing local commands manually now; event schemas, payload parsing, quoting and permissions must be verified for actual integration.
 
-Configure in `~/.claude/settings.json`:
+## Applicable checks
+Use configured format/analyzers, the actual dotnet/MSBuild configuration and relevant tests. dotnet test --no-build requires a successful matching build; preserve exit codes and avoid stale assemblies. Check changed appsettings for credentials without assuming every setting is secret. Native/host checks may require manual execution.
 
-- **dotnet format**: Auto-format edited C# files and apply analyzer fixes
-- **dotnet build**: Verify the solution or project still compiles after edits
-- **dotnet test --no-build**: Re-run the nearest relevant test project after behavior changes
-
-## Stop Hooks
-
-- Run a final `dotnet build` before ending a session with broad C# changes
-- Warn on modified `appsettings*.json` files so secrets do not get committed
+## Scheduling
+Prefer changed-file formatting and focused checks, followed by relevant final build/tests. Serialize or debounce costly jobs, bound duration and report failures. Do not download dependencies or apply broad fixes implicitly.

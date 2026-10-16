@@ -1,124 +1,23 @@
-# Code Review Standards
+# Code Review
 
-## Purpose
+## Scope and preparation
 
-Code review ensures quality, security, and maintainability before code is merged. This rule defines when and how to conduct code reviews.
+Pin the requested review surface: working changes, staged changes, an exact commit, or the complete merge-base diff. Include relevant untracked files. Read requirements, conventions, callers, and tests. Resolve conflicts and run relevant available checks before routine completion review. Early design or debugging review may inspect incomplete work when its status is clear. Do not silently update branches or discard edits to obtain a clean review.
 
-## When to Review
+Use separate review for substantive changes when delegation is available and permitted; self-review suffices for small, low-risk edits. State independent-review limitations. Follow [agent coordination](agents.md).
 
-**MANDATORY review triggers:**
+## Checklist
 
-- After writing or modifying code
-- Before any commit to shared branches
-- When security-sensitive code is changed (auth, payments, user data)
-- When architectural changes are made
-- Before merging pull requests
+Review observable correctness, runtime compatibility, readable names, cohesive responsibilities, error handling, boundary validation, secrets, appropriate tests, and accidental debug output. Examine workload-supported performance risks: repeated queries, unbounded reads, missing pagination, and repeated expensive work. Add caching only when evidence warrants its complexity.
 
-**Pre-Review Requirements:**
+Functions over 50 lines, source files over 800 lines, and nesting beyond four levels prompt maintainability assessment. They are not automatic failures or instructions to split code. Generated, vendored, test, and declarative files may justify size. Findings need a concrete behavior or maintenance concern.
 
-Before requesting review, ensure:
+Apply the changed-code coverage target and test-first exceptions in [testing](testing.md). Focused security review is required for authentication, secrets, permissions, and untrusted input changes. Examine relevant database, filesystem, API, cryptographic, and financial boundaries using [security](security.md).
 
-- All automated checks (CI/CD) are passing
-- Merge conflicts are resolved
-- Branch is up to date with target branch
+## Findings and completion
 
-## Review Checklist
+Each finding identifies location, trigger, harmful outcome, evidence, and practical correction. Separate defects from optional preferences; do not invent confidence percentages. Block affected completion or merge for confirmed critical vulnerabilities or data-loss hazards. Fix high-severity correctness/security defects before merging. Assess medium issues against scope and risk; low suggestions are optional. Record residual risks and blockers; review does not itself authorize merge.
 
-Before marking code complete:
+Use the [review workflow](../../skills/engineering/code-review/SKILL.md), [coding style](coding-style.md), and [Git workflow](git-workflow.md).
 
-- [ ] Code is readable and well-named
-- [ ] Functions are focused (<50 lines)
-- [ ] Source files are cohesive (under the 800-line soft maintainability ceiling, or include a reason for a deliberate exception)
-- [ ] No deep nesting (>4 levels)
-- [ ] Errors are handled explicitly
-- [ ] No hardcoded secrets or credentials
-- [ ] No console.log or debug statements
-- [ ] Tests exist for new functionality
-- [ ] Test coverage meets 80% minimum
-
-## Security Review Triggers
-
-**STOP and use security-reviewer agent when:**
-
-- Authentication or authorization code
-- User input handling
-- Database queries
-- File system operations
-- External API calls
-- Cryptographic operations
-- Payment or financial code
-
-## Review Severity Levels
-
-| Level | Meaning | Action |
-|-------|---------|--------|
-| CRITICAL | Security vulnerability or data loss risk | **BLOCK** - Must fix before merge |
-| HIGH | Bug or significant quality issue | **WARN** - Should fix before merge |
-| MEDIUM | Maintainability concern, including an unexplained source file over the soft 800-line ceiling | **INFO** - Consider fixing |
-| LOW | Style or minor suggestion | **NOTE** - Optional |
-
-## Agent Usage
-
-Use these agents for code review:
-
-| Agent | Purpose |
-|-------|---------|
-| **code-reviewer** | General code quality, patterns, best practices |
-| **security-reviewer** | Security vulnerabilities, OWASP Top 10 |
-| **typescript-reviewer** | TypeScript/JavaScript specific issues |
-| **python-reviewer** | Python specific issues |
-| **go-reviewer** | Go specific issues |
-| **rust-reviewer** | Rust specific issues |
-
-## Review Workflow
-
-```
-1. Run git diff to understand changes
-2. Check security checklist first
-3. Review code quality checklist
-4. Run relevant tests
-5. Verify coverage >= 80%
-6. Use appropriate agent for detailed review
-```
-
-## Common Issues to Catch
-
-### Security
-
-- Hardcoded credentials (API keys, passwords, tokens)
-- SQL injection (string concatenation in queries)
-- XSS vulnerabilities (unescaped user input)
-- Path traversal (unsanitized file paths)
-- CSRF protection missing
-- Authentication bypasses
-
-### Code Quality
-
-- Large functions (>50 lines) - split into smaller
-- Large files (>800 lines) - extract modules
-- Deep nesting (>4 levels) - use early returns
-- Missing error handling - handle explicitly
-- Mutation patterns - prefer immutable operations
-- Missing tests - add test coverage
-
-### Performance
-
-- N+1 queries - use JOINs or batching
-- Missing pagination - add LIMIT to queries
-- Unbounded queries - add constraints
-- Missing caching - cache expensive operations
-
-## Approval Criteria
-
-- **Approve**: No CRITICAL or HIGH issues
-- **Warning**: Only HIGH issues (merge with caution)
-- **Block**: CRITICAL issues found
-
-## Integration with Other Rules
-
-This rule works with:
-
-- [testing.md](testing.md) - Test coverage requirements
-- [security.md](security.md) - Security checklist
-- [git-workflow.md](git-workflow.md) - Commit standards
-- [agents.md](agents.md) - Agent delegation
+Adapted from ECC common rules; see [source coverage](../../consolidation/rules-common-audit.json).

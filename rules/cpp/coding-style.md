@@ -1,44 +1,14 @@
----
-paths:
-  - "**/*.cpp"
-  - "**/*.hpp"
-  - "**/*.cc"
-  - "**/*.hh"
-  - "**/*.cxx"
-  - "**/*.h"
-  - "**/CMakeLists.txt"
----
 # C++ Coding Style
 
-> This file extends [common/coding-style.md](../common/coding-style.md) with C++ specific content.
+Extends [shared coding style](../common/coding-style.md).
 
-## Modern C++ (C++17/20/23)
+## Standard and naming
+Inspect configured standard, compiler, ABI and platform first. Use auto when clear, constexpr and structured bindings where supported. Follow local naming for types, functions, constants, namespaces and members instead of forcing a naming migration.
 
-- Prefer **modern C++ features** over C-style constructs
-- Use `auto` when the type is obvious from context
-- Use `constexpr` for compile-time constants
-- Use structured bindings: `auto [key, value] = map_entry;`
-
-## Resource Management
-
-- **RAII everywhere** — no manual `new`/`delete`
-- Use `std::unique_ptr` for exclusive ownership
-- Use `std::shared_ptr` only when shared ownership is truly needed
-- Use `std::make_unique` / `std::make_shared` over raw `new`
-
-## Naming Conventions
-
-- Types/Classes: `PascalCase`
-- Functions/Methods: `snake_case` or `camelCase` (follow project convention)
-- Constants: `kPascalCase` or `UPPER_SNAKE_CASE`
-- Namespaces: `lowercase`
-- Member variables: `snake_case_` (trailing underscore) or `m_` prefix
+## Resources
+Prefer RAII and explicit ownership. unique_ptr suits exclusive ownership; shared_ptr needs genuine shared lifetime. Use make_unique/make_shared where supported. Nonowning pointers and required C/SDK allocations are valid at explicit boundaries with matching cleanup.
 
 ## Formatting
+Use the repository's clang-format configuration or existing formatter. Limit formatting to the authorized change.
 
-- Use **clang-format** — no style debates
-- Run `clang-format -i <file>` before committing
-
-## Reference
-
-See skill: `cpp-coding-standards` for comprehensive C++ coding standards and guidelines.
+Use [C++ development](../../skills/languages/cpp-development/SKILL.md).

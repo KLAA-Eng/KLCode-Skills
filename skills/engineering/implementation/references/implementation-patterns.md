@@ -502,11 +502,11 @@ test('test search', () => { })
 
 ## Code Smell Detection
 
-Watch for these anti-patterns:
+Assess these maintainability signals in context. Size and nesting thresholds prompt review, not automatic failure or extraction; see [shared coding style](../../../../rules/common/coding-style.md).
 
 ### 1. Long Functions
 ```typescript
-// FAIL: BAD: Function > 50 lines
+// REVIEW: Function > 50 lines; assess cohesion and responsibility
 function processMarketData() {
   // 100 lines of code
 }
@@ -521,7 +521,7 @@ function processMarketData() {
 
 ### 2. Deep Nesting
 ```typescript
-// FAIL: BAD: 5+ levels of nesting
+// REVIEW: 5+ levels of nesting; assess readability and error paths
 if (user) {
   if (user.isAdmin) {
     if (market) {

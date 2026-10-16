@@ -12,3 +12,5 @@ Use installed gh for scoped queries, check pagination/filtering, and distinguish
 Read [GitHub operations](references/github-operations.md) for issue/PR/CI/release examples. Keep lists, labels, assignments, merge methods and release channels project-specific. Draft concrete PR/release text before the final action. Preserve multiline bodies through structured arguments or body files.
 
 A remote action is complete only after reading back the resulting object/ref/state. Distinguish local preparation, pushed branch, opened PR, merged result, published release and deployed artifact. The ECC-specific release checklist is provenance, not this team's release procedure.
+
+Apply the relevant shared rules: [common / git workflow](../../../rules/common/git-workflow.md).

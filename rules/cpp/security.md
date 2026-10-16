@@ -1,51 +1,14 @@
----
-paths:
-  - "**/*.cpp"
-  - "**/*.hpp"
-  - "**/*.cc"
-  - "**/*.hh"
-  - "**/*.cxx"
-  - "**/*.h"
-  - "**/CMakeLists.txt"
----
 # C++ Security
 
-> This file extends [common/security.md](../common/security.md) with C++ specific content.
+Extends [shared security](../common/security.md).
 
-## Memory Safety
+## Memory and buffers
+Prefer RAII containers and smart owning pointers. Raw arrays, malloc/free and casts may be required for C/SDK or hardware boundaries; isolate them, document ownership, validate sizes/lifetimes and match allocators. Avoid unbounded strcpy/strcat/sprintf on untrusted data. Use supported strings and checked formatting; fmt is optional.
 
-- Never use raw `new`/`delete` — use smart pointers
-- Never use C-style arrays — use `std::array` or `std::vector`
-- Never use `malloc`/`free` — use C++ allocation
-- Avoid `reinterpret_cast` unless absolutely necessary
+## Undefined behavior
+Initialize values, check bounds/arithmetic overflow and prevent null, dangling and invalidated access. Containers alone do not prove safe indexing.
 
-## Buffer Overflows
+## Diagnostics
+Use supported compiler warnings and configured analyzers with actual compile flags. clang-tidy/cppcheck are options, not blanket all-check mandates. Address/undefined-behavior sanitizers depend on compiler/platform/host support. Keep ThreadSanitizer in a compatible separate configuration. A scan alone does not prove safety.
 
-- Use `std::string` over `char*`
-- Use `.at()` for bounds-checked access when safety matters
-- Never use `strcpy`, `strcat`, `sprintf` — use `std::string` or `fmt::format`
-
-## Undefined Behavior
-
-- Always initialize variables
-- Avoid signed integer overflow
-- Never dereference null or dangling pointers
-- Use sanitizers in CI:
-  ```bash
-  cmake -DCMAKE_CXX_FLAGS="-fsanitize=address,undefined" ..
-  ```
-
-## Static Analysis
-
-- Use **clang-tidy** for automated checks:
-  ```bash
-  clang-tidy --checks='*' src/*.cpp
-  ```
-- Use **cppcheck** for additional analysis:
-  ```bash
-  cppcheck --enable=all src/
-  ```
-
-## Reference
-
-See skill: `cpp-coding-standards` for detailed security guidelines.
+Use [C++ development](../../skills/languages/cpp-development/SKILL.md).

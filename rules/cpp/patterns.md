@@ -1,51 +1,17 @@
----
-paths:
-  - "**/*.cpp"
-  - "**/*.hpp"
-  - "**/*.cc"
-  - "**/*.hh"
-  - "**/*.cxx"
-  - "**/*.h"
-  - "**/CMakeLists.txt"
----
 # C++ Patterns
 
-> This file extends [common/patterns.md](../common/patterns.md) with C++ specific content.
+Extends [shared patterns](../common/patterns.md).
 
-## RAII (Resource Acquisition Is Initialization)
+## RAII
+Tie memory, locks, files and native handles to scoped owners; check acquisition failure and pair resources with the correct deleter without changing required ABI contracts.
 
-Tie resource lifetime to object lifetime:
+## Rule of Zero/Five
+Prefer standard owning members and Rule of Zero. When custom lifetime/copy/move behavior is needed assess all five special members, explicitly implementing, defaulting or deleting as appropriate. Do not add meaningless bodies merely to satisfy a count.
 
-```cpp
-class FileHandle {
-public:
-    explicit FileHandle(const std::string& path) : file_(std::fopen(path.c_str(), "r")) {}
-    ~FileHandle() { if (file_) std::fclose(file_); }
-    FileHandle(const FileHandle&) = delete;
-    FileHandle& operator=(const FileHandle&) = delete;
-private:
-    std::FILE* file_;
-};
-```
+## Values
+Pass small/trivial values by value, large read-only objects by const reference; transfer ownership explicitly. Return by value and use copy elision/move semantics where supported without relying on moved-from contents.
 
-## Rule of Five/Zero
+## Errors
+Respect exception policy and ABI boundaries. optional requires C++17, expected C++23; use compatible result types or existing conventions on older toolchains.
 
-- **Rule of Zero**: Prefer classes that need no custom destructor, copy/move constructors, or assignments
-- **Rule of Five**: If you define any of destructor/copy-ctor/copy-assign/move-ctor/move-assign, define all five
-
-## Value Semantics
-
-- Pass small/trivial types by value
-- Pass large types by `const&`
-- Return by value (rely on RVO/NRVO)
-- Use move semantics for sink parameters
-
-## Error Handling
-
-- Use exceptions for exceptional conditions
-- Use `std::optional` for values that may not exist
-- Use `std::expected` (C++23) or result types for expected failures
-
-## Reference
-
-See skill: `cpp-coding-standards` for comprehensive C++ patterns and anti-patterns.
+Use [C++ development](../../skills/languages/cpp-development/SKILL.md).

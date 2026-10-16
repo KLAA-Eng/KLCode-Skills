@@ -9,3 +9,5 @@ Historical paths identify provenance, not runtime dependencies. The entrypoint i
 Licenses: [source notices](../../../support/engineering/licenses/). Imported dependency inventory: [dependencies.json](../../../support/engineering/dependencies.json).
 
 PR evidence/visual-summary attribution is preserved in [PR-CREDITS.md](PR-CREDITS.md).
+
+Shared rule adaptations and their upstream fingerprints are recorded in the [rule coverage inventory](../../../rules/coverage.json). The linked canonical rules supersede earlier optional-only testing/review defaults where applicable.

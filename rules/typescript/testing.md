@@ -1,18 +1,11 @@
----
-paths:
-  - "**/*.ts"
-  - "**/*.tsx"
-  - "**/*.js"
-  - "**/*.jsx"
----
-# TypeScript/JavaScript Testing
+# TypeScript and JavaScript Testing
 
-> This file extends [common/testing.md](../common/testing.md) with TypeScript/JavaScript specific content.
+Extends [shared testing](../common/testing.md).
 
-## E2E Testing
+## Behavior
+Keep the existing Node runner, Vitest, Jest or equivalent. Default to test-first for new testable logic and bug fixes with practical exceptions; target 80% for new or substantially changed testable code, not a repository gate.
 
-Use **Playwright** as the E2E testing framework for critical user flows.
+## Browser flows
+Use installed Playwright or suitable browser tools for critical browser journeys. Pure utilities and native host behavior need their respective layers; Playwright is not a universal JavaScript test framework. Use stable role/label locators, observable waits and isolated fixtures.
 
-## Agent Support
-
-- **e2e-runner** - Playwright E2E testing specialist
+Use [browser testing](../../skills/engineering/browser-testing/SKILL.md), replacing the unregistered upstream e2e-runner reference.

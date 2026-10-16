@@ -12,3 +12,5 @@ Read [static configuration review](references/static-config-review.md). The bund
 Review permissions, shell interpolation, dangerous lifecycle hooks, token/environment exposure, untrusted instructions, and whether declared tools exist. Keep exploit evidence distinct from maintainability warnings. Do not call all shell servers compromised or treat a numerical scanner grade as proof of safety.
 
 AgentShield is an optional external local scanner, not bundled. Verify package/version/provenance and its data flows before authorized use; provider-backed analysis is an additional selected mode. [Scanner integration](references/scanner-integration.md) contains reviewed setup guidance. No global install or configuration scaffolding runs automatically.
+
+Apply the relevant shared rules: [common / security](../../../rules/common/security.md).

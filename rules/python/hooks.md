@@ -1,19 +1,12 @@
----
-paths:
-  - "**/*.py"
-  - "**/*.pyi"
----
-# Python Hooks
+# python Check and Hook Guidance
 
-> This file extends [common/hooks.md](../common/hooks.md) with Python specific content.
+Extends [shared hooks](../common/hooks.md).
 
-## PostToolUse Hooks
+## Deferred activation
+These checks are not registered hooks or instructions to modify global Claude/Codex settings. Host lifecycle configuration is a later phase. Use existing local commands manually now; event schemas, payload parsing, quoting and permissions must be verified for actual integration.
 
-Configure in `~/.claude/settings.json`:
+## Applicable checks
+Use configured compatible formatting/linting (Black, Ruff or isort where appropriate), type checks and focused tests. Modern-only tooling does not prove IronPython host behavior. Identify accidental print debugging while preserving intentional CLI/host output.
 
-- **black/ruff**: Auto-format `.py` files after edit
-- **mypy/pyright**: Run type checking after editing `.py` files
-
-## Warnings
-
-- Warn about `print()` statements in edited files (use `logging` module instead)
+## Scheduling
+Prefer changed-file formatting and focused checks, followed by relevant final build/tests. Serialize or debounce costly jobs, bound duration and report failures. Do not download dependencies or apply broad fixes implicitly.

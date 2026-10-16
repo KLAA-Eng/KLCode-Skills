@@ -1,97 +1,21 @@
 # Coding Style
 
-## Immutability (CRITICAL)
+## Clarity and compatibility
 
-ALWAYS create new objects, NEVER mutate existing ones:
+Follow actual project runtimes, frameworks, toolchains, and conventions. Prefer simple code, concrete names, focused responsibilities, and existing patterns. Extract real duplication; avoid speculative abstractions. Language and framework conventions determine casing and file organization.
 
-```
-// Pseudocode
-WRONG:  modify(original, field, value) → changes original in-place
-CORRECT: update(original, field, value) → returns new copy with change
-```
+Prefer high cohesion and low coupling. Functions over 50 lines, source files over 800 lines, and nesting beyond four levels are review prompts, not hard gates. Split when it improves comprehension or ownership, not to satisfy a number. Explain deliberate exceptions when useful. Name meaningful thresholds and policy values without replacing every literal mechanically.
 
-Rationale: Immutable data prevents hidden side effects, makes debugging easier, and enables safe concurrency.
+## State
 
-## Core Principles
+Prefer immutable data at shared-state and concurrency boundaries. Deliberate mutation is appropriate for host APIs, UI models, performance, and established conventions. Make ownership, lifetime, thread constraints, and side effects clear. Do not copy large objects merely to satisfy an absolute immutability rule.
 
-### KISS (Keep It Simple)
+## Errors and inputs
 
-- Prefer the simplest solution that actually works
-- Avoid premature optimization
-- Optimize for clarity over cleverness
+Handle errors at the layer that can recover, translate, or report them; otherwise propagate useful context. Avoid silent failures and repetitive catch-and-log chains. UI messages should aid recovery; diagnostics must not leak secrets.
 
-### DRY (Don't Repeat Yourself)
+Validate untrusted data at system boundaries using compatible schemas or explicit checks. Consider type, range, size, shape, authorization, and path constraints. Fail clearly; external API responses and local files can be untrusted.
 
-- Extract repeated logic into shared functions or utilities
-- Avoid copy-paste implementation drift
-- Introduce abstractions when repetition is real, not speculative
+Use [code review](code-review.md), [security](security.md), and [implementation](../../skills/engineering/implementation/SKILL.md).
 
-### YAGNI (You Aren't Gonna Need It)
-
-- Do not build features or abstractions before they are needed
-- Avoid speculative generality
-- Start simple, then refactor when the pressure is real
-
-## File Organization
-
-MANY SMALL FILES > FEW LARGE FILES:
-- High cohesion, low coupling
-- 200-400 lines typical, with 800 lines as a soft maintainability ceiling for source files
-- Test, generated, and vendored files may exceed the ceiling when their size is justified by their role
-- Extract utilities from large modules
-- Organize by feature/domain, not by type
-
-## Error Handling
-
-ALWAYS handle errors comprehensively:
-- Handle errors explicitly at every level
-- Provide user-friendly error messages in UI-facing code
-- Log detailed error context on the server side
-- Never silently swallow errors
-
-## Input Validation
-
-ALWAYS validate at system boundaries:
-- Validate all user input before processing
-- Use schema-based validation where available
-- Fail fast with clear error messages
-- Never trust external data (API responses, user input, file content)
-
-## Naming Conventions
-
-> **Language note**: This rule may be overridden by language-specific rules for
-> languages where a pattern is not idiomatic. Casing and framework-specific
-> prefixes belong to the applicable language or package rule.
-
-Language-independent:
-
-- Descriptive names: the name says what the thing holds or does, without a comment.
-- Boolean names read clearly as claims under the applicable language or package
-  convention.
-- Where the language draws the distinction, constants and types are visually
-  distinct from ordinary values in the form its language or package rule defines.
-
-## Code Smells to Avoid
-
-### Deep Nesting
-
-Prefer early returns over nested conditionals once the logic starts stacking.
-
-### Magic Numbers
-
-Use named constants for meaningful thresholds, delays, and limits.
-
-### Long Functions
-
-Split large functions into focused pieces with clear responsibilities.
-
-## Code Quality Checklist
-
-Before marking work complete:
-- [ ] Code is readable and well-named
-- [ ] Functions are small (<50 lines)
-- [ ] Files are focused (<800 lines)
-- [ ] No deep nesting (>4 levels)
-- [ ] Proper error handling
-- [ ] No hardcoded values (use constants or config)
-- [ ] No mutation (immutable patterns used)
+Adapted from ECC common rules; see [source coverage](../../consolidation/rules-common-audit.json).

@@ -1,76 +1,21 @@
----
-paths:
-  - "**/*.css"
-  - "**/*.scss"
-  - "**/*.sass"
-  - "**/*.less"
-  - "**/*.html"
-  - "**/*.tsx"
-  - "**/*.jsx"
-  - "**/*.vue"
-  - "**/*.svelte"
----
-> This file extends [common/performance.md](../common/performance.md) with web-specific performance content.
+# Web Performance
 
-# Web Performance Rules
+Extends [shared performance](../common/performance.md).
 
-## Core Web Vitals Targets
+## Selected budgets
+Set budgets for the actual audience, devices, network and browser/webview. Upstream starting examples below are not universal release gates or claims about current external standards:
+- LCP below 2.5s, INP below 200ms, CLS below 0.1.
+- Lab examples: FCP below 1.5s and TBT below 200ms.
+- Gzipped JS/CSS examples: landing 150/30 KB, app 300/50 KB, microsite 80/15 KB.
+Record baseline, measurement conditions, selected thresholds and regressions. Local desktop surfaces may need different startup/interaction/memory goals.
 
-| Metric | Target |
-|--------|--------|
-| LCP | < 2.5s |
-| INP | < 200ms |
-| CLS | < 0.1 |
-| FCP | < 1.5s |
-| TBT | < 200ms |
+## Loading
+Reduce blocking work, defer noncritical code and dynamically import heavy optional modules where supported. Preload only proven critical resources; do not add an animation library to match an example.
 
-## Bundle Budget
+## Images and fonts
+Reserve image dimensions/aspect ratio. Prioritize the actual LCP image, lazy-load appropriate offscreen assets and use efficient compatible formats. Avoid oversized assets and unnecessary font families/weights; subset/preload selectively with a supported font-display strategy.
 
-| Page Type | JS Budget (gzipped) | CSS Budget |
-|-----------|---------------------|------------|
-| Landing page | < 150kb | < 30kb |
-| App page | < 300kb | < 50kb |
-| Microsite | < 80kb | < 15kb |
+## Animation and checks
+Prefer cheap properties and CSS for simple transitions, requestAnimationFrame where appropriate, narrow will-change and low-churn scroll handling. Honor reduced motion and measure expensive clipping/filter effects. Inspect shifts, blocking resources, sizing and third-party scripts. Distinguish lab from real-user evidence.
 
-## Loading Strategy
-
-1. Inline critical above-the-fold CSS where justified
-2. Preload the hero image and primary font only
-3. Defer non-critical CSS or JS
-4. Dynamically import heavy libraries
-
-```js
-const gsapModule = await import('gsap');
-const { ScrollTrigger } = await import('gsap/ScrollTrigger');
-```
-
-## Image Optimization
-
-- Explicit `width` and `height`
-- `loading="eager"` plus `fetchpriority="high"` for hero media only
-- `loading="lazy"` for below-the-fold assets
-- Prefer AVIF or WebP with fallbacks
-- Never ship source images far beyond rendered size
-
-## Font Loading
-
-- Max two font families unless there is a clear exception
-- `font-display: swap`
-- Subset where possible
-- Preload only the truly critical weight/style
-
-## Animation Performance
-
-- Animate compositor-friendly properties only
-- Use `will-change` narrowly and remove it when done
-- Prefer CSS for simple transitions
-- Use `requestAnimationFrame` or established animation libraries for JS motion
-- Avoid scroll handler churn; use IntersectionObserver or well-behaved libraries
-
-## Performance Checklist
-
-- [ ] All images have explicit dimensions
-- [ ] No accidental render-blocking resources
-- [ ] No layout shifts from dynamic content
-- [ ] Motion stays on compositor-friendly properties
-- [ ] Third-party scripts load async/defer and only when needed
+Use [performance optimization](../../skills/engineering/performance-optimization/SKILL.md).

@@ -13,3 +13,5 @@ Author a rule for a concrete repeated behavior. This is an optional Claude hook 
 4. Report the file, event, action, example trigger and rollback (disable the rule or remove the selected registration). A rule file alone does not register a hook.
 
 The [activation recipe](../../../support/agents/hooks/activation-recipes.json) is inert. Registration needs the chosen Claude event and an absolute runtime path. For behavioral discovery, the imported [conversation analyst](../../../support/agents/agents/conversation-analyzer.md) can propose candidates; do not enable every suggested rule automatically.
+
+Apply the relevant shared rules: [common / hooks](../../../rules/common/hooks.md).

@@ -1,0 +1,3618 @@
+{
+  "schema_version": 1,
+  "scope": {
+    "owner": "rules-other-sources",
+    "inventory": "ECC 15 nonselected rule families excluding common/python/csharp/cpp/web/typescript/react; all Remotion rules/assets; other refs root AGENTS/CLAUDE where present; Caveman native core and activation rule bodies/generator/GEMINI imports; agent-skills hidden contribution rule and 7 shared checklists; Matt .agents policy docs; all Taste skill entrypoints and active art-direction refs; scientific CORE-name false positive. Includes both nested Matt ADRs discovered by the full .agents Markdown inventory check.",
+    "limits": [
+      "Finite file inventory, not every imperative in upstream skills/scripts/agents/READMEs or generated distribution mirrors.",
+      "ECC common/python/csharp/cpp/web/typescript/react belong to other audit lanes.",
+      "Excluded framework families classified by declaration/frontmatter/section inventory; no semantic-equivalence claim.",
+      "already-covered denotes enumerated behavior and explicit exclusions, not exhaustive sentence equivalence.",
+      "No host registration, activation or live provider/API/render testing."
+    ],
+    "reference_discovery": "Recursive file inventory and rg --files --hidden/-uuu; named rules/core/policy candidates checked against dependencies and canonical files."
+  },
+  "counts": {
+    "sources": 158,
+    "ecc_excluded": 78,
+    "remotion_tsx_assets": 3,
+    "remotion_topic_markdown": 28
+  },
+  "sources": [
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/angular/coding-style.md",
+      "sha256": "07ff77e554dad197c179c0fbd6b70dcbedbe4e038e95e60da0475134a5be856c",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "angular-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Angular Coding Style",
+        "## Version Awareness",
+        "## File Naming",
+        "## Components",
+        "## Dependency Injection",
+        "## Signals",
+        "### Core Primitives",
+        "### `linkedSignal` \u2014 Writable Derived State",
+        "### `resource` \u2014 Async Data into Signals",
+        "### `effect` Usage",
+        "## Templates",
+        "## Forms",
+        "## Component Styles",
+        "## Change Detection"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/angular/hooks.md",
+      "sha256": "321620abd2771d766149f5d38edc6b0f6a70fc49cdf4467bf3d81985668fa088",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "angular-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Angular Hooks",
+        "## PostToolUse Hooks",
+        "## Stop Hooks"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/angular/patterns.md",
+      "sha256": "dfe588461b1d1b4d63826559c89a22dec3a61de606db5ce249b01c5cceb6b887",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "angular-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Angular Patterns",
+        "## Smart / Dumb Component Split",
+        "## Service Layer",
+        "## Async Data with `resource`",
+        "## Signal State Patterns",
+        "## Subscription Cleanup",
+        "## Routing",
+        "### Route Definition",
+        "### Functional Guards",
+        "### Data Resolvers",
+        "### View Transitions",
+        "## Dependency Injection Patterns",
+        "### Scoped Providers",
+        "### `InjectionToken`",
+        "### `viewProviders` vs `providers`",
+        "## HTTP Interceptors",
+        "## RxJS Operators",
+        "## Forms",
+        "## Rendering Strategies",
+        "## Accessibility",
+        "## Skill Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/angular/security.md",
+      "sha256": "95aa06285fa05dfac872ec631057361ec8864d69dbf7be933c8d72c16aea5155",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "angular-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Angular Security",
+        "## XSS Prevention",
+        "## HTTP Security",
+        "## Secret Management",
+        "## Route Guards",
+        "## SSR Security",
+        "## Content Security Policy",
+        "## Agent Support"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/angular/testing.md",
+      "sha256": "db8e50e1a0eadf989399c69923ff939b857a82f2b7deedc6cfeef21f182ed0cb",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "angular-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Angular Testing",
+        "## Test Runner",
+        "## TestBed Setup",
+        "## Signal Inputs",
+        "## Component Harnesses",
+        "## Router Testing",
+        "## Async Testing",
+        "## HTTP Testing",
+        "## Service Testing",
+        "## What to Test",
+        "## E2E Testing",
+        "## Coverage",
+        "## Skill Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/arkts/coding-style.md",
+      "sha256": "6b7bd08dc321bc5acba53467918fe2ea8c24d8347ee41c91a2ad89969b2a071b",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "arkts-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# HarmonyOS / ArkTS Coding Style",
+        "## ArkTS Language Constraints",
+        "### Type System",
+        "### Functions & Classes",
+        "### Object & Property Access",
+        "### Destructuring & Spread",
+        "### Modules & Imports",
+        "### Other Restrictions",
+        "### Object Literals",
+        "## Naming Conventions",
+        "## Formatting",
+        "## File Organization",
+        "## Comments",
+        "## Error Handling",
+        "## Immutability"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/arkts/hooks.md",
+      "sha256": "58bc4133ecdf5bd81fd32fb228206a552445cddb0e868228d829fd390a807b2c",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "arkts-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# HarmonyOS / ArkTS Hooks",
+        "## Build Commands",
+        "### HAP Package Build",
+        "# Build HAP package (global hvigor environment)",
+        "# Build with specific module",
+        "# Clean build",
+        "### DevEco Studio CLI",
+        "# Check project structure",
+        "# Install dependencies",
+        "# Update dependencies",
+        "## Recommended PostToolUse Hooks",
+        "### After Editing .ets/.ts Files",
+        "### After Editing module.json5",
+        "### After Editing oh-package.json5",
+        "## PreToolUse Hooks",
+        "### V1 Decorator Guard",
+        "## Validation Checklist"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/arkts/patterns.md",
+      "sha256": "0b475545842fcee0777c98dbace9bac552a71c581f9630648fe28e2d5d0e1394",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "arkts-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# HarmonyOS / ArkTS Patterns",
+        "## State Management: V2 Only",
+        "### V2 Decorators",
+        "### Prohibited V1 Decorators",
+        "### V2 Component Example",
+        "### State Synchronization",
+        "## Routing: Navigation Only",
+        "### Navigation Setup",
+        "### Page Navigation",
+        "### NavDestination Sub-page",
+        "## Architecture Pattern: MVVM",
+        "## ArkUI Animation Patterns",
+        "### State-Driven Animation",
+        "### Animation Rules",
+        "## Performance Patterns",
+        "### LazyForEach for Large Lists",
+        "### Component Reuse",
+        "## Resource References"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/arkts/security.md",
+      "sha256": "68c2c51e2741e9e25878e82bae0a6364c261c0d9d2ac0052c5580218355d7eee",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "arkts-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# HarmonyOS / ArkTS Security",
+        "## Permission Management",
+        "### Declare Permissions in module.json5",
+        "### Permission Checklist",
+        "### Runtime Permission Request",
+        "## Secret Management",
+        "## Input Validation",
+        "## Network Security",
+        "## Data Storage Security",
+        "## Dependency Security"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/arkts/testing.md",
+      "sha256": "bbb059fbb062231bc992d890c3ad4d772d61b8a7cba37b113ca74bfb07e4b3b9",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "arkts-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# HarmonyOS / ArkTS Testing",
+        "## Test Framework",
+        "## Test Directory Structure",
+        "## Running Tests",
+        "# Run all tests for a module",
+        "# Run tests on connected device",
+        "## Unit Test Example",
+        "## UI Test Example",
+        "## TDD Workflow for HarmonyOS",
+        "## Test Coverage Requirements",
+        "## Testing Best Practices"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/dart/coding-style.md",
+      "sha256": "acf278be79dae9fdc323cf81059ec05fff32751617eef9bb5be3a2bdc9175f6b",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "dart-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Dart/Flutter Coding Style",
+        "## Formatting",
+        "## Immutability",
+        "## Naming",
+        "## Null Safety",
+        "## Sealed Types and Pattern Matching (Dart 3+)",
+        "## Error Handling",
+        "## Async / Futures",
+        "## Imports",
+        "## Code Generation"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/dart/hooks.md",
+      "sha256": "8dbf2a2cbedb962fbfed379749baddcad9164779159411ae248a42c0ebc2e9fc",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "dart-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Dart/Flutter Hooks",
+        "## PostToolUse Hooks",
+        "## Recommended Hook Configuration",
+        "## Pre-commit Checks",
+        "## Useful One-liners",
+        "# Format all Dart files",
+        "# Analyze and report issues",
+        "# Run all tests with coverage",
+        "# Regenerate code-gen files",
+        "# Check for outdated packages",
+        "# Upgrade packages within constraints"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/dart/patterns.md",
+      "sha256": "6fc60f9f286b04f61462e2b9e469a12a715097e71e48c1194e222795fc29160e",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "dart-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Dart/Flutter Patterns",
+        "## Repository Pattern",
+        "## State Management: BLoC/Cubit",
+        "## State Management: Riverpod",
+        "## Dependency Injection",
+        "## ViewModel Pattern (without BLoC/Riverpod)",
+        "## UseCase Pattern",
+        "## Immutable State with freezed",
+        "## Clean Architecture Layer Boundaries",
+        "## Navigation (GoRouter)",
+        "## References"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/dart/security.md",
+      "sha256": "7945724035a5fe77f9b89e15fe28b5b8c405b625a3d9fb27cfae7c590df1fa2a",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "dart-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Dart/Flutter Security",
+        "## Secrets Management",
+        "## Network Security",
+        "## Input Validation",
+        "## Data Protection",
+        "## Android-Specific",
+        "## iOS-Specific",
+        "## WebView Security",
+        "## Obfuscation and Build Security"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/dart/testing.md",
+      "sha256": "b2d645c8e6da1958d913c82cf408013ada2ea14962126e1575566cea55465cf2",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "dart-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Dart/Flutter Testing",
+        "## Test Framework",
+        "## Test Types",
+        "## Unit Tests: State Managers",
+        "### BLoC with `bloc_test`",
+        "### Riverpod with `ProviderContainer`",
+        "## Widget Tests",
+        "## Fakes Over Mocks",
+        "## Async Testing",
+        "## Golden Tests",
+        "## Test Naming",
+        "## Test Organization",
+        "## Coverage"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/fsharp/coding-style.md",
+      "sha256": "d1088a64bc2c3a46e9c00b17c8a8df4d94aba2a199881c21af7b004380d005ef",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "fsharp-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# F# Coding Style",
+        "## Standards",
+        "## Types and Models",
+        "## Immutability",
+        "## Function Style",
+        "## Async and Error Handling",
+        "## Formatting",
+        "### Open Declaration Order"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/fsharp/hooks.md",
+      "sha256": "c6b9cc1afef1f8556d13c6703a13662724b413b316bfbcc832be236a998596cf",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "fsharp-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# F# Hooks",
+        "## PostToolUse Hooks",
+        "## Stop Hooks"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/fsharp/patterns.md",
+      "sha256": "a120871213cce220eb41ccf5699707ac1d711f387a8e3ccc6b1b7810701429b4",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "fsharp-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# F# Patterns",
+        "## Result Type for Error Handling",
+        "## Option for Missing Values",
+        "## Discriminated Unions for Domain Modeling",
+        "## Computation Expressions",
+        "## Module Organization",
+        "## Dependency Injection"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/fsharp/security.md",
+      "sha256": "021f0fd447be83c7f8ad47e1bcbe28ac2f15fc8a2ff9a42199ac229bc8f405b3",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "fsharp-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# F# Security",
+        "## Secret Management",
+        "## SQL Injection Prevention",
+        "## Input Validation",
+        "## Authentication and Authorization",
+        "## Error Handling",
+        "## References"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/fsharp/testing.md",
+      "sha256": "254b49f908e575a6216d7eac2b7b6a3234bb7ab3c32a8d263dc22f8e109f6616",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "fsharp-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# F# Testing",
+        "## Test Framework",
+        "## Test Organization",
+        "## Property-Based Testing with FsCheck",
+        "## ASP.NET Core Integration Tests",
+        "## Coverage"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/golang/coding-style.md",
+      "sha256": "c32f6a2715297a1637b35567bb2e65054b4b28064b4d91fad26ad688f758243d",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "golang-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Go Coding Style",
+        "## Formatting",
+        "## Design Principles",
+        "## Error Handling",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/golang/hooks.md",
+      "sha256": "518fe31d4baa4a10e2f5ae341ececb7063bbc794ef44c4cdefd7dcf75ab50cc3",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "golang-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Go Hooks",
+        "## PostToolUse Hooks"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/golang/patterns.md",
+      "sha256": "aca279088c39a43e8b1371d61abbb5da15206c5f52cce52443252d47ad5c5ddb",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "golang-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Go Patterns",
+        "## Functional Options",
+        "## Small Interfaces",
+        "## Dependency Injection",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/golang/security.md",
+      "sha256": "72ff9516083e017b718f76e7a6f6838611fa3c02b810b3572fef7d605b38d033",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "golang-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Go Security",
+        "## Secret Management",
+        "## Security Scanning",
+        "## Context & Timeouts"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/golang/testing.md",
+      "sha256": "b0fcde8be4ce98e34fe872cc2ecca63cab8c8cd87d5faa1e1667ee82f3707d74",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "golang-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Go Testing",
+        "## Framework",
+        "## Race Detection",
+        "## Coverage",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/java/coding-style.md",
+      "sha256": "4ce94d84b6d23615ae5843892bb434dcccd3173938cfffb2701a61c17d1e9a67",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "java-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Java Coding Style",
+        "## Formatting",
+        "## Immutability",
+        "## Naming",
+        "## Modern Java Features",
+        "## Optional Usage",
+        "## Error Handling",
+        "## Streams",
+        "## References"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/java/hooks.md",
+      "sha256": "b3c2e5aa683bb14a804dc9a5b59c255e5de763d35abc94daac17c859cdb6fad7",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "java-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Java Hooks",
+        "## PostToolUse Hooks"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/java/patterns.md",
+      "sha256": "11f26e27624feecf828ac91dcb53389e08fa88ae6755dce5cf7d6ba84d36f9e2",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "java-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Java Patterns",
+        "## Repository Pattern",
+        "## Service Layer",
+        "## Constructor Injection",
+        "## DTO Mapping",
+        "## Builder Pattern",
+        "## Sealed Types for Domain Models",
+        "## API Response Envelope",
+        "## References"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/java/security.md",
+      "sha256": "e13c649b301a3d43d365a1a2ee5444b85043c2c8258543a52c52513fc86c732a",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "java-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Java Security",
+        "## Secrets Management",
+        "## SQL Injection Prevention",
+        "## Input Validation",
+        "## Authentication and Authorization",
+        "## Dependency Security",
+        "## Error Messages",
+        "## References"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/java/testing.md",
+      "sha256": "0af52504a7c8258dbfe9cbeeec9fd88d18e0fa5492e5ed2900ff5a97e9051497",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "java-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Java Testing",
+        "## Test Framework",
+        "## Test Organization",
+        "## Unit Test Pattern",
+        "## Parameterized Tests",
+        "## Integration Tests",
+        "## Test Naming",
+        "## Coverage",
+        "## References"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/kotlin/coding-style.md",
+      "sha256": "63c86f8bb5366901f3233f2b71880c4e9c0bde794bf2276745f2d2f6706d99c2",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "kotlin-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Kotlin Coding Style",
+        "## Formatting",
+        "## Immutability",
+        "## Naming",
+        "## Null Safety",
+        "## Sealed Types",
+        "## Extension Functions",
+        "## Scope Functions",
+        "## Error Handling"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/kotlin/hooks.md",
+      "sha256": "f5f703d6395984d4bbbdef4df9ee7875879a77551d3cc75acdf8b1054d09142c",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "kotlin-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Kotlin Hooks",
+        "## PostToolUse Hooks"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/kotlin/patterns.md",
+      "sha256": "1c043217f0a9b7a5f013ce6dbfe0ef065d56ee6afcb30010f99ccdaf22349805",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "kotlin-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Kotlin Patterns",
+        "## Dependency Injection",
+        "## ViewModel Pattern",
+        "## Repository Pattern",
+        "## UseCase Pattern",
+        "## expect/actual (KMP)",
+        "## Coroutine Patterns",
+        "## Builder Pattern with DSL",
+        "## References"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/kotlin/security.md",
+      "sha256": "f2cb2185afce33a401fc815fc28581eae21f5f75382cad2082b27557d9cd18ac",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "kotlin-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Kotlin Security",
+        "## Secrets Management",
+        "## Network Security",
+        "## Input Validation",
+        "## Data Protection",
+        "## Authentication",
+        "## ProGuard / R8",
+        "## WebView Security"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/kotlin/testing.md",
+      "sha256": "441d35861a1297cabd698b7f3886c5f0bdc59727cb99fde135f8ecb06025f6e7",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "kotlin-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Kotlin Testing",
+        "## Test Framework",
+        "## ViewModel Testing with Turbine",
+        "## Fakes Over Mocks",
+        "## Coroutine Testing",
+        "## Ktor MockEngine",
+        "## Room/SQLDelight Testing",
+        "## Test Naming",
+        "## Test Organization"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/nuxt/coding-style.md",
+      "sha256": "33dc74dddf4c7eddeb46c9c8c3ba2014cd432c5a82becbbf445caf999f272bb4",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "nuxt-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Nuxt Coding Style",
+        "## Directory layout",
+        "## Auto-imports discipline",
+        "## Compiler macros",
+        "## Config file separation",
+        "## Head and meta",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/nuxt/hooks.md",
+      "sha256": "ccfc501f38cc67d82d3aaf646f1aa97d7d09eee907e31679027c99abb3b18872",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "nuxt-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Nuxt Hooks",
+        "## Typecheck",
+        "## Lint",
+        "## Format",
+        "## Suggested PostToolUse chain",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/nuxt/patterns.md",
+      "sha256": "752177f220353824ae7c7a6eb9ecaa9e2638bb20233fcb8cb37d1bad0bbc79d2",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "nuxt-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Nuxt Patterns",
+        "## Data-fetch selection",
+        "## Shared state",
+        "## Nitro server routes",
+        "## Route middleware",
+        "## Hydration-safe rendering",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/nuxt/security.md",
+      "sha256": "a8ef6f1cf0f5e059a05b06d904be9bab49ee9736be3a85444e12d278c3786f78",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "nuxt-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Nuxt Security",
+        "## runtimeConfig public vs private",
+        "## Server-route input validation",
+        "## SSR payload leakage",
+        "## Cookie and auth passthrough on SSR",
+        "## SSRF on server $fetch",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/nuxt/testing.md",
+      "sha256": "2c1c9fd0006083515eb8ace54007602f1091df0b0fa35ff5d231ba64109cecbc",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "nuxt-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Nuxt Testing",
+        "## Setup",
+        "## Runtime helpers",
+        "## E2E helpers",
+        "## What to test how",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/perl/coding-style.md",
+      "sha256": "4f134e0da0e332280e6c6803c5dec6edb38088c42f4bb6270c27e81f579a853a",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "perl-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Perl Coding Style",
+        "## Standards",
+        "## Immutability",
+        "## Formatting",
+        "## Linting",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/perl/hooks.md",
+      "sha256": "a71f48f8b6068436a5b47c4f32291208ebd5d6b311b2ad1d393c1a0ad96c764d",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "perl-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Perl Hooks",
+        "## PostToolUse Hooks",
+        "## Warnings"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/perl/patterns.md",
+      "sha256": "55a86b5bca376dc511bd9b4fa2d0b29985f4d7576aae715d68b760afe0628169",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "perl-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Perl Patterns",
+        "## Repository Pattern",
+        "## DTOs / Value Objects",
+        "## Resource Management",
+        "## Module Interface",
+        "## Dependency Management",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/perl/security.md",
+      "sha256": "c3d0311c2bd9b0fbe94d079e410561fa6a918180925f86c29dfadd06d32a00b5",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "perl-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Perl Security",
+        "## Taint Mode",
+        "## Input Validation",
+        "## File I/O",
+        "## Process Execution",
+        "## SQL Injection Prevention",
+        "## Security Scanning",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/perl/testing.md",
+      "sha256": "4e8377928b5da585aebeaa278e3f293365d84df7819cb44d8efb1b5dc4631e68",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "perl-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Perl Testing",
+        "## Framework",
+        "## Runner",
+        "## Coverage",
+        "## Mocking",
+        "## Pitfalls",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/php/coding-style.md",
+      "sha256": "e6492b2e6f90a957a2f4664f2e01640fcc5ff77a81ab44c9cee42f3590be8b59",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "php-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# PHP Coding Style",
+        "## Standards",
+        "## Immutability",
+        "## Formatting",
+        "## Imports",
+        "## Error Handling",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/php/hooks.md",
+      "sha256": "624c6126b5c245aaf9af301f71f46a2b059baf94ef3de5c6bdb5dbf859ec0090",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "php-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# PHP Hooks",
+        "## PostToolUse Hooks",
+        "## Warnings"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/php/patterns.md",
+      "sha256": "f370b0af1e12d067fb4263ad829f62fedbc37e6e9aedf698d3939b6ee69cd1ea",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "php-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# PHP Patterns",
+        "## Thin Controllers, Explicit Services",
+        "## DTOs and Value Objects",
+        "## Dependency Injection",
+        "## Boundaries",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/php/security.md",
+      "sha256": "c3ab3949fab80c9bde6d0f6925984dbd094e66b6a790c4cba29f6d74dd07d2b2",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "php-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# PHP Security",
+        "## Input and Output",
+        "## Database Safety",
+        "## Secrets and Dependencies",
+        "## Auth and Session Safety",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/php/testing.md",
+      "sha256": "027a2fb6619fd671060a6d8283ee6cae2898eee20f26557f75626fc2d18ffdf9",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "php-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# PHP Testing",
+        "## Framework",
+        "## Coverage",
+        "# or",
+        "## Test Organization",
+        "## Inertia",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/accessibility.md",
+      "sha256": "7cd8adb29406c0f07e6628334bf417e8df3d71a2781c2f830b5b74177b2b8222",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# React Native / Expo Accessibility",
+        "## Labeling",
+        "## State & Live Regions",
+        "## Touch Targets & Layout",
+        "## Color & Contrast",
+        "## Focus & Navigation",
+        "## Testing"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/coding-style.md",
+      "sha256": "121c3c1d837828d2a648bcab8f0134fcc711f2fabdfffbdf5a095d60fdeb650f",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# React Native / Expo Coding Style",
+        "## Components",
+        "## Styling",
+        "## Platform Differences",
+        "## Imports & Project Layout",
+        "## Logging",
+        "## TypeScript"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/hooks.md",
+      "sha256": "b9b2d1a70bb621b4e6899f76c23b7573ce89d27cc16773b2e5ca03edc8fdc00a",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# React Native / Expo Hooks",
+        "## Suggested PostToolUse checks (on edit of *.ts/*.tsx)",
+        "## Pre-release / periodic",
+        "## Notes"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/patterns.md",
+      "sha256": "61ecf0979f22ba323cf03ad29fd98e67671a848127add4b12e3727f3ef76ae9f",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# React Native / Expo Patterns",
+        "## Navigation (Expo Router)",
+        "## State Management",
+        "## Data Fetching",
+        "## Lists",
+        "## Custom Hooks",
+        "## Async & Effects"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/performance.md",
+      "sha256": "66b87fce7da71f511b1382e52fd5becf3b4edaf6b4dd7a26a68de20b9e451f5d",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# React Native / Expo Performance",
+        "## Rendering",
+        "## Lists",
+        "## Images & Assets",
+        "## Animations",
+        "## Runtime & Build",
+        "## Measuring"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/production-readiness.md",
+      "sha256": "e4afb1ec82bf7fa541c07c40a71602f76f3a0cb76cc47731c98d5570f2019886",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# React Native / Expo Production Readiness",
+        "## Architecture",
+        "## Build & Release (EAS)",
+        "## Over-the-Air Updates",
+        "## Observability",
+        "## Configuration & Versioning",
+        "## Pre-Release Gate"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/security.md",
+      "sha256": "92819918373143837edd33da97af6873562d632d3970b66bfa4d3f4f5cbe5dbd",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# React Native / Expo Security",
+        "## The Bundle Is Public",
+        "## Secret & Token Storage",
+        "## Configuration",
+        "## Network & Data",
+        "## Permissions & Privacy",
+        "## Dependencies"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/react-native/testing.md",
+      "sha256": "989d2103a46e512dc7c20a7452c8c23b0301b55b0998fb92733f21721dba9382",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "react-native-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# React Native / Expo Testing",
+        "## Tooling",
+        "## Component Tests",
+        "## Mocking",
+        "## E2E",
+        "## What to test first"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/ruby/coding-style.md",
+      "sha256": "8dfa64f79717a61637f94a8c1f29cbf03cb87b5c3cb4511f96a3f3ad3ca77ce1",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "ruby-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Ruby Coding Style",
+        "## Standards",
+        "## Formatting And Linting",
+        "## Rails Style",
+        "## Error Handling",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/ruby/hooks.md",
+      "sha256": "70d673bc40b8b1dc04d1b1a0530486506dce22712684561e3c750347a84f6b24",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "ruby-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Ruby Hooks",
+        "## PostToolUse Hooks",
+        "## Warnings",
+        "## CI Gate Suggestions"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/ruby/patterns.md",
+      "sha256": "93060ad41a3f84daeceb05333e35fb84cf5982f39251f9f6d17fedb090988721",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "ruby-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Ruby Patterns",
+        "## Rails Way First",
+        "## Persistence",
+        "## Background Jobs And Runtime Services",
+        "## Frontend",
+        "## Authentication",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/ruby/security.md",
+      "sha256": "15802886a80d1ab0d7da6c4c0233eca08ee0f3828d388e82a77a882fcbef6af5",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "ruby-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Ruby Security",
+        "## Rails Defaults",
+        "## SQL And Active Record",
+        "## Authentication And Sessions",
+        "## Dependencies",
+        "## Web Safety",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/ruby/testing.md",
+      "sha256": "1719ae4872c19937c723b4f09b886536fef759dd9c58eab166f04b63a1c97573",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "ruby-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Ruby Testing",
+        "## Framework",
+        "## Test Pyramid",
+        "## Fixtures And Factories",
+        "## Commands",
+        "## Coverage",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/rust/coding-style.md",
+      "sha256": "01c056bef1bf3b7ca7cfc516986c1d05bcd341c620d2a09ce75acdc2ed539f5f",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "rust-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Rust Coding Style",
+        "## Formatting",
+        "## Immutability",
+        "## Naming",
+        "## Ownership and Borrowing",
+        "## Error Handling",
+        "## Iterators Over Loops",
+        "## Module Organization",
+        "## Visibility",
+        "## References"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/rust/hooks.md",
+      "sha256": "a7494896f1c8838f31cd72846f435e6388f91bf94e0d91eb226dd9b5b684ca55",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "rust-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Rust Hooks",
+        "## PostToolUse Hooks"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/rust/patterns.md",
+      "sha256": "08a09f7cf61991f4bdb69e388a9df546ea490c5c822aebcdd066e227cb06e16b",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "rust-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Rust Patterns",
+        "## Repository Pattern with Traits",
+        "## Service Layer",
+        "## Newtype Pattern for Type Safety",
+        "## Enum State Machines",
+        "## Builder Pattern",
+        "## Sealed Traits for Extensibility Control",
+        "## API Response Envelope",
+        "## References"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/rust/security.md",
+      "sha256": "09c5225869c09fc605f8495ae2c3728093e3b652dcc0ab55a9186946f5c67995",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "rust-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Rust Security",
+        "## Secrets Management",
+        "## SQL Injection Prevention",
+        "## Input Validation",
+        "## Unsafe Code",
+        "## Dependency Security",
+        "# Security audit",
+        "# Deny advisories, duplicate versions, and restricted licenses",
+        "# Inspect dependency tree",
+        "## Error Messages",
+        "## References"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/rust/testing.md",
+      "sha256": "54987d858918a433aea954c272c519d7ccb113834013fb79cc77ef7e6d571c8e",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "rust-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Rust Testing",
+        "## Test Framework",
+        "## Test Organization",
+        "## Unit Test Pattern",
+        "## Parameterized Tests",
+        "## Async Tests",
+        "## Mocking with mockall",
+        "## Test Naming",
+        "## Coverage",
+        "## Testing Commands",
+        "## References"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/swift/coding-style.md",
+      "sha256": "187d44050ed492076640f504a3fe7eb132ddabad262099d698a5b703b89d2659",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "swift-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Swift Coding Style",
+        "## Formatting",
+        "## Immutability",
+        "## Naming",
+        "## Error Handling",
+        "## Concurrency"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/swift/hooks.md",
+      "sha256": "654da388192df405927c5e4cea2f588d01cd349ba7ba30a813a4aa7c3d3a4661",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "swift-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Swift Hooks",
+        "## PostToolUse Hooks",
+        "## Warning"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/swift/patterns.md",
+      "sha256": "4381cb9fa1c1ec01a600a96d80e320385148728748fb702822f9ac1c3c079860",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "swift-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Swift Patterns",
+        "## Protocol-Oriented Design",
+        "## Value Types",
+        "## Actor Pattern",
+        "## Dependency Injection",
+        "## References"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/swift/security.md",
+      "sha256": "345a471220b7f448d991b9d28a0a047165aa7480a1ed758703d0c74041239b3a",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "swift-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Swift Security",
+        "## Secret Management",
+        "## Transport Security",
+        "## Input Validation"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/swift/testing.md",
+      "sha256": "9a44133b6a8afd496a79bd4e8211985f44cb4a24f83c45b64160d26411e434e9",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "swift-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Swift Testing",
+        "## Framework",
+        "## Test Isolation",
+        "## Parameterized Tests",
+        "## Coverage",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/vue/coding-style.md",
+      "sha256": "c5b8b3068e8c758bc7d3ccd0172fdc3cb510da412b873f025541b3d7499b3737",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "vue-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Vue Coding Style",
+        "## SFC Structure",
+        "## Reactivity Discipline",
+        "## Computed and Watchers",
+        "## Lifecycle and DOM",
+        "## Macros and Templates",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/vue/hooks.md",
+      "sha256": "f73294ea23030ded563f2907996f5bb53d9b297eb152d3e866be25ba00adaef8",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "vue-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Vue Hooks",
+        "## PostToolUse Targets",
+        "## Typecheck",
+        "## Lint and Format",
+        "## Architecture Boundaries",
+        "## Sequencing",
+        "# changed files only",
+        "# project-wide, debounced",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/vue/patterns.md",
+      "sha256": "57ab797198376c01323c775674e5a5a25a50a254ff6724730bb733187a5ff1f5",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "vue-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Vue Patterns",
+        "## Composables",
+        "## Props, Emits, v-model",
+        "## Provide / Inject",
+        "## Pinia (FSD model segment)",
+        "## vue-router",
+        "## vue-query (server cache)",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/vue/security.md",
+      "sha256": "4f2abdce6ac21dfd3afb9b4e847ac4496a7896c169cf42083bfdd7c360601ca6",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "vue-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Vue Security",
+        "## What Vue Escapes Automatically",
+        "## Rule No.1: Templates from Trusted Sources Only",
+        "## v-html and Render Functions",
+        "## URL, Style, and Event Injection",
+        "## Client Bundle Secrets",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "rules/vue/testing.md",
+      "sha256": "b02edf47b4088db53f96fd49c4e92aea14e4b27051f80bb5a4b49cb4060037ff",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "vue-specific language/framework policy is outside agreed Python/C#/C++/general web and conditional React/Remotion rule integration. Existing root files stay as references, not active canonical requirements. Reassess when a project selects this stack. Generic principles come from common rules; no full semantic coverage is asserted. Kotlin Compose was explicitly removed where applicable.",
+      "review_scope": "Scope classification using language/framework declaration, path frontmatter and section inventory.",
+      "source_headings": [
+        "# Vue Testing",
+        "## Stack",
+        "## Rendering and Async",
+        "## What to Test",
+        "## Composables",
+        "## Pinia",
+        "## Mount Config",
+        "## Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/3d.md",
+      "sha256": "d5f3f412ba540d10a98f330dea3cd949d4fc4f9a6bf0d9788cf3f2b21a90f3f4",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/3d.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Using Three.js and React Three Fiber in Remotion",
+        "## Prerequisites",
+        "## Using ThreeCanvas",
+        "## No animations not driven by `useCurrentFrame()`",
+        "## Animate using `useCurrentFrame()`",
+        "## Using `<Sequence>` inside `<ThreeCanvas>`"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/animations.md",
+      "sha256": "3b2a9055f720fb5da70af86d4d43ab5722b6229f2c3f7c70100972df0fe4863b",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/video/remotion-video/rules/animations.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate. The only normalized difference is fixing the TSX import to include interpolate and useVideoConfig already used by the example; frame-driven animation/CSS prohibition behavior is preserved.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": []
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/assets.md",
+      "sha256": "664160a48fe6ef76c9b25ea51b3796d39d371cb3632f380b014492412902ad42",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/assets.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Importing assets in Remotion",
+        "## The public folder",
+        "## Using staticFile()",
+        "## Using with components",
+        "## Remote URLs",
+        "## Important notes"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/audio.md",
+      "sha256": "06d859b2f463d0e0e823655548e314b59a1d6321377857fca52a09c629170b12",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/audio.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Using audio in Remotion",
+        "## Prerequisites",
+        "## Importing Audio",
+        "## Trimming",
+        "## Delaying",
+        "## Volume",
+        "## Muting",
+        "## Speed",
+        "## Looping",
+        "## Pitch"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/calculate-metadata.md",
+      "sha256": "b258c788fb3337187245c814f2fd4ddf10f7330ec97cb8117202a0145d4d27a6",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/calculate-metadata.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Using calculateMetadata",
+        "## Setting duration based on a video",
+        "## Matching dimensions of a video",
+        "## Setting duration based on multiple videos",
+        "## Setting a default outName",
+        "## Transforming props",
+        "## Return value"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/can-decode.md",
+      "sha256": "fb3f9933e45103d72530915b72a844b3454c6acc03289db5efe8f4541b088fad",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/can-decode.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Checking if a video can be decoded",
+        "## The `canDecode()` function",
+        "## Usage",
+        "## Using with Blob"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/charts.md",
+      "sha256": "67b51782c36f656af9c6e87fae77e70e8bb073495987670cb18c18a97add5584",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/charts.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Charts in Remotion",
+        "## No animations not powered by `useCurrentFrame()`",
+        "## Bar Chart Animations",
+        "### Staggered Bars",
+        "## Pie Chart Animation"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/compositions.md",
+      "sha256": "8939e6ce84d00e98f1813d781b554729d637b932b86fbbbbf6a3b3b34943220f",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/compositions.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "## Default Props",
+        "## Folders",
+        "## Stills",
+        "## Calculate Metadata"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/display-captions.md",
+      "sha256": "96abde72e0bcb88cdc5871b80b5d6eb0c6aedf0ea9611e6c5157cb0ee980ba99",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/display-captions.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Displaying captions in Remotion",
+        "## Prerequisites",
+        "## Creating pages",
+        "## Rendering with Sequences",
+        "## Word highlighting"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/extract-frames.md",
+      "sha256": "b7a63f6509a1a33d624f36d3f6772abbc364b0c883520803f3701c26541e7cd7",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/extract-frames.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Extracting frames from videos",
+        "## The `extractFrames()` function",
+        "## Basic usage",
+        "## Creating a filmstrip",
+        "## Cancellation with AbortSignal",
+        "## Timeout with Promise.race"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/fonts.md",
+      "sha256": "1749e4cf82e8b157d4b0a26f46721152d3ef9e5e9a1686753b8bb6a1be83ddbc",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/fonts.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Using fonts in Remotion",
+        "## Google Fonts with @remotion/google-fonts",
+        "### Prerequisites",
+        "### Waiting for font to load",
+        "## Local fonts with @remotion/fonts",
+        "### Prerequisites",
+        "### Loading a local font",
+        "### Loading multiple weights",
+        "### Available options",
+        "## Using in components"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/get-audio-duration.md",
+      "sha256": "d5098e8d20b227464e3519c761cba1e03396c77da636d1893c7be3061a0a8e40",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/get-audio-duration.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Getting audio duration with Mediabunny",
+        "## Getting audio duration",
+        "## Usage",
+        "## Using with local files",
+        "## Using with staticFile in Remotion"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/get-video-dimensions.md",
+      "sha256": "839867aa115e09a719096a902a6ad5e304135f2053cce9928776fb4fcb5bf3e1",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/get-video-dimensions.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Getting video dimensions with Mediabunny",
+        "## Getting video dimensions",
+        "## Usage",
+        "## Using with local files",
+        "## Using with staticFile in Remotion"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/get-video-duration.md",
+      "sha256": "7b31fab3cbf9b0771bae41e2c41c9abed2b59d495ffac7160e562fdf86848726",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/get-video-duration.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Getting video duration with Mediabunny",
+        "## Getting video duration",
+        "## Usage",
+        "## Using with local files",
+        "## Using with staticFile in Remotion"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/gifs.md",
+      "sha256": "53d9d658e3093dba4a798945d5c1b7004688ed96a09521cfb22b4cec418a8ae7",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/gifs.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Using Animated images in Remotion",
+        "## Basic usage",
+        "## Sizing and fit",
+        "## Playback speed",
+        "## Looping behavior",
+        "## Styling",
+        "## Getting GIF duration",
+        "## Alternative"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/images.md",
+      "sha256": "91d32f6e528b1f1cddc9a0cf70d0faa74491e3a2fe4a32933da0e21010e9aa74",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/images.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Using images in Remotion",
+        "## The `<Img>` component",
+        "## Important restrictions",
+        "## Local images with staticFile()",
+        "## Remote images",
+        "## Sizing and positioning",
+        "## Dynamic image paths",
+        "## Getting image dimensions"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/import-srt-captions.md",
+      "sha256": "38d33be5439714a2ddb577d8c8a6b7bf09bd10f66c0540415fb70536d4374e87",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/import-srt-captions.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Importing .srt subtitles into Remotion",
+        "## Prerequisites",
+        "## Reading an .srt file",
+        "## Using imported captions"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/lottie.md",
+      "sha256": "327673644c436b9f0b52f03ef2f2a6a9cf75d9e18d3384b88969b86942e2b8a1",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/lottie.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Using Lottie Animations in Remotion",
+        "## Prerequisites",
+        "## Displaying a Lottie file",
+        "## Styling and animating"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/measuring-dom-nodes.md",
+      "sha256": "4017103b03f14a041ac433be78c521ec2e9961629fae419c8b196d349637585b",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/measuring-dom-nodes.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Measuring DOM nodes in Remotion",
+        "## Measuring element dimensions"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/measuring-text.md",
+      "sha256": "88905cbd701e247306645c19f18e01aebe27c4eb0178a4e5d0377687f5ac1478",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/measuring-text.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Measuring text in Remotion",
+        "## Prerequisites",
+        "## Measuring text dimensions",
+        "## Fitting text to a width",
+        "## Checking text overflow",
+        "## Best practices"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/sequencing.md",
+      "sha256": "a6bc2ecf64c43d2c496c4a10f00d78151e23dd73f5ec73a09d950436eb5bcee1",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/sequencing.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "## Premounting",
+        "## Series",
+        "### Series with overlaps",
+        "## Frame References Inside Sequences",
+        "## Nested Sequences"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/tailwind.md",
+      "sha256": "e6025d703b69d9b4f9b240a80bbe4619872013ebd57c4511912d4be1a1c048a7",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/tailwind.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": []
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/text-animations.md",
+      "sha256": "40ac6b1bccf1c57d9edd46c74e847ec6e86fe775d3ef4fd14e1338f4a2606171",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/text-animations.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "## Text animations",
+        "## Typewriter Effect",
+        "## Word Highlighting"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/timing.md",
+      "sha256": "25d44384f42a2bbf4806e2e1aa6bd0acd0b1bd52160341f0f16dd1332b2a5d3d",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/timing.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "## Spring animations",
+        "### Physical properties",
+        "### Delay",
+        "### Duration",
+        "### Combining spring() with interpolate()",
+        "### Adding springs",
+        "## Easing"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/transcribe-captions.md",
+      "sha256": "c3324f7dc728cdb8d6a28ff664581b6a7ec2f1bae10727316b2b596d77d3df62",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/transcribe-captions.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Transcribing audio"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/transitions.md",
+      "sha256": "1b105c06bb968f9ea03678178047da59b82a216e7a879b96d8ec821a8b6dea1e",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/transitions.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "## Fullscreen transitions",
+        "## Prerequisites",
+        "## Example usage",
+        "## Available Transition Types",
+        "## Slide Transition with Direction",
+        "## Timing Options",
+        "## Duration calculation",
+        "### Getting the duration of a transition",
+        "### Calculating total composition duration"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/trimming.md",
+      "sha256": "9f71fc28200d18a4e75e727cc81506ee30b4e6bf73ca735686dfd55f4bcaee70",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/trimming.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "## Trim the Beginning",
+        "## Trim the End",
+        "## Trim and Delay"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/videos.md",
+      "sha256": "6c663a2325df97483c123cc7f26c4db3eca3fcd38135bf7719d2969ce942c489",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/videos.md",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": [
+        "# Using videos in Remotion",
+        "## Prerequisites",
+        "## Trimming",
+        "## Delaying",
+        "## Sizing and Position",
+        "## Volume",
+        "## Speed",
+        "## Looping",
+        "## Pitch"
+      ]
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/assets/charts-bar-chart.tsx",
+      "sha256": "6e5e219c596c8515336570a5bc89c233e32e695d5816dec88eb929e798eeea61",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/assets/charts-bar-chart.tsx",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": []
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/assets/text-animations-typewriter.tsx",
+      "sha256": "92b5f47d6d18387a0aa008ce9dceefd30f673ae5879e16892bd4b4ea97f5dddb",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/assets/text-animations-typewriter.tsx",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": []
+    },
+    {
+      "source_repo": "ref.ECC",
+      "source_path": "skills/remotion-video-creation/rules/assets/text-animations-word-highlight.tsx",
+      "sha256": "5dbba688b875baaa62555c7a243f54739e81edbf34148c87048594a210c3ec2c",
+      "disposition": "incorporated",
+      "destinations": [
+        "skills/video/remotion-video/rules/assets/text-animations-word-highlight.tsx",
+        "skills/video/remotion-video/SKILL.md",
+        "skills/video/remotion-video/references/rule-index.md"
+      ],
+      "rationale": "Preserved workflow-local Remotion topic rule or TSX example; selected through SKILL and topic index. Installed version/API compatibility governs use. Not a universal framework mandate.",
+      "review_scope": "Normalized source/destination comparison and index reachability; no live render/API compatibility proof.",
+      "source_headings": []
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "AGENTS.md",
+      "sha256": "a12bac68c447f8043a75c2259175b36a57a37617a5ab92900ab1e3e9afa381be",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Own scope notice explicitly restricts this file to maintaining addyosmani/agent-skills and says not to copy elsewhere. Exact anatomy, upstream PR process, mandatory 1% skill invocation, OpenCode routing and persona restrictions are not shared team defaults.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# AGENTS.md",
+        "## Repository Overview",
+        "## OpenCode Integration",
+        "### Core Rules",
+        "### Intent \u2192 Skill Mapping",
+        "### Lifecycle Mapping (Implicit Commands)",
+        "### Execution Model",
+        "### Anti-Rationalization",
+        "## Orchestration: Personas, Skills, and Commands",
+        "## Creating a New Skill"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "CLAUDE.md",
+      "sha256": "f03b7aaf2c08ab93e70a020442634a09f518286ff1beb7b8353dde92533ff9b0",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Own scope notice explicitly restricts this file to maintaining addyosmani/agent-skills and says not to copy elsewhere. Exact anatomy, upstream PR process, mandatory 1% skill invocation, OpenCode routing and persona restrictions are not shared team defaults.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# agent-skills",
+        "## Project Structure",
+        "## Skills by Phase",
+        "## Conventions",
+        "## Contributing",
+        "## Commands",
+        "## Pull Requests",
+        "## Boundaries"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": ".claude/rules/skills-contributing.md",
+      "sha256": "6f8ff659388c3b957322ac46f788ff16d996e5c751f71a6c1e59e4761c437bbd",
+      "disposition": "already-covered",
+      "destinations": [
+        "skills/tooling/skill-maintenance/SKILL.md"
+      ],
+      "rationale": "Catalog/overlap check, extending suitable skills, unique behavior, reference updates and validation are present. Upstream gh PR search and exact anatomy document remain upstream maintainer policies.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Adding or changing a skill"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/security-checklist.md",
+      "sha256": "37774056502fe8970dcd2fd27dca5fa31f2a55232649fc3056c89c3af7d62755",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/engineering/application-security/references/security-checklist.md",
+        "skills/engineering/application-security/SKILL.md"
+      ],
+      "rationale": "Preserved selected specialist reference. Web controls/budgets, code examples and named tools apply only to relevant supported surfaces; product requirements, actual runtime and truthful evidence govern applicability.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Security Checklist",
+        "## Table of Contents",
+        "## Threat Modeling (Start Here)",
+        "## Pre-Commit Checks",
+        "## Authentication",
+        "## Authorization",
+        "## Input Validation",
+        "### Destructive Path Operations",
+        "## Security Headers",
+        "## CORS Configuration",
+        "## Data Protection",
+        "## Dependency Security",
+        "### Install-Script Gate",
+        "## AI / LLM Security",
+        "## Error Handling",
+        "## OWASP Top 10 Quick Reference",
+        "## OWASP Top 10 for LLMs Quick Reference"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/performance-checklist.md",
+      "sha256": "fffc38b8f3b328a973aab8b1a2efdd72b65710d8f4b57f28f8374ddae7f8a88b",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/engineering/performance-optimization/references/performance-checklist.md",
+        "skills/engineering/performance-optimization/SKILL.md"
+      ],
+      "rationale": "Preserved selected specialist reference. Web controls/budgets, code examples and named tools apply only to relevant supported surfaces; product requirements, actual runtime and truthful evidence govern applicability.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Performance Checklist",
+        "## Table of Contents",
+        "## Core Web Vitals Targets",
+        "## TTFB Diagnosis",
+        "## Frontend Checklist",
+        "### Images",
+        "### JavaScript",
+        "### CSS",
+        "### Fonts",
+        "### Network",
+        "### Rendering",
+        "## Backend Checklist",
+        "### Database",
+        "### API",
+        "### Infrastructure",
+        "## Caching Strategies",
+        "### Read and write patterns",
+        "### Negative caching",
+        "### Request coalescing (stampede protection)",
+        "### Cache checklist",
+        "## Measurement Commands",
+        "### INP field data and DevTools workflow",
+        "# Lighthouse CLI",
+        "# Bundle analysis",
+        "# or for Vite:",
+        "# Check bundle size",
+        "## Common Anti-Patterns"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/accessibility-checklist.md",
+      "sha256": "61c759d94d52296231f5f310b92b401f56c44e4430dc3cc95ebac5d7b1d5ffac",
+      "disposition": "adapted",
+      "destinations": [
+        "support/ui/references/accessibility-checklist.md",
+        "skills/ui/interface-accessibility/SKILL.md"
+      ],
+      "rationale": "Preserved selected specialist reference. Web controls/budgets, code examples and named tools apply only to relevant supported surfaces; product requirements, actual runtime and truthful evidence govern applicability.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Accessibility Checklist",
+        "## Table of Contents",
+        "## Essential Checks",
+        "### Keyboard Navigation",
+        "### Screen Readers",
+        "### Visual",
+        "### Forms",
+        "### Content",
+        "## Common HTML Patterns",
+        "### Buttons vs. Links",
+        "### Form Labels",
+        "### ARIA Roles",
+        "### Accessible Lists",
+        "## Testing Tools",
+        "# Automated audit",
+        "# In browser",
+        "# Chrome DevTools \u2192 Lighthouse \u2192 Accessibility",
+        "# Chrome DevTools \u2192 Elements \u2192 Accessibility tree",
+        "# Screen reader testing",
+        "# macOS: VoiceOver (Cmd + F5)",
+        "# Windows: NVDA (free) or JAWS",
+        "# Linux: Orca",
+        "## Quick Reference: ARIA Live Regions",
+        "## Common Anti-Patterns"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/definition-of-done.md",
+      "sha256": "d1c75d2ae65d2c7a9cd01f93fa8de63e00e75f2fe5d08be224d576157054dcee",
+      "disposition": "already-covered",
+      "destinations": [
+        "skills/engineering/verification/SKILL.md",
+        "skills/engineering/release-readiness/references/readiness-checklist.md"
+      ],
+      "rationale": "Acceptance, runtime evidence, regressions, documentation, integration, compatibility, security and recovery are selected by canonical verification/release workflows. Every-change full launch checklist and universal human merge/deploy approval are not imported; actual task authorization and release authority control remote actions.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Definition of Done",
+        "## Definition of Done vs. Acceptance Criteria",
+        "## The Standing Checklist",
+        "### Correctness",
+        "### Quality",
+        "### Integration",
+        "### Documentation",
+        "### Ship-readiness",
+        "## How to Apply",
+        "## Red Flags"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/testing-patterns.md",
+      "sha256": "f0bf05acd0edcadc27297ad5b74f104c8103ccfedba1a05cd6d6ae4af8364c56",
+      "disposition": "already-covered",
+      "destinations": [
+        "skills/engineering/test-first-development/SKILL.md",
+        "skills/engineering/test-first-development/references/test-design.md",
+        "skills/engineering/test-first-development/references/mocking.md"
+      ],
+      "rationale": "Observable behavior, independent expectations, boundary mocks, relevant error/edge/async checks are covered. Exact Jest/React/Supertest/Playwright cookbook not imported and those frameworks not required.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Testing Patterns Reference (JavaScript/TypeScript)",
+        "## Table of Contents",
+        "## Test Structure (Arrange-Act-Assert)",
+        "## Test Naming Conventions",
+        "## Common Assertions",
+        "## Mocking Patterns",
+        "### Mock Functions",
+        "### Mock Modules",
+        "### Mock at Boundaries Only",
+        "## React/Component Testing",
+        "## API / Integration Testing",
+        "## E2E Testing (Playwright)",
+        "## Test Anti-Patterns"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/observability-checklist.md",
+      "sha256": "25fcd0e854596a5ab6f11b002050d245bf78f5ae0fcbd1df699b89451ae0e1e8",
+      "disposition": "already-covered",
+      "destinations": [
+        "skills/engineering/observability/SKILL.md",
+        "skills/engineering/observability/references/instrumentation-patterns.md"
+      ],
+      "rationale": "Question-led instrumentation, stable events, correlation/entry points, redaction, bounded metrics, traces, actionable alerts and telemetry proof preserved. Aggregators, dashboards, every-endpoint RED and on-call launch requirements depend on actual product needs.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Observability Checklist",
+        "## Table of Contents",
+        "## On-Call Questions (Start Here)",
+        "## Structured Logging",
+        "## Metrics",
+        "## Distributed Tracing",
+        "## Alerting",
+        "## Dashboards",
+        "## Verify the Telemetry",
+        "## Pre-Launch Gate"
+      ]
+    },
+    {
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/orchestration-patterns.md",
+      "sha256": "61e543d86f19f86b83074f8c1c769455c7085a2c72dd47b1da21a8c63785be4a",
+      "disposition": "already-covered",
+      "destinations": [
+        "skills/agents/agent-orchestration/SKILL.md",
+        "skills/agents/agent-orchestration/references/coordination.md"
+      ],
+      "rationale": "Independent bounded lanes, single ownership, disjoint writes, focused specialist context and integrator synthesis represented. Upstream exclusive user/command orchestration and fixed host no-nesting statements not universalized; active host and authorization control delegation.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Orchestration Patterns",
+        "## Endorsed patterns",
+        "### 1. Direct invocation (no orchestration)",
+        "### 2. Single-persona slash command",
+        "### 3. Parallel fan-out with merge",
+        "### 4. Sequential pipeline as user-driven slash commands",
+        "### 5. Research isolation (context preservation)",
+        "## Claude Code compatibility",
+        "### Where personas live",
+        "### Subagents vs. Agent Teams",
+        "### Platform-enforced rules",
+        "### Built-in subagents to know about",
+        "### Frontmatter restrictions for plugin agents",
+        "### Spawning multiple subagents in parallel",
+        "## Worked example: Agent Teams for competing-hypothesis debugging",
+        "### The scenario",
+        "### Why this is *not* a `/ship` job",
+        "### Setup (one-time, per-environment)",
+        "### The trigger prompt",
+        "### What happens",
+        "### When to clean up",
+        "### Cost expectation",
+        "### Anti-pattern in this scenario",
+        "### When *not* to use Agent Teams",
+        "## Anti-patterns",
+        "### A. Router persona (\"meta-orchestrator\")",
+        "### B. Persona that calls another persona",
+        "### C. Sequential orchestrator that paraphrases",
+        "### D. Deep persona trees",
+        "## Decision flow",
+        "## When to add a new pattern to this catalog"
+      ]
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "skills/native/native-core.md",
+      "sha256": "7e7ea4db5cc8ac6c6fc12c20bfbc17b622b52bc4a71e3d3a7c6d913c6e294a3e",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/implementation-core.md",
+        "support/engineering/rules/implementation-core.md",
+        "skills/engineering/implementation/SKILL.md"
+      ],
+      "rationale": "Native core adapted into the canonical shared rule: preserve invariant tracing, owning-layer/platform reuse, avoidance of speculative scaffolding, safeguards and sufficient proof; clarify authorized scope and link approved testing/review policies. Support path is a compatibility pointer and implementation SKILL directly links the canonical rule.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": []
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "AGENTS.md",
+      "sha256": "26d6fb4959aa6be640cc5467821607bc196b44a1fb8903cc09d9bbf3823582be",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream maintainer routing, private/public product boundaries, brand voice and build/distribution/host imports are repository-specific; neither paths nor always-on persona become team defaults.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": []
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "CLAUDE.md",
+      "sha256": "a90879c1c898d2abe2fd6dae300b036d5d7ee56146d0054c4dc98bde8a17f819",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream maintainer routing, private/public product boundaries, brand voice and build/distribution/host imports are repository-specific; neither paths nor always-on persona become team defaults.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# CLAUDE.md \u2014 caveman",
+        "## README is a product artifact",
+        "## Project overview",
+        "## Repository routing",
+        "## What lives where",
+        "## File structure and what owns what",
+        "### Single source of truth files \u2014 edit only these",
+        "### `skills/` is auto-discovered wholesale \u2014 every subdirectory ships",
+        "### `agents/*.md` is auto-discovered too \u2014 and `plugin.json` must NOT list them",
+        "### `commands/*.md` shadows same-named skills \u2014 keep the `.md` stubs unique",
+        "### Auto-generated / auto-synced \u2014 do not edit directly",
+        "## CI sync workflow",
+        "## Hook system (Claude Code)",
+        "### `src/hooks/caveman-config.js` \u2014 shared module",
+        "### `src/hooks/caveman-activate.js` \u2014 SessionStart hook",
+        "### `src/hooks/caveman-mode-tracker.js` \u2014 UserPromptSubmit hook",
+        "### `src/hooks/caveman-statusline.sh` \u2014 Statusline badge",
+        "### `src/hooks/caveman-stats.js --record` \u2014 SessionEnd hook",
+        "### `src/hooks/caveman-host-session-start.js` \u2014 Cursor / Copilot CLI sessionStart hook",
+        "### Hook installation",
+        "## Skill system",
+        "### Three skills, one mode model",
+        "### Auto-clarity rule",
+        "### caveman-compress",
+        "### caveman-commit / caveman-review",
+        "## Agent distribution",
+        "## Evals",
+        "## Benchmarks",
+        "## Key rules for agents working here"
+      ]
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "GEMINI.md",
+      "sha256": "e611f50fb4f68fe20c87632b30a476bf5ee1513b63fa23cd1de2cc57bff4de4f",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream maintainer routing, private/public product boundaries, brand voice and build/distribution/host imports are repository-specific; neither paths nor always-on persona become team defaults.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": []
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "src/rules/caveman-activate.md",
+      "sha256": "ef99681346ed2ff1932e1264fb5cdf1b5bb8ba54d62f7f205eebbd9973979802",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Always-on terse persona and OpenClaw/IDE bootstrap are outside retained default skills; host activation deferred. No universal article dropping, sentence limits, fragments or language switches.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": []
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "src/rules/caveman-openclaw-bootstrap.md",
+      "sha256": "c769ae1e97d387293f8c680639cba21e550eb3017f17522caf6ca8ac38bf966e",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Always-on terse persona and OpenClaw/IDE bootstrap are outside retained default skills; host activation deferred. No universal article dropping, sentence limits, fragments or language switches.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "## Caveman mode (always on)"
+      ]
+    },
+    {
+      "source_repo": "ref.caveman",
+      "source_path": "skills/activation-rule.mjs",
+      "sha256": "8adeea2f3f235b205321142b7b7348baeb32a62b0ec7d540c89d529d1da48af9",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Always-on terse persona and OpenClaw/IDE bootstrap are outside retained default skills; host activation deferred. No universal article dropping, sentence limits, fragments or language switches.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": []
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": "AGENTS.md",
+      "sha256": "6ebdb617a8104a7756d0cf36578ab01103dc9f07e4dc6feb751296b9c402faf7",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream bucket promotion, aihero.dev publishing, exact invocation metadata, Skill-tool-only cross-calls and marketplace update policy are repo/host-specific. KLCode maintains its own catalog and portable links; host metadata/activation evaluation remains later plugin work.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": []
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": "CLAUDE.md",
+      "sha256": "27dda2d839544e8a432e0cd215e46f14e39990ec4208c2e5d5778a80593a0639",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream bucket promotion, aihero.dev publishing, exact invocation metadata, Skill-tool-only cross-calls and marketplace update policy are repo/host-specific. KLCode maintains its own catalog and portable links; host metadata/activation evaluation remains later plugin work.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "## Agent skills",
+        "### Triage labels"
+      ]
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": ".agents/install-block.md",
+      "sha256": "f44f48c36a49ee13bca0374d6c9206409e18633dd7b4135229af1b2a6b0683f1",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream bucket promotion, aihero.dev publishing, exact invocation metadata, Skill-tool-only cross-calls and marketplace update policy are repo/host-specific. KLCode maintains its own catalog and portable links; host metadata/activation evaluation remains later plugin work.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# The canonical install block",
+        "## Managed installs first",
+        "## Claude Code",
+        "## Codex",
+        "## GitHub Copilot (CLI and VS Code)",
+        "## Gemini CLI",
+        "## Every other agent, or editable files (skills.sh)",
+        "## The two routes are exclusive"
+      ]
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": ".agents/invocation.md",
+      "sha256": "12770081fb55728caedf70f477d78895be181dfcff2b1af0af594861ec152eeb",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream bucket promotion, aihero.dev publishing, exact invocation metadata, Skill-tool-only cross-calls and marketplace update policy are repo/host-specific. KLCode maintains its own catalog and portable links; host metadata/activation evaluation remains later plugin work.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Model-invoked vs user-invoked",
+        "## Dependencies between them",
+        "## Passive vs active domain work"
+      ]
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": ".agents/writing-docs.md",
+      "sha256": "ad2e51a77be7a9404cf46cc9732f645dfae145a4683165f860c8fe25136dded3",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Upstream bucket promotion, aihero.dev publishing, exact invocation metadata, Skill-tool-only cross-calls and marketplace update policy are repo/host-specific. KLCode maintains its own catalog and portable links; host metadata/activation evaluation remains later plugin work.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Writing docs pages",
+        "## Page structure",
+        "## What it does",
+        "## When to reach for it",
+        "## Prerequisites",
+        "## <free-form middle>",
+        "## Common questions",
+        "## It's working if",
+        "## Where it fits",
+        "## Conventions",
+        "## Done when"
+      ]
+    },
+    {
+      "source_repo": "ref.scientific-skills",
+      "source_path": "AGENTS.md",
+      "sha256": "0d29c5ce3d401c23b0fcc48818e8cf2887ae2706824a655de6132172e743141a",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Scientific repository maintainer scope, version/manifest conventions, external provider-backed scanner and isolated scientific-package test harness are not portable team defaults. KLCode keeps its own validators, attribution and honest prerequisite/evidence reporting.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Repository Guidance",
+        "## What belongs here",
+        "## Layout",
+        "## Creating a skill",
+        "# Skill Title",
+        "## When to use",
+        "## Workflow",
+        "## Examples",
+        "## Updating a skill",
+        "## Frontmatter",
+        "### Write block-style YAML, not JSON flow style",
+        "# Wrong -- breaks the validator",
+        "# Right",
+        "### Quote `metadata` scalars",
+        "### Host manifest blocks stay nested mappings",
+        "## Body and layout",
+        "## Validate and scan",
+        "# spec conformance for one skill",
+        "# every skill, the way CI does",
+        "# needs SKILL_SCANNER_LLM_API_KEY (see .env)",
+        "# or the upstream CLI directly, without the repo wrapper",
+        "# every skill's suite, one process each, after the repo-wide guard",
+        "### The repo-wide guard",
+        "### The shared contract",
+        "# every argparse script answers --help; skips when its packages are absent,",
+        "# runs for real under --isolated",
+        "# for library-style scripts with an `if __name__ == \"__main__\"` worked example",
+        "### One environment per skill",
+        "## Skill diagrams",
+        "# one skill -> docs/images/<name>.png, replacing any existing image",
+        "# see which files feed the reader, and where the image lands \u2014 no API calls, nothing billed",
+        "# read the skill and print the diagram prompt without drawing it",
+        "# several skills in one batch",
+        "# backfill everything missing an image, six at a time",
+        "## Before opening a PR"
+      ]
+    },
+    {
+      "source_repo": "ref.scientific-skills",
+      "source_path": "skills/paper-lookup/references/core.md",
+      "sha256": "8cd052adfcc9abc3374e25b9ee7ab25f3bc0c4000a02cf89fa438882a5d46a2c",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Discovery false positive: CORE names a third-party research API, not coding policy. It needs external service access; paper-lookup is not a retained skill.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# CORE API",
+        "## Base URL",
+        "## Authentication",
+        "## Rate Limits (token-based)",
+        "## Key Endpoints",
+        "### 1. Search works",
+        "### 2. Query language",
+        "### 3. Get work by ID",
+        "### 4. Get output by ID",
+        "### 5. Download full text",
+        "### 6. Search outputs",
+        "## Response Format",
+        "### Search response",
+        "### Work object (key fields)",
+        "## Pagination",
+        "## Error Handling",
+        "## Official sources reviewed 2026-09-30"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/SKILL.md",
+      "sha256": "fcf8ac6e5a55f3cc067e16e3d651670d59c4ab0980743051c3438f54141a031e",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/SKILL.md",
+        "skills/ui/website-art-direction/references/art-direction-protocol.md",
+        "skills/ui/website-art-direction/references/colour.md",
+        "skills/ui/website-art-direction/references/copy.md",
+        "skills/ui/website-art-direction/references/critique.md",
+        "skills/ui/website-art-direction/references/imagery.md",
+        "skills/ui/website-art-direction/references/layout.md",
+        "skills/ui/website-art-direction/references/motion.md",
+        "skills/ui/website-art-direction/references/research.md",
+        "skills/ui/website-art-direction/references/tells.md",
+        "skills/ui/website-art-direction/references/type.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "review_scope": "Mode boundary and operational caveat comparison with canonical SKILL and linked specification; not every aesthetic imperative enforced globally.",
+      "source_headings": [
+        "# tasteskill v2",
+        "## The run",
+        "### 1. Read the brief and the project",
+        "### 2. Write the argument",
+        "### 3. Draw the direction",
+        "### 4. Find the idea",
+        "### 5. Write the words",
+        "### 6. Build it, still",
+        "### 7. Gate",
+        "### 8. Look",
+        "### 9. Move",
+        "### 10. Report",
+        "## House rules",
+        "## Laws of the craft",
+        "## Special cases",
+        "## Files"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/minimalist-skill/SKILL.md",
+      "sha256": "c3230cbad9d8b0c0477b4299f7bcd3304dca9e5d33dd37cef774e767be165fce",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/minimalist-ui/SKILL.md",
+        "skills/ui/minimalist-ui/references/minimalist-specification.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "review_scope": "Mode boundary and operational caveat comparison with canonical SKILL and linked specification; not every aesthetic imperative enforced globally.",
+      "source_headings": [
+        "# Protocol: Premium Utilitarian Minimalism UI Architect",
+        "## 1. Protocol Overview",
+        "## 2. Absolute Negative Constraints (Banned Elements)",
+        "## 3. Typographic Architecture",
+        "## 4. Color Palette (Warm Monochrome + Spot Pastels)",
+        "## 5. Component Specifications",
+        "## 6. Iconography & Imagery Directives",
+        "## 7. Subtle Motion & Micro-Animations",
+        "## 8. Execution Protocol"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/redesign-skill/SKILL.md",
+      "sha256": "089b2735a58eaf4c2dd760dbe89d2ad6bb87d90e7b2ea4dd4cdd900f213c98d9",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/interface-redesign/SKILL.md",
+        "skills/ui/interface-redesign/references/redesign-audit.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "review_scope": "Mode boundary and operational caveat comparison with canonical SKILL and linked specification; not every aesthetic imperative enforced globally.",
+      "source_headings": [
+        "# Redesign Skill",
+        "## How This Works",
+        "## Design Audit",
+        "### Typography",
+        "### Color and Surfaces",
+        "### Layout",
+        "### Interactivity and States",
+        "### Content",
+        "### Component Patterns",
+        "### Iconography",
+        "### Code Quality",
+        "### Strategic Omissions (What AI Typically Forgets)",
+        "## Upgrade Techniques",
+        "### Typography Upgrades",
+        "### Layout Upgrades",
+        "### Motion Upgrades",
+        "### Surface Upgrades",
+        "## Fix Priority",
+        "## Rules"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/output-skill/SKILL.md",
+      "sha256": "7b2275b591af7760b36a2dfb1dbcf3c99c5054c52298a1066c4979f39ed947d9",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/tooling/complete-output/SKILL.md",
+        "skills/tooling/complete-output/references/complete-deliverables.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "review_scope": "Mode boundary and operational caveat comparison with canonical SKILL and linked specification; not every aesthetic imperative enforced globally.",
+      "source_headings": [
+        "# Full-Output Enforcement",
+        "## Baseline",
+        "## Banned Output Patterns",
+        "## Execution Process",
+        "## Handling Long Outputs",
+        "## Quick Check"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/soft-skill/SKILL.md",
+      "sha256": "2d11cdcefc8bf319429ee17d94d69a390802e2acf7163662d1eacbcf5be3ff79",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/premium-web-design/SKILL.md",
+        "skills/ui/premium-web-design/references/premium-specification.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "review_scope": "Mode boundary and operational caveat comparison with canonical SKILL and linked specification; not every aesthetic imperative enforced globally.",
+      "source_headings": [
+        "# Agent Skill: Principal UI/UX Architect & Motion Choreographer (Awwwards-Tier)",
+        "## 1. Meta Information & Core Directive",
+        "## 2. THE \"ABSOLUTE ZERO\" DIRECTIVE (STRICT ANTI-PATTERNS)",
+        "## 3. THE CREATIVE VARIANCE ENGINE",
+        "### A. Vibe & Texture Archetypes (Pick 1)",
+        "### B. Layout Archetypes (Pick 1)",
+        "## 4. HAPTIC MICRO-AESTHETICS (COMPONENT MASTERY)",
+        "### A. The \"Double-Bezel\" (Doppelrand / Nested Architecture)",
+        "### B. Nested CTA & \"Island\" Button Architecture",
+        "### C. Spatial Rhythm & Tension",
+        "## 5. MOTION CHOREOGRAPHY (FLUID DYNAMICS)",
+        "### A. The \"Fluid Island\" Nav & Hamburger Reveal",
+        "### B. Magnetic Button Hover Physics",
+        "### C. Scroll Interpolation (Entry Animations)",
+        "## 6. PERFORMANCE GUARDRAILS",
+        "## 7. EXECUTION PROTOCOL",
+        "## 8. PRE-OUTPUT CHECKLIST"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/brandkit/SKILL.md",
+      "sha256": "cfa1a800ef2e7a60d04b232b0195e11beef5c6801127665514cbbd8652f27b83",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/brandkit/SKILL.md",
+        "skills/ui/brandkit/references/board-and-modes.md",
+        "skills/ui/brandkit/references/brand-board-specification.md",
+        "skills/ui/brandkit/references/logo-and-strategy.md",
+        "skills/ui/brandkit/references/prompt-and-content.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "review_scope": "Mode boundary and operational caveat comparison with canonical SKILL and linked specification; not every aesthetic imperative enforced globally.",
+      "source_headings": [
+        "# BRANDKIT IMAGE GENERATION SKILL",
+        "# REFERENCE STYLE DNA",
+        "# CORE PRINCIPLE",
+        "# DEFAULT OUTPUT",
+        "# BRAND INTAKE",
+        "# BRAND STRATEGY FIRST",
+        "# LOGO GENERATION STANDARD",
+        "# LOGO CONCEPT METHODS",
+        "## 1. Monogram + Meaning",
+        "## 2. Product Action",
+        "## 3. Metaphor Fusion",
+        "## 4. Negative Space",
+        "## 5. Construction Geometry",
+        "# BOARD COMPOSITION DNA",
+        "# DEFAULT 3 \u00d7 3 PANEL SYSTEM",
+        "## 1. Logo Cover",
+        "## 2. Logo Construction",
+        "## 3. Digital Application",
+        "## 4. Brand Essence",
+        "## 5. Color System",
+        "## 6. Typography",
+        "## 7. Physical Application",
+        "## 8. Image Direction",
+        "## 9. System Detail",
+        "# 2 \u00d7 3 REFERENCE-STYLE LAYOUT",
+        "# VISUAL MODES",
+        "## Dark Developer / Builder",
+        "## Dark Product / Operator",
+        "## Dark Nature / Calm System",
+        "## Dark Security / Threat Intelligence",
+        "## Light Editorial / Compliance",
+        "## Luxury / Beauty / Fashion",
+        "## Voice / Communication",
+        "## Cultural / Experimental",
+        "# PREMIUM DETAIL LANGUAGE",
+        "# TEXT RULES",
+        "# TAGLINE STYLE",
+        "# IMAGE DIRECTION",
+        "# MOCKUP DIRECTION",
+        "# COLOR DISCIPLINE",
+        "# ANTI-GENERIC RULES",
+        "# REFERENCE USAGE",
+        "# PROMPT TEMPLATE",
+        "# FINAL OUTPUT STANDARD"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/image-to-code-skill/SKILL.md",
+      "sha256": "2944189b448e2a77cbbf55014030b1890a9ec5891acc9fa97fb8c215e0008407",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/image-to-website/SKILL.md",
+        "skills/ui/image-to-website/references/extraction.md",
+        "skills/ui/image-to-website/references/image-first-specification.md",
+        "skills/ui/image-to-website/references/layout-fidelity.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "review_scope": "Mode boundary and operational caveat comparison with canonical SKILL and linked specification; not every aesthetic imperative enforced globally.",
+      "source_headings": [
+        "# CORE DIRECTIVE: IMAGE-FIRST WEBSITE DESIGN TO CODE",
+        "## 1. ACTIVE BASELINE CONFIGURATION",
+        "## 2. MANDATORY IMAGE-FIRST RULE",
+        "## 3. GENERATE ENOUGH IMAGES RULE",
+        "## 4. CODEX-SPECIFIC SECTION IMAGE RULE",
+        "## 5. DO NOT CROP OLD IMAGES RULE",
+        "## 6. FRESH RE-GENERATION RULE",
+        "## 7. OPTIONAL DETAIL / EXTRACTION IMAGE RULE",
+        "## 8. CLEAN ANALYSIS STANDARD",
+        "## 9. DEEP IMAGE ANALYSIS REQUIREMENT",
+        "## 10. IMAGE-FIRST CODEX WEBSITE WORKFLOW",
+        "## 11. WHEN TO TRIGGER IMAGE GENERATION FIRST",
+        "## 12. THE COMBINATORIAL VARIATION ENGINE",
+        "### Theme Paradigm",
+        "### Background Character",
+        "### Typography Character",
+        "### Hero Architecture",
+        "### Section System",
+        "### Signature Component Set",
+        "### Motion-Implied Language",
+        "## 13. WEBSITE REFERENCE RULE",
+        "## 14. HERO MINIMALISM RULES",
+        "### Absolute Hero Rules",
+        "### Hero Cleanliness Rule",
+        "### Headline Rule",
+        "## 15. RESPONSIVE FIRST-VIEW RULE",
+        "## 16. ANTI-NESTED-BOX RULE",
+        "## 17. REDUCE MICRO-UI CLUTTER RULE",
+        "## 18. SECTION IMAGE GENERATION RULE",
+        "## 19. WEBSITE IMAGE SYSTEM RULE",
+        "## 20. FIXED MEDIA FRAME RULE",
+        "## 21. TEXT EXTRACTION RULE",
+        "## 22. TYPOGRAPHY EXTRACTION RULE",
+        "## 23. SPACING EXTRACTION RULE",
+        "## 24. BUTTON / COMPONENT EXTRACTION RULE",
+        "## 25. COLOR EXTRACTION RULE",
+        "## 26. DESIGN-TO-CODE COPY DISCIPLINE",
+        "## 27. ANTI-DRIFT IMPLEMENTATION RULE",
+        "## 28. MISSING DETAIL RESOLUTION",
+        "## 29. ANTI-AI-SLOP RULES",
+        "### Layout slop",
+        "### Visual slop",
+        "### Typography slop",
+        "### Content slop",
+        "### Density slop",
+        "## 30. TYPOGRAPHY-FIRST DISCIPLINE",
+        "## 31. SECTION RHYTHM RULE",
+        "## 32. DENSITY & SPACING DISCIPLINE",
+        "## 33. DEFAULT SECTION PACKS",
+        "### 4-section pack",
+        "### 8-section pack",
+        "### 12-section pack",
+        "## 34. MULTI-IMAGE CONSISTENCY RULE",
+        "## 35. CLARITY CHECK",
+        "## 36. RESPONSE BEHAVIOR",
+        "## 37. EXAMPLE INTERPRETATIONS",
+        "### Example 1",
+        "### Example 2",
+        "### Example 3",
+        "## 38. FINAL GOAL"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/stitch-skill/SKILL.md",
+      "sha256": "56e41363d61ff565dbba8c8c05c3d8e6538ccd6f49180a504737edfcdbfff409",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/stitch-design-system/SKILL.md",
+        "skills/ui/stitch-design-system/references/stitch-semantic-specification.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "review_scope": "Mode boundary and operational caveat comparison with canonical SKILL and linked specification; not every aesthetic imperative enforced globally.",
+      "source_headings": [
+        "# Stitch Design Taste \u2014 Semantic Design System Skill",
+        "## Overview",
+        "## Prerequisites",
+        "## The Goal",
+        "## Analysis & Synthesis Instructions",
+        "### 1. Define the Atmosphere",
+        "### 2. Map the Color Palette",
+        "### 3. Establish Typography Rules",
+        "### 4. Define the Hero Section",
+        "### 5. Describe Component Stylings",
+        "### 6. Define Layout Principles",
+        "### 7. Define Responsive Rules",
+        "### 8. Encode Motion Philosophy",
+        "### 9. List Anti-Patterns (AI Tells)",
+        "## Output Format (DESIGN.md Structure)",
+        "# Design System: [Project Title]",
+        "## 1. Visual Theme & Atmosphere",
+        "## 2. Color Palette & Roles",
+        "## 3. Typography Rules",
+        "## 4. Component Stylings",
+        "## 5. Layout Principles",
+        "## 6. Motion & Interaction",
+        "## 7. Anti-Patterns (Banned)",
+        "## Best Practices",
+        "## Tips for Success",
+        "## Common Pitfalls to Avoid"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/gpt-tasteskill/SKILL.md",
+      "sha256": "2638d6d69f886a6d03378ab84bf5325577bbbe56153cd4703e2761578297a74f",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/cinematic-web-design/SKILL.md",
+        "skills/ui/cinematic-web-design/references/cinematic-specification.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "review_scope": "Mode boundary and operational caveat comparison with canonical SKILL and linked specification; not every aesthetic imperative enforced globally.",
+      "source_headings": [
+        "# CORE DIRECTIVE: AWWWARDS-LEVEL DESIGN ENGINEERING",
+        "## 1. PYTHON-DRIVEN TRUE RANDOMIZATION (BREAKING THE LOOP)",
+        "## 2. AIDA STRUCTURE & SPACING",
+        "## 3. HERO ARCHITECTURE & THE 2-LINE IRON RULE",
+        "## 4. THE GAPLESS BENTO GRID",
+        "## 5. ADVANCED GSAP MOTION & HOVER PHYSICS",
+        "## 6. COMPONENT ARSENAL & CREATIVITY",
+        "## 7. CONTENT, ASSETS & STRICT BANS",
+        "## 8. MANDATORY PRE-FLIGHT <design_plan>"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/brutalist-skill/SKILL.md",
+      "sha256": "bd9c7fd04ae149531eb6bd0d4e8dceee57aa6877fcef3d67ced90e68e755affa",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/industrial-brutalist-ui/SKILL.md",
+        "skills/ui/industrial-brutalist-ui/references/industrial-specification.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "review_scope": "Mode boundary and operational caveat comparison with canonical SKILL and linked specification; not every aesthetic imperative enforced globally.",
+      "source_headings": [
+        "# SKILL: Industrial Brutalism & Tactical Telemetry UI",
+        "## 1. Skill Meta",
+        "## 2. Visual Archetypes",
+        "### 2.1 Swiss Industrial Print",
+        "### 2.2 Tactical Telemetry & CRT Terminal",
+        "## 3. Typographic Architecture",
+        "### 3.1 Macro-Typography (Structural Headers)",
+        "### 3.2 Micro-Typography (Data & Telemetry)",
+        "### 3.3 Textural Contrast (Artistic Disruption)",
+        "## 4. Color System",
+        "### If Swiss Industrial Print (Light):",
+        "### If Tactical Telemetry (Dark):",
+        "## 5. Layout and Spatial Engineering",
+        "## 6. UI Components and Symbology",
+        "## 7. Textural and Post-Processing Effects",
+        "## 8. Web Engineering Directives"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/imagegen-frontend-web/SKILL.md",
+      "sha256": "23e6d27ab410e97fe5e844d18db97c8e674d317abd8567f4c7726ee16f56da6e",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-design-images/SKILL.md",
+        "skills/ui/website-design-images/references/composition-library.md",
+        "skills/ui/website-design-images/references/image-direction-specification.md",
+        "skills/ui/website-design-images/references/material-and-continuity.md",
+        "skills/ui/website-design-images/references/page-packs.md"
+      ],
+      "rationale": "Retained as explicitly selected competing style/output mode, with specification resources. Brand, accessibility, reduced motion, actual tools and truthful evidence outrank aesthetic mandates. Simulated random execution replaced with real seeded script where applicable; generation/service scope remains bounded. Not global shared defaults.",
+      "review_scope": "Mode boundary and operational caveat comparison with canonical SKILL and linked specification; not every aesthetic imperative enforced globally.",
+      "source_headings": [
+        "# HARD OUTPUT RULE \u2014 READ FIRST",
+        "# HERO COMPOSITION BIAS \u2014 READ FIRST",
+        "# CORE DIRECTIVE: AWWWARDS-LEVEL IMAGE ART DIRECTION",
+        "## 1. ACTIVE BASELINE CONFIGURATION",
+        "### Brief-to-direction mapping",
+        "## 2. THE COMBINATORIAL VARIATION ENGINE",
+        "### Theme Paradigm",
+        "### Background Character",
+        "### Typography Character",
+        "### Hero Architecture",
+        "### Section System",
+        "### Signature Component Set",
+        "### Motion-Implied Language",
+        "### Composition Anchor (per-section)",
+        "### Background Mode (per-section)",
+        "### CTA Variation",
+        "### Hero Scale (per-page)",
+        "### Narrative / Concept Spine",
+        "### Second-Read Moment",
+        "## 3. FRONTEND REFERENCE RULE",
+        "## 4. HERO MINIMALISM RULES",
+        "### Hero Composition Bias",
+        "### Pre-output check",
+        "### Absolute Hero Rules",
+        "### Headline Rule",
+        "### Typography Execution",
+        "### Graphic Restraint",
+        "## 5. IMAGE COUNT & PAGE SLICING",
+        "### THIS IS THE PRIMARY OUTPUT RULE",
+        "### Format",
+        "### Counting rule",
+        "### Section size variety",
+        "### Continuity Rule",
+        "## 6. CREATIVITY ESCALATION RULE",
+        "## 7. IMAGE-FIRST ART DIRECTION",
+        "## 8. ANTI-AI-SLOP RULES",
+        "### Layout slop",
+        "### Visual slop",
+        "### Typography slop",
+        "### Content slop",
+        "### Density slop",
+        "### Carousel / marquee slop (layout)",
+        "### Data / KPI slop",
+        "## 9. TYPOGRAPHY-FIRST DISCIPLINE",
+        "## 10. SECTION RHYTHM RULE",
+        "## 11. COMPONENT EXECUTION GUIDELINES",
+        "### Diagonal Staggered Square Masonry",
+        "### 3D Cascading Card Deck",
+        "### Hover-Accordion Slice Layout",
+        "### Pristine Gapless Bento Grid",
+        "### Turning Polaroid Arc",
+        "### Off-Grid Editorial Layout",
+        "### Product UI Panel Stack",
+        "### Vertical Rhythm Lines",
+        "## 12. DENSITY & SPACING DISCIPLINE",
+        "## 13. COLOR & MATERIAL RULES",
+        "### Palette Discipline",
+        "### Background-image harmony",
+        "### Gradient Discipline",
+        "### Background Confidence Rule",
+        "### Strong guidance",
+        "### Materiality",
+        "## 14. IMAGE / MEDIA DIRECTION",
+        "## 15. DEFAULT SITE PACKS",
+        "### 4-section pack",
+        "### 8-section pack",
+        "### 12-section pack",
+        "## 16. MULTI-IMAGE CONSISTENCY RULE",
+        "## 17. CLARITY CHECK",
+        "## 18. EXTRA CREATIVITY & IMPLEMENTATION EDGE",
+        "### Cross-section contrast",
+        "### CTA specificity",
+        "### Image variety inside one comp",
+        "### Data-viz restraint",
+        "### Cultural / tonal alignment",
+        "### Mobile-implied fidelity (even for desktop mocks)",
+        "### Conversion focus",
+        "### Composition variety check",
+        "## 19. RESPONSE BEHAVIOR",
+        "## 20. EXAMPLE INTERPRETATIONS",
+        "### Example 1",
+        "### Example 2",
+        "### Example 3",
+        "## 21. FINAL GOAL"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/colour.md",
+      "sha256": "fa634ab3a4e0f9159b12c1d5450f708e1baec2d4285dd05999c758da9d70bbc1",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/colour.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Colour",
+        "## Contents",
+        "## 1. What the study measured",
+        "## 2. The roles",
+        "## 3. Proportion",
+        "## 4. Surfaces without lines or shadows",
+        "## 5. Colour fields",
+        "## 6. Dark pages",
+        "## 7. Colour and photographs",
+        "## 8. Contrast",
+        "## 9. Banned families, and what \"warm\" means here"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/copy.md",
+      "sha256": "6de6cef4451a98660b4a4641d2c5f79f5281c18cd11016ef321d4a56e6c9cee2",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/copy.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Words",
+        "## Contents",
+        "## 1. Write the argument first",
+        "## 2. The two-line headline",
+        "## 3. Headline shapes that work",
+        "## 4. Supporting line, body, buttons",
+        "## 5. Proof without inventing it",
+        "## 6. Things that read as generated",
+        "## 7. Micro-typography"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/critique.md",
+      "sha256": "4cddba4e2ab476dadffb29e246da003f9d244c3b88542956aefb787d412a80da",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/critique.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Critique \u2014 judging the render",
+        "## Contents",
+        "## 1. How to look",
+        "## 2. The score",
+        "## 3. Caps",
+        "## 4. Writing the critique",
+        "## 5. What to fix first",
+        "## 6. When to stop"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/imagery.md",
+      "sha256": "65ab7d1990a7c3a3c084b0f2ea619ed52d6fbbb3cb71dd7cef31261db2d4650d",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/imagery.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Imagery",
+        "## Contents",
+        "## 1. What the study measured",
+        "## 2. Decide what imagery exists",
+        "## 3. Real pictures from the open collections",
+        "## 4. The dealt photographs",
+        "## 5. Cropping and placing",
+        "## 6. Treatment",
+        "## 7. Showing software",
+        "## 8. Drawing the subject",
+        "## 9. Type and colour alone",
+        "## 10. Markup and credits",
+        "## 11. Video"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/layout.md",
+      "sha256": "fb04a529d85af1fa7311f6ab8fab18f09cb32d7aad177577f9214156d62c0ac1",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/layout.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Layout",
+        "## Contents",
+        "## 1. What strong pages do",
+        "## 2. Margins and the grid",
+        "## 3. Where text sits",
+        "## 4. Empty space",
+        "## 5. Sections: carry the idea, vary the arrangement",
+        "## 6. Navigation",
+        "## 7. Endings",
+        "## 8. The phone is a second composition",
+        "## 9. How pages fail"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/motion.md",
+      "sha256": "272bbbb3682a0b674c2a2b59eaa5c8b630c6e3475f04db50b73f62912a680c4d",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/motion.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Motion",
+        "## Contents",
+        "## 1. The budget",
+        "## 2. Four questions before any animation",
+        "## 3. Tokens",
+        "## 4. Recipes",
+        "### Hero load sequence (CSS only)",
+        "### Masked line reveal (the classic gallery headline)",
+        "### Reveal on scroll (once)",
+        "### Image shutter",
+        "### Press and hover",
+        "### Scroll-linked progress without JavaScript",
+        "### Pinned story",
+        "### List with image preview (work index, menu, team)",
+        "### Accordion",
+        "### Menu or dialog",
+        "## 5. Signature moves",
+        "## 6. Reduced motion and performance",
+        "## 7. What gives generated motion away"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/research.md",
+      "sha256": "938fd3204deea0e7039396f8570a6343f22010ce1acafa6ea5c9d0ae525cd94d",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/research.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# The study",
+        "## Contents",
+        "## 1. Method and its limits",
+        "## 2. Scores",
+        "## 3. Where the idea comes from",
+        "## 4. Headlines",
+        "## 5. Type",
+        "## 6. Devices: what separates strong from weak, and what does not",
+        "## 7. Colour and shape",
+        "## 8. Imagery and page structure",
+        "## 9. What the inspector says about the gallery itself",
+        "## 10. The 25 highest-scored sites and their ideas",
+        "## 11. How the skill was tested"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/tells.md",
+      "sha256": "77ef3b25e1a66d7fee2096bf2fa648f30bd5dd73fc3e00161cef483aeb46031e",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/tells.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Tells \u2014 the dated registry",
+        "## Contents",
+        "## 1. First wave (2023\u20132024)",
+        "## 2. Second wave (2025)",
+        "## 3. Third wave (2025\u20132026): the \"fix\" that became the look",
+        "## 4. Gallery fashion, banned as house style",
+        "## 5. Structural tells",
+        "## 6. Copy tells",
+        "## 7. Motion tells",
+        "## 8. Why removal is not enough"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/type.md",
+      "sha256": "2419a8fb73ba97ae2ea81aa361a6ec6b95da64641fe1830e6937bb5b73f54168",
+      "disposition": "adapted",
+      "destinations": [
+        "skills/ui/website-art-direction/references/type.md",
+        "skills/ui/website-art-direction/SKILL.md"
+      ],
+      "rationale": "Retained art-direction branch reference linked by selected workflow. Source-backed research and aesthetic checks remain local to mode; runtime/user constraints govern illustrative code and tools.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# Type",
+        "## Contents",
+        "## 1. What the study measured",
+        "## 2. The scale: few sizes, far apart",
+        "## 3. Setting display type",
+        "## 4. Setting text",
+        "## 5. Loading the fonts properly",
+        "## 6. One family or two",
+        "## 7. Details that separate set type from typed text",
+        "## 8. Mistakes the inspector cannot see"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/imagegen-frontend-mobile/SKILL.md",
+      "sha256": "3cadf1bfbe836d377832d090e5db8479f98903453a4d1342be9636178755f9dd",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Not a retained historical source in consolidation manifest. Do not add mobile or archived/experimental alternate modes during shared-rule integration; retain eleven selected Taste modes.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# CORE DIRECTIVE: PREMIUM MOBILE APP IMAGE DIRECTION",
+        "## 1. ACTIVE BASELINE CONFIGURATION",
+        "## 2. PLATFORM MODE RULE",
+        "### iOS-native premium",
+        "### Android-native premium",
+        "### Cross-platform premium neutral",
+        "## 3. MANDATORY SCREEN-FIRST RULE",
+        "## 4. GENERATE ENOUGH SCREENS RULE",
+        "## 5. DO NOT CROP OLD IMAGES RULE",
+        "## 6. APP DESIGN BIBLE RULE",
+        "## 7. MULTI-SCREEN CONSISTENCY RULE",
+        "## 8. LOGICAL FLOW RULE",
+        "## 9. DEFAULT MOCKUP PRESENCE RULE",
+        "## 10. DEVICE MOCKUP FRAME RULE",
+        "## 11. ONBOARDING FLOW RULE",
+        "## 12. FIRST SCREEN CLEANLINESS RULE",
+        "## 13. SAFE AREA AND SYSTEM REGION RULE",
+        "## 14. NAVIGATION RULE",
+        "## 15. CLEAN LAYOUT RULE",
+        "## 16. CREATIVE IMAGE DIRECTION RULE",
+        "## 17. BACKGROUND TEXTURE AND SURFACE RULE",
+        "## 18. IMAGE-BEHIND-TEXT RULE",
+        "## 19. CREATIVE ASSET RULE",
+        "## 20. ICONOGRAPHY RULE",
+        "## 21. MOBILE ANTI-AI-TELLS RULE",
+        "### Visual AI tells",
+        "### Layout AI tells",
+        "### Copy AI tells",
+        "### UI clutter tells",
+        "## 22. STYLE VARIATION ENGINE",
+        "### Theme Paradigm",
+        "### Typography Character",
+        "### Structure Bias",
+        "### Image Art Direction Bias",
+        "### Texture / Surface Treatment",
+        "### Palette Logic",
+        "### Signature Component Set",
+        "### Decorative Asset Set",
+        "### Motion-Implied Language",
+        "## 23. COLOR PALETTE RULE",
+        "## 24. NON-GENERICITY RULE",
+        "## 25. NOT ALWAYS SIMPLE RULE",
+        "## 26. IMAGE SYSTEM RULE",
+        "## 27. FIXED MOBILE MEDIA FRAME RULE",
+        "## 28. TEXT RULE",
+        "## 29. TEXT SIZE AND READABILITY RULE",
+        "## 30. TYPOGRAPHY RULE",
+        "## 31. SPACING AND DENSITY RULE",
+        "## 32. SCREEN-TO-SCREEN VARIATION RULE",
+        "## 33. CATEGORY-SPECIFIC BIAS",
+        "### Fintech",
+        "### Health / Fitness",
+        "### Productivity",
+        "### Social",
+        "### Commerce",
+        "### Wellness / Lifestyle",
+        "## 34. REGENERATION RULE",
+        "## 35. QUALITY CHECK",
+        "## 36. RESPONSE BEHAVIOR",
+        "## 37. EXAMPLE INTERPRETATIONS",
+        "### Example 1",
+        "### Example 2",
+        "### Example 3",
+        "## 38. FINAL GOAL"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill-v1/SKILL.md",
+      "sha256": "48ef62d95507bf60f4dac488906d06dac207569f695459a1f835ed519137d3f5",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Not a retained historical source in consolidation manifest. Do not add mobile or archived/experimental alternate modes during shared-rule integration; retain eleven selected Taste modes.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# High-Agency Frontend Skill",
+        "## 1. ACTIVE BASELINE CONFIGURATION",
+        "## 2. DEFAULT ARCHITECTURE & CONVENTIONS",
+        "## 3. DESIGN ENGINEERING DIRECTIVES (Bias Correction)",
+        "## 4. CREATIVE PROACTIVITY (Anti-Slop Implementation)",
+        "## 5. PERFORMANCE GUARDRAILS",
+        "## 6. TECHNICAL REFERENCE (Dial Definitions)",
+        "### DESIGN_VARIANCE (Level 1-10)",
+        "### MOTION_INTENSITY (Level 1-10)",
+        "### VISUAL_DENSITY (Level 1-10)",
+        "## 7. AI TELLS (Forbidden Patterns)",
+        "### Visual & CSS",
+        "### Typography",
+        "### Layout & Spacing",
+        "### Content & Data (The \"Jane Doe\" Effect)",
+        "### External Resources & Components",
+        "## 8. THE CREATIVE ARSENAL (High-End Inspiration)",
+        "### The Standard Hero Paradigm",
+        "### Navigation & Men\u00fcs",
+        "### Layout & Grids",
+        "### Cards & Containers",
+        "### Scroll-Animations",
+        "### Galleries & Media",
+        "### Typography & Text",
+        "### Micro-Interactions & Effects",
+        "## 9. THE \"MOTION-ENGINE\" BENTO PARADIGM",
+        "### A. Core Design Philosophy",
+        "### B. The Animation Engine Specs (Perpetual Motion)",
+        "### C. The 5-Card Archetypes (Micro-Animation Specs)",
+        "## 10. FINAL PRE-FLIGHT CHECK"
+      ]
+    },
+    {
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill-v2-experimental/SKILL.md",
+      "sha256": "c5a562fc0eca345c081994199b1eef4a7a2a2a1cf24586e86bf5953a0dcfccbe",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Not a retained historical source in consolidation manifest. Do not add mobile or archived/experimental alternate modes during shared-rule integration; retain eleven selected Taste modes.",
+      "review_scope": "Policy-bearing file review",
+      "source_headings": [
+        "# tasteskill: Anti-Slop Frontend Skill",
+        "## 0. BRIEF INFERENCE (Read the Room Before Anything Else)",
+        "### 0.A Read these signals first",
+        "### 0.B Output a one-line \"Design Read\" before generating",
+        "### 0.C If the brief is ambiguous, ask one question, do not guess",
+        "### 0.D Anti-Default Discipline",
+        "## 1. THE THREE DIALS (Core Configuration)",
+        "### 1.A Dial Inference (design read \u2192 dial values)",
+        "### 1.B Use-Case Presets",
+        "### 1.C How the Dials Drive Output",
+        "## 2. BRIEF \u2192 DESIGN SYSTEM MAP",
+        "### 2.A When to reach for a real design system (use official packages)",
+        "### 2.B When the brief is an aesthetic, not a system",
+        "## 3. DEFAULT ARCHITECTURE & CONVENTIONS",
+        "### 3.A Stack",
+        "### 3.B State",
+        "### 3.C Icons",
+        "### 3.D Emoji Policy",
+        "### 3.E Responsiveness & Layout Mechanics",
+        "### 3.F Dependency Verification (mandatory)",
+        "## 4. DESIGN ENGINEERING DIRECTIVES (Bias Correction)",
+        "### 4.1 Typography",
+        "### 4.2 Color Calibration",
+        "### 4.3 Layout Diversification",
+        "### 4.4 Materiality, Shadows, Cards",
+        "### 4.5 Interactive UI States",
+        "### 4.6 Data & Form Patterns",
+        "### 4.7 Layout Discipline (Hard Rules. Failing any of these is shipping broken work)",
+        "### 4.8 Image & Visual Asset Strategy",
+        "### 4.9 Content Density",
+        "### 4.10 Quotes & Testimonials",
+        "### 4.11 Page Theme Lock (Light / Dark Mode Consistency)",
+        "## 5. CONTEXT-AWARE PROACTIVITY",
+        "### 5.A Sticky-Stack - Canonical Skeleton",
+        "### 5.B Horizontal-Pan - Canonical Skeleton",
+        "### 5.C Scroll-Reveal Stagger - Canonical Skeleton (lighter alternative)",
+        "### 5.D Forbidden Animation Patterns",
+        "## 6. PERFORMANCE & ACCESSIBILITY GUARDRAILS",
+        "### 6.A Hardware Acceleration",
+        "### 6.B Reduced Motion (mandatory)",
+        "### 6.C Dark Mode (mandatory for any consumer-facing page)",
+        "### 6.D Core Web Vitals Targets",
+        "### 6.E DOM Cost",
+        "### 6.F Z-Index Restraint",
+        "## 7. DIAL DEFINITIONS (Technical Reference)",
+        "### DESIGN_VARIANCE (Level 1-10)",
+        "### MOTION_INTENSITY (Level 1-10)",
+        "### VISUAL_DENSITY (Level 1-10)",
+        "## 8. DARK MODE PROTOCOL",
+        "### 8.A Token Strategy (pick one, stick to it)",
+        "### 8.B Do Not Prescribe Specific Colors Here",
+        "### 8.C Default Mode",
+        "### 8.D Test in Both Modes Before Finishing",
+        "## 9. AI TELLS (Forbidden Patterns)",
+        "### 9.A Visual & CSS",
+        "### 9.B Typography",
+        "### 9.C Layout & Spacing",
+        "### 9.D Content & Data (\"Jane Doe\" Effect)",
+        "### 9.E External Resources & Components",
+        "### 9.F Production-Test Tells (banned outright)",
+        "### 9.G EM-DASH BAN (the single most-violated Tell)",
+        "## 10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)",
+        "### Hero Paradigms",
+        "### Navigation & Menus",
+        "### Layout & Grids",
+        "### Cards & Containers",
+        "### Scroll Animations",
+        "### Galleries & Media",
+        "### Typography & Text",
+        "### Micro-Interactions & Effects",
+        "### Animation Library Choice",
+        "## 11. REDESIGN PROTOCOL",
+        "### 11.A Detect the Mode (first action)",
+        "### 11.B Audit Before Touching",
+        "### 11.C Preservation Rules",
+        "### 11.D Modernisation Levers (priority order)",
+        "### 11.E Decision Tree: Targeted Evolution vs Full Redesign",
+        "### 11.F What Never Changes Silently",
+        "## 12. THE BLOCK LIBRARY (Contract - Implementations Land Here Iteratively)",
+        "### 12.A File Location",
+        "### 12.B Required Frontmatter",
+        "### 12.C Required Body Sections",
+        "### 12.D Block-Library Discipline",
+        "## 13. OUT OF SCOPE",
+        "## 14. FINAL PRE-FLIGHT CHECK",
+        "# APPENDICES - Real Source-Backed Reference Material",
+        "## Appendix A - Install Commands per Design System",
+        "# Material Web (Material 3)",
+        "# Fluent UI React (v9)",
+        "# Fluent UI Web Components (framework-free)",
+        "# IBM Carbon",
+        "# Radix Themes",
+        "# shadcn/ui (open code, owned components)",
+        "# Primer CSS (GitHub product/devtool UI)",
+        "# Primer Brand (GitHub marketing UI)",
+        "# GOV.UK Frontend",
+        "# USWDS (US Web Design System)",
+        "# Atlassian Design System (Atlaskit)",
+        "# Bootstrap 5.3",
+        "# Shopify Polaris Web Components (Shopify apps only)",
+        "# Add this to your app HTML head:",
+        "#   <meta name=\"shopify-api-key\" content=\"%SHOPIFY_API_KEY%\" />",
+        "#   <script src=\"https://cdn.shopify.com/shopifycloud/polaris.js\"></script>",
+        "## Appendix B - Canonical Sources (read these before reinventing)",
+        "### Material Web",
+        "### Fluent UI",
+        "### Carbon",
+        "### Shopify Polaris",
+        "### Atlassian",
+        "### Primer",
+        "### GOV.UK",
+        "### USWDS",
+        "### Bootstrap",
+        "### Tailwind",
+        "### Radix",
+        "### shadcn/ui",
+        "### Native CSS / W3C standards",
+        "### Apple Liquid Glass (Apple platforms only)",
+        "## Appendix C - Apple Liquid Glass: Honest Web Approximation",
+        "### What is official",
+        "### What is NOT official",
+        "### Safer web approximation skeleton"
+      ]
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": ".agents/adr/0001-explicit-setup-pointer-only-for-hard-dependencies.md",
+      "sha256": "b6f21d955eeabd31eb6de189abb488a7b38d660f01c95912964432cf90dd5ff4",
+      "disposition": "adapted",
+      "destinations": [
+        "rules/common/development-workflow.md"
+      ],
+      "rationale": "Preserve the distinction between hard prerequisites and optional context; report required missing configuration and degrade gracefully when optional context is absent. Do not import the upstream repo-specific setup command or issue-tracker requirements.",
+      "review_scope": "Full ADR read after declared discovery-tree check identified previously unrecorded nested policies.",
+      "source_headings": [
+        "# Explicit `/setup-matt-pocock-skills` pointer only for hard dependencies"
+      ]
+    },
+    {
+      "source_repo": "ref.matt-skills",
+      "source_path": ".agents/adr/0002-ship-as-a-claude-code-plugin.md",
+      "sha256": "93bb18f7a1c928338af9dcbde8c78a34a0f43b38593d0476310c763ef5aad5d8",
+      "disposition": "excluded",
+      "destinations": [],
+      "rationale": "Historical upstream distribution decisions and evolving host-version findings are not shared workflow rules. Plugin packaging is deferred; verify current official host capabilities in that phase rather than treating dated upstream conclusions as active instructions.",
+      "review_scope": "Full ADR read after declared discovery-tree check identified previously unrecorded nested policies.",
+      "source_headings": [
+        "# Ship the skill set as a native Claude Code plugin; defer a native Codex plugin",
+        "## The constraint: bucketed skills vs. single-path selection",
+        "## Decision",
+        "## Invariants this creates",
+        "## Update, 2026-08-05",
+        "## Update, 2026-10-07",
+        "## Update, 2026-10-08: managed installs first"
+      ]
+    }
+  ],
+  "gaps": [],
+  "notes": [
+    "React five rules handled by language lane because React is used by retained Remotion and selected web styles.",
+    "No other source has an ECC-equivalent standalone shared language-rule tree. Most reusable policy is embedded in skill entrypoints and resources.",
+    "No missing required file found within finite selected candidates. Host activation is deferred and exclusions stay explicit."
+  ]
+}

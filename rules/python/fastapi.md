@@ -1,58 +1,23 @@
----
-paths:
-  - "**/app/**/*.py"
-  - "**/fastapi/**/*.py"
-  - "**/*_api.py"
----
 # FastAPI Rules
 
-Use these rules for FastAPI projects alongside the general Python rules.
+Apply only when FastAPI is actually present; app/ and *_api.py names do not establish applicability. Extends [Python patterns](patterns.md), [security](security.md) and [testing](testing.md).
 
 ## Structure
-
-- Put app construction in `create_app()`.
-- Keep routers thin; move persistence and business behavior into services or CRUD helpers.
-- Keep request schemas, update schemas, and response schemas separate.
-- Keep database sessions and auth in dependencies.
+Prefer a testable app factory when it fits. Keep routers thin, separate request/update/response schemas, and inject database/auth dependencies. Do not restructure another framework or desktop app to match.
 
 ## Async
+Use async endpoints for awaitable I/O with compatible async clients. Avoid blocking requests, synchronous database access or blocking filesystem/network calls on the event loop. Synchronous endpoints or bounded thread offloading are valid for blocking workloads.
 
-- Use `async def` for endpoints that perform I/O.
-- Use async database and HTTP clients from async endpoints.
-- Do not call `requests`, sync SQLAlchemy sessions, or blocking file/network operations from async routes.
-
-## Dependency Injection
-
-```python
-@router.get("/users/{user_id}")
-async def get_user(
-    user_id: str,
-    db: AsyncSession = Depends(get_db),
-    current_user: User = Depends(get_current_user),
-):
-    ...
-```
-
-Do not create `SessionLocal()` or long-lived clients inside route handlers.
+## Dependencies
+Use scoped dependencies for sessions/authentication and appropriately managed long-lived clients. Close resources at the correct lifecycle boundary; avoid unmanaged clients/sessions inside handlers.
 
 ## Schemas
-
-- Never include passwords, password hashes, access tokens, refresh tokens, or internal auth state in response models.
-- Use `response_model` on endpoints that return application data.
-- Use field constraints instead of hand-written validation when Pydantic can express the rule.
+Constrain application-data serialization with explicit response models. Exclude passwords, hashes, tokens and internal auth state. Prefer supported Pydantic constraints for expressible validation, respecting the installed version.
 
 ## Security
+Use environment-specific CORS origins; never combine wildcard origins and credentialed requests. For JWT auth validate signature, algorithm allowlist, expiry, issuer and audience. Apply abuse controls to exposed auth/write endpoints and redact credentials, cookies and tokens.
 
-- Keep CORS origins environment-specific.
-- Do not combine wildcard origins with credentialed CORS.
-- Validate JWT expiry, issuer, audience, and algorithm.
-- Rate-limit auth and write-heavy endpoints.
-- Redact credentials, cookies, authorization headers, and tokens from logs.
+## Tests
+Override the exact Depends dependency and clear overrides after each test. Use compatible async clients for async behavior and test auth, validation and serialization through the application boundary. Follow [shared testing](../common/testing.md).
 
-## Testing
-
-- Override the exact dependency used by `Depends`.
-- Clear `app.dependency_overrides` after tests.
-- Prefer async test clients for async applications.
-
-See skill: `fastapi-patterns`.
+Use [Python development](../../skills/languages/python-development/SKILL.md) and [application security](../../skills/engineering/application-security/SKILL.md); the retired fastapi-patterns skill is not required.

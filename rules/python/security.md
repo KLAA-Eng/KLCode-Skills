@@ -1,30 +1,12 @@
----
-paths:
-  - "**/*.py"
-  - "**/*.pyi"
----
 # Python Security
 
-> This file extends [common/security.md](../common/security.md) with Python specific content.
+Extends [shared security](../common/security.md).
 
-## Secret Management
+## Secrets
+Read required secrets from the existing environment, credential store or approved provider; report missing configuration safely. dotenv is optional for compatible development setups. Never commit real .env credentials or log secret values.
 
-```python
-import os
-from dotenv import load_dotenv
+## Scanning
+Use existing compatible security tooling. Bandit is an option; modern CPython scanning does not prove IronPython or host safety. Review unsafe deserialization, shell invocation, parameterized SQL and path confinement at untrusted-input boundaries.
 
-load_dotenv()
-
-api_key = os.environ["OPENAI_API_KEY"]  # Raises KeyError if missing
-```
-
-## Security Scanning
-
-- Use **bandit** for static security analysis:
-  ```bash
-  bandit -r src/
-  ```
-
-## Reference
-
-See skill: `django-security` for Django-specific security guidelines (if applicable).
+## Framework-specific guidance
+Apply Django or other framework advice only when present. Use [application security](../../skills/engineering/application-security/SKILL.md) for applicable review.

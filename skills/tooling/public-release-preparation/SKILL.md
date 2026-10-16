@@ -12,3 +12,5 @@ Use [staging and sanitization](references/staging-and-sanitization.md) and the i
 Run the [local staging scanner](scripts/sanitize_staging.py) without executing target code. Record scanned, skipped, unreadable and binary files honestly; a partial scan cannot become a clean verdict. Inspect uncertain binary assets through the appropriate viewer before treating them as cleared.
 
 Preserve applicable licenses and attribution; ask for the intended outbound license if undecided. Prepare accurate setup/contribution/user docs and reproducible checks. Report a concrete candidate, remaining review and publish commands. Creating a public repo, rewriting source history, deleting staging, pushing or publishing requires the task's authorization; do not infer it from preparation.
+
+Apply the relevant shared rules: [common / git workflow](../../../rules/common/git-workflow.md).

@@ -1,29 +1,21 @@
-# Security Guidelines
+# Security
 
-## Mandatory Security Checks
+## Applicable checks
 
-Before ANY commit:
-- [ ] No hardcoded secrets (API keys, passwords, tokens)
-- [ ] All user inputs validated
-- [ ] SQL injection prevention (parameterized queries)
-- [ ] XSS prevention (sanitized HTML)
-- [ ] CSRF protection enabled
-- [ ] Authentication/authorization verified
-- [ ] Rate limiting on all endpoints
-- [ ] Error messages don't leak sensitive data
+Review changed trust boundaries before completion or commit. Never introduce secrets in source or logs. Validate untrusted input, parameterize queries, confine filesystem access, encode output for its context, preserve authentication/authorization, and prevent sensitive error disclosure where those surfaces exist.
 
-## Secret Management
+Apply web controls to web risks: contextual XSS output handling, CSRF defenses for relevant browser credential flows, and rate/resource limits for exposed or expensive operations. These are not universal requirements for every desktop command or endpoint. Local files, shared folders, serialized data, process arguments, and model/tool output can be trust boundaries.
 
-- NEVER hardcode secrets in source code
-- ALWAYS use environment variables or a secret manager
-- Validate that required secrets are present at startup
-- Rotate any secrets that may have been exposed
+Authentication, secrets, permissions, and untrusted input changes require focused security review. Use a separate qualified reviewer when delegation is available and permitted; otherwise conduct the review explicitly and report the missing independent check. See [code review](code-review.md).
 
-## Security Response Protocol
+## Secrets
 
-If security issue found:
-1. STOP immediately
-2. Use **security-reviewer** agent
-3. Fix CRITICAL issues before continuing
-4. Rotate any exposed secrets
-5. Review entire codebase for similar issues
+Use appropriate environment injection, OS credential storage, or an approved secret manager. Avoid source-controlled credentials and unnecessary cloud dependencies. Validate required configuration at the appropriate boundary without exposing values. Treat suspected exposure as compromise and coordinate revocation/rotation through the authorized owner.
+
+## Response
+
+Stop the affected unsafe action when a credible critical vulnerability or data-loss hazard is found. Preserve evidence safely, assess exploitability and scope, fix before affected completion/merge, and inspect related call sites for the same pattern. Continue unrelated safe work. Do not perform unauthorized credential administration. Record unresolved risks and review limits.
+
+Read [application security](../../skills/engineering/application-security/SKILL.md) for concrete threat modeling and hardening.
+
+Adapted from ECC common rules; see [source coverage](../../consolidation/rules-common-audit.json).

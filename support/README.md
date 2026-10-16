@@ -2,6 +2,8 @@
 
 Shared files are grouped by the consuming workflow category. Each category's `dependencies.json` records imported resources, upstream paths, consumers, activation and remaining external prerequisites. Skill-specific code, references, templates and assets remain inside the skill.
 
+Canonical shared rules live under [rules/](../rules/README.md), with a separate [source coverage inventory](../rules/coverage.json). The old engineering implementation-core path is a compatibility pointer. Skills link to the canonical rules they need; copied rule directories and prompt files do not register host behavior.
+
 | Category | Dependency inventory | Handoff |
 |---|---|---|
 | Engineering | [dependencies](engineering/dependencies.json) | [validation](../consolidation/engineering-handoff.md) |

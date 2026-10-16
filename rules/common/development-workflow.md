@@ -1,44 +1,21 @@
 # Development Workflow
 
-> This file extends [common/git-workflow.md](./git-workflow.md) with the full feature development process that happens before git operations.
+## Research and reuse
 
-The Feature Implementation Workflow describes the development pipeline: research, planning, TDD, code review, and then committing to git.
+Search repository implementations and conventions first. Check primary documentation when API behavior, versions, or compatibility are uncertain. External code searches, registries, and new dependencies are conditional on need; assess licensing, maintenance, compatibility, and integration cost. No cloud search service is mandatory.
 
-## Feature Implementation Workflow
+Distinguish hard prerequisites from optional context. If missing configuration or tooling prevents correct output, identify the missing prerequisite and its available setup guidance; do not guess it or run an unrelated installer. Missing optional vocabulary or reference documents should degrade gracefully rather than trigger a mandatory setup ceremony.
 
-0. **Research & Reuse** _(mandatory before any new implementation)_
-   - **GitHub code search first:** Run `gh search repos` and `gh search code` to find existing implementations, templates, and patterns before writing anything new.
-   - **Library docs second:** Use Context7 or primary vendor docs to confirm API behavior, package usage, and version-specific details before implementing.
-   - **Exa only when the first two are insufficient:** Use Exa for broader web research or discovery after GitHub search and primary docs.
-   - **Check package registries:** Search npm, PyPI, crates.io, and other registries before writing utility code. Prefer battle-tested libraries over hand-rolled solutions.
-   - **Search for adaptable implementations:** Look for open-source projects that solve 80%+ of the problem and can be forked, ported, or wrapped.
-   - Prefer adopting or porting a proven approach over writing net-new code when it meets the requirement.
+## Plan and implement
 
-1. **Plan First**
-   - Use **planner** agent to create implementation plan
-   - Generate planning docs before coding: PRD, architecture, system_design, tech_doc, task_list
-   - Identify dependencies and risks
-   - Break down into phases
+Scale planning to uncertainty and risk. Small changes may need a short task plan; complex work benefits from explicit requirements, interfaces, risks, and phased acceptance evidence. Use existing task authority and docs/specs/, docs/plans/, docs/decisions/, and docs/knowledge/ rather than a mandatory document bundle.
 
-2. **TDD Approach**
-   - Use **tdd-guide** agent
-   - Write tests first (RED)
-   - Implement to pass tests (GREEN)
-   - Refactor (IMPROVE)
-   - Verify 80%+ coverage
+Use test-first development by default for new testable logic and bug fixes. Follow [testing](testing.md) for exceptions, red/green evidence, and the 80% changed-code target. Respect actual runtimes and toolchains rather than introducing unsupported modern features.
 
-3. **Code Review**
-   - Use **code-reviewer** agent immediately after writing code
-   - Address CRITICAL and HIGH issues
-   - Fix MEDIUM issues when possible
+## Review and finish
 
-4. **Commit & Push**
-   - Detailed commit messages
-   - Follow conventional commits format
-   - See [git-workflow.md](./git-workflow.md) for commit message format and PR process
+Run relevant checks and inspect the complete task diff. Use separate review for substantive changes when available and permitted, plus focused security review for sensitive changes. Fix material defects, record limits, and create meaningful verified local milestones. Remote actions follow task authorization.
 
-5. **Pre-Review Checks**
-   - Verify all automated checks (CI/CD) are passing
-   - Resolve any merge conflicts
-   - Ensure branch is up to date with target branch
-   - Only request review after these checks pass
+Use [code review](code-review.md), [Git workflow](git-workflow.md), [implementation planning](../../skills/planning/implementation-planning/SKILL.md), and [implementation](../../skills/engineering/implementation/SKILL.md). Hooks are not activated by this workflow.
+
+Adapted from ECC common rules; see [source coverage](../../consolidation/rules-common-audit.json).

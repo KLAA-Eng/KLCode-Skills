@@ -1,91 +1,17 @@
----
-paths:
-  - "**/*.css"
-  - "**/*.scss"
-  - "**/*.sass"
-  - "**/*.less"
-  - "**/*.html"
-  - "**/*.tsx"
-  - "**/*.jsx"
-  - "**/*.vue"
-  - "**/*.svelte"
----
-> This file extends [common/patterns.md](../common/patterns.md) with web-specific patterns.
-
 # Web Patterns
 
-## Component Composition
+Extends [shared patterns](../common/patterns.md).
 
-### Compound Components
+## Composition
+Compose related state and interaction semantics. Compound components/context, slots and render props are conditional framework options. Keep keyboard/ARIA/focus in the interaction layer. Separate effects/loading from presentation where useful without forcing extra components.
 
-Use compound components when related UI shares state and interaction semantics:
+## State
+Distinguish server, client, URL and form state. Use existing libraries or simple native mechanisms; TanStack Query, SWR, tRPC, Zustand, Jotai and form packages are examples, not dependencies to install. Derive computed values and avoid duplicating authoritative state.
 
-```tsx
-<Tabs defaultValue="overview">
-  <Tabs.List>
-    <Tabs.Trigger value="overview">Overview</Tabs.Trigger>
-    <Tabs.Trigger value="settings">Settings</Tabs.Trigger>
-  </Tabs.List>
-  <Tabs.Content value="overview">...</Tabs.Content>
-  <Tabs.Content value="settings">...</Tabs.Content>
-</Tabs>
-```
+## URLs
+Use URLs for appropriate shareable filters, sorting, pagination, tabs and queries. Exclude secrets/sensitive data and respect embedded-host navigation.
 
-- Parent owns state
-- Children consume via context
-- Prefer this over prop drilling for complex widgets
+## Loading and writes
+Use stale-while-revalidate only where staleness is acceptable; avoid cross-user cache leakage. Optimistic writes need rollback and visible errors. Load independent data in parallel, avoid waterfalls and prefetch only when justified.
 
-### Render Props / Slots
-
-- Use render props or slot patterns when behavior is shared but markup must vary
-- Keep keyboard handling, ARIA, and focus logic in the headless layer
-
-### Container / Presentational Split
-
-- Container components own data loading and side effects
-- Presentational components receive props and render UI
-- Presentational components should stay pure
-
-## State Management
-
-Treat these separately:
-
-| Concern | Tooling |
-|---------|---------|
-| Server state | TanStack Query, SWR, tRPC |
-| Client state | Zustand, Jotai, signals |
-| URL state | search params, route segments |
-| Form state | React Hook Form or equivalent |
-
-- Do not duplicate server state into client stores
-- Derive values instead of storing redundant computed state
-
-## URL As State
-
-Persist shareable state in the URL:
-- filters
-- sort order
-- pagination
-- active tab
-- search query
-
-## Data Fetching
-
-### Stale-While-Revalidate
-
-- Return cached data immediately
-- Revalidate in the background
-- Prefer existing libraries instead of rolling this by hand
-
-### Optimistic Updates
-
-- Snapshot current state
-- Apply optimistic update
-- Roll back on failure
-- Emit visible error feedback when rolling back
-
-### Parallel Loading
-
-- Fetch independent data in parallel
-- Avoid parent-child request waterfalls
-- Prefetch likely next routes or states when justified
+Use [interface development](../../skills/ui/interface-development/SKILL.md).

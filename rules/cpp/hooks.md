@@ -1,39 +1,12 @@
----
-paths:
-  - "**/*.cpp"
-  - "**/*.hpp"
-  - "**/*.cc"
-  - "**/*.hh"
-  - "**/*.cxx"
-  - "**/*.h"
-  - "**/CMakeLists.txt"
----
-# C++ Hooks
+# cpp Check and Hook Guidance
 
-> This file extends [common/hooks.md](../common/hooks.md) with C++ specific content.
+Extends [shared hooks](../common/hooks.md).
 
-## Build Hooks
+## Deferred activation
+These checks are not registered hooks or instructions to modify global Claude/Codex settings. Host lifecycle configuration is a later phase. Use existing local commands manually now; event schemas, payload parsing, quoting and permissions must be verified for actual integration.
 
-Run these checks before committing C++ changes:
+## Applicable checks
+Use configured formatting, analysis with actual compile flags, build and tests. clang-format, clang-tidy, cppcheck, CMake and CTest are options only where installed/configured. Do not hardcode -std=c++17 or incomplete globs; use the real compilation database and supported sanitizer configuration.
 
-```bash
-# Format check
-clang-format --dry-run --Werror src/*.cpp src/*.hpp
-
-# Static analysis
-clang-tidy src/*.cpp -- -std=c++17
-
-# Build
-cmake --build build
-
-# Tests
-ctest --test-dir build --output-on-failure
-```
-
-## Recommended CI Pipeline
-
-1. **clang-format** — formatting check
-2. **clang-tidy** — static analysis
-3. **cppcheck** — additional analysis
-4. **cmake build** — compilation
-5. **ctest** — test execution with sanitizers
+## Scheduling
+Prefer changed-file formatting and focused checks, followed by relevant final build/tests. Serialize or debounce costly jobs, bound duration and report failures. Do not download dependencies or apply broad fixes implicitly.

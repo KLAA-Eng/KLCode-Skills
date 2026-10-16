@@ -1,145 +1,28 @@
-# Rules
+﻿# Shared rules
 
-## Structure
+This folder is the canonical home for team rules. Skills link to the rules needed for their task; rule files describe standards, while skills describe workflows. These files are instruction resources, not registered hooks or an installed plugin.
 
-Rules are organized into a **common** layer plus **language-specific** directories:
+## Selected defaults
 
-```
-rules/
-├── common/          # Language-agnostic principles (always install)
-│   ├── coding-style.md
-│   ├── git-workflow.md
-│   ├── testing.md
-│   ├── performance.md
-│   ├── patterns.md
-│   ├── hooks.md
-│   ├── agents.md
-│   └── security.md
-├── typescript/      # TypeScript/JavaScript specific
-├── angular/         # Angular specific
-├── vue/             # Vue 3 specific
-├── nuxt/            # Nuxt 4 specific
-├── python/          # Python specific
-├── golang/          # Go specific
-├── web/             # Web and frontend specific
-├── react-native/    # React Native / Expo specific
-├── swift/           # Swift specific
-├── php/             # PHP specific
-├── ruby/            # Ruby / Rails specific
-└── arkts/           # HarmonyOS / ArkTS specific
-```
+- [Common](common/): development, testing, review, security, coding, git, performance, agent coordination and hook policy.
+- [Python](python/), [C#/.NET](csharp/) and [C++](cpp/): read the relevant language rules against the actual interpreter, target framework, compiler and host. FastAPI guidance applies only to FastAPI projects.
+- [Web](web/) and [JavaScript/TypeScript](typescript/): conditional web guidance; native WPF/Avalonia interfaces use their native APIs. Visual style alternatives remain explicitly selected.
+- [React](react/): conditional guidance for actual React interfaces and Remotion compositions; it does not select React or Next.js for a project.
 
-- **common/** contains universal principles — no language-specific code examples.
-- **Language directories** extend the common rules with framework-specific patterns, tools, and code examples. Each file references its common counterpart.
+The other language/framework directories are retained upstream reference material, **not selected team defaults**. Their exclusion and source fingerprints are recorded in [coverage.json](coverage.json). Do not load or install this entire tree as a rules pack. Plugin packaging and host-specific activation will select the adapted files later.
 
-## Installation
+## Policy and precedence
 
-### Option 1: Install Script (Recommended)
+Follow the active host's instruction hierarchy and the authorized task. Explicit project instructions and actual runtime constraints take precedence over these defaults. Language rules specialize the common rules where their applicability requires it; examples do not authorize tool installation, framework adoption, remote changes or new services.
 
-```bash
-# Install common + one or more language-specific rule sets
-./install.sh typescript
-./install.sh angular
-./install.sh vue
-./install.sh nuxt
-./install.sh python
-./install.sh golang
-./install.sh web
-./install.sh react-native
-./install.sh swift
-./install.sh php
-./install.sh ruby
-./install.sh arkts
+The agreed defaults are test-first development for new testable logic and bug fixes with practical exceptions; an 80% coverage target for new or substantially changed testable code; independent review of substantive changes when delegation is available and authorized; focused security review of sensitive changes; and size/nesting thresholds as review prompts. Read [testing](common/testing.md), [code review](common/code-review.md) and [coding style](common/coding-style.md) for scope and exceptions. Do not apply these as universal numerical gates to existing repositories.
 
-# Install multiple languages at once
-./install.sh typescript python
-```
+Check local implementations before introducing new code or dependencies. Use primary documentation to resolve uncertain API behavior. Preserve project toolchains, host transactions and thread affinity. Keep external research, aesthetic prescriptions and provider-specific integrations conditional.
 
-### Option 2: Manual Installation
+## Coverage and provenance
 
-> **Important:** Copy entire directories — do NOT flatten with `/*`.
-> Common and language-specific directories contain files with the same names.
-> Flattening them into one directory causes language-specific files to overwrite
-> common rules, and breaks the relative `../common/` references used by
-> language-specific files.
->
-> Use the ECC-owned namespace below for user-level Claude installs. Flat
-> package-level destinations can collide with non-ECC rule packs and do not
-> match the main README guidance.
+[coverage.json](coverage.json) records audited upstream rule files, source hashes, dispositions, destinations and reasons. The category audit records under `consolidation/` contain section-level details. A valid link proves that a destination exists; semantic incorporation is established by the recorded audit and review, not by the link checker alone.
 
-```bash
-# Create the ECC rule namespace once.
-mkdir -p ~/.claude/rules/ecc
+The ECC rules are adapted from [Affaan Mustafa's ECC](https://github.com/affaan-m/ECC) under its [MIT license](../licenses/ref.ECC/LICENSE). Other sources retain their attribution through the coverage inventory, skill `SOURCES.md` files and [third-party notices](../THIRD_PARTY_NOTICES.md). Upstream checkouts remain unchanged.
 
-# Install common rules (required for all projects)
-cp -r rules/common ~/.claude/rules/ecc/
-
-# Install language-specific rules based on your project's tech stack
-cp -r rules/typescript ~/.claude/rules/ecc/
-cp -r rules/angular ~/.claude/rules/ecc/
-cp -r rules/vue ~/.claude/rules/ecc/
-cp -r rules/nuxt ~/.claude/rules/ecc/
-cp -r rules/python ~/.claude/rules/ecc/
-cp -r rules/golang ~/.claude/rules/ecc/
-cp -r rules/web ~/.claude/rules/ecc/
-cp -r rules/react-native ~/.claude/rules/ecc/
-cp -r rules/swift ~/.claude/rules/ecc/
-cp -r rules/php ~/.claude/rules/ecc/
-cp -r rules/ruby ~/.claude/rules/ecc/
-cp -r rules/arkts ~/.claude/rules/ecc/
-
-# Attention ! ! ! Configure according to your actual project requirements; the configuration here is for reference only.
-```
-
-For project-local rules, use the same namespace under the project root:
-
-```bash
-mkdir -p .claude/rules/ecc
-cp -r rules/common .claude/rules/ecc/
-cp -r rules/typescript .claude/rules/ecc/
-```
-
-## Rules vs Skills
-
-- **Rules** define standards, conventions, and checklists that apply broadly (e.g., "80% test coverage", "no hardcoded secrets").
-- **Skills** (`skills/` directory) provide deep, actionable reference material for specific tasks (e.g., `python-patterns`, `golang-testing`).
-
-Language-specific rule files reference relevant skills where appropriate. Rules tell you _what_ to do; skills tell you _how_ to do it.
-
-## Adding a New Language
-
-To add support for a new language (e.g., `rust/`):
-
-1. Create a `rules/rust/` directory
-2. Add files that extend the common rules:
-   - `coding-style.md` — formatting tools, idioms, error handling patterns
-   - `testing.md` — test framework, coverage tools, test organization
-   - `patterns.md` — language-specific design patterns
-   - `hooks.md` — PostToolUse hooks for formatters, linters, type checkers
-   - `security.md` — secret management, security scanning tools
-3. Each file should start with:
-   ```
-   > This file extends [common/xxx.md](../common/xxx.md) with <Language> specific content.
-   ```
-4. Reference existing skills if available, or create new ones under `skills/`.
-
-For non-language domains like `web/`, follow the same layered pattern when there is enough reusable domain-specific guidance to justify a standalone ruleset.
-
-## Rule Priority
-
-When language-specific rules and common rules conflict, **language-specific rules take precedence** (specific overrides general). This follows the standard layered configuration pattern (similar to CSS specificity or `.gitignore` precedence).
-
-- `rules/common/` defines universal defaults applicable to all projects.
-- `rules/golang/`, `rules/python/`, `rules/swift/`, `rules/php/`, `rules/typescript/`, `rules/react-native/`, etc. override those defaults where language idioms differ.
-
-### Example
-
-`common/coding-style.md` recommends immutability as a default principle. A language-specific `golang/coding-style.md` can override this:
-
-> Idiomatic Go uses pointer receivers for struct mutation — see [common/coding-style.md](common/coding-style.md) for the general principle, but Go-idiomatic mutation is preferred here.
-
-### Common rules with override notes
-
-Rules in `rules/common/` that may be overridden by language-specific files are marked with:
-
-> **Language note**: This rule may be overridden by language-specific rules for languages where this pattern is not idiomatic.
+Run `node scripts/validate-repo.cjs --syntax` for repository checks and `node scripts/validate-rules.cjs` for selected-rule coverage, destinations and skill consumers. Neither command activates hooks or claims application behavior was tested.

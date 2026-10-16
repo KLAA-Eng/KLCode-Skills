@@ -5,6 +5,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const cp = require('node:child_process');
+const { validateRules } = require('./validate-rules.cjs');
 
 const root = path.resolve(__dirname, '..');
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'consolidation/manifest.json'), 'utf8'));
@@ -78,8 +79,17 @@ if (!partial) {
 
 const canonicalFiles = manifest.skills.flatMap(s => files(path.resolve(root, s.path)));
 const supportFiles = files(path.join(root, 'support'));
-const repositoryDocs = ['README.md', 'AGENTS.md', 'THIRD_PARTY_NOTICES.md', 'consolidation/STATUS.md', 'consolidation/WORKING-AGREEMENT.md'].map(p => path.resolve(root, p)).filter(p => fs.existsSync(p));
-const inspected = [...new Set([...canonicalFiles, ...supportFiles, ...repositoryDocs])];
+const ruleReport = validateRules(root);
+for (const error of ruleReport.errors) errors.push(`Rules: ${error}`);
+stats.ruleSources = ruleReport.checks.sources;
+stats.selectedRules = ruleReport.checks.selectedRules;
+let ruleFiles = [];
+try {
+  const coverage = JSON.parse(read(path.join(root, 'rules/coverage.json')));
+  ruleFiles = (coverage.rules || []).map(rule => path.resolve(root, rule.path)).filter(p => within(p) && fs.existsSync(p));
+} catch (e) { if (!partial) errors.push(`Cannot load selected rules: ${e.message}`); }
+const repositoryDocs = ['README.md', 'AGENTS.md', 'THIRD_PARTY_NOTICES.md', 'skills/glossary.md', 'rules/README.md', 'consolidation/STATUS.md', 'consolidation/WORKING-AGREEMENT.md', 'consolidation/RULES-REVIEW.md'].map(p => path.resolve(root, p)).filter(p => fs.existsSync(p));
+const inspected = [...new Set([...canonicalFiles, ...supportFiles, ...ruleFiles, ...files(path.join(root, 'scripts')), ...repositoryDocs])];
 for (const filename of inspected) {
   if (filename.endsWith('.md')) {
     stats.markdown++;

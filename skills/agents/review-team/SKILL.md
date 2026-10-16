@@ -15,3 +15,5 @@ Select a mode explicitly; don't launch a team for routine deterministic checks. 
 Optional external critique uses [review-with-codex.js](scripts/review-with-codex.js) only after the user approves the compact review packet's transfer to OpenAI. Read [external adapter](references/external-adapter.md). A same-provider invocation is not cross-provider diversity. Missing/unsupported adapter yields external review absent, not invented critique.
 
 Synthesize consensus, strongest dissent, unresolved evidence and what changed your position. Persist only decisions that change project truth, using docs/decisions/ or the existing plan/spec; review chatter is not a second task ledger.
+
+Apply the relevant shared rules: [common / agents](../../../rules/common/agents.md).

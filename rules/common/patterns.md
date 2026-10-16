@@ -1,31 +1,13 @@
 # Common Patterns
 
-## Skeleton Projects
+Search the repository before introducing a new structure. For a genuinely new subsystem, evaluate a proven skeleton when useful: relevance, security, compatibility, licensing, maintenance, and extensibility matter. Parallel evaluation is optional and subject to delegation permission. Do not clone a template merely because it exists.
 
-When implementing new functionality:
-1. Search for battle-tested skeleton projects
-2. Use parallel agents to evaluate options:
-   - Security assessment
-   - Extensibility analysis
-   - Relevance scoring
-   - Implementation planning
-3. Clone best match as foundation
-4. Iterate within proven structure
+Apply patterns to observed problems:
 
-## Design Patterns
+- A repository or adapter can isolate storage or external APIs behind a stable domain interface. Define needed operations rather than a universal CRUD layer.
+- For an API you own, use consistent success/error semantics and relevant pagination metadata. Preserve public contracts and protocol conventions rather than imposing a custom envelope on every API.
+- Prefer testable boundaries and simple dependency direction over speculative interchangeability.
 
-### Repository Pattern
+Read [interface design](../../skills/engineering/interface-design/SKILL.md), [architecture design](../../skills/planning/architecture-design/SKILL.md), and [coding style](coding-style.md).
 
-Encapsulate data access behind a consistent interface:
-- Define standard operations: findAll, findById, create, update, delete
-- Concrete implementations handle storage details (database, API, file, etc.)
-- Business logic depends on the abstract interface, not the storage mechanism
-- Enables easy swapping of data sources and simplifies testing with mocks
-
-### API Response Format
-
-Use a consistent envelope for all API responses:
-- Include a success/status indicator
-- Include the data payload (nullable on error)
-- Include an error message field (nullable on success)
-- Include metadata for paginated responses (total, page, limit)
+Adapted from ECC common rules; see [source coverage](../../consolidation/rules-common-audit.json).

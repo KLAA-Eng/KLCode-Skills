@@ -1,57 +1,23 @@
-# Testing Requirements
+# Testing
 
-## Minimum Test Coverage: 80%
+## Default and exceptions
 
-Test Types (ALL required):
-1. **Unit Tests** - Individual functions, utilities, components
-2. **Integration Tests** - API endpoints, database operations
-3. **E2E Tests** - Critical user flows (framework chosen per language)
+Use test-first development for new testable logic and bug fixes: write a behavioral test, establish the intended failure, implement enough to pass, then refactor with checks green. Prefer independent expected values and useful regression evidence.
 
-## Test-Driven Development
+Documentation, visual exploration, host-bound behavior without an automated seam, and changes where automated tests add little value may use practical alternatives. Explain the exception and verify with suitable inspection, rendered evidence, reproducible manual checks, or real-host checks when available. Mocked host tests do not prove live integration.
 
-MANDATORY workflow:
-1. Write test first (RED)
-2. Run test - it should FAIL
-3. Write minimal implementation (GREEN)
-4. Run test - it should PASS
-5. Refactor (IMPROVE)
-6. Verify coverage (80%+)
+## Coverage target
 
-## Troubleshooting Test Failures
+Target 80% coverage for new or substantially changed testable code. This is a changed-code quality target, not a universal repository gate. Use compatible project coverage tooling and identify scope and metric. Explain when the target is impractical or cannot be measured. Behavioral, boundary, and failure assertions matter more than a percentage; avoid implementation-mirroring tests for the number.
 
-1. Use **tdd-guide** agent
-2. Check test isolation
-3. Verify mocks are correct
-4. Fix implementation, not tests (unless tests are wrong)
+## Test quality and selection
 
-## Agent Support
+Choose unit, integration, and end-to-end checks for changed contracts and risk; all three are not required for every edit. Cover relevant errors, empty values, boundaries, cancellation, and malformed input. Use actual repository runtimes and runners.
 
-- **tdd-guide** - Use PROACTIVELY for new features, enforces write-tests-first
+Prefer Arrange-Act-Assert and names describing observable behavior. Keep tests isolated and deterministic without unnecessary external services. Diagnose implementation defects, wrong expectations, bad fakes, and environment failures separately. Do not weaken valid assertions to pass.
 
-## Test Structure (AAA Pattern)
+Run relevant checks after refactoring and before completion. Report what ran and what remains unverified. Do not leave deliberately failing tests on a shared integration branch. Commit at verified milestones, not each test stage.
 
-Prefer Arrange-Act-Assert structure for tests:
+Use [test-first development](../../skills/engineering/test-first-development/SKILL.md), [verification](../../skills/engineering/verification/SKILL.md), and [test governance](../../skills/engineering/test-governance/SKILL.md).
 
-```typescript
-test('calculates similarity correctly', () => {
-  // Arrange
-  const vector1 = [1, 0, 0]
-  const vector2 = [0, 1, 0]
-
-  // Act
-  const similarity = calculateCosineSimilarity(vector1, vector2)
-
-  // Assert
-  expect(similarity).toBe(0)
-})
-```
-
-### Test Naming
-
-Use descriptive names that explain the behavior under test:
-
-```typescript
-test('returns empty array when no markets match query', () => {})
-test('throws error when API key is missing', () => {})
-test('falls back to substring search when Redis is unavailable', () => {})
-```
+Adapted from ECC common rules; see [source coverage](../../consolidation/rules-common-audit.json).

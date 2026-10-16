@@ -2017,7 +2017,7 @@
       "source_repo": "ref.caveman",
       "source_path": "skills/native/native-core.md",
       "additional_sources": [],
-      "role": "rule",
+      "role": "compatibility-reference",
       "consumers": [
         "implementation",
         "refactoring"
@@ -2025,7 +2025,8 @@
       "activation": "loaded when relevant",
       "license": "Apache-2.0; MIT component notice preserved",
       "external_requirements": [],
-      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+      "validation": "Compatibility pointer checked; canonical rule and source fingerprint recorded in rules/coverage.json.",
+      "canonical_path": "rules/common/implementation-core.md"
     },
     {
       "path": "support/engineering/scripts/check-offline.cjs",
@@ -2074,6 +2075,18 @@
       "activation": "explicit convention-extraction mode",
       "external_requirements": [],
       "validation": "Independent review identified omitted requested workflow; adapted four-dimension extraction, exemplar contract and incremental updates to approved defaults."
+    },
+    {
+      "path": "rules/common/implementation-core.md",
+      "source_repo": "ref.caveman",
+      "source_path": "skills/native/native-core.md",
+      "role": "rule",
+      "consumers": [
+        "implementation"
+      ],
+      "activation": "Read through skill links; no host registration",
+      "external_requirements": [],
+      "validation": "Source fingerprint and adaptation recorded in consolidation/rules-common-audit.json."
     }
   ],
   "external_prerequisites": [

@@ -18,3 +18,9 @@ Read [engineering patterns](references/engineering-patterns.md) for component/st
 For a substantial UI change the optional [evidence checker](scripts/check-evidence.js) validates the completeness and local artifact paths of a selected report, not the truth or quality of its screenshots. This is not a mandatory ceremony for a small style edit. Existing project checks and real rendered evidence remain authoritative.
 
 Style alternatives such as minimalist-ui, premium-web-design and industrial-brutalist-ui are explicitly selected. Their font, palette and surface preferences are not foundation rules. Do not impose marketing layouts or decorative animation on a data-heavy tool.
+
+For web interfaces, apply [web / coding style](../../../rules/web/coding-style.md), [web / design quality](../../../rules/web/design-quality.md), [web / hooks](../../../rules/web/hooks.md), [web / patterns](../../../rules/web/patterns.md), [web / performance](../../../rules/web/performance.md), [web / security](../../../rules/web/security.md), [web / testing](../../../rules/web/testing.md).
+
+For JavaScript/TypeScript work, apply [typescript / coding style](../../../rules/typescript/coding-style.md), [typescript / hooks](../../../rules/typescript/hooks.md), [typescript / patterns](../../../rules/typescript/patterns.md), [typescript / security](../../../rules/typescript/security.md), [typescript / testing](../../../rules/typescript/testing.md).
+
+When the actual interface uses React, apply [react / coding style](../../../rules/react/coding-style.md), [react / hooks](../../../rules/react/hooks.md), [react / patterns](../../../rules/react/patterns.md), [react / security](../../../rules/react/security.md), [react / testing](../../../rules/react/testing.md).

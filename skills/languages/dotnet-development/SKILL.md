@@ -13,4 +13,6 @@ For a web/service or EF-based application only, read [service integration](refer
 
 Read [unit testing](references/unit-testing.md) for arrange/act/assert, theories, mocks and builders, and [integration testing](references/integration-testing.md) when the application actually uses ASP.NET/database services. Preserve existing xUnit/NUnit/MSTest choices and assertion-library licensing; do not add the source's preferred packages automatically. Testcontainers requires its own runtime, not a bundled capability.
 
-Run the relevant dotnet/MSBuild/test commands for the selected target; native/desktop/host-bound behavior may require its actual Windows application. A compile or unit pass alone does not prove host integration. Use [C# review prompt](../../../support/languages/agents/csharp-reviewer.md) for an explicitly selected bounded review.
+Run the relevant dotnet/MSBuild/test commands for the selected target; native/desktop/host-bound behavior may require its actual Windows application. A compile or unit pass alone does not prove host integration. Use [C# review prompt](../../../support/languages/agents/csharp-reviewer.md) for a bounded independent review under the shared review rule.
+
+Apply the runtime-compatible language rules: [csharp / coding style](../../../rules/csharp/coding-style.md), [csharp / hooks](../../../rules/csharp/hooks.md), [csharp / patterns](../../../rules/csharp/patterns.md), [csharp / security](../../../rules/csharp/security.md), [csharp / testing](../../../rules/csharp/testing.md).

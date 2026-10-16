@@ -10,3 +10,5 @@ Original repositories: `ref.ECC` (Affaan Mustafa, 2026), `ref.matt-skills` (Matt
 Shared-default adaptation: proportional rigor; local documents; one task authority; separate requirements/planning/implementation/verification; no automatic remote writes or global hook activation. Unique mode details are preserved in focused references instead of conflicting historical entrypoints.
 
 Supporting file provenance, licensing, activation and prerequisites are enumerated in `support/planning/dependencies.json`.
+
+Shared rule adaptations and their upstream fingerprints are recorded in the [rule coverage inventory](../../../rules/coverage.json). The linked canonical rules supersede earlier optional-only testing/review defaults where applicable.

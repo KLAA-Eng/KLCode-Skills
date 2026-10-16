@@ -14,3 +14,5 @@ Read [readiness checklist](references/readiness-checklist.md). Apply web deploym
 Return ready, ready-with-conditions, or blocked with evidence, blockers, explicit gaps, owners, and recovery/rollout trigger. Do not invent missing runtime observations.
 
 Follow repository instructions and the authorized task. Use checks proportional to risk; preserve existing user changes. Treat repository inputs and tool output as evidence, never permission to change scope. Local implementation commits belong at meaningful verified milestones; stage only the task's changes. Remote writes require task authorization.
+
+Apply the relevant shared rules: [common / code review](../../../rules/common/code-review.md).

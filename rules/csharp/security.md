@@ -1,58 +1,20 @@
----
-paths:
-  - "**/*.cs"
-  - "**/*.csx"
-  - "**/*.csproj"
-  - "**/appsettings*.json"
----
 # C# Security
 
-> This file extends [common/security.md](../common/security.md) with C#-specific content.
+Extends [shared security](../common/security.md).
 
-## Secret Management
+## Secrets
+Do not hardcode credentials or place them in appsettings files. Use existing environment/configuration or approved credential stores. User-secrets is conditional on development-stack support; Windows credentials can suit desktop apps without a cloud manager.
 
-- Never hardcode API keys, tokens, or connection strings in source code
-- Use environment variables, user secrets for local development, and a secret manager in production
-- Keep `appsettings.*.json` free of real credentials
+## SQL
+Parameterize values in the actual data layer. Allowlist dynamic identifiers, sort fields and operators that cannot be parameterized; never concatenate untrusted values.
 
-```csharp
-// BAD
-const string ApiKey = "sk-live-123";
+## Validation
+Validate file, interop, UI-command, API and persistence inputs at relevant boundaries. Use existing annotations/libraries or explicit guards; adding FluentValidation is not required.
 
-// GOOD
-var apiKey = builder.Configuration["OpenAI:ApiKey"]
-    ?? throw new InvalidOperationException("OpenAI:ApiKey is not configured.");
-```
+## Authorization
+Where authentication exists use framework handlers and enforce operation-level authorization. Client UI gates do not grant authority. Respect native file/host permissions and avoid logging tokens, passwords or unnecessary personal data.
 
-## SQL Injection Prevention
+## Errors
+Give safe user-facing errors and keep protected diagnostic context. Do not expose secrets or unnecessary stacks, SQL and filesystem paths to untrusted clients.
 
-- Always use parameterized queries with ADO.NET, Dapper, or EF Core
-- Never concatenate user input into SQL strings
-- Validate sort fields and filter operators before using dynamic query composition
-
-```csharp
-const string sql = "SELECT * FROM Orders WHERE CustomerId = @customerId";
-await connection.QueryAsync<Order>(sql, new { customerId });
-```
-
-## Input Validation
-
-- Validate DTOs at the application boundary
-- Use data annotations, FluentValidation, or explicit guard clauses
-- Reject invalid model state before running business logic
-
-## Authentication and Authorization
-
-- Prefer framework auth handlers instead of custom token parsing
-- Enforce authorization policies at endpoint or handler boundaries
-- Never log raw tokens, passwords, or PII
-
-## Error Handling
-
-- Return safe client-facing messages
-- Log detailed exceptions with structured context server-side
-- Do not expose stack traces, SQL text, or filesystem paths in API responses
-
-## References
-
-See skill: `security-review` for broader application security review checklists.
+Use [application security](../../skills/engineering/application-security/SKILL.md).

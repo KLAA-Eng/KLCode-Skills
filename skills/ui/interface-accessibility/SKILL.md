@@ -14,3 +14,5 @@ Read [web patterns](references/web-patterns.md) for connected forms, modal/focus
 For native desktop interfaces use the toolkit's automation names/roles, focus traversal, high-contrast support and platform accessibility inspector. Do not paste HTML/ARIA attributes into XAML and claim coverage.
 
 Verify the requested path using keyboard-only operation and appropriate assistive tooling when available. Record what was actually exercised, which states remain untested and any platform limits. Automated checks complement inspection; they cannot prove the full experience is accessible. Use the [checklist](../../../support/ui/references/accessibility-checklist.md) as a conditional reference.
+
+For web accessibility, also apply [web / coding style](../../../rules/web/coding-style.md), [web / testing](../../../rules/web/testing.md).
