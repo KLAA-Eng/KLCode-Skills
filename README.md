@@ -12,16 +12,30 @@ The collection consolidates 209 source skills into 103 canonical workflows, orga
 | [Languages](skills/languages/) | 3 | Python, .NET/C# and C++ development/testing |
 | [Planning](skills/planning/) | 15 | Interviews, requirements, plans, architecture and task coordination |
 | [Knowledge](skills/knowledge/) | 16 | Research, documentation, decisions, onboarding and handoffs |
-| [Agent systems](skills/agents/) | 12 | Explicitly selected orchestration, evaluation, context and learning |
+| [Agent systems](skills/agents/) | 12 | Delegation, evaluation, context and optional learning |
 | [Tooling](skills/tooling/) | 16 | Automation, guardrails, configuration, packaging and skill maintenance |
 | [UI/design](skills/ui/) | 15 | Interface development, accessibility, design systems and selectable styles |
 | [Video](skills/video/) | 4 | UI recording, Remotion, style analysis and style-based editing |
 
-Each workflow has a `SKILL.md` entrypoint, focused supporting resources and `SOURCES.md` provenance. All eleven retained Taste workflows survive: ten in UI/design and `complete-output` in tooling. Ranking-pipeline guidance is an architecture reference; Python installer guidance remains separately callable.
+Each workflow has a `SKILL.md` entrypoint and `SOURCES.md` provenance, with focused supporting resources where needed. All eleven retained Taste workflows survive: ten in UI/design and `complete-output` in tooling. Ranking-pipeline guidance is an architecture reference; Python installer guidance remains separately callable.
 
 See the [skills and workflow glossary](skills/glossary.md) for the complete linked catalog, common workflow routes and terminology.
 
-KLCode 0.1.0 now includes [Claude/Codex plugin wiring](plugin/README.md), 16 convenient entrypoints, nine role adapters, private marketplace metadata and disabled project-scoped Node hooks. Use `node plugin/cli.cjs validate`, `doctor --project .` or `build` to inspect and package it. Installation, hook trust and activation remain separate; nothing is enabled by this implementation.
+## Plugin status
+
+KLCode 0.1.0 includes [Claude/Codex plugin wiring](plugin/README.md) for **native Windows only**, private marketplace metadata and disabled project-scoped Node hooks. Its 16 convenient command names use 15 aliases plus the existing `requirements` skill, giving Codex 118 unique skill exports. Nine Claude role adapters are declared in the manifest; nine Codex role adapters are unregistered TOML templates with a documented delegation alternative.
+
+Use Node.js 22 or later to inspect and package the plugin:
+
+```powershell
+node plugin/cli.cjs validate
+node plugin/cli.cjs doctor --project .
+node plugin/cli.cjs build
+```
+
+Builds are written under `.scratch/dist/` with a SHA-256 file index and private marketplace catalogs. `doctor` reports current configuration and prerequisites without executing project checks. Normal hook launchers require `node.exe` on PATH.
+
+The [plugin validation record](consolidation/plugin-validation.json) records 27 passing tests, 118 official skill metadata checks, nine TOML templates, and isolated native Codex discovery of source and release packages. Claude-native and installed lifecycle checks were not performed. Installation, hook trust, activation and publication remain separate; this implementation enabled none of them.
 
 ## Shared defaults
 
@@ -38,9 +52,7 @@ KLCode 0.1.0 now includes [Claude/Codex plugin wiring](plugin/README.md), 16 con
 
 Imported agents, commands, hooks, scripts, templates and assets support the grouped skills. Category-shared files live under [support/](support/README.md); each category has a `dependencies.json` inventory recording source, consumer, activation and prerequisites. Skill-specific helpers remain within their skill. Canonical shared rules live under [rules/](rules/README.md), with explicit skill links and a source-by-source [coverage inventory](rules/coverage.json). Unselected upstream rule families are retained as reference material.
 
-Agent and command files are usable prompt definitions. Hook recipes remain unregistered until the appropriate host integration is configured. External SDKs, CLIs, GUI hosts, media tools and optional service credentials are recorded prerequisites; the collection does not silently install packages or activate global settings.
-
-Claude/Codex plugin lifecycle wiring and publication remain the next phase.
+Imported files under `support/` are reusable prompt definitions, scripts and optional recipes. The plugin manifests explicitly select the packaged entrypoints and hook declarations. Packaged hooks execute only after the host loads the plugin, any required native hook trust is granted, and the project explicitly opts in. External SDKs, CLIs, GUI hosts, media tools and optional service credentials are recorded prerequisites; the collection does not silently install packages or activate global settings. Retained vendor- or POSIX-dependent workflows keep their documented platform limits.
 
 ## Validation and provenance
 
@@ -50,7 +62,13 @@ Run structural, local-link, import-closure and JavaScript syntax checks with Nod
 node scripts/validate-repo.cjs --syntax
 ```
 
-Compile-check Python helpers without generating bytecode; optionally pass the installed Skill Creator validator to validate metadata using its official checks:
+With maintenance Python 3.11 or later, parse Python helpers without generating bytecode and check Codex role-template TOML:
+
+```powershell
+python -X utf8 -B scripts/validate-python.py
+```
+
+Optionally include the installed Skill Creator validator for official canonical and alias skill metadata checks:
 
 ```powershell
 python -X utf8 -B scripts/validate-python.py --skill-validator "path/to/skill-creator/scripts/quick_validate.py"
