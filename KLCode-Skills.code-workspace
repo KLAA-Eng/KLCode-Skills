@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../ref.agent-skills"
+		},
+		{
+			"path": "../ref.caveman"
+		},
+		{
+			"path": "../ref.ECC"
+		},
+		{
+			"path": "../ref.matt-skills"
+		},
+		{
+			"path": "../ref.scientific-skills"
+		},
+		{
+			"path": "../ref.taste-skill"
+		}
+	],
+	"settings": {}
+}
