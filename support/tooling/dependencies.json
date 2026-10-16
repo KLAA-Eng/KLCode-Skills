@@ -1,0 +1,1974 @@
+{
+  "schema_version": 1,
+  "category": "tooling",
+  "files": [
+    {
+      "path": "skills/tooling/agent-configuration-security/references/scanner-integration.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/security-scan/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/mcp-dependency-review/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "agent-configuration-security"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/agent-configuration-security/references/static-config-review.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/mcp-dependency-review/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "agent-configuration-security"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/agent-configuration-security/scripts/audit_mcp.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/mcp-dependency-review/SKILL.md",
+      "additional_sources": [],
+      "role": "script",
+      "consumers": [
+        "agent-configuration-security"
+      ],
+      "activation": "manual invocation only",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Python 3.9+"
+      ],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/agent-configuration-security/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/security-scan/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/mcp-dependency-review/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "agent-configuration-security"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/agent-configuration-security/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/security-scan",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/mcp-dependency-review"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "agent-configuration-security"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/complete-output/agents/openai.yaml",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/output-skill/SKILL.md",
+      "additional_sources": [],
+      "role": "metadata",
+      "consumers": [
+        "complete-output"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/complete-output/references/complete-deliverables.md",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/output-skill/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "complete-output"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/complete-output/SKILL.md",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/output-skill/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "complete-output"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/complete-output/SOURCES.md",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/output-skill",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "complete-output"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/configuration-audit/references/configuration-and-automation-audit.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/automation-audit-ops/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "configuration-audit"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/configuration-audit/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/config-gc/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/automation-audit-ops/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "configuration-audit"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/configuration-audit/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/config-gc",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/automation-audit-ops"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "configuration-audit"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/github-operations/references/github-operations.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/github-ops/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "github-operations"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/github-operations/references/release-evidence.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/github-ops/references/ecc-release-checklist.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "github-operations"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/github-operations/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/github-ops/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "github-operations"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/github-operations/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/github-ops",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "github-operations"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/operation-guardrails/references/guard-modes.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/safety-guard/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/gateguard/SKILL.md"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/misc/git-guardrails-claude-code/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/operation-guardrails/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/safety-guard/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/gateguard/SKILL.md"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/misc/git-guardrails-claude-code/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/operation-guardrails/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/safety-guard",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/gateguard"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/misc/git-guardrails-claude-code"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/prompt-optimizer/references/prompt-design.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/prompt-optimizer/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "prompt-optimizer"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/prompt-optimizer/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/prompt-optimizer/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "prompt-optimizer"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/prompt-optimizer/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/prompt-optimizer",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "prompt-optimizer"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/public-release-preparation/references/staging-and-sanitization.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/opensource-pipeline/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "public-release-preparation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/public-release-preparation/scripts/sanitize_staging.py",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/opensource-sanitizer.md",
+      "additional_sources": [],
+      "role": "script",
+      "consumers": [
+        "public-release-preparation"
+      ],
+      "activation": "manual invocation only",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Python 3.9+"
+      ],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/public-release-preparation/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/opensource-pipeline/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "public-release-preparation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/public-release-preparation/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/opensource-pipeline",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "public-release-preparation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/quality-automation/references/ci-and-precommit.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/ci-cd-and-automation/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/misc/setup-pre-commit/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/plankton-code-quality/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/delivery-gate/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "quality-automation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/quality-automation/references/edit-time-enforcement.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/ci-cd-and-automation/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/misc/setup-pre-commit/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/plankton-code-quality/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/delivery-gate/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "quality-automation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/quality-automation/SKILL.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/ci-cd-and-automation/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/misc/setup-pre-commit/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/plankton-code-quality/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/delivery-gate/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "quality-automation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/quality-automation/SOURCES.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/ci-cd-and-automation",
+      "additional_sources": [
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/misc/setup-pre-commit"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/plankton-code-quality"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/delivery-gate"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "quality-automation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/quality-constraints/references/constraint-design.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/constraint-driven-development/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "quality-constraints"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/quality-constraints/scripts/floor-guard.cjs",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/constraint-driven-development/references/floor-guard.md",
+      "additional_sources": [],
+      "role": "script",
+      "consumers": [
+        "quality-constraints"
+      ],
+      "activation": "manual invocation only",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+",
+        "Git executable on PATH; explicit --base comparison"
+      ],
+      "validation": "Node syntax passed; Git-backed diff execution awaits final approved parent environment."
+    },
+    {
+      "path": "skills/tooling/quality-constraints/SKILL.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/constraint-driven-development/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "quality-constraints"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/quality-constraints/SOURCES.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/constraint-driven-development",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "quality-constraints"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/response-depth/references/depth-options.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/token-budget-advisor/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "response-depth"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/response-depth/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/token-budget-advisor/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "response-depth"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/response-depth/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/token-budget-advisor",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "response-depth"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/skill-maintenance/references/evaluation-and-distillation.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-stocktake/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/skill-host-compat/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/skill-scout/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/rules-distill/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "skill-maintenance"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/skill-maintenance/scripts/inventory.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-stocktake/scripts/scan.sh",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/skill-stocktake/scripts/quick-diff.sh"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/skill-stocktake/scripts/save-results.sh"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/rules-distill/scripts/scan-skills.sh"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/rules-distill/scripts/scan-rules.sh"
+        }
+      ],
+      "role": "script",
+      "consumers": [
+        "skill-maintenance"
+      ],
+      "activation": "manual invocation only",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Python 3.9+"
+      ],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/skill-maintenance/scripts/validate_skills.py",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/ci/validate-skills.js",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "scripts/ci/validate-skill-host-compat.js"
+        }
+      ],
+      "role": "script",
+      "consumers": [
+        "skill-maintenance"
+      ],
+      "activation": "manual invocation only",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Python 3.9+",
+        "PyYAML 6.0.3"
+      ],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/skill-maintenance/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-stocktake/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/skill-host-compat/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/skill-scout/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/rules-distill/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "skill-maintenance"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/skill-maintenance/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-stocktake",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/skill-host-compat"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/skill-scout"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/rules-distill"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "skill-maintenance"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/terminal-opener/agents/openai.yaml",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/terminal-opener/agents/openai.yaml",
+      "additional_sources": [],
+      "role": "metadata",
+      "consumers": [
+        "terminal-opener"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "WezTerm only for selected actual launch; dry-run and stubbed tests need no terminal"
+      ],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/terminal-opener/references/launch-and-recovery.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/terminal-opener/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "terminal-opener"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "WezTerm only for selected actual launch; dry-run and stubbed tests need no terminal"
+      ],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/terminal-opener/scripts/open-terminal.js",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/terminal-opener/scripts/open-terminal.js",
+      "additional_sources": [],
+      "role": "script",
+      "consumers": [
+        "terminal-opener"
+      ],
+      "activation": "manual invocation only",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+",
+        "WezTerm only for selected actual launch; dry-run and stubbed tests need no terminal"
+      ],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/terminal-opener/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/terminal-opener/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "terminal-opener"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "WezTerm only for selected actual launch; dry-run and stubbed tests need no terminal"
+      ],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/terminal-opener/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/terminal-opener",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "terminal-opener"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "WezTerm only for selected actual launch; dry-run and stubbed tests need no terminal"
+      ],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/windows-python-packaging/references/inno-and-acceptance.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/generating-python-installer/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "windows-python-packaging"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/windows-python-packaging/references/nuitka-distribution.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/generating-python-installer/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "windows-python-packaging"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/windows-python-packaging/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/generating-python-installer/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "windows-python-packaging"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/windows-python-packaging/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/generating-python-installer",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "windows-python-packaging"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/windows-python-packaging/templates/app.iss",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/generating-python-installer/SKILL.md",
+      "additional_sources": [],
+      "role": "template",
+      "consumers": [
+        "windows-python-packaging"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/workflow-guide/references/phase-boundaries.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/using-agent-skills/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/ecc-guide/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/ecc-recipes/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/plan-orchestrate/SKILL.md"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/ask-matt/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "workflow-guide"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/workflow-guide/references/workflow-routing.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/using-agent-skills/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/ecc-guide/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/ecc-recipes/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/plan-orchestrate/SKILL.md"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/ask-matt/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "workflow-guide"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/workflow-guide/SKILL.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/using-agent-skills/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/ecc-guide/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/ecc-recipes/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/plan-orchestrate/SKILL.md"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/ask-matt/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "workflow-guide"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/workflow-guide/SOURCES.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/using-agent-skills",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/ecc-guide"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/ecc-recipes"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/plan-orchestrate"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/ask-matt"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "workflow-guide"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/workspace-setup/references/upstream-lifecycle.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/workspace-surface-audit/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/agent-sort/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/configure-ecc/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/repo-scan/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "workspace-setup"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/workspace-setup/references/workspace-inventory.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/workspace-surface-audit/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/agent-sort/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "workspace-setup"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/workspace-setup/SKILL.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/workspace-surface-audit/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/agent-sort/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/configure-ecc/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/repo-scan/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "workspace-setup"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/workspace-setup/SOURCES.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/setup-matt-pocock-skills",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/workspace-surface-audit"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/agent-sort"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/configure-ecc"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/repo-scan"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "workspace-setup"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/workspace-setup/templates/domain.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/setup-matt-pocock-skills/domain.md",
+      "additional_sources": [],
+      "role": "template",
+      "consumers": [
+        "workspace-setup"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/workspace-setup/templates/issue-tracker-github.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "additional_sources": [],
+      "role": "template",
+      "consumers": [
+        "workspace-setup"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/workspace-setup/templates/issue-tracker-gitlab.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "additional_sources": [],
+      "role": "template",
+      "consumers": [
+        "workspace-setup"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/workspace-setup/templates/issue-tracker-local.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-local.md",
+      "additional_sources": [],
+      "role": "template",
+      "consumers": [
+        "workspace-setup"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/workspace-setup/templates/triage-labels.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/setup-matt-pocock-skills/triage-labels.md",
+      "additional_sources": [],
+      "role": "template",
+      "consumers": [
+        "workspace-setup"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/writing-for-agents/references/instruction-design.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/productivity/writing-for-agents/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "writing-for-agents"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/writing-for-agents/references/skill-mechanics.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/productivity/writing-for-agents/SKILL-MECHANICS.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "writing-for-agents"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "skills/tooling/writing-for-agents/SKILL.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/productivity/writing-for-agents/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "writing-for-agents"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Official quick_validate.py and portable validator; see tooling-handoff.md for executed evidence."
+    },
+    {
+      "path": "skills/tooling/writing-for-agents/SOURCES.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/productivity/writing-for-agents",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "writing-for-agents"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/agents/public-forker.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/opensource-forker.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "public-release-preparation"
+      ],
+      "activation": "selected delegation; not registered",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/agents/public-packager.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/opensource-packager.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "public-release-preparation"
+      ],
+      "activation": "selected delegation; not registered",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/agents/public-sanitizer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/opensource-sanitizer.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "public-release-preparation"
+      ],
+      "activation": "selected delegation; not registered",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/agents/rule-distiller.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/rules-distill/SKILL.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "skill-maintenance"
+      ],
+      "activation": "selected delegation; not registered",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/agents/skill-evaluator.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-stocktake/SKILL.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "skill-maintenance"
+      ],
+      "activation": "selected delegation; not registered",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/agents/workspace-auditor.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/agent-sort/SKILL.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "workspace-setup"
+      ],
+      "activation": "selected delegation; not registered",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/commands/configuration-audit.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/config-gc/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/automation-audit-ops/SKILL.md"
+        }
+      ],
+      "role": "command",
+      "consumers": [
+        "configuration-audit"
+      ],
+      "activation": "manual prompt; not registered",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/commands/skill-check.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-stocktake/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/skill-host-compat/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/skill-scout/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/rules-distill/SKILL.md"
+        }
+      ],
+      "role": "command",
+      "consumers": [
+        "skill-maintenance"
+      ],
+      "activation": "manual prompt; not registered",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/commands/workspace-setup.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/workspace-surface-audit/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/agent-sort/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/configure-ecc/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/repo-scan/SKILL.md"
+        }
+      ],
+      "role": "command",
+      "consumers": [
+        "workspace-setup"
+      ],
+      "activation": "manual prompt; not registered",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/hooks/delivery_gate.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/delivery-gate/hooks/quality-gate.py",
+      "additional_sources": [],
+      "role": "hook",
+      "consumers": [
+        "quality-automation"
+      ],
+      "activation": "explicit selected host configuration only; disabled by default",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Python 3.9+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/hooks/operation_guard.cjs",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/gateguard/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/safety-guard/SKILL.md"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/misc/git-guardrails-claude-code/scripts/block-dangerous-git.sh"
+        }
+      ],
+      "role": "hook",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "explicit selected host configuration only; disabled by default",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/hooks/quality_hook.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/plankton-code-quality/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "scripts/hooks/quality-gate.js"
+        }
+      ],
+      "role": "hook",
+      "consumers": [
+        "quality-automation"
+      ],
+      "activation": "explicit selected host configuration only; disabled by default",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Python 3.9+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/licenses/agent-skills-MIT.txt",
+      "source_repo": "ref.agent-skills",
+      "source_path": "LICENSE",
+      "additional_sources": [],
+      "role": "license",
+      "consumers": [
+        "quality-automation",
+        "operation-guardrails",
+        "github-operations",
+        "public-release-preparation",
+        "windows-python-packaging",
+        "agent-configuration-security",
+        "quality-constraints",
+        "workflow-guide",
+        "writing-for-agents",
+        "workspace-setup",
+        "configuration-audit",
+        "skill-maintenance",
+        "response-depth",
+        "prompt-optimizer",
+        "terminal-opener",
+        "complete-output"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/licenses/ecc-MIT.txt",
+      "source_repo": "ref.ECC",
+      "source_path": "LICENSE",
+      "additional_sources": [],
+      "role": "license",
+      "consumers": [
+        "quality-automation",
+        "operation-guardrails",
+        "github-operations",
+        "public-release-preparation",
+        "windows-python-packaging",
+        "agent-configuration-security",
+        "quality-constraints",
+        "workflow-guide",
+        "writing-for-agents",
+        "workspace-setup",
+        "configuration-audit",
+        "skill-maintenance",
+        "response-depth",
+        "prompt-optimizer",
+        "terminal-opener",
+        "complete-output"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/licenses/matt-skills-MIT.txt",
+      "source_repo": "ref.matt-skills",
+      "source_path": "LICENSE",
+      "additional_sources": [],
+      "role": "license",
+      "consumers": [
+        "quality-automation",
+        "operation-guardrails",
+        "github-operations",
+        "public-release-preparation",
+        "windows-python-packaging",
+        "agent-configuration-security",
+        "quality-constraints",
+        "workflow-guide",
+        "writing-for-agents",
+        "workspace-setup",
+        "configuration-audit",
+        "skill-maintenance",
+        "response-depth",
+        "prompt-optimizer",
+        "terminal-opener",
+        "complete-output"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/licenses/taste-license.txt",
+      "source_repo": "ref.taste-skill",
+      "source_path": "LICENSE",
+      "additional_sources": [],
+      "role": "license",
+      "consumers": [
+        "complete-output"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/requirements-validation.txt",
+      "source_repo": "KLCode consolidation",
+      "source_path": "new category integration resource",
+      "additional_sources": [],
+      "role": "requirements",
+      "consumers": [
+        "skill-maintenance"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/runtime/package.json",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/hooks/gateguard-fact-force.js",
+      "additional_sources": [],
+      "role": "runtime-config",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/hooks/gateguard-fact-force.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/hooks/gateguard-fact-force.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/hooks/gateguard-heredoc.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/hooks/gateguard-heredoc.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/lib/file-tail.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/file-tail.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/lib/gateguard-change-profile.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/gateguard-change-profile.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/lib/gateguard-code-lexer.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/gateguard-code-lexer.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/lib/gateguard-file-context.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/gateguard-file-context.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/lib/gateguard-metrics.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/gateguard-metrics.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/lib/gateguard-readonly-shell.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/gateguard-readonly-shell.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/lib/gateguard-search-evidence.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/gateguard-search-evidence.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/lib/gateguard-search-filters.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/gateguard-search-filters.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/lib/gateguard-state.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/gateguard-state.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/lib/gateguard-target-class.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/gateguard-target-class.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/lib/gateguard-turn-scan.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/gateguard-turn-scan.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/lib/powershell-destructive-command.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/powershell-destructive-command.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/runtime/scripts/lib/shell-substitution.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/shell-substitution.js",
+      "additional_sources": [],
+      "role": "runtime-module",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node syntax/Python AST plus offline guard/helper cases; no hook registered."
+    },
+    {
+      "path": "support/tooling/templates/hook-profiles.json",
+      "source_repo": "KLCode consolidation",
+      "source_path": "new category integration resource",
+      "additional_sources": [],
+      "role": "template",
+      "consumers": [
+        "quality-automation",
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/tests/operation-guard.test.cjs",
+      "source_repo": "KLCode consolidation",
+      "source_path": "new category integration resource",
+      "additional_sources": [],
+      "role": "test",
+      "consumers": [
+        "operation-guardrails"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/tests/terminal-opener.test.js",
+      "source_repo": "ref.ECC",
+      "source_path": "tests/skills/terminal-opener.test.js",
+      "additional_sources": [],
+      "role": "test",
+      "consumers": [
+        "terminal-opener"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/tests/test_offline.py",
+      "source_repo": "KLCode consolidation",
+      "source_path": "new category integration resource",
+      "additional_sources": [],
+      "role": "test",
+      "consumers": [
+        "skill-maintenance",
+        "agent-configuration-security",
+        "public-release-preparation",
+        "quality-automation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT; upstream notices preserved",
+      "external_requirements": [
+        "Python 3.9+",
+        "PyYAML 6.0.3"
+      ],
+      "validation": "Local resource links, source provenance and frontmatter audited."
+    },
+    {
+      "path": "support/tooling/tests/floor-guard.test.cjs",
+      "source_repo": "KLCode-Skills",
+      "source_path": "consolidation integration regression",
+      "role": "test",
+      "consumers": [
+        "quality-constraints"
+      ],
+      "activation": "explicit offline validation",
+      "external_requirements": [
+        "Node.js",
+        "Git"
+      ],
+      "validation": "Exercises explicit base, clean/change/untracked scopes, threshold tightening/loosening, deleted tests and unavailable Git in a disposable repository."
+    }
+  ],
+  "external_prerequisites": [
+    "Python 3.9+ and PyYAML 6.0.3 for portable validation",
+    "Node.js 18+ for imported GateGuard/terminal/constraint helpers",
+    "Git for the selected floor-guard diff",
+    "Installed reviewed project checkers/formatters only for selected quality hooks",
+    "WezTerm only for an explicitly requested actual terminal launch",
+    "gh CLI/auth only for requested GitHub operations",
+    "Nuitka/compiler/Inno Setup/runtime/signing/vendor prerequisites only for selected Windows packaging",
+    "AgentShield/repo-scan remain optional external tools, not bundled or auto-installed"
+  ],
+  "notes": [
+    "All hook profiles remain disabled. No global configuration, upstream installer, plugin registration or remote mutation is performed.",
+    "GateGuard runtime imports its complete local require graph; original upstream documentation paths in comments are provenance, not missing runtime modules.",
+    "Validators/inventory replace upstream Bash/jq/global-root assumptions with explicit scoped Python tools.",
+    "Plankton useful local enforcement is adapted into the included configured-argv hook; an external Plankton checkout or model subprocess is not pretended to be bundled."
+  ]
+}

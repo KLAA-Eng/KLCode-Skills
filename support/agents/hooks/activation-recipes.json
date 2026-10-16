@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "status": "inert templates; not a host hooks configuration",
+  "activation": "Resolve exact absolute paths and explicitly select host/event registration. Do not copy all recipes into global settings.",
+  "recipes": [
+    {
+      "consumer": "hook-rules",
+      "host": "Claude Code",
+      "events": [
+        "PreToolUse",
+        "Stop",
+        "UserPromptSubmit"
+      ],
+      "executable": "node",
+      "argv": [
+        "<absolute-support-root>/runtime/scripts/hooks/hookify-runtime.js"
+      ],
+      "input": "Claude hook JSON; register only events needed by selected rules"
+    },
+    {
+      "consumer": "context-management",
+      "host": "Claude Code",
+      "events": [
+        "PreToolUse"
+      ],
+      "executable": "node",
+      "argv": [
+        "<absolute-support-root>/runtime/scripts/hooks/suggest-compact.js"
+      ],
+      "input": "Claude hook JSON"
+    },
+    {
+      "consumer": "agent-cost-report",
+      "host": "Claude Code",
+      "events": [
+        "Stop"
+      ],
+      "executable": "node",
+      "argv": [
+        "<absolute-support-root>/runtime/scripts/hooks/cost-tracker.js"
+      ],
+      "input": "Claude Stop JSON with transcript_path"
+    },
+    {
+      "consumer": "continuous-learning",
+      "host": "Claude Code",
+      "events": [
+        "PreToolUse",
+        "PostToolUse"
+      ],
+      "executable": "bash",
+      "argv": [
+        "<absolute-skill-root>/hooks/observe.sh",
+        "<pre-or-post>"
+      ],
+      "input": "Claude hook JSON; observer disabled by default; choose WSL/Linux/macOS for background observer"
+    }
+  ]
+}

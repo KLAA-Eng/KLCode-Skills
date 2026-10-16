@@ -1,0 +1,1421 @@
+{
+  "schema_version": 1,
+  "category": "agents",
+  "activation": "Nothing installed or enabled automatically",
+  "verification": {
+    "node": "v24.21.0",
+    "offline_tests": [
+      {
+        "label": "tests/hooks/hookify-runtime.test.js",
+        "status": 0,
+        "tail": "nd conditions\n  ✓ does not satisfy negative conditions when the requested field is absent\n  ✓ requires MultiEdit conditions to match the same edit item\n  ✓ supports PowerShell and MultiEdit on the cross-platform aliases\n  ✓ bounds one simple rule to one isolated regex evaluation for large MultiEdit input\n  ✓ uses prompt input and the top-level block contract for UserPromptSubmit\n  ✓ blocks Stop once and skips recursive stop_hook_active events\n  ✓ matches all-event rules while respecting tool_matcher\n  ✓ all-event rules can match tool events outside bash and file aliases\n  ✓ an all-event wildcard can match a Stop payload with no optional text\n  ✓ fails open on malformed YAML, invalid regex, and unsupported operators\n  ✓ rejects duplicate keys instead of silently changing rule semantics\n  ✓ rejects unknown keys instead of silently weakening a rule\n  ✓ rejects common catastrophic-backtracking regex shapes\n  ✓ hard-times out ReDoS shapes that pass static screening\n  ✓ a timed-out blocking rule fails closed\n  ✓ a timed-out rule cannot suppress a later valid blocking rule\n  ✓ caps rule files and emitted messages without producing invalid JSON\n  ✓ blocking rules inspect content beyond 64 KiB and MultiEdit entry 100\n  ✓ condition evaluation budget fails closed for an uninspected blocking rule\n  ✓ a warning cannot consume the budget and hide a later blocking rule\n\nPassed: 31\nFailed: 0\n\n"
+      },
+      {
+        "label": "tests/hooks/hookify-security.test.js",
+        "status": 1,
+        "tail": "\nHookify security tests (#2561)\n──────────────────────────────────────────────────\n  ✓ does not follow rule symlinks outside the project .claude directory\n  ✗ rejects Git-tracked local rules unless explicitly approved\n    Error: Expected values to be strictly equal:\n\nnull !== 0\n\n  ✗ detects tracked rules through case-variant .claude paths\n    Error: Expected values to be strictly equal:\n\nnull !== 0\n\n  ✗ tracked rules cannot exhaust the rule limit before local rules are considered\n    Error: Expected values to be strictly equal:\n\nnull !== 0\n\n  ✗ fails closed when Git tracking status cannot be established\n    Error: Expected values to be strictly equal:\n\nnull !== 0\n\n  ✓ trusted CLAUDE_PROJECT_DIR takes precedence over payload cwd\n\nPassed: 2\nFailed: 4\n\n",
+        "limitation": "Four Git-backed cases cannot run: git executable unavailable; two non-Git cases pass (Windows symlink case skips). Runtime is fail-closed when Git status is unavailable."
+      },
+      {
+        "label": "tests/hooks/hookify-limits.test.js",
+        "status": 0,
+        "tail": "\nHookify resource-limit tests (#2561)\n--------------------------------------------------\n  PASS a wall-clock deadline cannot hide a later blocking rule\n  PASS simple MultiEdit patterns share the evaluation budget and fail closed\n  PASS oversized PreToolUse input fails closed for a relevant block rule\n  PASS oversized PostToolUse input uses the top-level block contract\n  PASS oversized inputs only fail closed for rules relevant to their event\n\nPassed: 5\nFailed: 0\n\n"
+      },
+      {
+        "label": "tests/hooks/hookify-file-race.test.js",
+        "status": 0,
+        "tail": " device still rejects same-inode content mutation during reading (3.3986ms)\n✔ Windows missing device keeps the growth read bounded at ceiling plus one (4.0154ms)\n✔ growth after metadata validation cannot read over the rule ceiling plus one byte (3.7511ms)\n✔ same-inode replacement during reading is rejected before parsing (3.1307ms)\n﹣ permission changes during reading invalidate the pinned rule snapshot (0.1284ms) # POSIX file modes required\n✔ path replacement after opening cannot substitute or retain a stale rule (4.0838ms)\n﹣ replacement of the rule directory cannot read outside-project rule data (0.1441ms) # directory symlink creation requires POSIX\n﹣ platforms without O_NOFOLLOW reject a raced leaf symlink before any read (0.1366ms) # symlink creation requires developer mode\n✔ a different real rule directory is rejected before reading its contents (4.1835ms)\n✔ a disappeared rule is diagnosed without opening or reading another file (2.2558ms)\n✔ premature EOF cannot turn an incomplete file snapshot into a rule (2.2623ms)\n✔ short descriptor reads load a stable rule exactly at the byte limit (71.3136ms)\n✔ read failures close the descriptor and report a bounded diagnostic (2.5494ms)\n﹣ a FIFO is opened nonblocking and rejected without consuming bytes (0.1057ms) # POSIX FIFO required\nℹ tests 33\nℹ suites 0\nℹ pass 29\nℹ fail 0\nℹ cancelled 0\nℹ skipped 4\nℹ todo 0\nℹ duration_ms 188.7856\n\n"
+      },
+      {
+        "label": "tests/hooks/cost-tracker.test.js",
+        "status": 0,
+        "tail": "\n=== Testing cost-tracker.js ===\n\n  ✓ passes through input on stdout\n  ✓ keeps JSONL authoritative when the snapshot path cannot be published\n  ✓ creates metrics file when given transcript usage data\n  ✓ counts usage once per message.id across multi-line responses\n  ✓ normalizes malformed negative and non-finite transcript usage\n  ✓ handles empty input gracefully\n  ✓ handles invalid JSON gracefully\n  ✓ handles missing usage fields gracefully\n  ✓ prefers ECC_SESSION_ID over CLAUDE_SESSION_ID when both are present\n  ✓ uses input session_id for session correlation when env vars are absent\n  ✓ prefers fresh harness-cost cache over transcript estimate\n  ✓ prices Sonnet 5 at $12 per 1M input + 1M output tokens\n  ✓ prices Sonnet 5 cache tokens at the documented rates\n  ✓ prices Sonnet 5 cache writes at $2.50 per 1M tokens\n  ✓ prices Sonnet 5 cache reads at $0.20 per 1M tokens\n  ✓ prices Sonnet 4.6 at $18 per 1M input + 1M output tokens\n  ✓ prices dated Sonnet 5 IDs at $12\n  ✓ rejects claude-sonnet-50 as a Sonnet 5 near-miss\n  ✓ distinguishes the dated Opus 4.0 snapshot from current Opus 4.x\n  ✓ prices Claude 5.5 generations and Haiku long prompts per request\n  ✓ ignores stale harness-cost cache (>300s) and uses transcript estimate\n\nResults: Passed: 21, Failed: 0\n\n"
+      },
+      {
+        "label": "tests/hooks/suggest-compact.test.js",
+        "status": 0,
+        "tail": "\n ✓ emits no stdout below threshold (silent)\n ✓ still writes [StrategicCompact] to stderr (debug log retained)\n\nDefault session ID fallback (Round 64):\n ✓ uses \"default\" session ID when CLAUDE_SESSION_ID is empty\n\nCounter file cleanup (#2156):\n ✓ removes counter files older than retention window\n ✓ preserves counter files within retention window\n ✓ preserves the active session's counter file even if old\n ✓ honours COMPACT_STATE_TTL_DAYS env var\n ✓ falls back to default for invalid COMPACT_STATE_TTL_DAYS\n ✓ does not touch unrelated temp files\n ✓ preserves files whose mtime sits at or after the TTL cutoff\n ✓ exit 0 holds when sweep encounters a populated temp dir\n\nContext-size trigger (#2155):\n ✓ omits the percentage when the context window is assumed\n ✓ stays silent below the context threshold\n ✓ honours COMPACT_CONTEXT_THRESHOLD override\n ✓ does not re-fire within the same context bucket\n ✓ re-fires after the context grows by another interval\n ✓ uses the 250k default threshold for [1m] models\n ✓ treats >200k observed tokens as a 1M window even without the [1m] marker\n ✓ COMPACT_CONTEXT_THRESHOLD=0 disables the context signal\n ✓ survives a malformed transcript (exit 0, silent)\n ✓ survives a missing transcript path (exit 0, count signal intact)\n ✓ emits a single stdout JSON payload when both signals fire\n ✓ sweeps stale context bucket state files\n\nResults: Passed: 44, Failed: 0\n\n"
+      },
+      {
+        "label": "tests/lib/transcript-context.test.js",
+        "status": 0,
+        "tail": "oes not match hypothetical smaller tiers sharing a known-family prefix (#2461)\n  ✓ keeps the 200k default for unknown model ids at low token counts (no false positives, #2461)\n  ✓ treats an empty model id as standard window\n\nisContextWindowInferred:\n  ✓ flags the assumed 200k default as inferred\n  ✓ an env override is a detected window, not inferred\n  ✓ a [1m] marker is a detected window, not inferred\n  ✓ a known large-window family is a detected window, not inferred\n  ✓ tokens above the standard window still leave the exact size inferred\n\nresolveContextThreshold:\n  ✓ defaults to 160k for the 200k window\n  ✓ defaults to 250k for the 1M window\n  ✓ honours COMPACT_CONTEXT_THRESHOLD override\n  ✓ COMPACT_CONTEXT_THRESHOLD=0 disables the signal\n  ✓ invalid COMPACT_CONTEXT_THRESHOLD falls back to the default\n\nresolveContextInterval:\n  ✓ defaults to 60k tokens\n  ✓ honours COMPACT_CONTEXT_INTERVAL override\n  ✓ invalid COMPACT_CONTEXT_INTERVAL falls back to the default\n\ncomputeContextBucket:\n  ✓ returns -1 below the threshold\n  ✓ returns bucket 0 at the threshold\n  ✓ increments the bucket after each interval of growth\n  ✓ returns -1 when the threshold is disabled (0)\n  ✓ returns -1 for non-finite token counts\n\nreadFileTail:\n  ✓ is exported and returns the trailing bytes with a truncation flag\n\nformatWindowLabel:\n  ✓ labels the standard and large windows\n\nResults: Passed: 43, Failed: 0\n\n"
+      },
+      {
+        "label": "bounded external reviewer",
+        "status": 0,
+        "tail": "\n=== Testing council-multi-model adapter ===\n\n  PASS requires explicit OpenAI transfer consent and host-provider disclosure\n  PASS bounds configurable timeouts\n  PASS labels provider relationship without overstating diversity\n  PASS builds an ephemeral tool-less invocation with no inherited tools or MCPs\n  PASS accepts only the exactly tested Codex version and fails closed\n  PASS passes only an allowlisted environment to Codex\n  PASS runs from a temporary directory, reads the final response, and cleans up\n  PASS does not invoke Codex when tool-less capability verification fails\n  PASS fails before invocation when the packet exceeds the size limit\n  PASS handles stdin overflow, success output, and review failures directly\n\nResults: Passed: 10, Failed: 0\n\n"
+      },
+      {
+        "label": "offline capsule example",
+        "status": 0,
+        "tail": "\n== Gate: execution unavailable without a verified OS backend\n   ok  gate refuses before executing any variant\n   ok  no gate work directory or promotion receipt was created\n\n== Static inspection: digests and syntactic warnings\n   ok  candidate source has a content digest\n   ok  static warnings: checker_probe, hidden_network, parent_escape\n\n== Replay: declared tools, fixtures, fail-closed on missing\n   ok  replayed response matches the recorded fixture\n   ok  missing fixture fails closed with tool.fixture_missing\n   ok  SE4 tool is refused with tool.effect_forbidden\n\n== Receipt: build, verify, export bundle\n   ok  capsule holds 6 entries across 5 lineages\n   ok  all five lineages are present\n   ok  exported bundle verifies against the receipt without the source store\n\n== Tamper: one changed value fails at the exact entry\n   ok  refusal entry is present\n   ok  verify fails closed at entry 1 (capsule.invalid_entry)\n   ok  receipt verification names the failing check: journal_integrity\n\nwork dir: C:\\Users\\AI_LMA~1\\AppData\\Local\\Temp\\ecc-eval-harness-example-1F39Zu (removed)\n\nall steps passed\n\n"
+      }
+    ],
+    "syntax_failures": [],
+    "unresolved_links": [
+      {
+        "file": "skills\\agents\\agent-cost-report\\SKILL.md",
+        "target": "../../tooling/llm-cost-optimization/SKILL.md"
+      },
+      {
+        "file": "skills\\agents\\context-management\\SKILL.md",
+        "target": "../../knowledge/session-handoff/SKILL.md"
+      },
+      {
+        "file": "support\\agents\\agents\\code-explorer.md",
+        "target": "../../../skills/knowledge/codebase-onboarding/SKILL.md"
+      }
+    ],
+    "not_run": [
+      "Python/pytest compliance and instinct tests: Python not available",
+      "Bash observer execution: no background processes or hooks activated",
+      "Live model/provider review and external service integrations: intentionally not invoked"
+    ],
+    "python": "Not available; Python code and tests not executed."
+  },
+  "files": [
+    {
+      "path": "skills/agents/skill-compliance-testing/fixtures/compliant_trace.jsonl",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/fixtures/compliant_trace.jsonl",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/fixtures/noncompliant_trace.jsonl",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/fixtures/noncompliant_trace.jsonl",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/fixtures/tdd_spec.yaml",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/fixtures/tdd_spec.yaml",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/prompts/classifier.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/prompts/classifier.md",
+      "role": "agent",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/prompts/scenario_generator.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/prompts/scenario_generator.md",
+      "role": "agent",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/prompts/spec_generator.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/prompts/spec_generator.md",
+      "role": "agent",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/pyproject.toml",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/pyproject.toml",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/scripts/classifier.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/scripts/classifier.py",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/scripts/grader.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/scripts/grader.py",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/scripts/parser.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/scripts/parser.py",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/scripts/report.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/scripts/report.py",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/scripts/run.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/scripts/run.py",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/scripts/runner.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/scripts/runner.py",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/scripts/scenario_generator.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/scripts/scenario_generator.py",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/scripts/spec_generator.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/scripts/spec_generator.py",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/scripts/utils.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/scripts/utils.py",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/scripts/__init__.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/scripts/__init__.py",
+      "role": "resource",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/tests/test_classifier.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/tests/test_classifier.py",
+      "role": "test",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/tests/test_grader.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/tests/test_grader.py",
+      "role": "test",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/tests/test_parser.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/tests/test_parser.py",
+      "role": "test",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/skill-compliance-testing/tests/test_runner.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/skill-comply/tests/test_runner.py",
+      "role": "test",
+      "consumers": [
+        "skill-compliance-testing"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/continuous-learning/agents/observer-loop.sh",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/continuous-learning-v2/agents/observer-loop.sh",
+      "role": "resource",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/continuous-learning/agents/observer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/continuous-learning-v2/agents/observer.md",
+      "role": "agent",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/continuous-learning/agents/session-guardian.sh",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/continuous-learning-v2/agents/session-guardian.sh",
+      "role": "resource",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/continuous-learning/agents/start-observer.sh",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/continuous-learning-v2/agents/start-observer.sh",
+      "role": "resource",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/continuous-learning/config.json",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/continuous-learning-v2/config.json",
+      "role": "resource",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/continuous-learning/hooks/observe.sh",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/continuous-learning-v2/hooks/observe.sh",
+      "role": "resource",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/continuous-learning/scripts/detect-project.sh",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/continuous-learning-v2/scripts/detect-project.sh",
+      "role": "resource",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/continuous-learning/scripts/instinct-cli.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/continuous-learning-v2/scripts/instinct-cli.py",
+      "role": "resource",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/continuous-learning/scripts/lib/homunculus-dir.sh",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/continuous-learning-v2/scripts/lib/homunculus-dir.sh",
+      "role": "resource",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/continuous-learning/scripts/migrate-homunculus.sh",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/continuous-learning-v2/scripts/migrate-homunculus.sh",
+      "role": "resource",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/continuous-learning/scripts/test_parse_instinct.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/continuous-learning-v2/scripts/test_parse_instinct.py",
+      "role": "resource",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "skills/agents/review-team/scripts/review-with-codex.js",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/council-multi-model/scripts/review-with-codex.js",
+      "role": "resource",
+      "consumers": [
+        "review-team"
+      ],
+      "activation": "explicit workflow invocation only",
+      "license": "MIT; see skill licenses",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/hooks/hookify-runtime.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/hooks/hookify-runtime.js",
+      "role": "resource",
+      "consumers": [
+        "hook-rules"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/hooks/hookify-frontmatter.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/hooks/hookify-frontmatter.js",
+      "role": "resource",
+      "consumers": [
+        "hook-rules"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/hooks/hook-input.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/hooks/hook-input.js",
+      "role": "resource",
+      "consumers": [
+        "hook-rules"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/hooks/hook-input-limits.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/hooks/hook-input-limits.js",
+      "role": "resource",
+      "consumers": [
+        "hook-rules"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/hooks/suggest-compact.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/hooks/suggest-compact.js",
+      "role": "resource",
+      "consumers": [
+        "context-management"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/utils.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/utils.js",
+      "role": "resource",
+      "consumers": [
+        "context-management"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/agent-data-home.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/agent-data-home.js",
+      "role": "resource",
+      "consumers": [
+        "context-management"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/path-safety.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/path-safety.js",
+      "role": "resource",
+      "consumers": [
+        "context-management"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/transcript-context.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/transcript-context.js",
+      "role": "resource",
+      "consumers": [
+        "context-management"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/file-tail.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/file-tail.js",
+      "role": "resource",
+      "consumers": [
+        "context-management"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/hooks/cost-tracker.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/hooks/cost-tracker.js",
+      "role": "resource",
+      "consumers": [
+        "agent-cost-report"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/session-bridge.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/session-bridge.js",
+      "role": "resource",
+      "consumers": [
+        "agent-cost-report"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/session-cost-snapshot.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/session-cost-snapshot.js",
+      "role": "resource",
+      "consumers": [
+        "agent-cost-report"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/atomic-write.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/atomic-write.js",
+      "role": "resource",
+      "consumers": [
+        "agent-cost-report"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/eval-harness.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/eval-harness.js",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/eval-harness/index.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/eval-harness/index.js",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/eval-harness/canonical.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/eval-harness/canonical.js",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/eval-harness/envelope.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/eval-harness/envelope.js",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/eval-harness/capsule.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/eval-harness/capsule.js",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/eval-harness/retrospective.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/eval-harness/retrospective.js",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/eval-harness/gate.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/eval-harness/gate.js",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/eval-harness/replay.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/eval-harness/replay.js",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/eval-harness/receipt.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/eval-harness/receipt.js",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/tests/hooks/hookify-runtime.test.js",
+      "source_repo": "ref.ECC",
+      "source_path": "tests/hooks/hookify-runtime.test.js",
+      "role": "test",
+      "consumers": [
+        "hook-rules"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/tests/hooks/hookify-security.test.js",
+      "source_repo": "ref.ECC",
+      "source_path": "tests/hooks/hookify-security.test.js",
+      "role": "test",
+      "consumers": [
+        "hook-rules"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/tests/hooks/hookify-limits.test.js",
+      "source_repo": "ref.ECC",
+      "source_path": "tests/hooks/hookify-limits.test.js",
+      "role": "test",
+      "consumers": [
+        "hook-rules"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/tests/hooks/hookify-file-race.test.js",
+      "source_repo": "ref.ECC",
+      "source_path": "tests/hooks/hookify-file-race.test.js",
+      "role": "test",
+      "consumers": [
+        "hook-rules"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/tests/hooks/cost-tracker.test.js",
+      "source_repo": "ref.ECC",
+      "source_path": "tests/hooks/cost-tracker.test.js",
+      "role": "test",
+      "consumers": [
+        "agent-cost-report"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/tests/hooks/suggest-compact.test.js",
+      "source_repo": "ref.ECC",
+      "source_path": "tests/hooks/suggest-compact.test.js",
+      "role": "test",
+      "consumers": [
+        "context-management"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/tests/lib/transcript-context.test.js",
+      "source_repo": "ref.ECC",
+      "source_path": "tests/lib/transcript-context.test.js",
+      "role": "test",
+      "consumers": [
+        "context-management"
+      ],
+      "activation": "explicit; no installed hooks or global configuration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/agents/planner.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/planner.md",
+      "role": "agent",
+      "consumers": [
+        "agent-orchestration",
+        "review-team",
+        "agent-loop-design",
+        "agent-evaluation",
+        "hook-rules"
+      ],
+      "activation": "explicit host-native delegation; no global registration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/agents/architect.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/architect.md",
+      "role": "agent",
+      "consumers": [
+        "agent-orchestration",
+        "review-team",
+        "agent-loop-design",
+        "agent-evaluation",
+        "hook-rules"
+      ],
+      "activation": "explicit host-native delegation; no global registration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/agents/code-explorer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/code-explorer.md",
+      "role": "agent",
+      "consumers": [
+        "agent-orchestration",
+        "review-team",
+        "agent-loop-design",
+        "agent-evaluation",
+        "hook-rules"
+      ],
+      "activation": "explicit host-native delegation; no global registration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/agents/code-reviewer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/code-reviewer.md",
+      "role": "agent",
+      "consumers": [
+        "agent-orchestration",
+        "review-team",
+        "agent-loop-design",
+        "agent-evaluation",
+        "hook-rules"
+      ],
+      "activation": "explicit host-native delegation; no global registration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/agents/tdd-guide.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/tdd-guide.md",
+      "role": "agent",
+      "consumers": [
+        "agent-orchestration",
+        "review-team",
+        "agent-loop-design",
+        "agent-evaluation",
+        "hook-rules"
+      ],
+      "activation": "explicit host-native delegation; no global registration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/agents/refactor-cleaner.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/refactor-cleaner.md",
+      "role": "agent",
+      "consumers": [
+        "agent-orchestration",
+        "review-team",
+        "agent-loop-design",
+        "agent-evaluation",
+        "hook-rules"
+      ],
+      "activation": "explicit host-native delegation; no global registration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/agents/security-reviewer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/security-reviewer.md",
+      "role": "agent",
+      "consumers": [
+        "agent-orchestration",
+        "review-team",
+        "agent-loop-design",
+        "agent-evaluation",
+        "hook-rules"
+      ],
+      "activation": "explicit host-native delegation; no global registration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/agents/loop-operator.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/loop-operator.md",
+      "role": "agent",
+      "consumers": [
+        "agent-orchestration",
+        "review-team",
+        "agent-loop-design",
+        "agent-evaluation",
+        "hook-rules"
+      ],
+      "activation": "explicit host-native delegation; no global registration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/agents/agent-evaluator.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/agent-evaluator.md",
+      "role": "agent",
+      "consumers": [
+        "agent-orchestration",
+        "review-team",
+        "agent-loop-design",
+        "agent-evaluation",
+        "hook-rules"
+      ],
+      "activation": "explicit host-native delegation; no global registration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/agents/harness-optimizer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/harness-optimizer.md",
+      "role": "agent",
+      "consumers": [
+        "agent-orchestration",
+        "review-team",
+        "agent-loop-design",
+        "agent-evaluation",
+        "hook-rules"
+      ],
+      "activation": "explicit host-native delegation; no global registration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/agents/conversation-analyzer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/conversation-analyzer.md",
+      "role": "agent",
+      "consumers": [
+        "agent-orchestration",
+        "review-team",
+        "agent-loop-design",
+        "agent-evaluation",
+        "hook-rules"
+      ],
+      "activation": "explicit host-native delegation; no global registration",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/commands/orchestrate.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/team-agent-orchestration/SKILL.md",
+      "role": "agent",
+      "consumers": [
+        "agent-orchestration"
+      ],
+      "activation": "explicit command recipe; unregistered",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/commands/loop-start.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/loop-start.md",
+      "role": "agent",
+      "consumers": [
+        "agent-loop-design"
+      ],
+      "activation": "explicit command recipe; unregistered",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/commands/loop-status.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/loop-status.md",
+      "role": "agent",
+      "consumers": [
+        "agent-loop-design"
+      ],
+      "activation": "explicit command recipe; unregistered",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/commands/cost-report.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/cost-report.md",
+      "role": "agent",
+      "consumers": [
+        "agent-cost-report"
+      ],
+      "activation": "explicit command recipe; unregistered",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/commands/hookify.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/hookify.md",
+      "role": "agent",
+      "consumers": [
+        "hook-rules"
+      ],
+      "activation": "explicit command recipe; unregistered",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/commands/hookify-list.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/hookify-list.md",
+      "role": "agent",
+      "consumers": [
+        "hook-rules"
+      ],
+      "activation": "explicit command recipe; unregistered",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/commands/hookify-configure.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/hookify-configure.md",
+      "role": "agent",
+      "consumers": [
+        "hook-rules"
+      ],
+      "activation": "explicit command recipe; unregistered",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/commands/instinct-status.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/instinct-status.md",
+      "role": "agent",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit command recipe; unregistered",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/commands/instinct-import.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/instinct-import.md",
+      "role": "agent",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit command recipe; unregistered",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/commands/instinct-export.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/instinct-export.md",
+      "role": "agent",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit command recipe; unregistered",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/commands/evolve.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/evolve.md",
+      "role": "agent",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit command recipe; unregistered",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/commands/learn-eval.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/learn-eval.md",
+      "role": "agent",
+      "consumers": [
+        "continuous-learning"
+      ],
+      "activation": "explicit command recipe; unregistered",
+      "license": "MIT; support/agents/licenses/ECC.txt",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/examples/eval-harness/gate.config.json",
+      "source_repo": "ref.ECC",
+      "source_path": "examples/eval-harness/gate.config.json",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "selected offline example",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/examples/eval-harness/run-example.js",
+      "source_repo": "ref.ECC",
+      "source_path": "examples/eval-harness/run-example.js",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "selected offline example",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/examples/eval-harness/taskset.json",
+      "source_repo": "ref.ECC",
+      "source_path": "examples/eval-harness/taskset.json",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "selected offline example",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/examples/eval-harness/variants/baseline/run.js",
+      "source_repo": "ref.ECC",
+      "source_path": "examples/eval-harness/variants/baseline/run.js",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "selected offline example",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/examples/eval-harness/variants/baseline/variant.json",
+      "source_repo": "ref.ECC",
+      "source_path": "examples/eval-harness/variants/baseline/variant.json",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "selected offline example",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/examples/eval-harness/variants/candidate/run.js",
+      "source_repo": "ref.ECC",
+      "source_path": "examples/eval-harness/variants/candidate/run.js",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "selected offline example",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/examples/eval-harness/variants/candidate/variant.json",
+      "source_repo": "ref.ECC",
+      "source_path": "examples/eval-harness/variants/candidate/variant.json",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "selected offline example",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/examples/eval-harness/variants/reward-hack/run.js",
+      "source_repo": "ref.ECC",
+      "source_path": "examples/eval-harness/variants/reward-hack/run.js",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "selected offline example",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/examples/eval-harness/variants/reward-hack/variant.json",
+      "source_repo": "ref.ECC",
+      "source_path": "examples/eval-harness/variants/reward-hack/variant.json",
+      "role": "resource",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "selected offline example",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/tests/council-adapter.test.cjs",
+      "source_repo": "ref.ECC",
+      "source_path": "tests/scripts/council-multi-model.test.js",
+      "role": "test",
+      "consumers": [
+        "review-team"
+      ],
+      "activation": "offline tests with mocked adapter; integration opt-in remains off",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "see validation results and handoff"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/eval-harness/effect-fence.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/eval-harness/effect-fence.js",
+      "role": "script",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "fail-closed compatibility boundary; never autolaunched",
+      "external_requirements": [
+        "Node"
+      ],
+      "validation": "Node syntax and capsule example"
+    },
+    {
+      "path": "support/agents/runtime/scripts/lib/eval-harness/gate-child.js",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/eval-harness/gate-child.js",
+      "role": "script",
+      "consumers": [
+        "agent-evaluation"
+      ],
+      "activation": "fail-closed compatibility boundary; never autolaunched",
+      "external_requirements": [
+        "Node"
+      ],
+      "validation": "Node syntax and capsule example"
+    }
+  ],
+  "external_prerequisites": [
+    {
+      "name": "node",
+      "requirement": "Node 18+; external critique additionally requires exactly tested Codex CLI 0.146.0"
+    },
+    {
+      "name": "python",
+      "requirement": "Python 3.11+ with PyYAML for compliance; Python3 for instincts"
+    },
+    {
+      "name": "bash",
+      "requirement": "Bash/jq/git + authenticated Claude CLI for optional learning observer; WSL2/Linux/macOS for background lifetime"
+    },
+    {
+      "name": "model_runs",
+      "requirement": "Authenticated CLI and explicitly selected budget/scope; compliance --dry-run still calls models"
+    },
+    {
+      "name": "external_services",
+      "requirement": "Optional DevFleet localhost server and tokenchit package not bundled"
+    }
+  ]
+}

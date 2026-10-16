@@ -1,0 +1,874 @@
+{
+  "schema_version": 1,
+  "note": "Reference checkout revisions identify provenance. Historical skill hashes identify the curated inputs actually consolidated, including the team's prior edits.",
+  "reference_repositories": [
+    {
+      "repository": "ref.agent-skills",
+      "origin": "https://github.com/addyosmani/agent-skills.git",
+      "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d"
+    },
+    {
+      "repository": "ref.caveman",
+      "origin": "https://github.com/JuliusBrussee/caveman.git",
+      "revision": "d262ab3882952a59312ff3537cd86d894523c5ab"
+    },
+    {
+      "repository": "ref.ECC",
+      "origin": "https://github.com/affaan-m/ECC.git",
+      "revision": "76aaa77df6adc5b889e689007bf99b9a4f74af34"
+    },
+    {
+      "repository": "ref.matt-skills",
+      "origin": "https://github.com/mattpocock/skills.git",
+      "revision": "49dd158d1076134a641b33efb035946536778336"
+    },
+    {
+      "repository": "ref.scientific-skills",
+      "origin": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
+      "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+    },
+    {
+      "repository": "ref.taste-skill",
+      "origin": "https://github.com/Leonxlnx/taste-skill.git",
+      "revision": "f624f37a8c650b9cc550253104925efe4c8de246"
+    }
+  ],
+  "historical_skill_hashes": [
+    {
+      "path": "skills/caveman-skills/lean-build/SKILL.md",
+      "sha256": "4d498073c6312858b220e9a04b7456c2485c734edb077f6bb17d88a7ed96ad7a"
+    },
+    {
+      "path": "skills/agent-skills/incremental-implementation/SKILL.md",
+      "sha256": "df66536610071727feae1ca95f3c391c248ad828041750ccd3699cce763aa00b"
+    },
+    {
+      "path": "skills/matt-skills/engineering/implement/SKILL.md",
+      "sha256": "83042ad79e3d7ce616124bf59a38a5ebe79417adb36bedfc4e6223aab783be8c"
+    },
+    {
+      "path": "skills/matt-skills/engineering/implement-spec/SKILL.md",
+      "sha256": "5bdaaf884b02b24db432241bcc32250bfee6149c45c743a2a1fef6b416837cfa"
+    },
+    {
+      "path": "skills/ecc-skills/coding-standards/SKILL.md",
+      "sha256": "b844a9b01c7ebf8a1faa3c9f3e05a23e3f9bc9d0b2e4b6c983eb6bff23f9881e"
+    },
+    {
+      "path": "skills/ecc-skills/inherit-legacy-style/SKILL.md",
+      "sha256": "ccce44b6240e346e2d564a035f45abf01842cfc03f4c0253050b8304c505f709"
+    },
+    {
+      "path": "skills/ecc-skills/error-handling/SKILL.md",
+      "sha256": "e8eec6756c950b570486493e64e3bf14c12baf6bf0858bf3928097fe2bfeaf79"
+    },
+    {
+      "path": "skills/agent-skills/debugging-and-error-recovery/SKILL.md",
+      "sha256": "21f3960f5d7ae2cc95c40896545004dbbcbbd752ea65fc2d53962554d4174220"
+    },
+    {
+      "path": "skills/matt-skills/engineering/diagnosing-bugs/SKILL.md",
+      "sha256": "aa87b0ac245c6d1b203c4678eb34dc101af02291448780c55c5e58ccc1619bd7"
+    },
+    {
+      "path": "skills/caveman-skills/investigate-first/SKILL.md",
+      "sha256": "7cc19dd2fc457eb20d65c44dee4d1b72dcdfcd1617182f5bff666700f2a055d8"
+    },
+    {
+      "path": "skills/caveman-skills/surgical-patch/SKILL.md",
+      "sha256": "81ea9f7b51409970099e04b98875dd65806cd35472f9a774b847030328187387"
+    },
+    {
+      "path": "skills/ecc-skills/click-path-audit/SKILL.md",
+      "sha256": "662fc5d02483bcd8ff799d6d3109a38da673182341cfc14445e9076fcd920162"
+    },
+    {
+      "path": "skills/agent-skills/test-driven-development/SKILL.md",
+      "sha256": "a3aa6ba95638497025577469eda10ed17918698209615aeafbc26f131bf2469d"
+    },
+    {
+      "path": "skills/matt-skills/engineering/tdd/SKILL.md",
+      "sha256": "969583080caf842ae86a53501a0091eced13fd89cad65d3aa75c09112318ff33"
+    },
+    {
+      "path": "skills/ecc-skills/tdd-workflow/SKILL.md",
+      "sha256": "8887afa786ef30de834e7567115d3df71934b343c3d9d849714f8ea43f979ee0"
+    },
+    {
+      "path": "skills/ecc-skills/ai-regression-testing/SKILL.md",
+      "sha256": "83f2f5c4083af5762dd658f742d4a390eb3a6f969d835f69e8f47efba296c127"
+    },
+    {
+      "path": "skills/agent-skills/code-review-and-quality/SKILL.md",
+      "sha256": "2db1e850379f255fd3091ef278cde24cd6c7d2ba23e360cc52ea522c40d4396e"
+    },
+    {
+      "path": "skills/matt-skills/engineering/code-review/SKILL.md",
+      "sha256": "9e6d1b00c31e10a002ac3e5fb49014c9589166f668c62996e80a36d23ca21e70"
+    },
+    {
+      "path": "skills/caveman-skills/caveman-review/SKILL.md",
+      "sha256": "599330563f19b5c59c3efddffcd7e8d9098b74c29817ab422ccd3253b103fcb8"
+    },
+    {
+      "path": "skills/agent-skills/doubt-driven-development/SKILL.md",
+      "sha256": "6fa1fcd8420c28daf7e53c5b08b0f20b907911efd2a6d9bce0b9740da20a4008"
+    },
+    {
+      "path": "skills/caveman-skills/safe-refactor/SKILL.md",
+      "sha256": "cd52867aba26aafb53379d43068cef9b2feca3a3fff850f877a99f710ccd02c0"
+    },
+    {
+      "path": "skills/agent-skills/code-simplification/SKILL.md",
+      "sha256": "f0c5ed754057eb0c1e027e2587f59de816651feb5e837242296c43ea21cf621d"
+    },
+    {
+      "path": "skills/caveman-skills/verify-and-stop/SKILL.md",
+      "sha256": "3d5599f49771b864eba94f27f456fda295c48c1a37fa6ba2f65fdcb13cc32acb"
+    },
+    {
+      "path": "skills/ecc-skills/verification-loop/SKILL.md",
+      "sha256": "5b06be54d4852f60e6cf1b04c6e9a4748554334eb3e41af6c0959b544e6464ae"
+    },
+    {
+      "path": "skills/ecc-skills/terminal-ops/SKILL.md",
+      "sha256": "f26e518e6922fe0796f5b6a55349a409f5b03745c4eeed9be80b4c66d890d852"
+    },
+    {
+      "path": "skills/caveman-skills/caveman-commit/SKILL.md",
+      "sha256": "c788a282fc75b981b421dfdad5d84ea7f83f946c126daa39cfc7d3f97845e193"
+    },
+    {
+      "path": "skills/ecc-skills/conventional-commit-review/SKILL.md",
+      "sha256": "c81397a4bfc2ec66986aae7a4dff5a02f78c519bc9774a80778fa9055e7fa2fe"
+    },
+    {
+      "path": "skills/agent-skills/git-workflow-and-versioning/SKILL.md",
+      "sha256": "b7465d187935c52546d39fdc7bd6ac36d94eda25a9500ef8c18b767d2eb116ea"
+    },
+    {
+      "path": "skills/ecc-skills/git-workflow/SKILL.md",
+      "sha256": "7094ab94802d7e839dc33c6ea230020327260518b1b1ce62b42d56d051c1d7c5"
+    },
+    {
+      "path": "skills/matt-skills/engineering/pr/SKILL.md",
+      "sha256": "57658baca2e50e9cf98fdb6b74a51f2afd34b71019d516f7c5d45a51a28354b0"
+    },
+    {
+      "path": "skills/agent-skills/security-and-hardening/SKILL.md",
+      "sha256": "2e3fc60eed5aba97fe416f3f3c9317fdb014a682925ec70a733c3ff99e4b9858"
+    },
+    {
+      "path": "skills/ecc-skills/security-review/SKILL.md",
+      "sha256": "b9eb6416eebc8dda046674f0a2dbb3be88aff526d182b60a0f55998d3d6d0d8d"
+    },
+    {
+      "path": "skills/agent-skills/performance-optimization/SKILL.md",
+      "sha256": "bd36a30e55a5f84329a6977eba5e1ab7654146e71eaba88e34337d4ee020460f"
+    },
+    {
+      "path": "skills/ecc-skills/benchmark-optimization-loop/SKILL.md",
+      "sha256": "f11208b6a86bc311cfbd9e20688a189238fda6c1e03b6f8000ef9e55487f6f95"
+    },
+    {
+      "path": "skills/ecc-skills/benchmark/SKILL.md",
+      "sha256": "58e34c3ccf60ee5155e3db74357b73770015a7aad3594649b6758ba8375ab6ff"
+    },
+    {
+      "path": "skills/ecc-skills/latency-critical-systems/SKILL.md",
+      "sha256": "e533b86d34fe05f5db46365608e15df35386f4d9ad2b8d9d0a350cce5fa8b59d"
+    },
+    {
+      "path": "skills/ecc-skills/data-throughput-accelerator/SKILL.md",
+      "sha256": "59e98c2c2871627ee42984a1509da0d2c3e92d80b10b04d4f93338e5e0c9b0d6"
+    },
+    {
+      "path": "skills/ecc-skills/content-hash-cache-pattern/SKILL.md",
+      "sha256": "c0242ee2fcb5c096d0625cb6957481fce2266e92985036795f5b5c13c329d802"
+    },
+    {
+      "path": "skills/agent-skills/shipping-and-launch/SKILL.md",
+      "sha256": "726f3e546369db289160b8d42195590f00b6432887e17bf19070dcc9a347fe39"
+    },
+    {
+      "path": "skills/ecc-skills/production-audit/SKILL.md",
+      "sha256": "6c92b688db8addb806de171b78e7616a67a0c8b3dd9d565fe1b6bc85c2bcf908"
+    },
+    {
+      "path": "skills/ecc-skills/python-patterns/SKILL.md",
+      "sha256": "103e0130dac33a49d26705fc5a2df804980fcab6a0138d65bc7f370a987d49f6"
+    },
+    {
+      "path": "skills/ecc-skills/python-testing/SKILL.md",
+      "sha256": "b9f7a158dae3b6c06c9c75ffe84e27a1edc86092d2afdcb39e96fc2569902eb7"
+    },
+    {
+      "path": "skills/ecc-skills/regex-vs-llm-structured-text/SKILL.md",
+      "sha256": "5d7d04591ad656ba7b8064b2fa25e83936f8bd077449dac6cc599b4c41ce662a"
+    },
+    {
+      "path": "skills/ecc-skills/dotnet-patterns/SKILL.md",
+      "sha256": "61bc21a6c6d6d1230d90f0bbebca55101b1b63de68ece8574152cbad152cef07"
+    },
+    {
+      "path": "skills/ecc-skills/csharp-testing/SKILL.md",
+      "sha256": "ee93aae975fa9d44bebc33be010b24435d38177e77395c697048622d9be68ad1"
+    },
+    {
+      "path": "skills/ecc-skills/cpp-coding-standards/SKILL.md",
+      "sha256": "f870b47d3493b0ad0b6e3808a679ac3c429b60f03193af6c9dc0e0d9e6981436"
+    },
+    {
+      "path": "skills/ecc-skills/cpp-testing/SKILL.md",
+      "sha256": "a92fb5da9b7e3cd1b4dee185b3eb9d0a55352af6396bf996d2eef72d683784df"
+    },
+    {
+      "path": "skills/agent-skills/api-and-interface-design/SKILL.md",
+      "sha256": "e83d34f52ff12dd8a7c5134cd7e8140ea4541ec65e204f8a1e4cd366e30c4192"
+    },
+    {
+      "path": "skills/ecc-skills/api-design/SKILL.md",
+      "sha256": "250e464413a13c0eb93cc73447b423df1f9aa8e4f80e5e68c41f895b2c33e352"
+    },
+    {
+      "path": "skills/agent-skills/deprecation-and-migration/SKILL.md",
+      "sha256": "6a624f942e09c69863a4219b9bd5d56975026b67b0c70bc83385ffd2120b6142"
+    },
+    {
+      "path": "skills/caveman-skills/migration/SKILL.md",
+      "sha256": "fe7cf96a58b0521130fbb886dab2a326869d6ed0001e0306fd244014ba7a9662"
+    },
+    {
+      "path": "skills/ecc-skills/database-migrations/SKILL.md",
+      "sha256": "dad2f1964295eee14a96e06213ce3f60992bbcdc1f37a50c828bbc2e1abd79dd"
+    },
+    {
+      "path": "skills/agent-skills/observability-and-instrumentation/SKILL.md",
+      "sha256": "e7fcb0820306d46268de9594d676ad98e35040858926c412b7000faa52a61f87"
+    },
+    {
+      "path": "skills/agent-skills/ci-cd-and-automation/SKILL.md",
+      "sha256": "a6ed8ed56456b01ff8314c44eefc69897d9905ae4e06bb2b7036286efb79b5f0"
+    },
+    {
+      "path": "skills/matt-skills/misc/setup-pre-commit/SKILL.md",
+      "sha256": "e069e6a23069ebdba946d4dea11e5d663c10640c6b14b55c4585c81b1a256ac9"
+    },
+    {
+      "path": "skills/ecc-skills/plankton-code-quality/SKILL.md",
+      "sha256": "917920552320fdf0927a3bba61107eee8255dab469af80680dea40d671d51866"
+    },
+    {
+      "path": "skills/ecc-skills/delivery-gate/SKILL.md",
+      "sha256": "1f20dd3c7f10aa459fa025f2070bd9cb2d93028a71c01e46d2c60906da000b5b"
+    },
+    {
+      "path": "skills/ecc-skills/safety-guard/SKILL.md",
+      "sha256": "6378dad8e60286b3fcc32e064e4ba2e452000f5eef0cb2c2204ad7fe7dae3afc"
+    },
+    {
+      "path": "skills/ecc-skills/gateguard/SKILL.md",
+      "sha256": "54083368cd78dea6ea178a8cf666557f41bbc70edaa3be32b8639df9de1c1795"
+    },
+    {
+      "path": "skills/matt-skills/misc/git-guardrails-claude-code/SKILL.md",
+      "sha256": "12d335b84bcf984b213b527014262233f27ffa1eb807db466832ff711b96f41f"
+    },
+    {
+      "path": "skills/ecc-skills/test-collaboration/SKILL.md",
+      "sha256": "741138330940e2c9d3cc7bec9e671787f24a361ff89be44e09a56abc8e10dcfa"
+    },
+    {
+      "path": "skills/ecc-skills/api-connector-builder/SKILL.md",
+      "sha256": "bd164e68965d011447fb217e7861ddf7552e8bf6a0cdf267cd0a588c593141a5"
+    },
+    {
+      "path": "skills/ecc-skills/contract-first/SKILL.md",
+      "sha256": "0f0e95ac16ef1fe17503d026f557bb7933fe394548fc4dcc2705abb61e5b2a09"
+    },
+    {
+      "path": "skills/ecc-skills/github-ops/SKILL.md",
+      "sha256": "281e19fbf138c8d7ac7379864825721aa6f6efcf4008e976a6ea34b3c96e2b54"
+    },
+    {
+      "path": "skills/ecc-skills/opensource-pipeline/SKILL.md",
+      "sha256": "1d4ef417d0254893968f9e9479ac23fea3643b95e86fb42d98d3de3e020a1a33"
+    },
+    {
+      "path": "skills/ecc-skills/generating-python-installer/SKILL.md",
+      "sha256": "47e73ef601d900be3b5ccb5d1a1ba2371d3e46c67b5243c1810e51cd2d8f62f3"
+    },
+    {
+      "path": "skills/ecc-skills/security-scan/SKILL.md",
+      "sha256": "74bc3006fb15eef9cea6bf70a4e9cc45ec118ef00733d1c8226c9dc428f8d658"
+    },
+    {
+      "path": "skills/ecc-skills/mcp-dependency-review/SKILL.md",
+      "sha256": "766536baa981710a85c8f761675f6a57f58600fff42b23ccf6171606180f4c12"
+    },
+    {
+      "path": "skills/ecc-skills/e2e-testing/SKILL.md",
+      "sha256": "b0e00e7e17cb259101139900816c5528aed18dd10bcf5f9cb42cfc35baf8a755"
+    },
+    {
+      "path": "skills/ecc-skills/browser-qa/SKILL.md",
+      "sha256": "6eb78a2460adcde116e6b44fcdff7ae37aeec6208241a24417cb2db4b3b254cd"
+    },
+    {
+      "path": "skills/ecc-skills/windows-desktop-e2e/SKILL.md",
+      "sha256": "cbc93a1e2514ecdcee30da744aa13eb6c0ebe4948ca3dfff52b287df4f9f0814"
+    },
+    {
+      "path": "skills/ecc-skills/change-impact/SKILL.md",
+      "sha256": "b8d8a11417af8b84e93983a8eb682e3b9a16d04f926778eb635c96e90019bf18"
+    },
+    {
+      "path": "skills/ecc-skills/mcp-server-patterns/SKILL.md",
+      "sha256": "eacb07c953e0440c758e3ee7d92984d2c9128e3444005ea7ad5da7bc0201d43d"
+    },
+    {
+      "path": "skills/matt-skills/productivity/grilling/SKILL.md",
+      "sha256": "26d225ea8a36f4acacbe267e789cfb97d73964412f4243dd4b65b6cb806ddebc"
+    },
+    {
+      "path": "skills/matt-skills/productivity/grill-me/SKILL.md",
+      "sha256": "19e660207b447acf6ee0d600471c02e549c7aca8fb3ab38fdc2c7056aa442fc8"
+    },
+    {
+      "path": "skills/agent-skills/interview-me/SKILL.md",
+      "sha256": "ace4b675999bb504593d572e0f73f3d7e803ad6fddf318445598c82c11939db2"
+    },
+    {
+      "path": "skills/matt-skills/engineering/grill-with-docs/SKILL.md",
+      "sha256": "abc0fa7948db18b5fb0e1cc1c522ac5ff47d874e2da1e5df60619d79be11f38b"
+    },
+    {
+      "path": "skills/ecc-skills/intent-driven-development/SKILL.md",
+      "sha256": "e34045f7b3bf6a6fbd364f85c7bc81d8208e18bb929ceff80bbc987f78aadea8"
+    },
+    {
+      "path": "skills/agent-skills/spec-driven-development/SKILL.md",
+      "sha256": "c4b97ce3d7f24be0e67fd612c7595f65504872e3a9f8d338d098b2363fdb66ef"
+    },
+    {
+      "path": "skills/ecc-skills/product-capability/SKILL.md",
+      "sha256": "c26114356edb15f0340e5af66b6f4444892bdf376b053a7152312fd04d22aced"
+    },
+    {
+      "path": "skills/matt-skills/engineering/to-spec/SKILL.md",
+      "sha256": "c73a2250beac0479e384f5466e834bb54ce6e30b7f8705e9999ba840d9d59b36"
+    },
+    {
+      "path": "skills/agent-skills/planning-and-task-breakdown/SKILL.md",
+      "sha256": "ed0f90cc5951ddd4bcab7f871f64efec93a49af9279ef93bc470da77ad8da3f7"
+    },
+    {
+      "path": "skills/matt-skills/engineering/to-tickets/SKILL.md",
+      "sha256": "b8eb6dca1085e85220b0f5990ed787ebf8a924844d090689f1073b06367e2f7a"
+    },
+    {
+      "path": "skills/ecc-skills/story-lifecycle/SKILL.md",
+      "sha256": "1492a724d4df362d8e95a340fabd22423e20965b1d0f9ebc6d2d319aca843194"
+    },
+    {
+      "path": "skills/ecc-skills/blueprint/SKILL.md",
+      "sha256": "878eae8ed0ea4d46d21c8f88d471f6ffce7b0815202a43501060a163e7f446f3"
+    },
+    {
+      "path": "skills/agent-skills/idea-refine/SKILL.md",
+      "sha256": "21ef828e3a2144245b67f840cc3805f761e98c9acce9a96670b7cd7441353463"
+    },
+    {
+      "path": "skills/ecc-skills/product-lens/SKILL.md",
+      "sha256": "58b82c847304b0c4fbf456c1f4ae9205f3733e011f8cbdeed30687f111a098c6"
+    },
+    {
+      "path": "skills/matt-skills/engineering/research/SKILL.md",
+      "sha256": "524b404b1ca373a8b00f63a64667ec4b0a61c3c9cf4e8f246e639be859bb6979"
+    },
+    {
+      "path": "skills/ecc-skills/research-ops/SKILL.md",
+      "sha256": "063a0a60614987a0a0e77c85fcab6ec2b40229300442821da0e1314a9dd6fa1e"
+    },
+    {
+      "path": "skills/agent-skills/source-driven-development/SKILL.md",
+      "sha256": "c59faf851377f0eeda45306398d16eb96d77ab1c2fd3e1a7fb58e9a0af33c1e9"
+    },
+    {
+      "path": "skills/ecc-skills/documentation-lookup/SKILL.md",
+      "sha256": "81ad2b5b4acbe02259f4b6cbfd9111d81d5cfe51025051b6048959c45f6516c1"
+    },
+    {
+      "path": "skills/ecc-skills/search-first/SKILL.md",
+      "sha256": "76835db48dd910061d2e4271b1151793d2fddbabeb2d2866eed068b3580c55d5"
+    },
+    {
+      "path": "skills/matt-skills/engineering/domain-modeling/SKILL.md",
+      "sha256": "b62d997256cc073e123d4303da8e9db00db0e28de9739660ca3e55ab76e09cdb"
+    },
+    {
+      "path": "skills/ecc-skills/context-and-decisions/SKILL.md",
+      "sha256": "5158283621d6d15288dab50fc2e884cf114b8d91137e45e619bf3dff4740f3e0"
+    },
+    {
+      "path": "skills/ecc-skills/architecture-decision-records/SKILL.md",
+      "sha256": "263b20e81801aa5fa7e75eaec6c38345c0ac028ca0edbd67b1b9071c5fcbe11f"
+    },
+    {
+      "path": "skills/agent-skills/documentation-and-adrs/SKILL.md",
+      "sha256": "b60d503925bbaacee7fd63935db70b9ced5b2514ff5a56a672130e01b9690bc5"
+    },
+    {
+      "path": "skills/ecc-skills/docs-governance/SKILL.md",
+      "sha256": "499ac59071e6e2b8fb60f085e337a3a1ec16e200adb8f5b8bc027afb338cf3eb"
+    },
+    {
+      "path": "skills/ecc-skills/living-docs-governance/SKILL.md",
+      "sha256": "e8c22a1f69743e256c6d6df138d99e49d22e29effbf008dfe2328b7fdc76247e"
+    },
+    {
+      "path": "skills/matt-skills/engineering/codebase-design/SKILL.md",
+      "sha256": "362b0bec828219d9f4b08ca7c466164e67253bdd817359258e60d2e9c5692a8f"
+    },
+    {
+      "path": "skills/ecc-skills/hexagonal-architecture/SKILL.md",
+      "sha256": "1579f70e4cd5a2dde39d29a2055d18b39f06b063a308d3b43a498900c99495b7"
+    },
+    {
+      "path": "skills/ecc-skills/recsys-pipeline-architect/SKILL.md",
+      "sha256": "309fe65f0ffdb44b62005c63ab9f460ddbe813f994e010316f7a2e55fc52e436"
+    },
+    {
+      "path": "skills/matt-skills/engineering/improve-codebase-architecture/SKILL.md",
+      "sha256": "f053ff6d7a70f10bd0104e368f7e664b23ea6378898e305bf027e8864757822f"
+    },
+    {
+      "path": "skills/ecc-skills/codebase-onboarding/SKILL.md",
+      "sha256": "ef88873a4b0d0fe155c0a196ffecd5c7b5e28edd00fbbdb5c1fd2ca8fd0eb6f0"
+    },
+    {
+      "path": "skills/caveman-skills/caveman-explore/SKILL.md",
+      "sha256": "908f504ce45f5f8517ac7b64dc89fef57c4519d26f92b0b1843febf4b6fe2ac8"
+    },
+    {
+      "path": "skills/ecc-skills/code-tour/SKILL.md",
+      "sha256": "416c7eb9229554a1ef113bbb873ff0b260a2ad9ae6e6075a75c375955d3fcf6f"
+    },
+    {
+      "path": "skills/matt-skills/engineering/retro/SKILL.md",
+      "sha256": "42110f533f169026d037cf141b9f6c2752c6d914903be4758c38a68349e83e78"
+    },
+    {
+      "path": "skills/ecc-skills/growth-log/SKILL.md",
+      "sha256": "1cfaf2a0bf341087bbeeb8db0dc7c5edd5bad241ce4d89df728d22f2c5c72809"
+    },
+    {
+      "path": "skills/ecc-skills/agent-self-evaluation/SKILL.md",
+      "sha256": "96bb21eb37760f596789f84ec0a5dad4ef92fc2255e35cd7b88dc4234062b8c1"
+    },
+    {
+      "path": "skills/ecc-skills/brownfield-retrospective/SKILL.md",
+      "sha256": "805439bc795d40dff6bceb34da6a2ab2115badfea6c9f4729e7fe0ccda62c382"
+    },
+    {
+      "path": "skills/agent-skills/constraint-driven-development/SKILL.md",
+      "sha256": "06479d4305f286d23cfb99f5dc85695896785269664e1f6a8d800e3b71e70c10"
+    },
+    {
+      "path": "skills/matt-skills/engineering/wayfinder/SKILL.md",
+      "sha256": "0efeec3d47d2fdd3d9b677f19ca7360a3e1e2034ff23bfee33765a74c5d27d22"
+    },
+    {
+      "path": "skills/matt-skills/engineering/prototype/SKILL.md",
+      "sha256": "f74ae01f4fc454d3a4ef21271920f1706e626271e715dda0559e489f45c792c3"
+    },
+    {
+      "path": "skills/matt-skills/engineering/wizard/SKILL.md",
+      "sha256": "dbefb750eae07d9f8b05ab1084f6acfdda2752df2a6b577c46a505e2bc790164"
+    },
+    {
+      "path": "skills/matt-skills/productivity/to-questionnaire/SKILL.md",
+      "sha256": "77825120815c21400f82e2794faf342d1d1a4ab1493be3fe061857885d26b768"
+    },
+    {
+      "path": "skills/matt-skills/productivity/teach/SKILL.md",
+      "sha256": "d9480a846c88bb1151947eb484bab1a8c9a84af4d9ddf1ea0f6fb7fe639cf9b3"
+    },
+    {
+      "path": "skills/matt-skills/productivity/wait-what/SKILL.md",
+      "sha256": "95393f96e730b20dabc6b425515cb6292d34bd9a91859a03c2c821e24d321112"
+    },
+    {
+      "path": "skills/matt-skills/engineering/triage/SKILL.md",
+      "sha256": "797f4371a4cea1b564ecfdc7a603089acf3c023454e47ccb0b3307c62de279f8"
+    },
+    {
+      "path": "skills/ecc-skills/project-flow-ops/SKILL.md",
+      "sha256": "6d59e4118a91419fdc66cf51925371a3f9fad66881c5a1720ed1c5cc490df1f7"
+    },
+    {
+      "path": "skills/ecc-skills/plan-canvas/SKILL.md",
+      "sha256": "0ee9356f9305eb8ceec671753700a0a7a438c76dca9983ed87c66be0b5681b64"
+    },
+    {
+      "path": "skills/agent-skills/using-agent-skills/SKILL.md",
+      "sha256": "30787ef2c77bf1a4729fffed0f6523ba6fcbe81bdc436b36371b78c21394d3c3"
+    },
+    {
+      "path": "skills/ecc-skills/ecc-guide/SKILL.md",
+      "sha256": "472d72a270cbd7f4eaf7fc73a1313f40a4995575c5e2d2ff4f91c280f5ee5df9"
+    },
+    {
+      "path": "skills/ecc-skills/ecc-recipes/SKILL.md",
+      "sha256": "0c3250fe8c8c1384f1dc4a8b8bd57e3a80037d4964c7c18848e449bf03866644"
+    },
+    {
+      "path": "skills/ecc-skills/plan-orchestrate/SKILL.md",
+      "sha256": "df127a46f7b5db2608f00da04d0cdfe5ed4a075ecc7e2876189e1de26c99d4fe"
+    },
+    {
+      "path": "skills/matt-skills/engineering/ask-KLCode/SKILL.md",
+      "sha256": "9153a87908838ed24838c16da0eaeec46877f3ab701efdeefea7a5579a4a474d"
+    },
+    {
+      "path": "skills/matt-skills/productivity/writing-for-agents/SKILL.md",
+      "sha256": "1c0c4ebf2d221917591144f0ced4fe46dae13301cb3d6d93fc88ecf0dda6aed2"
+    },
+    {
+      "path": "skills/matt-skills/engineering/setup-KLCode-skills/SKILL.md",
+      "sha256": "5dcf60b4265d52423cd83b8f0aef466f93b624152bbb9d2450b41ed80f7d0e6d"
+    },
+    {
+      "path": "skills/ecc-skills/workspace-surface-audit/SKILL.md",
+      "sha256": "ca6eadae6bd303713da56344bedbd8b246fe07bde1d20a26c9f21844d919cd6f"
+    },
+    {
+      "path": "skills/ecc-skills/agent-sort/SKILL.md",
+      "sha256": "ed49245f9a025275a9462b639cf6319cd240dc653a93ed69a91073a794e79217"
+    },
+    {
+      "path": "skills/ecc-skills/configure-ecc/SKILL.md",
+      "sha256": "ad87612e3cd745332625cd707179f4e98dc78da99183640f985637022ec9d650"
+    },
+    {
+      "path": "skills/ecc-skills/repo-scan/SKILL.md",
+      "sha256": "b3318f6263629467d895d71a281cb64575d9d5de12c96d97cd1d19c66734e98e"
+    },
+    {
+      "path": "skills/ecc-skills/config-gc/SKILL.md",
+      "sha256": "e8ade5c8d48728db6c1137e4392308b6d56290a19d4f78d365122d7ab05276a1"
+    },
+    {
+      "path": "skills/ecc-skills/automation-audit-ops/SKILL.md",
+      "sha256": "71aa878fd06ef02f0c8ca50eaaee0ec45995981d769d8701806b9b83ca8a2f2c"
+    },
+    {
+      "path": "skills/ecc-skills/skill-stocktake/SKILL.md",
+      "sha256": "3de326f8f87216b024bf524433b91607068d805286394d5ed8e293b4799b7314"
+    },
+    {
+      "path": "skills/ecc-skills/skill-host-compat/SKILL.md",
+      "sha256": "246242187c2da04369c23d782ba0970bcb9b9fb74acb421161649e4c572d4b54"
+    },
+    {
+      "path": "skills/ecc-skills/skill-scout/SKILL.md",
+      "sha256": "77003af6531a221e3e99d68b33aafa229811c558ca3092b198bf9818aaf864da"
+    },
+    {
+      "path": "skills/ecc-skills/rules-distill/SKILL.md",
+      "sha256": "c451a63f96077f92ef6b40c4310f5a470a5d05103a181af518b115c4e828292c"
+    },
+    {
+      "path": "skills/ecc-skills/skill-comply/SKILL.md",
+      "sha256": "e26cbbc30a32ea8c76c56d09ba9a3a921e82ad6e2360f825ec63d3f8df6b1f5a"
+    },
+    {
+      "path": "skills/ecc-skills/hookify-rules/SKILL.md",
+      "sha256": "6d1fdfe8e594ad1465ee1e02ee2fb6fce51570ef9e4ee1231bdc43df937ed4c4"
+    },
+    {
+      "path": "skills/agent-skills/context-engineering/SKILL.md",
+      "sha256": "8b736cb9e55b82b265ab6ff78349c0e826e8a6df550deddf665b7fb3ff858b63"
+    },
+    {
+      "path": "skills/ecc-skills/iterative-retrieval/SKILL.md",
+      "sha256": "b453b16d3e36174b8487c05ab807d0321a66c2d058812b2ae129d82824183725"
+    },
+    {
+      "path": "skills/ecc-skills/strategic-compact/SKILL.md",
+      "sha256": "4ef213d6ac6007d93a8d99e15b9ba1688db2ef96badc7f2a8d522dd1f90535eb"
+    },
+    {
+      "path": "skills/ecc-skills/context-budget/SKILL.md",
+      "sha256": "793d51ac6639a466213800c228189a48b102c88d7cfb5b0651baa3480a577206"
+    },
+    {
+      "path": "skills/matt-skills/productivity/handoff/SKILL.md",
+      "sha256": "739d8fbe3e6ed688581eb62b35f04834822eae47e57bc35a79c8d8dc9ac703d3"
+    },
+    {
+      "path": "skills/ecc-skills/unified-memory/SKILL.md",
+      "sha256": "c42e96155783a44a50f13ab63e9d7f33c9d03b7a1f30777ef434401469c1630a"
+    },
+    {
+      "path": "skills/ecc-skills/ck/SKILL.md",
+      "sha256": "4759d9f4959fbec9afc7bc4b06c33d5644fb059e4d74a6c94200d29112b71bf5"
+    },
+    {
+      "path": "skills/ecc-skills/knowledge-ops/SKILL.md",
+      "sha256": "958529713af2ab29c7b31b3cb758953271174b8909c94f1238dd7c78671672c2"
+    },
+    {
+      "path": "skills/ecc-skills/continuous-learning-v2/SKILL.md",
+      "sha256": "ddad12451a0d582c6ef1b197b7be193bef613cbc74eba4117fcb74fc7a4ecd00"
+    },
+    {
+      "path": "skills/ecc-skills/continuous-learning/SKILL.md",
+      "sha256": "d494867b456999cad53c51c89fa2cf8da101f76ea875286987f52e5d45f72221"
+    },
+    {
+      "path": "skills/ecc-skills/team-agent-orchestration/SKILL.md",
+      "sha256": "a64dbdf4b6df857c044d6b38cf23324fcd7d2c139ba1cfcd39535e8c928c49a3"
+    },
+    {
+      "path": "skills/ecc-skills/parallel-execution-optimizer/SKILL.md",
+      "sha256": "e7de2fff9971d7bc179ac1827d62de701fd8951142d9e17ec7c782481c8b7941"
+    },
+    {
+      "path": "skills/ecc-skills/agentic-engineering/SKILL.md",
+      "sha256": "41c32c20ec97469341f5d83d8beb15f03d1b6f1c40fb1bdf534c50cd9a38cb6f"
+    },
+    {
+      "path": "skills/ecc-skills/ai-first-engineering/SKILL.md",
+      "sha256": "114913bdcb6127392df56d96f7f1312f36c74d69c278dece6d377b9bd92123a5"
+    },
+    {
+      "path": "skills/ecc-skills/orch-pipeline/SKILL.md",
+      "sha256": "26707fc276a0a8489a5919c48af22f0c2c2d12724d3e031080200281f26a3f2e"
+    },
+    {
+      "path": "skills/ecc-skills/orch-add-feature/SKILL.md",
+      "sha256": "6ba858d94cfaa05f3b1e63ad09656285a4a33009e9cd837ebcaf093d39d29a25"
+    },
+    {
+      "path": "skills/ecc-skills/orch-change-feature/SKILL.md",
+      "sha256": "d35ee5dfdf5f64e60e8905124eccf73267bc59852e7d11ba5ca5acf7d765c6f8"
+    },
+    {
+      "path": "skills/ecc-skills/orch-fix-defect/SKILL.md",
+      "sha256": "399e142bbf3751b5a0fdec1ae450f5673bd1a038304a221748c865280e885b2d"
+    },
+    {
+      "path": "skills/ecc-skills/orch-refine-code/SKILL.md",
+      "sha256": "5f0f468ffa4e220bd8f76684b3df6a14b67b34333e1ae52e0de49ed2c16fa17b"
+    },
+    {
+      "path": "skills/ecc-skills/orch-build-mvp/SKILL.md",
+      "sha256": "ab8591b1b9a2711be93a9690bcee95ff8486faa00522aa8c0847d0481f7f64d9"
+    },
+    {
+      "path": "skills/ecc-skills/claude-devfleet/SKILL.md",
+      "sha256": "5fe6efbb5663699ba8e348b2a77fbf7c396ed1903bb95fa0c05c1174f81fabfc"
+    },
+    {
+      "path": "skills/ecc-skills/autonomous-agent-harness/SKILL.md",
+      "sha256": "74afde3fa6e8423bdbf43f53b24c7b4a8b441648a1ad8f23953dc6eba3378409"
+    },
+    {
+      "path": "skills/ecc-skills/agentic-os/SKILL.md",
+      "sha256": "e1d1207353652456ac84a821e5522def1d108677318630af4fd7ac16735b5c04"
+    },
+    {
+      "path": "skills/ecc-skills/continuous-agent-loop/SKILL.md",
+      "sha256": "f228cd383a9063b3a0116c5aea02565e859992f63fae5e799adf9c9e44e2454d"
+    },
+    {
+      "path": "skills/ecc-skills/autonomous-loops/SKILL.md",
+      "sha256": "c2db797295500b9c2b31d9dd2451ef28727346c739b5d1d3366f0f9ea2e823dc"
+    },
+    {
+      "path": "skills/ecc-skills/loop-design-check/SKILL.md",
+      "sha256": "d48c239c8b9ff253d103d7de7b9839c5bf9dbd3c90eddef7c4ac612b28d71bbd"
+    },
+    {
+      "path": "skills/ecc-skills/recursive-decision-ledger/SKILL.md",
+      "sha256": "0c842b982a4ec80bb6487842ac8f019dc0f716c56e8363618a5f6d5a6de6e58e"
+    },
+    {
+      "path": "skills/ecc-skills/dynamic-workflow-mode/SKILL.md",
+      "sha256": "bdf7902e4e213c6f2e7bdc417757004d118e8e36267239b707670e2875ebf7bf"
+    },
+    {
+      "path": "skills/ecc-skills/agent-harness-construction/SKILL.md",
+      "sha256": "e7fb390a6663b46ea5d3c2876753a5ce32ba3bad1889686b21a42894caa1742d"
+    },
+    {
+      "path": "skills/ecc-skills/team-builder/SKILL.md",
+      "sha256": "23ce20d4d50be35d4b6cfe7facc01010983e18cb95c4aaf3d100338ca55e671b"
+    },
+    {
+      "path": "skills/ecc-skills/dev-team/SKILL.md",
+      "sha256": "727b093c8f8284923e54619b9193e5dee9e9ae0ea87b5fb65e1e01e0206fe621"
+    },
+    {
+      "path": "skills/ecc-skills/council/SKILL.md",
+      "sha256": "2104d002d301a061a16d21ea2e00292f80b66b20c9883a33525a7de404153502"
+    },
+    {
+      "path": "skills/ecc-skills/council-multi-model/SKILL.md",
+      "sha256": "3c67816efdab97c89f8433b8a88d720ca736871467f7d6d1ff344fee59f18ce5"
+    },
+    {
+      "path": "skills/ecc-skills/santa-method/SKILL.md",
+      "sha256": "942eb2301d759aec427771866779b431fa10129d11a4f058583770f68ca6baa7"
+    },
+    {
+      "path": "skills/ecc-skills/agent-eval/SKILL.md",
+      "sha256": "57fa683e356b6f5612bc6d7dc101ae39c126e6edf9a48f4ec53afea3e80d7e5d"
+    },
+    {
+      "path": "skills/ecc-skills/eval-harness/SKILL.md",
+      "sha256": "3a5339a5a80099a5c9d55da9b6c8e05a690f5befc6f78d779c75dd79d818ca07"
+    },
+    {
+      "path": "skills/ecc-skills/cost-tracking/SKILL.md",
+      "sha256": "f868207abd550308bc18902ecdfd2c51ad1ea85ba692dbe95cd9c3561da2a8bb"
+    },
+    {
+      "path": "skills/ecc-skills/token-card/SKILL.md",
+      "sha256": "ac297ba33187d7d2d66a6b151b1492a8757aac64938715f6eaabfbb1287cfd26"
+    },
+    {
+      "path": "skills/ecc-skills/token-budget-advisor/SKILL.md",
+      "sha256": "7f037a58306a6bd5c5a024491a6c4529cd8373309e413eda517ad2430420e25a"
+    },
+    {
+      "path": "skills/ecc-skills/cost-aware-llm-pipeline/SKILL.md",
+      "sha256": "2d6c19c2d21a473db8720c4f723f17d265eeec48f84614f0169be2df2fbe28ff"
+    },
+    {
+      "path": "skills/ecc-skills/prompt-caching-strategy/SKILL.md",
+      "sha256": "bde64446760754680a6e821fce96ed70e4a409adc7145cb056a815aa64eb5b81"
+    },
+    {
+      "path": "skills/ecc-skills/ecc-tools-cost-audit/SKILL.md",
+      "sha256": "efcc5b7c850d5a2f1b853c25a92b392fa0bf62451e5799b9a5efb905dbf45337"
+    },
+    {
+      "path": "skills/ecc-skills/prompt-optimizer/SKILL.md",
+      "sha256": "2e7a5ac45bae3e7e11a8c572f3ed1cbf0a753028b7750107c776bb19d111daf5"
+    },
+    {
+      "path": "skills/ecc-skills/terminal-opener/SKILL.md",
+      "sha256": "679b8aca9af3f47450d437fed7a71ac9c1272b6196224ddad8fead218f5f16ab"
+    },
+    {
+      "path": "skills/agent-skills/frontend-ui-engineering/SKILL.md",
+      "sha256": "29a3e53d57c0a128831a20730ae874a8c4fda40c001fcdc15f8e9ad4b5f72f1b"
+    },
+    {
+      "path": "skills/ecc-skills/frontend-design-direction/SKILL.md",
+      "sha256": "71a40f7bc4a28da01b54527fe5590f6055c93adc630e6ceee8c892b35c980893"
+    },
+    {
+      "path": "skills/ecc-skills/make-interfaces-feel-better/SKILL.md",
+      "sha256": "aff91aef917cba9c65681ae77197cee93ce9b697ee8916ea684ef8537c99fb52"
+    },
+    {
+      "path": "skills/ecc-skills/frontend-a11y/SKILL.md",
+      "sha256": "01ce69a831ff42a90ee0b83ca5081a3e6fa718b9a070fdbd6391f79afe360dd6"
+    },
+    {
+      "path": "skills/ecc-skills/design-system/SKILL.md",
+      "sha256": "1969e4cb6cd13cdafff5f84353047d6e55cebc24e1a595ec48e6e2c666f3d8b1"
+    },
+    {
+      "path": "skills/ecc-skills/dashboard-builder/SKILL.md",
+      "sha256": "3ec0939407a9f410bf651063e6e81c011a8243c5bb448f190764b321321687ee"
+    },
+    {
+      "path": "skills/ecc-skills/frontend-slides/SKILL.md",
+      "sha256": "3c2797608d387b98eb3ca550107dbc30ee3e86154a811c5d6e7c7c03b7f496fb"
+    },
+    {
+      "path": "skills/ecc-skills/remotion-video-creation/SKILL.md",
+      "sha256": "dd727cadc4c1e179932b9736955ff3e537f75eeb759c038345ad9fe7d1bc55a9"
+    },
+    {
+      "path": "skills/ecc-skills/ui-demo/SKILL.md",
+      "sha256": "893eee77f98f52d28bffa6bbababa7481300cc13535dea519fa0cc1b0168b2f8"
+    },
+    {
+      "path": "skills/ecc-skills/taste-distillation/SKILL.md",
+      "sha256": "7aa53f4a4cc7a959da5b60d77a6f43e5541cb3a95aa982fea73a2b706d9cd408"
+    },
+    {
+      "path": "skills/ecc-skills/taste-application/SKILL.md",
+      "sha256": "422a07f05e0dfc16a1bcc14895ff6f34891473ddec28981c4fa7986591165d2e"
+    },
+    {
+      "path": "skills/taste-skills/taste-skill/SKILL.md",
+      "sha256": "fcf8ac6e5a55f3cc067e16e3d651670d59c4ab0980743051c3438f54141a031e"
+    },
+    {
+      "path": "skills/taste-skills/gpt-tasteskill/SKILL.md",
+      "sha256": "2638d6d69f886a6d03378ab84bf5325577bbbe56153cd4703e2761578297a74f"
+    },
+    {
+      "path": "skills/taste-skills/soft-skill/SKILL.md",
+      "sha256": "2d11cdcefc8bf319429ee17d94d69a390802e2acf7163662d1eacbcf5be3ff79"
+    },
+    {
+      "path": "skills/taste-skills/minimalist-skill/SKILL.md",
+      "sha256": "c3230cbad9d8b0c0477b4299f7bcd3304dca9e5d33dd37cef774e767be165fce"
+    },
+    {
+      "path": "skills/taste-skills/brutalist-skill/SKILL.md",
+      "sha256": "bd9c7fd04ae149531eb6bd0d4e8dceee57aa6877fcef3d67ced90e68e755affa"
+    },
+    {
+      "path": "skills/taste-skills/redesign-skill/SKILL.md",
+      "sha256": "089b2735a58eaf4c2dd760dbe89d2ad6bb87d90e7b2ea4dd4cdd900f213c98d9"
+    },
+    {
+      "path": "skills/taste-skills/image-to-code-skill/SKILL.md",
+      "sha256": "2944189b448e2a77cbbf55014030b1890a9ec5891acc9fa97fb8c215e0008407"
+    },
+    {
+      "path": "skills/taste-skills/imagegen-frontend-web/SKILL.md",
+      "sha256": "23e6d27ab410e97fe5e844d18db97c8e674d317abd8567f4c7726ee16f56da6e"
+    },
+    {
+      "path": "skills/taste-skills/brandkit/SKILL.md",
+      "sha256": "cfa1a800ef2e7a60d04b232b0195e11beef5c6801127665514cbbd8652f27b83"
+    },
+    {
+      "path": "skills/taste-skills/stitch-skill/SKILL.md",
+      "sha256": "56e41363d61ff565dbba8c8c05c3d8e6538ccd6f49180a504737edfcdbfff409"
+    },
+    {
+      "path": "skills/taste-skills/output-skill/SKILL.md",
+      "sha256": "7b2275b591af7760b36a2dfb1dbcf3c99c5054c52298a1066c4979f39ed947d9"
+    },
+    {
+      "path": "skills/ecc-skills/scientific-thinking-literature-review/SKILL.md",
+      "sha256": "380918f545c7e9b297b23bee4a0432deba977acbdb217232bf1ab9d5aa3c562e"
+    },
+    {
+      "path": "skills/ecc-skills/scientific-thinking-scholar-evaluation/SKILL.md",
+      "sha256": "079ed9182c086fbb2168b723f36cb167d4cb2272a10a41b131f38945d2f0b145"
+    },
+    {
+      "path": "skills/ecc-skills/article-writing/SKILL.md",
+      "sha256": "a736a875e8b33a7319d8ed835a8ff8a53614729477a843b51a5369d022931bdc"
+    },
+    {
+      "path": "skills/ecc-skills/data-scraper-agent/SKILL.md",
+      "sha256": "662e884d58f4089bd8e090ef8d32042b85a5d9b4715906a89072002704451c0a"
+    },
+    {
+      "path": "skills/ecc-skills/osint-investigation/SKILL.md",
+      "sha256": "d5964e1e967450ae0e7b5422e8044825058b5dcd59f40a9ce0cc704d6c91a437"
+    }
+  ]
+}

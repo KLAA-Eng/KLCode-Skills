@@ -1,0 +1,1376 @@
+{
+  "schema_version": 1,
+  "category": "knowledge",
+  "external_prerequisites": [
+    "Ordinary Markdown workflows need only host file/search tools",
+    "Python3.10+ for docs audit, tour validation, scientific local helpers and heuristic evaluator",
+    "Node18+ for optional CK and Memory Vault; Git optional, and refs require Git to validate revision tours",
+    "Bash required for generated wizard runtime/syntax check; unavailable here",
+    "requests/network only for optional DOI metadata checks; never required for local review",
+    "pandoc/XeLaTeX/CSL assets only for optional PDF export; not installed here",
+    "CodeTour-compatible extension only to view tours interactively; author/validation is local",
+    "Context7/search/MCP/hosted storage optional when already configured; no provider installation implied"
+  ],
+  "files": [
+    {
+      "consumers": [
+        "technical-research",
+        "solution-discovery",
+        "architecture-decisions",
+        "documentation",
+        "codebase-onboarding",
+        "code-tours",
+        "session-retrospective",
+        "human-setup-guide",
+        "teaching",
+        "reexplain",
+        "session-handoff",
+        "knowledge-management",
+        "literature-review",
+        "scholarly-evaluation",
+        "article-writing",
+        "osint-investigation"
+      ],
+      "path": "support/knowledge/licenses/ref.ECC.txt",
+      "source_repo": "ref.ECC",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "license",
+      "license": "MIT",
+      "source_path": "LICENSE",
+      "source_sha256": "326146379F01BB137C0A5D3C54770C1AA31076705C8B88A7F6B26A460F6221B2",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "technical-research",
+        "solution-discovery",
+        "architecture-decisions",
+        "documentation",
+        "codebase-onboarding",
+        "code-tours",
+        "session-retrospective",
+        "human-setup-guide",
+        "teaching",
+        "reexplain",
+        "session-handoff",
+        "knowledge-management",
+        "literature-review",
+        "scholarly-evaluation",
+        "article-writing",
+        "osint-investigation"
+      ],
+      "path": "support/knowledge/licenses/ref.matt-skills.txt",
+      "source_repo": "ref.matt-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "license",
+      "license": "MIT",
+      "source_path": "LICENSE",
+      "source_sha256": "4981C5F6A90EB3A969DACABB9350F5A75695FF3910B39B6534952908DFDC5FF7",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "technical-research",
+        "solution-discovery",
+        "architecture-decisions",
+        "documentation",
+        "codebase-onboarding",
+        "code-tours",
+        "session-retrospective",
+        "human-setup-guide",
+        "teaching",
+        "reexplain",
+        "session-handoff",
+        "knowledge-management",
+        "literature-review",
+        "scholarly-evaluation",
+        "article-writing",
+        "osint-investigation"
+      ],
+      "path": "support/knowledge/licenses/ref.agent-skills.txt",
+      "source_repo": "ref.agent-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "license",
+      "license": "MIT",
+      "source_path": "LICENSE",
+      "source_sha256": "6F202F8BD568CD730DBB2B0D1F8E243BC74C2FA1F64DBCE9B2C7EA08BD5C9FD7",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "technical-research",
+        "solution-discovery",
+        "architecture-decisions",
+        "documentation",
+        "codebase-onboarding",
+        "code-tours",
+        "session-retrospective",
+        "human-setup-guide",
+        "teaching",
+        "reexplain",
+        "session-handoff",
+        "knowledge-management",
+        "literature-review",
+        "scholarly-evaluation",
+        "article-writing",
+        "osint-investigation"
+      ],
+      "path": "support/knowledge/licenses/ref.caveman.txt",
+      "source_repo": "ref.caveman",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "license",
+      "license": "Apache-2.0",
+      "source_path": "LICENSE",
+      "source_sha256": "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "technical-research",
+        "solution-discovery",
+        "architecture-decisions",
+        "documentation",
+        "codebase-onboarding",
+        "code-tours",
+        "session-retrospective",
+        "human-setup-guide",
+        "teaching",
+        "reexplain",
+        "session-handoff",
+        "knowledge-management",
+        "literature-review",
+        "scholarly-evaluation",
+        "article-writing",
+        "osint-investigation"
+      ],
+      "path": "support/knowledge/licenses/ref.scientific-skills.txt",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "license",
+      "license": "MIT",
+      "source_path": "LICENSE.md",
+      "source_sha256": "5C793D8FE1C553D49C305F3C178AC360B6D32607BDF1BCA06B10D3BA9881D78F",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/scripts/memory.js",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "scripts/memory.js",
+      "source_sha256": "C5266A07230D5917C84665FFF55C4F17A50A6F74BC55BF403D3D4A6B9CC2620C",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/scripts/lib/memory-vault.js",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "scripts/lib/memory-vault.js",
+      "source_sha256": "83461FEA071D2A96CA29A9E9767DF770A0363B98721E3EEBD2B371DDC48453AB",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Project/team roots docs/knowledge/memory; explicit user ~/.klcode/memory; scoped read/write protections preserved"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/scripts/lib/memory-vault-format.js",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "scripts/lib/memory-vault-format.js",
+      "source_sha256": "A5589F0CD0FD8A414436775E74243C39B068C86DDC99A4732D71EE54409A50C2",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/scripts/lib/path-safety.js",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "scripts/lib/path-safety.js",
+      "source_sha256": "542126CF47247161DD26713A1F33D34AF2881DB46435AC8ECEF76A8BE31C062C",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "documentation"
+      ],
+      "path": "support/knowledge/scripts/docs-audit/audit-docs.py",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/docs-governance/scripts/audit-docs.py",
+      "source_sha256": "889156EC7B22FA5F08B4F9E5B9A9C918C53B357B24C5AA9F322FDC7E97107622",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Bundled sibling import resolution supports embedded Python; docs audit defaults use approved shared doc paths"
+    },
+    {
+      "consumers": [
+        "documentation"
+      ],
+      "path": "support/knowledge/scripts/docs-audit/markdown_links.py",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/docs-governance/scripts/markdown_links.py",
+      "source_sha256": "148CC371D8143BD5070A9A5C5A1A7CC3E142ACFAD53C7DAE4C4C5F9896EC0B20",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Bundled sibling import resolution supports embedded Python; docs audit defaults use approved shared doc paths"
+    },
+    {
+      "consumers": [
+        "documentation"
+      ],
+      "path": "skills/knowledge/documentation/references/artifact-role-contract.md",
+      "source_repo": "ref.ECC",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "reference",
+      "license": "MIT",
+      "source_path": "skills/docs-governance/references/artifact-role-contract.md",
+      "source_sha256": "4C22A702C6B0C44659D7999D2CF0A706B7AF064562025E28A425C753F0393183",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/ck/commands/forget.mjs",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Opt-in local CK adapter only; hook not enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/ck/commands/forget.mjs",
+      "source_sha256": "AF9995621BD68EB3D848A37F5D63B9F0D22A49665BA19C1AFD00EEB912E3ADFC",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Local docs/knowledge/.ck and KLCODE_CK_HOME; no native Claude memory writes; context target confinement; hook inactive"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/ck/commands/info.mjs",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Opt-in local CK adapter only; hook not enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/ck/commands/info.mjs",
+      "source_sha256": "F294480E80AAFE155D789AB3E005891EFD7AA22635F0392886C36457DD46BA75",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Local docs/knowledge/.ck and KLCODE_CK_HOME; no native Claude memory writes; context target confinement; hook inactive"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/ck/commands/init.mjs",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Opt-in local CK adapter only; hook not enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/ck/commands/init.mjs",
+      "source_sha256": "3AB39C2610548DA4252726B7B5212FF5375314B54CD0C2E0B71A41D515EF923D",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Local docs/knowledge/.ck and KLCODE_CK_HOME; no native Claude memory writes; context target confinement; hook inactive"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/ck/commands/list.mjs",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Opt-in local CK adapter only; hook not enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/ck/commands/list.mjs",
+      "source_sha256": "902D5EF9370D07217492D59968FBE904A7961741C601F8A4420787D98910C2A3",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Local docs/knowledge/.ck and KLCODE_CK_HOME; no native Claude memory writes; context target confinement; hook inactive"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/ck/commands/migrate.mjs",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Opt-in local CK adapter only; hook not enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/ck/commands/migrate.mjs",
+      "source_sha256": "7703062EB780C63785870B26290BC4FC386B42EB697E24D91FA87BCB2F13D6B7",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Local docs/knowledge/.ck and KLCODE_CK_HOME; no native Claude memory writes; context target confinement; hook inactive"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/ck/commands/resume.mjs",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Opt-in local CK adapter only; hook not enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/ck/commands/resume.mjs",
+      "source_sha256": "773A706247BFEB45D7206EC363E695CB42262CCCB14851E67D194ACE760B309F",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Local docs/knowledge/.ck and KLCODE_CK_HOME; no native Claude memory writes; context target confinement; hook inactive"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/ck/commands/save.mjs",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Opt-in local CK adapter only; hook not enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/ck/commands/save.mjs",
+      "source_sha256": "1D096FFD0CE5776AC69F01A8D80B2A158FA3B465D2B5FAA33BD539887E63F32B",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Local docs/knowledge/.ck and KLCODE_CK_HOME; no native Claude memory writes; context target confinement; hook inactive"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/ck/commands/shared.mjs",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Opt-in local CK adapter only; hook not enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/ck/commands/shared.mjs",
+      "source_sha256": "8DA746463AE5E90700E29BDAE1E738F54A7BD279CFB0CA6D90B292170A2E1ABE",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Local docs/knowledge/.ck and KLCODE_CK_HOME; no native Claude memory writes; context target confinement; hook inactive"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/ck/hooks/session-start.mjs",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Opt-in local CK adapter only; hook not enabled",
+      "role": "hook",
+      "license": "MIT",
+      "source_path": "skills/ck/hooks/session-start.mjs",
+      "source_sha256": "4AD0B843A0E1256E72D3B371E126CE1DBDF1BAF45819FB3F55F614D1C386BF29",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Local docs/knowledge/.ck and KLCODE_CK_HOME; no native Claude memory writes; context target confinement; hook inactive"
+    },
+    {
+      "consumers": [
+        "session-retrospective"
+      ],
+      "path": "support/knowledge/scripts/output-evaluate.py",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/agent-self-evaluation/scripts/evaluate.py",
+      "source_sha256": "04B2A9460A7BABA2A8D86993C8AECB068380EE72C5DE8CA07D996C4055DCAF5C",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "human-setup-guide"
+      ],
+      "path": "skills/knowledge/human-setup-guide/assets/template.sh",
+      "source_repo": "ref.matt-skills",
+      "external_requirements": [
+        "Bash; optional gh/browser tools used by authored stages; not installed here"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "template",
+      "license": "MIT",
+      "source_path": "skills/engineering/wizard/template.sh",
+      "source_sha256": "B1F2291A7D01062AEE8359CB987F6DD9DA7A9627B0055FAA1CFF540A7E770DD2",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/scripts/calculate_scores.py",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "scripts",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/scripts/calculate_scores.py",
+      "source_sha256": "EEE56B1591FDF3AF498D0BDA4581444B8FAA77C7144B701E4CE21485A0D064B4",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Bundled sibling import resolution supports embedded Python; docs audit defaults use approved shared doc paths"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/scripts/check_process.py",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "scripts",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/scripts/check_process.py",
+      "source_sha256": "61D90C74DBCA804C912AA84A7F7FE92FB3B08AB8CADC3D9B6E711C2BC8F64D3E",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Bundled sibling import resolution supports embedded Python; docs audit defaults use approved shared doc paths"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/scripts/check_traceability.py",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "scripts",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/scripts/check_traceability.py",
+      "source_sha256": "262EB08FB716AC47738649080CE44873E0D37FC15A1F0CB28646B26DFB4E236C",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Bundled sibling import resolution supports embedded Python; docs audit defaults use approved shared doc paths"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/scripts/generate_report_scaffold.py",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "scripts",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/scripts/generate_report_scaffold.py",
+      "source_sha256": "FF2C670B77D00A73C5412B70F7A0995525529A89128791F2B94C2879AD96364C",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Bundled sibling import resolution supports embedded Python; docs audit defaults use approved shared doc paths"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/scripts/summarize_agreement.py",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "scripts",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/scripts/summarize_agreement.py",
+      "source_sha256": "C66B22F1D2EB7C33B9BC534656CF0341745DC0340152E2BA33D32F9234CBA9EA",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Bundled sibling import resolution supports embedded Python; docs audit defaults use approved shared doc paths"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/scripts/validate_rubric.py",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "scripts",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/scripts/validate_rubric.py",
+      "source_sha256": "07EBA1F852B5FA15F5BACF03342DDAC83BB6C7FA19745E4AB73F9C4EA96B2881",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Bundled sibling import resolution supports embedded Python; docs audit defaults use approved shared doc paths"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/scripts/weight_sensitivity.py",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "scripts",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/scripts/weight_sensitivity.py",
+      "source_sha256": "1578E952AAE2BE417320730D0FDDA602818CE06A5B2E5D9D3B6428817563FF7B",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Bundled sibling import resolution supports embedded Python; docs audit defaults use approved shared doc paths"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/scripts/_common.py",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "scripts",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/scripts/_common.py",
+      "source_sha256": "207354D8DE3A6A2B0D89BF4722FB69F2E7BE92AA51631C172208DC16C5C7AB51",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "adaptation": "Bundled sibling import resolution supports embedded Python; docs audit defaults use approved shared doc paths"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/references/evaluation_framework.md",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "references",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/references/evaluation_framework.md",
+      "source_sha256": "9D70A4AC5EE10F8EC4220BED65FC78CA71FE794B784B7D98A462835EFAA3DF12",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/references/local_tooling.md",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "references",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/references/local_tooling.md",
+      "source_sha256": "7126802A77F45DE0D960F0DF49EEC0736C1A62AD3E012D21BD455B4A0C30FAF8",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/references/responsible_assessment.md",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "references",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/references/responsible_assessment.md",
+      "source_sha256": "7EA691D4E16041B3A00452F55C2062EF4E65AE360E9952B87CC47D0AC61CE40F",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/references/security_validation.md",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "references",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/references/security_validation.md",
+      "source_sha256": "053981F587E559ECA36E7B02D7F0920E5799A3DDC0EB0FF9D6FE3D0A7433B122",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/references/source_ledger.md",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "references",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/references/source_ledger.md",
+      "source_sha256": "FD19F1CAD20B8AB7E30C5BF150A45327F9FF38D098ED584871FE8FB4E7D810D0",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/assets/evaluation_template.json",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "assets",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/assets/evaluation_template.json",
+      "source_sha256": "869DDFC2FBA45602C005BB4FA9AE9DCB0B2692D5905D189791F916C70FC7657F",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/assets/evidence_manifest_template.json",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "assets",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/assets/evidence_manifest_template.json",
+      "source_sha256": "4FBD25B846F6BC62872A0E3462095A15D9A4C483FC4854887D7FC16ECEE56551",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/assets/process_checklist_template.json",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "assets",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/assets/process_checklist_template.json",
+      "source_sha256": "52448B401EBFD73DC94AF47DE1AD4004093932F8E1438F15F8DA40FB8B2131BF",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/assets/ratings_template.csv",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "assets",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/assets/ratings_template.csv",
+      "source_sha256": "5CC9B58A6FB6E5FE4CB09C66FBB24F27AF1FB4AC67A4DCA461145B73660373C8",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/assets/rubric_template.json",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "assets",
+      "license": "MIT",
+      "source_path": "skills/scholar-evaluation/assets/rubric_template.json",
+      "source_sha256": "B0B838A8363E649001FD39D90D61D6988B6243C62F4A3A9F519D07E074DBC957",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "literature-review"
+      ],
+      "path": "skills/knowledge/literature-review/scripts/search_databases.py",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/literature-review/scripts/search_databases.py",
+      "source_sha256": "0F7C1F38070E3500E18EC4400555C2ED0AF6D58D161F6DA0AFCF6D8A0E419BB3",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "literature-review"
+      ],
+      "path": "skills/knowledge/literature-review/scripts/verify_citations.py",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)",
+        "requests; optional network Crossref lookup"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/literature-review/scripts/verify_citations.py",
+      "source_sha256": "9FD2A853C7156477DA8D983B83C5D61035BC1175FB2C306A828283FA0EC724DC",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "literature-review"
+      ],
+      "path": "skills/knowledge/literature-review/scripts/generate_pdf.py",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)",
+        "Optional pandoc and XeLaTeX; not installed/tested here"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "script",
+      "license": "MIT",
+      "source_path": "skills/literature-review/scripts/generate_pdf.py",
+      "source_sha256": "4484FA1F44AAF4E5A905373932AD360DEDB73725032E8778BCB0EF85DDCDD543",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "literature-review"
+      ],
+      "path": "skills/knowledge/literature-review/references/citation_styles.md",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "reference",
+      "license": "MIT",
+      "source_path": "skills/literature-review/references/citation_styles.md",
+      "source_sha256": "D662EB056347722162279CC9DAE488EFD42684ED53334BCF8F46556DA9F24CAB",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "literature-review"
+      ],
+      "path": "skills/knowledge/literature-review/references/database_strategies.md",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "reference",
+      "license": "MIT",
+      "source_path": "skills/literature-review/references/database_strategies.md",
+      "source_sha256": "25E6A2F2CAFC403C79B96E752A4FFA3BF76ECBE17FAB2386170F838A63099C37",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "literature-review"
+      ],
+      "path": "skills/knowledge/literature-review/assets/review_template.md",
+      "source_repo": "ref.scientific-skills",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "template",
+      "license": "MIT",
+      "source_path": "skills/literature-review/assets/review_template.md",
+      "source_sha256": "669AE07555843EAE2A99B463E1C5FE0ACE1D7780493F444F6F96949B9BB3C1A7",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "osint-investigation"
+      ],
+      "path": "skills/knowledge/osint-investigation/LICENSE.txt",
+      "source_repo": "ref.ECC",
+      "external_requirements": [],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "license",
+      "license": "CC-BY-SA-4.0",
+      "source_path": "skills/osint-investigation/LICENSE.txt",
+      "source_sha256": "2EE4926EDD20442E2237F93F90BCB519F97B4200F0334426E76F273BE6A764D4",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/tests/lib/memory-vault.test.js",
+      "source_repo": "ref.ECC",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Selected workflow only; never globally enabled",
+      "role": "test",
+      "license": "MIT",
+      "source_path": "tests/lib/memory-vault.test.js",
+      "source_sha256": "E7E354C6CE3F642A918637EF795C1EE151FEE910D0FC8C1822100AD5A0FC17F1",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "license": "Apache-2.0",
+      "path": "support/knowledge/licenses/ref.caveman-NOTICE.txt",
+      "source_repo": "ref.caveman",
+      "consumers": [
+        "codebase-onboarding"
+      ],
+      "source_sha256": "20112DC6E62E91DA4F03C29FD10CFA41743A9C526389FDF1396C3649C18216FC",
+      "external_requirements": [],
+      "role": "notice",
+      "activation": "Selected prompt/resource only; no registration",
+      "source_path": "NOTICE"
+    },
+    {
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "license": "MIT",
+      "path": "support/knowledge/agents/researcher.md",
+      "source_repo": "ref.ECC",
+      "consumers": [
+        "solution-discovery"
+      ],
+      "source_sha256": "76835DB48DD910061D2E4271B1151793D2FDDBABEB2D2866EED068B3580C55D5",
+      "external_requirements": [],
+      "role": "agent",
+      "activation": "Selected prompt/resource only; no registration",
+      "source_path": "skills/search-first/SKILL.md"
+    },
+    {
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips",
+      "license": "Apache-2.0",
+      "path": "support/knowledge/agents/repo-explorer.md",
+      "source_repo": "ref.caveman",
+      "consumers": [
+        "codebase-onboarding"
+      ],
+      "source_sha256": "908F504CE45F5F8517AC7B64DC89FEF57C4519D26F92B0B1843FEBF4B6FE2AC8",
+      "external_requirements": [],
+      "role": "agent",
+      "activation": "Selected prompt/resource only; no registration",
+      "source_path": "skills/caveman-explore/SKILL.md"
+    },
+    {
+      "consumers": [
+        "technical-research"
+      ],
+      "path": "skills/knowledge/technical-research/references/source-discipline.md",
+      "source_repo": "ref.matt-skills",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/engineering/research/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/engineering/research/SKILL.md",
+          "historical_source": "skills/matt-skills/engineering/research/SKILL.md",
+          "source_repo": "ref.matt-skills"
+        },
+        {
+          "source_path": "skills/research-ops/SKILL.md",
+          "historical_source": "skills/ecc-skills/research-ops/SKILL.md",
+          "source_repo": "ref.ECC"
+        },
+        {
+          "source_path": "skills/source-driven-development/SKILL.md",
+          "historical_source": "skills/agent-skills/source-driven-development/SKILL.md",
+          "source_repo": "ref.agent-skills"
+        },
+        {
+          "source_path": "skills/documentation-lookup/SKILL.md",
+          "historical_source": "skills/ecc-skills/documentation-lookup/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "architecture-decisions"
+      ],
+      "path": "skills/knowledge/architecture-decisions/references/decision-template.md",
+      "source_repo": "ref.ECC",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/architecture-decision-records/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/architecture-decision-records/SKILL.md",
+          "historical_source": "skills/ecc-skills/architecture-decision-records/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "documentation"
+      ],
+      "path": "skills/knowledge/documentation/references/document-roles.md",
+      "source_repo": "ref.agent-skills",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/documentation-and-adrs/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/documentation-and-adrs/SKILL.md",
+          "historical_source": "skills/agent-skills/documentation-and-adrs/SKILL.md",
+          "source_repo": "ref.agent-skills"
+        },
+        {
+          "source_path": "skills/docs-governance/SKILL.md",
+          "historical_source": "skills/ecc-skills/docs-governance/SKILL.md",
+          "source_repo": "ref.ECC"
+        },
+        {
+          "source_path": "skills/living-docs-governance/SKILL.md",
+          "historical_source": "skills/ecc-skills/living-docs-governance/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "codebase-onboarding"
+      ],
+      "path": "skills/knowledge/codebase-onboarding/references/localization.md",
+      "source_repo": "ref.ECC",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/codebase-onboarding/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/codebase-onboarding/SKILL.md",
+          "historical_source": "skills/ecc-skills/codebase-onboarding/SKILL.md",
+          "source_repo": "ref.ECC"
+        },
+        {
+          "source_path": "skills/caveman-explore/SKILL.md",
+          "historical_source": "skills/caveman-skills/caveman-explore/SKILL.md",
+          "source_repo": "ref.caveman"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "code-tours"
+      ],
+      "path": "skills/knowledge/code-tours/references/tour-format.md",
+      "source_repo": "ref.ECC",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/code-tour/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/code-tour/SKILL.md",
+          "historical_source": "skills/ecc-skills/code-tour/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "session-retrospective"
+      ],
+      "path": "skills/knowledge/session-retrospective/references/retrospective.md",
+      "source_repo": "ref.matt-skills",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/engineering/retro/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/engineering/retro/SKILL.md",
+          "historical_source": "skills/matt-skills/engineering/retro/SKILL.md",
+          "source_repo": "ref.matt-skills"
+        },
+        {
+          "source_path": "skills/growth-log/SKILL.md",
+          "historical_source": "skills/ecc-skills/growth-log/SKILL.md",
+          "source_repo": "ref.ECC"
+        },
+        {
+          "source_path": "skills/agent-self-evaluation/SKILL.md",
+          "historical_source": "skills/ecc-skills/agent-self-evaluation/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "human-setup-guide"
+      ],
+      "path": "skills/knowledge/human-setup-guide/references/wizard-authoring.md",
+      "source_repo": "ref.matt-skills",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/engineering/wizard/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/engineering/wizard/SKILL.md",
+          "historical_source": "skills/matt-skills/engineering/wizard/SKILL.md",
+          "source_repo": "ref.matt-skills"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "teaching"
+      ],
+      "path": "skills/knowledge/teaching/references/learning-formats.md",
+      "source_repo": "ref.matt-skills",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/productivity/teach/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/productivity/teach/SKILL.md",
+          "historical_source": "skills/matt-skills/productivity/teach/SKILL.md",
+          "source_repo": "ref.matt-skills"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "skills/knowledge/session-handoff/references/context-keeper.md",
+      "source_repo": "ref.matt-skills",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/productivity/handoff/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/productivity/handoff/SKILL.md",
+          "historical_source": "skills/matt-skills/productivity/handoff/SKILL.md",
+          "source_repo": "ref.matt-skills"
+        },
+        {
+          "source_path": "skills/unified-memory/SKILL.md",
+          "historical_source": "skills/ecc-skills/unified-memory/SKILL.md",
+          "source_repo": "ref.ECC"
+        },
+        {
+          "source_path": "skills/ck/SKILL.md",
+          "historical_source": "skills/ecc-skills/ck/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "skills/knowledge/session-handoff/references/memory-vault.md",
+      "source_repo": "ref.matt-skills",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/productivity/handoff/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/productivity/handoff/SKILL.md",
+          "historical_source": "skills/matt-skills/productivity/handoff/SKILL.md",
+          "source_repo": "ref.matt-skills"
+        },
+        {
+          "source_path": "skills/unified-memory/SKILL.md",
+          "historical_source": "skills/ecc-skills/unified-memory/SKILL.md",
+          "source_repo": "ref.ECC"
+        },
+        {
+          "source_path": "skills/ck/SKILL.md",
+          "historical_source": "skills/ecc-skills/ck/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "knowledge-management"
+      ],
+      "path": "skills/knowledge/knowledge-management/references/knowledge-flow.md",
+      "source_repo": "ref.ECC",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/knowledge-ops/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/knowledge-ops/SKILL.md",
+          "historical_source": "skills/ecc-skills/knowledge-ops/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "literature-review"
+      ],
+      "path": "skills/knowledge/literature-review/references/local-tools.md",
+      "source_repo": "ref.ECC",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/scientific-thinking-literature-review/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/scientific-thinking-literature-review/SKILL.md",
+          "historical_source": "skills/ecc-skills/scientific-thinking-literature-review/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "literature-review"
+      ],
+      "path": "skills/knowledge/literature-review/references/review-protocol.md",
+      "source_repo": "ref.ECC",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/scientific-thinking-literature-review/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/scientific-thinking-literature-review/SKILL.md",
+          "historical_source": "skills/ecc-skills/scientific-thinking-literature-review/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "scholarly-evaluation"
+      ],
+      "path": "skills/knowledge/scholarly-evaluation/references/work-rubric.md",
+      "source_repo": "ref.ECC",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "Applicable source MIT/Apache-2.0 notices preserved",
+      "source_path": "skills/scientific-thinking-scholar-evaluation/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/scientific-thinking-scholar-evaluation/SKILL.md",
+          "historical_source": "skills/ecc-skills/scientific-thinking-scholar-evaluation/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "osint-investigation"
+      ],
+      "path": "skills/knowledge/osint-investigation/references/artifacts-and-reporting.md",
+      "source_repo": "ref.ECC",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "CC-BY-SA-4.0",
+      "source_path": "skills/osint-investigation/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/osint-investigation/SKILL.md",
+          "historical_source": "skills/ecc-skills/osint-investigation/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "osint-investigation"
+      ],
+      "path": "skills/knowledge/osint-investigation/references/case-framing.md",
+      "source_repo": "ref.ECC",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "CC-BY-SA-4.0",
+      "source_path": "skills/osint-investigation/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/osint-investigation/SKILL.md",
+          "historical_source": "skills/ecc-skills/osint-investigation/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "osint-investigation"
+      ],
+      "path": "skills/knowledge/osint-investigation/references/testing-and-convergence.md",
+      "source_repo": "ref.ECC",
+      "external_requirements": [],
+      "activation": "Read for relevant mode",
+      "role": "adapted-reference",
+      "license": "CC-BY-SA-4.0",
+      "source_path": "skills/osint-investigation/SKILL.md",
+      "original_sources": [
+        {
+          "source_path": "skills/osint-investigation/SKILL.md",
+          "historical_source": "skills/ecc-skills/osint-investigation/SKILL.md",
+          "source_repo": "ref.ECC"
+        }
+      ],
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "code-tours",
+        "documentation"
+      ],
+      "path": "support/knowledge/scripts/validate-tour.py",
+      "source_repo": "local",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Manual validation only",
+      "role": "script",
+      "license": "KLCode authored adaptation",
+      "source_path": "KLCode consolidation",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "code-tours",
+        "documentation"
+      ],
+      "path": "support/knowledge/tests/test_helpers.py",
+      "source_repo": "local",
+      "external_requirements": [
+        "Python3.10+ (Python3.14 tested)"
+      ],
+      "activation": "Manual validation only",
+      "role": "test",
+      "license": "KLCode authored adaptation",
+      "source_path": "KLCode consolidation",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "session-handoff"
+      ],
+      "path": "support/knowledge/tests/ck-smoke.test.mjs",
+      "source_repo": "local",
+      "external_requirements": [
+        "Node18+ (Node24 tested)"
+      ],
+      "activation": "Manual validation only",
+      "role": "test",
+      "license": "KLCode authored adaptation",
+      "source_path": "KLCode consolidation",
+      "validation": "Syntax, path and source checks; see category handoff for actual test coverage/skips"
+    },
+    {
+      "consumers": [
+        "codebase-onboarding"
+      ],
+      "path": "support/knowledge/licenses/ref.caveman-LICENSE-MIT.txt",
+      "source_repo": "ref.caveman",
+      "external_requirements": [],
+      "activation": "Distributed attribution",
+      "role": "license-notice",
+      "license": "Apache-2.0 with retained historical MIT notice",
+      "source_path": "LICENSE-MIT",
+      "source_sha256": "5EB826CD03151BCC7CCE3F80D40E87733237FEDFC6C36D6908ACA5FD650A0BDB",
+      "validation": "Copied verbatim"
+    },
+    {
+      "consumers": [
+        "codebase-onboarding"
+      ],
+      "path": "support/knowledge/licenses/ref.caveman-LICENSING.md",
+      "source_repo": "ref.caveman",
+      "external_requirements": [],
+      "activation": "Distributed attribution",
+      "role": "license-notice",
+      "license": "Apache-2.0 with retained historical MIT notice",
+      "source_path": "LICENSING.md",
+      "source_sha256": "E36EF7B22766EA22F01BCE187F629669E62F2346948435154A295F91BD3C3FF2",
+      "validation": "Copied verbatim"
+    }
+  ],
+  "validation": "16 skills valid; zero broken Markdown targets; all16 Python files parse and7 scholarly CLIs import; local helper4 tests pass including canonical/prefixed ADR supersession, history exclusion and malformed-record refusal; CK smoke pass; vault30 pass/5 unavailable Git/symlink skips; see handoff",
+  "dependency_closure": "Docs audit parser bundled. Vault CLI with format, storage and path-safety modules; no MCP runtime dependency. Complete CK command/shared/hook files bundled but inactive. Scholarly scripts share bundled _common; requests/Pandoc optional only. No global registration or package install."
+}

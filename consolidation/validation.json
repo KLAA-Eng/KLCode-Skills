@@ -1,0 +1,64 @@
+{
+  "status": "passed-for-validated-scope",
+  "generated_at": "2026-10-16T20:09:19.796Z",
+  "runtime": {
+    "node": "24.21.0",
+    "python": "3.14.0",
+    "yaml": "6.0.3"
+  },
+  "structural": {
+    "status": "passed",
+    "partial": false,
+    "checks": {
+      "expectedSkills": 103,
+      "checkedSkills": 103,
+      "markdown": 512,
+      "localLinks": 591,
+      "scriptImports": 95,
+      "syntaxChecks": 105,
+      "dependencyFiles": 608
+    },
+    "warnings": [],
+    "errors": []
+  },
+  "python": {
+    "status": "passed",
+    "python_scripts": 115,
+    "official_skill_validations": 103,
+    "errors": []
+  },
+  "provenance": {
+    "mapped_sources": 209,
+    "locked_inputs": 209,
+    "reference_revisions": 6,
+    "upstream_file_references_checked": 757,
+    "missing_sources": [],
+    "dependency_records": 608,
+    "unique_dependency_paths": 608
+  },
+  "independent_review": {
+    "categories": 8,
+    "canonical_skills": 103,
+    "unresolved_findings": [],
+    "record": "consolidation/REVIEW.md"
+  },
+  "focused_evidence": [
+    "Planning: sessions16, Markdown64, server86 pass;10 Windows symlink skips; optional ledger smoke.",
+    "Engineering: source-aware helpers, UI artifact/wait confinement checks, data transformation3 and defect/path forward fixtures.",
+    "Agents: nine offline Node suites/examples; bounded adapter10; Git-enabled hook security6; deterministic mocked compliance grading.",
+    "Knowledge: regression helpers4, CK local smoke, vault31 pass/4 Windows symlink skips, seven scholarly CLI imports.",
+    "Tooling: terminal25, Python7, operation guard and Git-backed floor guard9.",
+    "UI: resource5, evidence6; accessibility and explicit-style forward fixtures.",
+    "Languages: Python3.8 syntax/net48 C#7.3/C++11 target-aware forward review; native legacy compilers not executed.",
+    "Video: recorder4, timeline12, pack7, schema10, metadata6, mocked Resolve11; nine full isolated source suites pass."
+  ],
+  "runtime_limits": [
+    "Live GUI/vendor/GPU acceptance, real browser keyboard/assistive use, media rendering, authenticated services/models and host hook activation were not exercised.",
+    "Native Windows lacks required POSIX descriptor flags for protected TasteForge multimodal paths; five source suites retain platform/symlink failures. Supported WSL/POSIX is required for those optional paths.",
+    "Windows symlink capability limited dedicated filesystem cases; protections were not weakened.",
+    "Bash/ShellCheck are absent; Bash template/exporter execution and syntax checks were not performed.",
+    "Plugin lifecycle wiring/publication and project-specific variants remain separate work."
+  ],
+  "git_diff_check": "passed",
+  "formatting": "Removed extra blank lines at EOF; Markdown hard-break spaces are explicitly allowed by .gitattributes."
+}

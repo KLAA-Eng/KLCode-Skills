@@ -1,0 +1,17 @@
+// Offline checks for preserved UI resources. No browser, package install or network call.
+const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),cp=require('node:child_process'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'../../..');
+const skill=path.join(root,'skills/ui/website-art-direction');
+const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'klcode-ui-smoke-'));
+const env={...process.env,TASTE_SKILL_HISTORY:path.join(tmp,'history.json')};
+let passed=0;const failures=[];
+function check(label,fn){try{fn();passed++;console.log('PASS '+label)}catch(e){failures.push(label+': '+e.message);console.error('FAIL '+label+': '+e.message)}}
+const run=(script,args=[])=>cp.spawnSync(process.execPath,[script,...args],{encoding:'utf8',cwd:tmp,env,timeout:15000});
+try{
+ check('research datasets parse and populated direction library is available',()=>{for(const file of fs.readdirSync(path.join(skill,'library'))){const value=JSON.parse(fs.readFileSync(path.join(skill,'library',file),'utf8'));assert.ok(value&&typeof value==='object');}const r=run(path.join(skill,'scripts/draw.mjs'),['--list','directions']);assert.equal(r.status,0);assert.ok(r.stdout.trim().split('\n').length>=10)});
+ check('draw creates a usable direction sheet and can reprint it',()=>{const out=path.join(tmp,'draw');const r=run(path.join(skill,'scripts/draw.mjs'),['--sector','dev-tool','--brief','Local structural model diagnostics','--sections','features,footer','--seed','142','--out',out]);assert.equal(r.status,0,r.stderr);const sheet=JSON.parse(fs.readFileSync(path.join(out,'direction.json'),'utf8'));assert.ok(Object.keys(sheet).length>5);const shown=run(path.join(skill,'scripts/draw.mjs'),['--show','--out',out]);assert.equal(shown.status,0,shown.stderr);assert.ok(shown.stdout.length>100)});
+ check('source lint distinguishes selected-style violations from a simple clean page',()=>{const clean=path.join(tmp,'clean.html'),bad=path.join(tmp,'bad.html');fs.writeFileSync(clean,'<!doctype html><html><head><title>Local report</title></head><body><main><h1>Model checks</h1><p>Read the selected model.</p></main></body></html>');fs.writeFileSync(bad,'<style>body { background: linear-gradient(red, blue); }</style><h1>Local report</h1>');const a=run(path.join(skill,'scripts/lint.mjs'),[clean,'--json']);assert.equal(a.status,0,a.stdout);const b=run(path.join(skill,'scripts/lint.mjs'),[bad,'--json']);assert.equal(b.status,1);assert.ok(JSON.parse(b.stdout).findings.some(x=>x.level==='FAIL'))});
+ check('asset help and inspector usage do not start services',()=>{const a=run(path.join(skill,'scripts/assets.mjs'),['--help']);assert.equal(a.status,0,a.stderr);assert.match(a.stdout,/--source/);const b=run(path.join(skill,'scripts/inspect.mjs'),['--help']);assert.equal(b.status,2);assert.match(b.stderr,/usage:/)});
+ check('cinematic selector is reproducible and returns unique component/motion choices',()=>{const p=path.join(root,'skills/ui/cinematic-web-design/scripts/choose-direction.mjs');const a=run(p,['structural-tools']),b=run(p,['structural-tools']);assert.equal(a.status,0);assert.equal(a.stdout,b.stdout);const v=JSON.parse(a.stdout);assert.equal(new Set(v.components).size,3);assert.equal(new Set(v.motions).size,2);assert.ok(v.hero&&v.typography);assert.equal(run(p).status,2)});
+}finally{fs.rmSync(tmp,{recursive:true,force:true})}
+console.log(JSON.stringify({passed,failures}));process.exitCode=failures.length?1:0;

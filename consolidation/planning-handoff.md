@@ -1,0 +1,13 @@
+# Planning consolidation handoff
+
+Completed all 15 manifest skills under `skills/planning/`. Strong bases are integrated with unique source detail in focused references; no old source directories were removed. Each skill includes SOURCES.md and root MIT license notices are preserved in support/planning/licenses/.
+
+Requirements, planning, implementation and verification remain separate. Shared defaults use docs/specs, docs/plans, docs/decisions and docs/knowledge. Grilling uses frontier rounds with optional one-at-a-time mode. Plans use one task authority; Blueprint remains separately callable as multi-session-planning. Risk, actual uncertainty and task scope determine review/approval/test rigor. Milestones are verified before local commits; no automatic remote mutation is implied.
+
+Imported support: Plan Canvas CLI plus complete seven-file module closure, optional transactional story ledger, adapted planner/architect/behavior-miner/plan-reviewer delegation briefs, two portable command prompts, and upstream Canvas checks. No package install, global registration or hook activation. Dependency origins, source digests, consumers, adaptation, licenses, activation and external prerequisites are recorded in support/planning/dependencies.json.
+
+Validation: all 15 skills pass the actual skill-creator quick_validate.py. Node v24.21.0: all nine runtime modules pass syntax; Canvas sessions 16 passed, Markdown 64 passed, full HTTP/server suite 86 passed and 10 skipped because Windows symlink creation is unavailable. Optional local ledger smoke verifies nested default, unique IDs, transactional refusal, traversal rejection, transitions and derived projections. All dependency files and original source paths exist. Browser launch and model/service calls were not exercised.
+
+Remaining external requirements: Node18+ for optional scripts; browser and local loopback listener for review; hardlink-capable writable storage for optional ledger; Git optional for cross-worktree IDs. Mermaid is optional with an offline source fallback. Agents/commands are usable prompt files but intentionally not globally registered; plugin wiring follows later. No hooks are needed for the bounded/manual Canvas listener.
+
+Integration: planning links to knowledge/architecture-decisions were unresolved while that category was pending; canonical spelling follows the manifest. All other local planning/support Markdown references resolved when checked. Preserve optional candidate-pipeline design attribution to mturac and xAI; no unbundled external scaffold is required. No source deletion, staging or commits performed.

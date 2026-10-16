@@ -1,0 +1,52 @@
+{
+  "description": "Disabled examples. Merge selected host events manually only after review; no paths or hooks are installed.",
+  "enabled": false,
+  "quality": {
+    "event": "PostToolUse",
+    "script": "support/tooling/hooks/quality_hook.py",
+    "environment": {
+      "KLCODE_QUALITY_CONFIG": "<explicit-project-config.json>"
+    },
+    "config_example": {
+      "project_root": "<absolute-selected-project>",
+      "checks": [
+        {
+          "extensions": [
+            ".py"
+          ],
+          "argv": [
+            "<installed-python>",
+            "-m",
+            "ruff",
+            "check",
+            "{file}"
+          ],
+          "timeout_seconds": 30
+        }
+      ]
+    }
+  },
+  "delivery": {
+    "event": "Stop",
+    "script": "support/tooling/hooks/delivery_gate.py",
+    "environment": {
+      "KLCODE_DELIVERY_CONFIG": "<explicit-project-config.json>"
+    },
+    "config_example": {
+      "project_root": "<absolute-selected-project>",
+      "knowledge_paths": [
+        "docs/knowledge/"
+      ],
+      "block_learning": false,
+      "disk_block_gb": 0
+    }
+  },
+  "operations": {
+    "event": "PreToolUse",
+    "script": "support/tooling/hooks/operation_guard.cjs",
+    "environment": {
+      "KLCODE_GUARD_MODE": "off",
+      "KLCODE_GUARD_ROOT": "<absolute-selected-project>"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# Video handoff
+
+Implemented all4 canonical workflows. Preserved Remotion29 rule topics and3 TSX example assets; converted UI-demo inline helpers to a runnable recorder interface; imported complete standalone numeric-analysis and TasteForge editing modules/tests/fixtures/workflow templates with source and MIT notices.
+
+Local workflows remain usable without provider calls when their media dependencies are installed. Provider registry defaults fail closed; explicit live flags/credentials remain required. Editing retains cadence-target duration semantics, source/shot assets and editable handoff receipts. No media sources, LUT binaries or provider responses invented.
+
+Validation: all4 skills pass central canonical metadata, provenance, local-link and script-import checks; 73 video Python files pass AST parsing and Node syntax passes. Recorder behavioral tests pass4/4 (plan bounds, output collision, required-action failure/cleanup and context-flush-before-save); recorder, pipeline and graph compiler help execute without optional runtimes. Of14 isolated standard-library Python suites,9 fully pass (schema, interview, pack, distillation, timeline export, provider fail-closed, provenance, metadata fixture and mocked Resolve). The other5 retain failing cases due missing POSIX descriptor flags and native-Windows symlink privilege; full original tests and exact summaries remain in the dependency inventory. Two broader CLI/integration modules were not run. Scientific media/FFmpeg, real Playwright recording, Blender/Resolve/CapCut, and provider jobs remain untested.
+
+Important platform boundary: protected multimodal asset/receipt/output operations require O_NOFOLLOW/O_DIRECTORY/O_NONBLOCK and are unavailable on native Windows. This limitation is documented in the entrypoint and dependencies; protections were not weakened. Use a supported WSL/Linux/POSIX environment for those optional paths. Portable pack/schema/timeline operations and source-local numeric processing are separate capabilities with their own dependencies.
+
+No browsers, editors, rendering services, media downloads or provider jobs started. Source helpers remain standalone; package/import/environment identifiers such as tasteforge and TASTE_FORGE_ALLOW_LIVE are intentional compatibility surfaces rather than old skill navigation.

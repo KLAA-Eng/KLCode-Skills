@@ -1,0 +1,2094 @@
+{
+  "schema_version": 1,
+  "category": "engineering",
+  "files": [
+    {
+      "path": "skills/engineering/application-security/references/hardening-patterns.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/security-and-hardening/references/hardening-patterns.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "application-security"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/application-security/references/security-checklist.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/security-checklist.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/security-review/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "application-security"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/application-security/SKILL.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/security-and-hardening/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/security-review/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "application-security"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/application-security/SOURCES.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/security-and-hardening",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/security-review"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "application-security"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/browser-testing/references/live-qa-checklist.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/browser-qa/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "browser-testing"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Selected installed browser automation; @playwright/test for Playwright examples",
+        "Authorized staging/test data; baseline images only for visual regression"
+      ],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/browser-testing/references/playwright-patterns.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/e2e-testing/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "browser-testing"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Selected installed browser automation; @playwright/test for Playwright examples",
+        "Authorized staging/test data; baseline images only for visual regression"
+      ],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/browser-testing/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/e2e-testing/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/browser-qa/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "browser-testing"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Selected installed browser automation; @playwright/test for Playwright examples",
+        "Authorized staging/test data; baseline images only for visual regression"
+      ],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/browser-testing/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/e2e-testing",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/browser-qa"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "browser-testing"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Selected installed browser automation; @playwright/test for Playwright examples",
+        "Authorized staging/test data; baseline images only for visual regression"
+      ],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/code-review/references/review-methods.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/doubt-driven-development/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "code-review"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/code-review/SKILL.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/code-review-and-quality/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/code-review/SKILL.md"
+        },
+        {
+          "source_repo": "ref.caveman",
+          "source_path": "skills/caveman-review/SKILL.md"
+        },
+        {
+          "source_repo": "ref.agent-skills",
+          "source_path": "skills/doubt-driven-development/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "code-review"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/code-review/SOURCES.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/code-review-and-quality",
+      "additional_sources": [
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/code-review"
+        },
+        {
+          "source_repo": "ref.caveman",
+          "source_path": "skills/caveman-review"
+        },
+        {
+          "source_repo": "ref.agent-skills",
+          "source_path": "skills/doubt-driven-development"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "code-review"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/commit-preparation/references/message-patterns.md",
+      "source_repo": "ref.caveman",
+      "source_path": "skills/caveman-commit/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "commit-preparation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/commit-preparation/SKILL.md",
+      "source_repo": "ref.caveman",
+      "source_path": "skills/caveman-commit/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/conventional-commit-review/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "commit-preparation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/commit-preparation/SOURCES.md",
+      "source_repo": "ref.caveman",
+      "source_path": "skills/caveman-commit",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/conventional-commit-review"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "commit-preparation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/connector-development/references/connector-checklist.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/api-connector-builder/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "connector-development"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/connector-development/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/api-connector-builder/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "connector-development"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/connector-development/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/api-connector-builder",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "connector-development"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/contract-collaboration/references/contract-workflow.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/contract-first/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "contract-collaboration"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/contract-collaboration/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/contract-first/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "contract-collaboration"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/contract-collaboration/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/contract-first",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "contract-collaboration"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/data-collection/references/collection-patterns.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/data-scraper-agent/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/data-scraper-agent/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/data-scraper-agent/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "data-collection"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Optional examples: Python requests, BeautifulSoup, feedparser or Playwright; choose only relevant source adapters"
+      ],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/data-collection/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/data-scraper-agent/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "data-collection"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/data-collection/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/data-scraper-agent",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "data-collection"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/debugging/references/click-paths.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/click-path-audit/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "debugging"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/debugging/references/diagnostic-methods.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/debugging-and-error-recovery/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/diagnosing-bugs/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "debugging"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/debugging/scripts/hitl-loop.template.sh",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/diagnosing-bugs/scripts/hitl-loop.template.sh",
+      "additional_sources": [],
+      "role": "script",
+      "consumers": [
+        "debugging"
+      ],
+      "activation": "manual invocation only",
+      "license": "MIT",
+      "external_requirements": [
+        "Bash with interactive stdin"
+      ],
+      "validation": "Inspected Bash strict mode, literal prompts and observation-only capture; Bash runtime unavailable, not executed."
+    },
+    {
+      "path": "skills/engineering/debugging/SKILL.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/debugging-and-error-recovery/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/diagnosing-bugs/SKILL.md"
+        },
+        {
+          "source_repo": "ref.caveman",
+          "source_path": "skills/investigate-first/SKILL.md"
+        },
+        {
+          "source_repo": "ref.caveman",
+          "source_path": "skills/surgical-patch/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/click-path-audit/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "debugging"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/debugging/SOURCES.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/debugging-and-error-recovery",
+      "additional_sources": [
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/diagnosing-bugs"
+        },
+        {
+          "source_repo": "ref.caveman",
+          "source_path": "skills/investigate-first"
+        },
+        {
+          "source_repo": "ref.caveman",
+          "source_path": "skills/surgical-patch"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/click-path-audit"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "debugging"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/desktop-testing/references/isolation-and-artifacts.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/windows-desktop-e2e/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "desktop-testing"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Windows interactive test desktop",
+        "Optional examples: Python 3, pywinauto, pytest, Pillow, psutil/pywin32, ffmpeg and Windows Sandbox as selected"
+      ],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/desktop-testing/references/qt-and-screenshots.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/windows-desktop-e2e/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "desktop-testing"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Windows interactive test desktop",
+        "Optional examples: Python 3, pywinauto, pytest, Pillow, psutil/pywin32, ffmpeg and Windows Sandbox as selected"
+      ],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/desktop-testing/references/windows-uia.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/windows-desktop-e2e/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "desktop-testing"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Windows interactive test desktop",
+        "Optional examples: Python 3, pywinauto, pytest, Pillow, psutil/pywin32, ffmpeg and Windows Sandbox as selected"
+      ],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/desktop-testing/scripts/conftest.example.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/windows-desktop-e2e/SKILL.md",
+      "additional_sources": [],
+      "role": "script",
+      "consumers": [
+        "desktop-testing"
+      ],
+      "activation": "manual invocation only",
+      "license": "MIT",
+      "external_requirements": [
+        "Windows interactive test desktop",
+        "Python 3",
+        "pywinauto",
+        "pytest"
+      ],
+      "validation": "Python 3.14 AST passed; fixture inspected for owned-process cleanup; pytest/interactive UIA not executed."
+    },
+    {
+      "path": "skills/engineering/desktop-testing/scripts/uia_helpers.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/windows-desktop-e2e/SKILL.md",
+      "additional_sources": [],
+      "role": "script",
+      "consumers": [
+        "desktop-testing"
+      ],
+      "activation": "manual invocation only",
+      "license": "MIT",
+      "external_requirements": [
+        "Windows interactive test desktop",
+        "Python 3",
+        "pywinauto"
+      ],
+      "validation": "Python 3.14 AST and offline artifact confinement/write + wait success/timeout checks passed; live Windows UIA not executed."
+    },
+    {
+      "path": "skills/engineering/desktop-testing/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/windows-desktop-e2e/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "desktop-testing"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/desktop-testing/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/windows-desktop-e2e",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "desktop-testing"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/git-workflow/PR-CREDITS.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/pr/CREDITS.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "git-workflow"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/git-workflow/references/git-and-pr-patterns.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/git-workflow/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/git-workflow/SKILL.md"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/pr/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "git-workflow"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/git-workflow/references/versioning-and-recovery.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/git-workflow-and-versioning/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/git-workflow/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "git-workflow"
+      ],
+      "activation": "loaded for versioning or recovery",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links and source provenance checked."
+    },
+    {
+      "path": "skills/engineering/git-workflow/SKILL.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/git-workflow-and-versioning/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/git-workflow/SKILL.md"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/pr/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "git-workflow"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/git-workflow/SOURCES.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/git-workflow-and-versioning",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/git-workflow"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/pr"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "git-workflow"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/implementation/references/implementation-patterns.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/incremental-implementation/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/coding-standards/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/error-handling/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "implementation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/implementation/SKILL.md",
+      "source_repo": "ref.caveman",
+      "source_path": "skills/lean-build/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.agent-skills",
+          "source_path": "skills/incremental-implementation/SKILL.md"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/implement/SKILL.md"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/implement-spec/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/coding-standards/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/inherit-legacy-style/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/error-handling/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "implementation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/implementation/SOURCES.md",
+      "source_repo": "ref.caveman",
+      "source_path": "skills/lean-build",
+      "additional_sources": [
+        {
+          "source_repo": "ref.agent-skills",
+          "source_path": "skills/incremental-implementation"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/implement"
+        },
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/implement-spec"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/coding-standards"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/inherit-legacy-style"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/error-handling"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "implementation"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/interface-design/references/interface-and-rest-patterns.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/api-and-interface-design/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/api-design/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "interface-design"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/interface-design/SKILL.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/api-and-interface-design/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/api-design/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "interface-design"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/interface-design/SOURCES.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/api-and-interface-design",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/api-design"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "interface-design"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/llm-cost-optimization/references/cache-accounting.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/prompt-caching-strategy/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "llm-cost-optimization"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Provider documentation and authorized credentials only for selected live measurement; offline arithmetic needs no credentials"
+      ],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/llm-cost-optimization/references/routing-and-burn.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/ecc-tools-cost-audit/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "llm-cost-optimization"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Provider documentation and authorized credentials only for selected live measurement; offline arithmetic needs no credentials"
+      ],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/llm-cost-optimization/scripts/cache-cost.cjs",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/prompt-caching-strategy/SKILL.md",
+      "additional_sources": [],
+      "role": "script",
+      "consumers": [
+        "llm-cost-optimization"
+      ],
+      "activation": "manual invocation only",
+      "license": "MIT",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node --check and offline observable helper cases passed with Node 24.21.0."
+    },
+    {
+      "path": "skills/engineering/llm-cost-optimization/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/cost-aware-llm-pipeline/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/prompt-caching-strategy/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/ecc-tools-cost-audit/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "llm-cost-optimization"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Provider documentation and authorized credentials only for selected live measurement; offline arithmetic needs no credentials"
+      ],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/llm-cost-optimization/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/cost-aware-llm-pipeline",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/prompt-caching-strategy"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/ecc-tools-cost-audit"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "llm-cost-optimization"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Provider documentation and authorized credentials only for selected live measurement; offline arithmetic needs no credentials"
+      ],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/mcp-development/references/mcp-server-patterns.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/mcp-server-patterns/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "mcp-development"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Target SDK/runtime and MCP client; examples use @modelcontextprotocol/sdk and zod"
+      ],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/mcp-development/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/mcp-server-patterns/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "mcp-development"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Target SDK/runtime and MCP client; examples use @modelcontextprotocol/sdk and zod"
+      ],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/mcp-development/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/mcp-server-patterns",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "mcp-development"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [
+        "Target SDK/runtime and MCP client; examples use @modelcontextprotocol/sdk and zod"
+      ],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/migration/references/database-migrations.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/database-migrations/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "migration"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/migration/references/migration-lifecycle.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/deprecation-and-migration/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "migration"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/migration/SKILL.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/deprecation-and-migration/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.caveman",
+          "source_path": "skills/migration/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/database-migrations/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "migration"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/migration/SOURCES.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/deprecation-and-migration",
+      "additional_sources": [
+        {
+          "source_repo": "ref.caveman",
+          "source_path": "skills/migration"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/database-migrations"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "migration"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/observability/references/instrumentation-patterns.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/observability-and-instrumentation/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "observability"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/observability/SKILL.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/observability-and-instrumentation/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "observability"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/observability/SOURCES.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/observability-and-instrumentation",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "observability"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/performance-optimization/references/content-cache.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/content-hash-cache-pattern/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "performance-optimization"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/performance-optimization/references/data-throughput.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/data-throughput-accelerator/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "performance-optimization"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/performance-optimization/references/measurement-and-optimization.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/performance-optimization/references/optimization-patterns.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/benchmark/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/latency-critical-systems/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "performance-optimization"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/performance-optimization/references/performance-checklist.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/performance-checklist.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "performance-optimization"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/performance-optimization/SKILL.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/performance-optimization/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/benchmark-optimization-loop/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/benchmark/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/latency-critical-systems/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/data-throughput-accelerator/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/content-hash-cache-pattern/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "performance-optimization"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/performance-optimization/SOURCES.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/performance-optimization",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/benchmark-optimization-loop"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/benchmark"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/latency-critical-systems"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/data-throughput-accelerator"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/content-hash-cache-pattern"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "performance-optimization"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/refactoring/references/refactoring-remedies.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/code-simplification/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.agent-skills",
+          "source_path": "skills/code-simplification/SKILL.md"
+        }
+      ],
+      "role": "reference",
+      "consumers": [
+        "refactoring"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/refactoring/SKILL.md",
+      "source_repo": "ref.caveman",
+      "source_path": "skills/safe-refactor/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.agent-skills",
+          "source_path": "skills/code-simplification/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "refactoring"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/refactoring/SOURCES.md",
+      "source_repo": "ref.caveman",
+      "source_path": "skills/safe-refactor",
+      "additional_sources": [
+        {
+          "source_repo": "ref.agent-skills",
+          "source_path": "skills/code-simplification"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "refactoring"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/release-readiness/references/readiness-checklist.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/production-audit/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "release-readiness"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/release-readiness/SKILL.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/shipping-and-launch/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/production-audit/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "release-readiness"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/release-readiness/SOURCES.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/shipping-and-launch",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/production-audit"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "release-readiness"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/test-first-development/references/mocking.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/tdd/mocking.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "test-first-development"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/test-first-development/references/regression-parity.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/ai-regression-testing/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "test-first-development"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/test-first-development/references/test-design.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/tdd/tests.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "test-first-development"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/test-first-development/SKILL.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/test-driven-development/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/tdd/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/tdd-workflow/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/ai-regression-testing/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "test-first-development"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/test-first-development/SOURCES.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "skills/test-driven-development",
+      "additional_sources": [
+        {
+          "source_repo": "ref.matt-skills",
+          "source_path": "skills/engineering/tdd"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/tdd-workflow"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/ai-regression-testing"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "test-first-development"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/test-governance/references/governance-guidance.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/test-collaboration/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "test-governance"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/test-governance/SKILL.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/test-collaboration/SKILL.md",
+      "additional_sources": [],
+      "role": "skill",
+      "consumers": [
+        "test-governance"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/test-governance/SOURCES.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/test-collaboration",
+      "additional_sources": [],
+      "role": "provenance",
+      "consumers": [
+        "test-governance"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/test-governance/templates/TESTS.example.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/test-collaboration/templates/TESTS.example.md",
+      "additional_sources": [],
+      "role": "template",
+      "consumers": [
+        "test-governance"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/verification/references/verification-matrix.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/verification-loop/SKILL.md",
+      "additional_sources": [],
+      "role": "reference",
+      "consumers": [
+        "verification"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "skills/engineering/verification/SKILL.md",
+      "source_repo": "ref.caveman",
+      "source_path": "skills/verify-and-stop/SKILL.md",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/verification-loop/SKILL.md"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/terminal-ops/SKILL.md"
+        }
+      ],
+      "role": "skill",
+      "consumers": [
+        "verification"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Official skill-creator quick_validate.py passed with Python 3.14/PyYAML; local links and source inventory checked."
+    },
+    {
+      "path": "skills/engineering/verification/SOURCES.md",
+      "source_repo": "ref.caveman",
+      "source_path": "skills/verify-and-stop",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/verification-loop"
+        },
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "skills/terminal-ops"
+        }
+      ],
+      "role": "provenance",
+      "consumers": [
+        "verification"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/agents/browser-runner.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/e2e-runner.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "browser-testing"
+      ],
+      "activation": "selected delegation; not installed",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/agents/build-resolver.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/build-error-resolver.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "debugging"
+      ],
+      "activation": "selected delegation; not installed",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/agents/desktop-runner.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/windows-desktop-e2e/SKILL.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "desktop-testing"
+      ],
+      "activation": "selected delegation; not installed",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/agents/implementer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/code-architect.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "implementation"
+      ],
+      "activation": "selected delegation; not installed",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/agents/integration-coordinator.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/implement-spec/SKILL.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "implementation"
+      ],
+      "activation": "selected delegation; not installed",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/agents/performance-reviewer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/performance-optimizer.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "performance-optimization"
+      ],
+      "activation": "selected delegation; not installed",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/agents/refactor-reviewer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/refactor-cleaner.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "refactoring"
+      ],
+      "activation": "selected delegation; not installed",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/agents/security-reviewer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/security-reviewer.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "application-security"
+      ],
+      "activation": "selected delegation; not installed",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/agents/spec-reviewer.md",
+      "source_repo": "ref.matt-skills",
+      "source_path": "skills/engineering/code-review/SKILL.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "code-review"
+      ],
+      "activation": "selected delegation; not installed",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/agents/standards-reviewer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/code-reviewer.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "code-review"
+      ],
+      "activation": "selected delegation; not installed",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/agents/test-first-guide.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/tdd-guide.md",
+      "additional_sources": [],
+      "role": "agent",
+      "consumers": [
+        "test-first-development"
+      ],
+      "activation": "selected delegation; not installed",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/commands/browser-qa.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/browser-qa/SKILL.md",
+      "additional_sources": [],
+      "role": "command",
+      "consumers": [
+        "browser-testing"
+      ],
+      "activation": "manual prompt; not registered",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/commands/build-fix.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/build-fix.md",
+      "additional_sources": [],
+      "role": "command",
+      "consumers": [
+        "debugging"
+      ],
+      "activation": "manual prompt; not registered",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/commands/coverage.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/test-coverage.md",
+      "additional_sources": [],
+      "role": "command",
+      "consumers": [
+        "test-governance"
+      ],
+      "activation": "manual prompt; not registered",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/commands/review.md",
+      "source_repo": "ref.ECC",
+      "source_path": "commands/code-review.md",
+      "additional_sources": [],
+      "role": "command",
+      "consumers": [
+        "code-review"
+      ],
+      "activation": "manual prompt; not registered",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/commands/verify.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/verification-loop/SKILL.md",
+      "additional_sources": [],
+      "role": "command",
+      "consumers": [
+        "verification"
+      ],
+      "activation": "manual prompt; not registered",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/licenses/agent-skills-MIT.txt",
+      "source_repo": "ref.agent-skills",
+      "source_path": "LICENSE",
+      "additional_sources": [],
+      "role": "license",
+      "consumers": [
+        "implementation",
+        "debugging",
+        "test-first-development",
+        "code-review",
+        "refactoring",
+        "verification",
+        "commit-preparation",
+        "git-workflow",
+        "application-security",
+        "performance-optimization",
+        "release-readiness",
+        "interface-design",
+        "migration",
+        "observability",
+        "test-governance",
+        "connector-development",
+        "contract-collaboration",
+        "browser-testing",
+        "desktop-testing",
+        "mcp-development",
+        "llm-cost-optimization",
+        "data-collection"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/licenses/caveman-Apache-2.0.txt",
+      "source_repo": "ref.caveman",
+      "source_path": "LICENSE",
+      "additional_sources": [],
+      "role": "license",
+      "consumers": [
+        "implementation",
+        "debugging",
+        "test-first-development",
+        "code-review",
+        "refactoring",
+        "verification",
+        "commit-preparation",
+        "git-workflow",
+        "application-security",
+        "performance-optimization",
+        "release-readiness",
+        "interface-design",
+        "migration",
+        "observability",
+        "test-governance",
+        "connector-development",
+        "contract-collaboration",
+        "browser-testing",
+        "desktop-testing",
+        "mcp-development",
+        "llm-cost-optimization",
+        "data-collection"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/licenses/caveman-MIT.txt",
+      "source_repo": "ref.caveman",
+      "source_path": "LICENSE-MIT",
+      "additional_sources": [],
+      "role": "license",
+      "consumers": [
+        "implementation",
+        "debugging",
+        "test-first-development",
+        "code-review",
+        "refactoring",
+        "verification",
+        "commit-preparation",
+        "git-workflow",
+        "application-security",
+        "performance-optimization",
+        "release-readiness",
+        "interface-design",
+        "migration",
+        "observability",
+        "test-governance",
+        "connector-development",
+        "contract-collaboration",
+        "browser-testing",
+        "desktop-testing",
+        "mcp-development",
+        "llm-cost-optimization",
+        "data-collection"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/licenses/ecc-MIT.txt",
+      "source_repo": "ref.ECC",
+      "source_path": "LICENSE",
+      "additional_sources": [],
+      "role": "license",
+      "consumers": [
+        "implementation",
+        "debugging",
+        "test-first-development",
+        "code-review",
+        "refactoring",
+        "verification",
+        "commit-preparation",
+        "git-workflow",
+        "application-security",
+        "performance-optimization",
+        "release-readiness",
+        "interface-design",
+        "migration",
+        "observability",
+        "test-governance",
+        "connector-development",
+        "contract-collaboration",
+        "browser-testing",
+        "desktop-testing",
+        "mcp-development",
+        "llm-cost-optimization",
+        "data-collection"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/licenses/matt-skills-MIT.txt",
+      "source_repo": "ref.matt-skills",
+      "source_path": "LICENSE",
+      "additional_sources": [],
+      "role": "license",
+      "consumers": [
+        "implementation",
+        "debugging",
+        "test-first-development",
+        "code-review",
+        "refactoring",
+        "verification",
+        "commit-preparation",
+        "git-workflow",
+        "application-security",
+        "performance-optimization",
+        "release-readiness",
+        "interface-design",
+        "migration",
+        "observability",
+        "test-governance",
+        "connector-development",
+        "contract-collaboration",
+        "browser-testing",
+        "desktop-testing",
+        "mcp-development",
+        "llm-cost-optimization",
+        "data-collection"
+      ],
+      "activation": "loaded when relevant",
+      "license": "MIT",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/rules/implementation-core.md",
+      "source_repo": "ref.caveman",
+      "source_path": "skills/native/native-core.md",
+      "additional_sources": [],
+      "role": "rule",
+      "consumers": [
+        "implementation",
+        "refactoring"
+      ],
+      "activation": "loaded when relevant",
+      "license": "Apache-2.0; MIT component notice preserved",
+      "external_requirements": [],
+      "validation": "Local links, source inventory, frontmatter and adaptation audit."
+    },
+    {
+      "path": "support/engineering/scripts/check-offline.cjs",
+      "source_repo": "KLCode consolidation",
+      "source_path": "new offline integration checks",
+      "role": "script",
+      "consumers": [
+        "verification",
+        "test-first-development",
+        "llm-cost-optimization"
+      ],
+      "activation": "manual only",
+      "license": "MIT",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node --check and offline observable helper cases passed with Node 24.21.0."
+    },
+    {
+      "path": "support/engineering/scripts/detect-node-tooling.cjs",
+      "source_repo": "ref.ECC",
+      "source_path": "scripts/lib/package-manager.js",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "scripts/setup-package-manager.js"
+        }
+      ],
+      "role": "script",
+      "consumers": [],
+      "activation": "manual invocation only",
+      "license": "MIT",
+      "external_requirements": [
+        "Node.js 18+"
+      ],
+      "validation": "Node --check and offline observable helper cases passed with Node 24.21.0."
+    },
+    {
+      "path": "skills/engineering/implementation/references/convention-extraction.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/inherit-legacy-style/SKILL.md",
+      "role": "reference",
+      "consumers": [
+        "implementation"
+      ],
+      "activation": "explicit convention-extraction mode",
+      "external_requirements": [],
+      "validation": "Independent review identified omitted requested workflow; adapted four-dimension extraction, exemplar contract and incremental updates to approved defaults."
+    }
+  ],
+  "external_prerequisites": [
+    "Node.js 18+ for offline tooling and calculator",
+    "Bash only for optional HITL helper",
+    "Windows interactive desktop + Python 3 + pywinauto/pytest for UIA fixtures",
+    "Installed target build/test runtimes; Revit/Excel/vendor/GPU hosts only for relevant live acceptance",
+    "Playwright/browser tools only for selected browser tests; no service is required",
+    "MCP SDK/client only for selected server implementation",
+    "Authorized provider/API credentials only for selected LLM or collection adapters"
+  ],
+  "notes": [
+    "No hooks, commands or agents are automatically registered.",
+    "No package installation, global settings change, remote mutation or provider call is performed by consolidation.",
+    "Historical source locations are provenance; active references use canonical local paths.",
+    "Agent models are host-selected; imported prompts do not force provider/model tiers."
+  ]
+}

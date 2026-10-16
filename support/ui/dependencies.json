@@ -1,0 +1,521 @@
+{
+  "schema_version": 1,
+  "category": "ui",
+  "files": [
+    {
+      "path": "skills/ui/interface-development/scripts/check-evidence.js",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/frontend-design-direction/scripts/check-evidence.js",
+      "role": "script",
+      "consumers": [
+        "interface-development"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/html-presentations/animation-patterns.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/frontend-slides/animation-patterns.md",
+      "role": "resource",
+      "consumers": [
+        "html-presentations"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/html-presentations/html-template.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/frontend-slides/html-template.md",
+      "role": "resource",
+      "consumers": [
+        "html-presentations"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/html-presentations/scripts/export-pdf.sh",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/frontend-slides/scripts/export-pdf.sh",
+      "role": "script",
+      "consumers": [
+        "html-presentations"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/html-presentations/scripts/extract-pptx.py",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/frontend-slides/scripts/extract-pptx.py",
+      "role": "script",
+      "consumers": [
+        "html-presentations"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/html-presentations/STYLE_PRESETS.md",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/frontend-slides/STYLE_PRESETS.md",
+      "role": "resource",
+      "consumers": [
+        "html-presentations"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/html-presentations/viewport-base.css",
+      "source_repo": "ref.ECC",
+      "source_path": "skills/frontend-slides/viewport-base.css",
+      "role": "resource",
+      "consumers": [
+        "html-presentations"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/assets/base.css",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/assets/base.css",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/assets/base.js",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/assets/base.js",
+      "role": "script",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/evals/evals.json",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/evals/evals.json",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/library/directions.json",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/library/directions.json",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/library/heroes.json",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/library/heroes.json",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/library/motions.json",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/library/motions.json",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/library/palettes.json",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/library/palettes.json",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/library/photos.json",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/library/photos.json",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/library/sections.json",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/library/sections.json",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/library/sites.json",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/library/sites.json",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/library/type.json",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/library/type.json",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/references/colour.md",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/colour.md",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/references/copy.md",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/copy.md",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/references/critique.md",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/critique.md",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/references/imagery.md",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/imagery.md",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/references/layout.md",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/layout.md",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/references/motion.md",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/motion.md",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/references/research.md",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/research.md",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/references/tells.md",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/tells.md",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/references/type.md",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/references/type.md",
+      "role": "resource",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/scripts/assets.mjs",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/scripts/assets.mjs",
+      "role": "script",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/scripts/draw.mjs",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/scripts/draw.mjs",
+      "role": "script",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/scripts/inspect.mjs",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/scripts/inspect.mjs",
+      "role": "script",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/scripts/lib/cdp.mjs",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/scripts/lib/cdp.mjs",
+      "role": "script",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/scripts/lib/probe.mjs",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/scripts/lib/probe.mjs",
+      "role": "script",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/scripts/lib/rules.mjs",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/scripts/lib/rules.mjs",
+      "role": "script",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/website-art-direction/scripts/lint.mjs",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/taste-skill/scripts/lint.mjs",
+      "role": "script",
+      "consumers": [
+        "website-art-direction"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "skills/ui/stitch-design-system/DESIGN.md",
+      "source_repo": "ref.taste-skill",
+      "source_path": "skills/stitch-skill/DESIGN.md",
+      "role": "resource",
+      "consumers": [
+        "stitch-design-system"
+      ],
+      "activation": "loaded only by the selected workflow",
+      "external_requirements": [],
+      "validation": "see validation report"
+    },
+    {
+      "path": "support/ui/references/accessibility-checklist.md",
+      "source_repo": "ref.agent-skills",
+      "source_path": "references/accessibility-checklist.md",
+      "role": "reference",
+      "consumers": [
+        "interface-development",
+        "interface-accessibility"
+      ],
+      "activation": "read when needed",
+      "external_requirements": [],
+      "validation": "Markdown link audit"
+    },
+    {
+      "path": "skills/ui/cinematic-web-design/scripts/choose-direction.mjs",
+      "source_repo": "KLCode",
+      "source_path": "adaptation of ref.taste-skill/skills/gpt-tasteskill/SKILL.md",
+      "role": "script",
+      "consumers": [
+        "cinematic-web-design"
+      ],
+      "activation": "explicit seed; stdout only",
+      "external_requirements": [
+        "Node 18+"
+      ],
+      "validation": "deterministic draw and valid option checks"
+    },
+    {
+      "path": "support/ui/tests/interface-evidence.test.cjs",
+      "source_repo": "ref.ECC",
+      "source_path": "tests/skills/frontend-design-direction.test.js",
+      "role": "test",
+      "consumers": [
+        "interface-development"
+      ],
+      "activation": "offline validation",
+      "external_requirements": [
+        "Node"
+      ],
+      "validation": "Six offline evidence tests pass; Windows symlink subcases unavailable, other containment checks exercised."
+    },
+    {
+      "path": "support/ui/tests/resource-smoke.cjs",
+      "source_repo": "KLCode",
+      "source_path": "UI resource integration tests",
+      "role": "test",
+      "consumers": [
+        "website-art-direction",
+        "cinematic-web-design"
+      ],
+      "activation": "offline validation; temporary isolated fixture output/history",
+      "external_requirements": [
+        "Node"
+      ],
+      "validation": "5 integration checks pass"
+    }
+  ],
+  "external_prerequisites": [
+    {
+      "name": "website-art-direction",
+      "requirement": "Node18+ for draw/lint/assets; Node22+ and installed Chrome/Edge/Chromium for inspector; network only for selected asset search/download"
+    },
+    {
+      "name": "cinematic-web-design",
+      "requirement": "GSAP/ScrollTrigger and optional React adapter only when used; actual project dependencies checked"
+    },
+    {
+      "name": "html-presentations",
+      "requirement": "Python3/python-pptx for .pptx extraction; Bash/Node/npm/Playwright/Chromium for optional exporter; explicit dependency-download flag"
+    },
+    {
+      "name": "image workflows",
+      "requirement": "Available authorized image-generation tool; no provider credentials installed here"
+    },
+    {
+      "name": "stitch-design-system",
+      "requirement": "Google Stitch access for generation/submission; optional Stitch MCP; local DESIGN.md creation works without calls"
+    },
+    {
+      "name": "monitoring-dashboard",
+      "requirement": "Selected monitoring platform schema/query evidence; account only when actually operating that platform"
+    }
+  ],
+  "verification": {
+    "node": "v24.21.0",
+    "resource_integration": "5/5 pass: library/draw/reprint, lint positive/negative, offline help, seeded chooser",
+    "evidence_tests": "6/6 pass; symlink-specific cases unavailable due Windows privilege; remaining containment tests exercised",
+    "central_validation": "UI category metadata, links, import closure and Node syntax pass; other categories still in progress",
+    "python": "AST and extractor --help pass; python-pptx unavailable so real extraction not run",
+    "not_run": [
+      "Browser screenshots",
+      "PDF export and Bash execution",
+      "External asset/image services",
+      "Google Stitch"
+    ]
+  }
+}

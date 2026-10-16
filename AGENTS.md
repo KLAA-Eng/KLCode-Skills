@@ -7,14 +7,15 @@ This repository contains skills being curated for the development team. The goal
 ## Current phase
 
 - The owner's initial cleanup and the agreed relevance-based removal pass are complete.
-- Consolidation and removal of overlapping skills are next.
-- Import required agents, commands, and hooks after the final skill list is settled. Missing infrastructure alone is not a reason to remove a skill.
-- Claude and Codex plugin packaging will be addressed after consolidation.
+- Consolidation and required supporting-resource imports are complete: 209 source skills became 103 canonical workflows. See `consolidation/manifest.json` and the category handoffs.
+- Preserve and adapt imported agents, commands, hooks, scripts, rules, templates, assets, and their licensing when changing a workflow. Missing external prerequisites must be reported honestly.
+- Project-specific variants and Claude/Codex plugin lifecycle wiring/publication are separate later phases.
 - Keep changes scoped to the current request. Do not proactively reorganize, consolidate, delete skills, or add plugin configuration.
 
 ## Repository layout
 
-- `skills/` contains the imported skill collections, currently grouped by source.
+- `skills/<category>/<skill>/` contains the canonical workflows, grouped by job rather than upstream source.
+- `support/<category>/` contains imported category-shared dependencies and their provenance/dependency manifest.
 - Each skill's `SKILL.md` describes its purpose and usage. Supporting scripts, references, and assets belong with that skill.
 - `README.md` is the entry point for repository documentation.
 
@@ -44,5 +45,7 @@ Use these repositories to check original behavior, context, and attribution when
 ## Validation and handoff
 
 - For documentation edits, check Markdown, metadata, and referenced paths as applicable.
+- Run `node scripts/validate-repo.cjs --syntax` for canonical inventory, metadata schema, local links, dependency files, relative imports, and JavaScript syntax.
+- Run `python -X utf8 -B scripts/validate-python.py` for Python syntax; optionally pass `--skill-validator` with Skill Creator's `quick_validate.py` (requires PyYAML) for official metadata validation.
 - For script changes, run the relevant available checks and report anything that could not be verified.
 - Summarize what changed, how it was checked, and any remaining decisions.

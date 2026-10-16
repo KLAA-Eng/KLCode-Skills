@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "category": "languages",
+  "files": [
+    {
+      "path": "support/languages/agents/python-reviewer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/python-reviewer.md",
+      "role": "agent",
+      "consumers": [
+        "python-development"
+      ],
+      "activation": "explicit bounded delegation; unregistered",
+      "external_requirements": [],
+      "validation": "canonical path and metadata audit"
+    },
+    {
+      "path": "support/languages/agents/csharp-reviewer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/csharp-reviewer.md",
+      "role": "agent",
+      "consumers": [
+        "dotnet-development"
+      ],
+      "activation": "explicit bounded delegation; unregistered",
+      "external_requirements": [],
+      "validation": "canonical path and metadata audit"
+    },
+    {
+      "path": "support/languages/agents/cpp-reviewer.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/cpp-reviewer.md",
+      "role": "agent",
+      "consumers": [
+        "cpp-development"
+      ],
+      "activation": "explicit bounded delegation; unregistered",
+      "external_requirements": [],
+      "validation": "canonical path and metadata audit"
+    },
+    {
+      "path": "support/languages/agents/cpp-build-resolver.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/cpp-build-resolver.md",
+      "role": "agent",
+      "consumers": [
+        "cpp-development"
+      ],
+      "activation": "explicit bounded delegation; unregistered",
+      "external_requirements": [],
+      "validation": "canonical path and metadata audit"
+    },
+    {
+      "path": "support/languages/references/path-boundaries.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/csharp-reviewer.md",
+      "role": "reference",
+      "consumers": [
+        "python-development",
+        "dotnet-development",
+        "cpp-development"
+      ],
+      "activation": "read only when relevant",
+      "external_requirements": [],
+      "validation": "peer-reported contradictions removed; central metadata/provenance/link checks pass",
+      "adaptation": "Conditional review guidance extracted and corrected for canonical runtime, evidence and trust-boundary policies.",
+      "additional_sources": [
+        {
+          "source_repo": "ref.ECC",
+          "source_path": "agents/python-reviewer.md"
+        }
+      ]
+    },
+    {
+      "path": "support/languages/references/python-review-checks.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/python-reviewer.md",
+      "role": "reference",
+      "consumers": [
+        "python-development"
+      ],
+      "activation": "read only when relevant",
+      "external_requirements": [],
+      "validation": "peer-reported contradictions removed; central metadata/provenance/link checks pass",
+      "adaptation": "Conditional review guidance extracted and corrected for canonical runtime, evidence and trust-boundary policies."
+    },
+    {
+      "path": "support/languages/references/csharp-review-checks.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/csharp-reviewer.md",
+      "role": "reference",
+      "consumers": [
+        "dotnet-development"
+      ],
+      "activation": "read only when relevant",
+      "external_requirements": [],
+      "validation": "peer-reported contradictions removed; central metadata/provenance/link checks pass",
+      "adaptation": "Conditional review guidance extracted and corrected for canonical runtime, evidence and trust-boundary policies."
+    },
+    {
+      "path": "support/languages/references/cpp-review-checks.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/cpp-reviewer.md",
+      "role": "reference",
+      "consumers": [
+        "cpp-development"
+      ],
+      "activation": "read only when relevant",
+      "external_requirements": [],
+      "validation": "peer-reported contradictions removed; central metadata/provenance/link checks pass",
+      "adaptation": "Conditional review guidance extracted and corrected for canonical runtime, evidence and trust-boundary policies."
+    },
+    {
+      "path": "support/languages/references/cpp-build-diagnosis.md",
+      "source_repo": "ref.ECC",
+      "source_path": "agents/cpp-build-resolver.md",
+      "role": "reference",
+      "consumers": [
+        "cpp-development"
+      ],
+      "activation": "read only when relevant",
+      "external_requirements": [],
+      "validation": "peer-reported contradictions removed; central metadata/provenance/link checks pass",
+      "adaptation": "Conditional review guidance extracted and corrected for canonical runtime, evidence and trust-boundary policies."
+    }
+  ],
+  "external_prerequisites": [
+    {
+      "name": "python-development",
+      "requirement": "Project-supported Python/host; pytest/async/coverage tools only if present or selected"
+    },
+    {
+      "name": "dotnet-development",
+      "requirement": "Matching SDK/MSBuild/Windows or host runtime and configured test framework"
+    },
+    {
+      "name": "cpp-development",
+      "requirement": "Project toolchain/CMake or native build system; test framework and sanitizer support vary"
+    }
+  ],
+  "verification": {
+    "documentation": "Central partial validator: language metadata, source provenance, role-prompt paths and Markdown links pass",
+    "execution": "No source snippets compiled as standalone applications; no dependency installation or runtime changes"
+  }
+}

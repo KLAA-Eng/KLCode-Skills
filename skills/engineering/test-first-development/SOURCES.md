@@ -1,0 +1,10 @@
+# Sources and adaptation
+
+- `skills/agent-skills/test-driven-development`: ref.agent-skills (MIT)
+- `skills/matt-skills/engineering/tdd`: ref.matt-skills (MIT)
+- `skills/ecc-skills/tdd-workflow`: ref.ECC (MIT)
+- `skills/ecc-skills/ai-regression-testing`: ref.ECC (MIT)
+
+Historical paths identify provenance, not runtime dependencies. The entrypoint integrates the approved shared defaults: proportional verification, existing project conventions, meaningful verified local milestones, and explicitly selected optional integrations. Focused references retain useful patterns and examples; historical approval, coverage, host, and provider assumptions are adapted.
+
+Licenses: [source notices](../../../support/engineering/licenses/). Imported dependency inventory: [dependencies.json](../../../support/engineering/dependencies.json).

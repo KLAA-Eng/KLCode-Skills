@@ -1,0 +1,1024 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "scope": "Shared defaults; project-specific variants and plugin publication remain separate work.",
+  "source_count": 209,
+  "skill_count": 103,
+  "reference_root": "../",
+  "reference_repositories": [
+    "ref.agent-skills",
+    "ref.caveman",
+    "ref.ECC",
+    "ref.matt-skills",
+    "ref.scientific-skills",
+    "ref.taste-skill"
+  ],
+  "defaults": {
+    "rigor": "proportional to task risk and complexity",
+    "specs": "docs/specs/",
+    "plans": "docs/plans/",
+    "decisions": "docs/decisions/",
+    "knowledge": "docs/knowledge/",
+    "commits": "automatic local commits at meaningful verified milestones; remote actions follow task scope",
+    "interviews": "independent frontier per round; single-question mode on request",
+    "infrastructure": "agent systems, persistent memory, learning and style alternatives explicitly selected",
+    "dependencies": "Import required supporting files now; adapt paths and workflow names; do not auto-install or enable global configuration"
+  },
+  "skills": [
+    {
+      "category": "engineering",
+      "name": "implementation",
+      "path": "skills/engineering/implementation",
+      "historical_sources": [
+        "skills/caveman-skills/lean-build",
+        "skills/agent-skills/incremental-implementation",
+        "skills/matt-skills/engineering/implement",
+        "skills/matt-skills/engineering/implement-spec",
+        "skills/ecc-skills/coding-standards",
+        "skills/ecc-skills/inherit-legacy-style",
+        "skills/ecc-skills/error-handling"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "debugging",
+      "path": "skills/engineering/debugging",
+      "historical_sources": [
+        "skills/agent-skills/debugging-and-error-recovery",
+        "skills/matt-skills/engineering/diagnosing-bugs",
+        "skills/caveman-skills/investigate-first",
+        "skills/caveman-skills/surgical-patch",
+        "skills/ecc-skills/click-path-audit"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "test-first-development",
+      "path": "skills/engineering/test-first-development",
+      "historical_sources": [
+        "skills/agent-skills/test-driven-development",
+        "skills/matt-skills/engineering/tdd",
+        "skills/ecc-skills/tdd-workflow",
+        "skills/ecc-skills/ai-regression-testing"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "code-review",
+      "path": "skills/engineering/code-review",
+      "historical_sources": [
+        "skills/agent-skills/code-review-and-quality",
+        "skills/matt-skills/engineering/code-review",
+        "skills/caveman-skills/caveman-review",
+        "skills/agent-skills/doubt-driven-development"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "refactoring",
+      "path": "skills/engineering/refactoring",
+      "historical_sources": [
+        "skills/caveman-skills/safe-refactor",
+        "skills/agent-skills/code-simplification"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "verification",
+      "path": "skills/engineering/verification",
+      "historical_sources": [
+        "skills/caveman-skills/verify-and-stop",
+        "skills/ecc-skills/verification-loop",
+        "skills/ecc-skills/terminal-ops"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "commit-preparation",
+      "path": "skills/engineering/commit-preparation",
+      "historical_sources": [
+        "skills/caveman-skills/caveman-commit",
+        "skills/ecc-skills/conventional-commit-review"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "git-workflow",
+      "path": "skills/engineering/git-workflow",
+      "historical_sources": [
+        "skills/agent-skills/git-workflow-and-versioning",
+        "skills/ecc-skills/git-workflow",
+        "skills/matt-skills/engineering/pr"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "application-security",
+      "path": "skills/engineering/application-security",
+      "historical_sources": [
+        "skills/agent-skills/security-and-hardening",
+        "skills/ecc-skills/security-review"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "performance-optimization",
+      "path": "skills/engineering/performance-optimization",
+      "historical_sources": [
+        "skills/agent-skills/performance-optimization",
+        "skills/ecc-skills/benchmark-optimization-loop",
+        "skills/ecc-skills/benchmark",
+        "skills/ecc-skills/latency-critical-systems",
+        "skills/ecc-skills/data-throughput-accelerator",
+        "skills/ecc-skills/content-hash-cache-pattern"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "release-readiness",
+      "path": "skills/engineering/release-readiness",
+      "historical_sources": [
+        "skills/agent-skills/shipping-and-launch",
+        "skills/ecc-skills/production-audit"
+      ]
+    },
+    {
+      "category": "languages",
+      "name": "python-development",
+      "path": "skills/languages/python-development",
+      "historical_sources": [
+        "skills/ecc-skills/python-patterns",
+        "skills/ecc-skills/python-testing",
+        "skills/ecc-skills/regex-vs-llm-structured-text"
+      ]
+    },
+    {
+      "category": "languages",
+      "name": "dotnet-development",
+      "path": "skills/languages/dotnet-development",
+      "historical_sources": [
+        "skills/ecc-skills/dotnet-patterns",
+        "skills/ecc-skills/csharp-testing"
+      ]
+    },
+    {
+      "category": "languages",
+      "name": "cpp-development",
+      "path": "skills/languages/cpp-development",
+      "historical_sources": [
+        "skills/ecc-skills/cpp-coding-standards",
+        "skills/ecc-skills/cpp-testing"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "interface-design",
+      "path": "skills/engineering/interface-design",
+      "historical_sources": [
+        "skills/agent-skills/api-and-interface-design",
+        "skills/ecc-skills/api-design"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "migration",
+      "path": "skills/engineering/migration",
+      "historical_sources": [
+        "skills/agent-skills/deprecation-and-migration",
+        "skills/caveman-skills/migration",
+        "skills/ecc-skills/database-migrations"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "observability",
+      "path": "skills/engineering/observability",
+      "historical_sources": [
+        "skills/agent-skills/observability-and-instrumentation"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "quality-automation",
+      "path": "skills/tooling/quality-automation",
+      "historical_sources": [
+        "skills/agent-skills/ci-cd-and-automation",
+        "skills/matt-skills/misc/setup-pre-commit",
+        "skills/ecc-skills/plankton-code-quality",
+        "skills/ecc-skills/delivery-gate"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "operation-guardrails",
+      "path": "skills/tooling/operation-guardrails",
+      "historical_sources": [
+        "skills/ecc-skills/safety-guard",
+        "skills/ecc-skills/gateguard",
+        "skills/matt-skills/misc/git-guardrails-claude-code"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "test-governance",
+      "path": "skills/engineering/test-governance",
+      "historical_sources": [
+        "skills/ecc-skills/test-collaboration"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "connector-development",
+      "path": "skills/engineering/connector-development",
+      "historical_sources": [
+        "skills/ecc-skills/api-connector-builder"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "contract-collaboration",
+      "path": "skills/engineering/contract-collaboration",
+      "historical_sources": [
+        "skills/ecc-skills/contract-first"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "github-operations",
+      "path": "skills/tooling/github-operations",
+      "historical_sources": [
+        "skills/ecc-skills/github-ops"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "public-release-preparation",
+      "path": "skills/tooling/public-release-preparation",
+      "historical_sources": [
+        "skills/ecc-skills/opensource-pipeline"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "windows-python-packaging",
+      "path": "skills/tooling/windows-python-packaging",
+      "historical_sources": [
+        "skills/ecc-skills/generating-python-installer"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "agent-configuration-security",
+      "path": "skills/tooling/agent-configuration-security",
+      "historical_sources": [
+        "skills/ecc-skills/security-scan",
+        "skills/ecc-skills/mcp-dependency-review"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "browser-testing",
+      "path": "skills/engineering/browser-testing",
+      "historical_sources": [
+        "skills/ecc-skills/e2e-testing",
+        "skills/ecc-skills/browser-qa"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "desktop-testing",
+      "path": "skills/engineering/desktop-testing",
+      "historical_sources": [
+        "skills/ecc-skills/windows-desktop-e2e"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "change-impact",
+      "path": "skills/planning/change-impact",
+      "historical_sources": [
+        "skills/ecc-skills/change-impact"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "mcp-development",
+      "path": "skills/engineering/mcp-development",
+      "historical_sources": [
+        "skills/ecc-skills/mcp-server-patterns"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "grilling",
+      "path": "skills/planning/grilling",
+      "historical_sources": [
+        "skills/matt-skills/productivity/grilling",
+        "skills/matt-skills/productivity/grill-me",
+        "skills/agent-skills/interview-me",
+        "skills/matt-skills/engineering/grill-with-docs"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "requirements",
+      "path": "skills/planning/requirements",
+      "historical_sources": [
+        "skills/ecc-skills/intent-driven-development",
+        "skills/agent-skills/spec-driven-development",
+        "skills/ecc-skills/product-capability",
+        "skills/matt-skills/engineering/to-spec"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "implementation-planning",
+      "path": "skills/planning/implementation-planning",
+      "historical_sources": [
+        "skills/agent-skills/planning-and-task-breakdown",
+        "skills/matt-skills/engineering/to-tickets",
+        "skills/ecc-skills/story-lifecycle"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "multi-session-planning",
+      "path": "skills/planning/multi-session-planning",
+      "historical_sources": [
+        "skills/ecc-skills/blueprint"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "product-discovery",
+      "path": "skills/planning/product-discovery",
+      "historical_sources": [
+        "skills/agent-skills/idea-refine",
+        "skills/ecc-skills/product-lens"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "technical-research",
+      "path": "skills/knowledge/technical-research",
+      "historical_sources": [
+        "skills/matt-skills/engineering/research",
+        "skills/ecc-skills/research-ops",
+        "skills/agent-skills/source-driven-development",
+        "skills/ecc-skills/documentation-lookup"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "solution-discovery",
+      "path": "skills/knowledge/solution-discovery",
+      "historical_sources": [
+        "skills/ecc-skills/search-first"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "domain-modeling",
+      "path": "skills/planning/domain-modeling",
+      "historical_sources": [
+        "skills/matt-skills/engineering/domain-modeling",
+        "skills/ecc-skills/context-and-decisions"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "architecture-decisions",
+      "path": "skills/knowledge/architecture-decisions",
+      "historical_sources": [
+        "skills/ecc-skills/architecture-decision-records"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "documentation",
+      "path": "skills/knowledge/documentation",
+      "historical_sources": [
+        "skills/agent-skills/documentation-and-adrs",
+        "skills/ecc-skills/docs-governance",
+        "skills/ecc-skills/living-docs-governance"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "architecture-design",
+      "path": "skills/planning/architecture-design",
+      "historical_sources": [
+        "skills/matt-skills/engineering/codebase-design",
+        "skills/ecc-skills/hexagonal-architecture",
+        "skills/ecc-skills/recsys-pipeline-architect"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "architecture-assessment",
+      "path": "skills/planning/architecture-assessment",
+      "historical_sources": [
+        "skills/matt-skills/engineering/improve-codebase-architecture"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "codebase-onboarding",
+      "path": "skills/knowledge/codebase-onboarding",
+      "historical_sources": [
+        "skills/ecc-skills/codebase-onboarding",
+        "skills/caveman-skills/caveman-explore"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "code-tours",
+      "path": "skills/knowledge/code-tours",
+      "historical_sources": [
+        "skills/ecc-skills/code-tour"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "session-retrospective",
+      "path": "skills/knowledge/session-retrospective",
+      "historical_sources": [
+        "skills/matt-skills/engineering/retro",
+        "skills/ecc-skills/growth-log",
+        "skills/ecc-skills/agent-self-evaluation"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "brownfield-retrospective",
+      "path": "skills/planning/brownfield-retrospective",
+      "historical_sources": [
+        "skills/ecc-skills/brownfield-retrospective"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "quality-constraints",
+      "path": "skills/tooling/quality-constraints",
+      "historical_sources": [
+        "skills/agent-skills/constraint-driven-development"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "decision-exploration",
+      "path": "skills/planning/decision-exploration",
+      "historical_sources": [
+        "skills/matt-skills/engineering/wayfinder"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "prototyping",
+      "path": "skills/planning/prototyping",
+      "historical_sources": [
+        "skills/matt-skills/engineering/prototype"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "human-setup-guide",
+      "path": "skills/knowledge/human-setup-guide",
+      "historical_sources": [
+        "skills/matt-skills/engineering/wizard"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "questionnaire",
+      "path": "skills/planning/questionnaire",
+      "historical_sources": [
+        "skills/matt-skills/productivity/to-questionnaire"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "teaching",
+      "path": "skills/knowledge/teaching",
+      "historical_sources": [
+        "skills/matt-skills/productivity/teach"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "reexplain",
+      "path": "skills/knowledge/reexplain",
+      "historical_sources": [
+        "skills/matt-skills/productivity/wait-what"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "work-triage",
+      "path": "skills/planning/work-triage",
+      "historical_sources": [
+        "skills/matt-skills/engineering/triage",
+        "skills/ecc-skills/project-flow-ops"
+      ]
+    },
+    {
+      "category": "planning",
+      "name": "plan-review-ui",
+      "path": "skills/planning/plan-review-ui",
+      "historical_sources": [
+        "skills/ecc-skills/plan-canvas"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "workflow-guide",
+      "path": "skills/tooling/workflow-guide",
+      "historical_sources": [
+        "skills/agent-skills/using-agent-skills",
+        "skills/ecc-skills/ecc-guide",
+        "skills/ecc-skills/ecc-recipes",
+        "skills/ecc-skills/plan-orchestrate",
+        "skills/matt-skills/engineering/ask-KLCode"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "writing-for-agents",
+      "path": "skills/tooling/writing-for-agents",
+      "historical_sources": [
+        "skills/matt-skills/productivity/writing-for-agents"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "workspace-setup",
+      "path": "skills/tooling/workspace-setup",
+      "historical_sources": [
+        "skills/matt-skills/engineering/setup-KLCode-skills",
+        "skills/ecc-skills/workspace-surface-audit",
+        "skills/ecc-skills/agent-sort",
+        "skills/ecc-skills/configure-ecc",
+        "skills/ecc-skills/repo-scan"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "configuration-audit",
+      "path": "skills/tooling/configuration-audit",
+      "historical_sources": [
+        "skills/ecc-skills/config-gc",
+        "skills/ecc-skills/automation-audit-ops"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "skill-maintenance",
+      "path": "skills/tooling/skill-maintenance",
+      "historical_sources": [
+        "skills/ecc-skills/skill-stocktake",
+        "skills/ecc-skills/skill-host-compat",
+        "skills/ecc-skills/skill-scout",
+        "skills/ecc-skills/rules-distill"
+      ]
+    },
+    {
+      "category": "agents",
+      "name": "skill-compliance-testing",
+      "path": "skills/agents/skill-compliance-testing",
+      "historical_sources": [
+        "skills/ecc-skills/skill-comply"
+      ]
+    },
+    {
+      "category": "agents",
+      "name": "hook-rules",
+      "path": "skills/agents/hook-rules",
+      "historical_sources": [
+        "skills/ecc-skills/hookify-rules"
+      ]
+    },
+    {
+      "category": "agents",
+      "name": "context-management",
+      "path": "skills/agents/context-management",
+      "historical_sources": [
+        "skills/agent-skills/context-engineering",
+        "skills/ecc-skills/iterative-retrieval",
+        "skills/ecc-skills/strategic-compact"
+      ]
+    },
+    {
+      "category": "agents",
+      "name": "context-budget",
+      "path": "skills/agents/context-budget",
+      "historical_sources": [
+        "skills/ecc-skills/context-budget"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "session-handoff",
+      "path": "skills/knowledge/session-handoff",
+      "historical_sources": [
+        "skills/matt-skills/productivity/handoff",
+        "skills/ecc-skills/unified-memory",
+        "skills/ecc-skills/ck"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "knowledge-management",
+      "path": "skills/knowledge/knowledge-management",
+      "historical_sources": [
+        "skills/ecc-skills/knowledge-ops"
+      ]
+    },
+    {
+      "category": "agents",
+      "name": "continuous-learning",
+      "path": "skills/agents/continuous-learning",
+      "historical_sources": [
+        "skills/ecc-skills/continuous-learning-v2",
+        "skills/ecc-skills/continuous-learning"
+      ]
+    },
+    {
+      "category": "agents",
+      "name": "agent-orchestration",
+      "path": "skills/agents/agent-orchestration",
+      "historical_sources": [
+        "skills/ecc-skills/team-agent-orchestration",
+        "skills/ecc-skills/parallel-execution-optimizer",
+        "skills/ecc-skills/agentic-engineering",
+        "skills/ecc-skills/ai-first-engineering",
+        "skills/ecc-skills/orch-pipeline",
+        "skills/ecc-skills/orch-add-feature",
+        "skills/ecc-skills/orch-change-feature",
+        "skills/ecc-skills/orch-fix-defect",
+        "skills/ecc-skills/orch-refine-code",
+        "skills/ecc-skills/orch-build-mvp",
+        "skills/ecc-skills/claude-devfleet"
+      ]
+    },
+    {
+      "category": "agents",
+      "name": "autonomous-operation",
+      "path": "skills/agents/autonomous-operation",
+      "historical_sources": [
+        "skills/ecc-skills/autonomous-agent-harness",
+        "skills/ecc-skills/agentic-os"
+      ]
+    },
+    {
+      "category": "agents",
+      "name": "agent-loop-design",
+      "path": "skills/agents/agent-loop-design",
+      "historical_sources": [
+        "skills/ecc-skills/continuous-agent-loop",
+        "skills/ecc-skills/autonomous-loops",
+        "skills/ecc-skills/loop-design-check",
+        "skills/ecc-skills/recursive-decision-ledger",
+        "skills/ecc-skills/dynamic-workflow-mode"
+      ]
+    },
+    {
+      "category": "agents",
+      "name": "agent-tool-design",
+      "path": "skills/agents/agent-tool-design",
+      "historical_sources": [
+        "skills/ecc-skills/agent-harness-construction"
+      ]
+    },
+    {
+      "category": "agents",
+      "name": "review-team",
+      "path": "skills/agents/review-team",
+      "historical_sources": [
+        "skills/ecc-skills/team-builder",
+        "skills/ecc-skills/dev-team",
+        "skills/ecc-skills/council",
+        "skills/ecc-skills/council-multi-model",
+        "skills/ecc-skills/santa-method"
+      ]
+    },
+    {
+      "category": "agents",
+      "name": "agent-evaluation",
+      "path": "skills/agents/agent-evaluation",
+      "historical_sources": [
+        "skills/ecc-skills/agent-eval",
+        "skills/ecc-skills/eval-harness"
+      ]
+    },
+    {
+      "category": "agents",
+      "name": "agent-cost-report",
+      "path": "skills/agents/agent-cost-report",
+      "historical_sources": [
+        "skills/ecc-skills/cost-tracking",
+        "skills/ecc-skills/token-card"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "response-depth",
+      "path": "skills/tooling/response-depth",
+      "historical_sources": [
+        "skills/ecc-skills/token-budget-advisor"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "llm-cost-optimization",
+      "path": "skills/engineering/llm-cost-optimization",
+      "historical_sources": [
+        "skills/ecc-skills/cost-aware-llm-pipeline",
+        "skills/ecc-skills/prompt-caching-strategy",
+        "skills/ecc-skills/ecc-tools-cost-audit"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "prompt-optimizer",
+      "path": "skills/tooling/prompt-optimizer",
+      "historical_sources": [
+        "skills/ecc-skills/prompt-optimizer"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "terminal-opener",
+      "path": "skills/tooling/terminal-opener",
+      "historical_sources": [
+        "skills/ecc-skills/terminal-opener"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "interface-development",
+      "path": "skills/ui/interface-development",
+      "historical_sources": [
+        "skills/agent-skills/frontend-ui-engineering",
+        "skills/ecc-skills/frontend-design-direction",
+        "skills/ecc-skills/make-interfaces-feel-better"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "interface-accessibility",
+      "path": "skills/ui/interface-accessibility",
+      "historical_sources": [
+        "skills/ecc-skills/frontend-a11y"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "design-system",
+      "path": "skills/ui/design-system",
+      "historical_sources": [
+        "skills/ecc-skills/design-system"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "monitoring-dashboard",
+      "path": "skills/ui/monitoring-dashboard",
+      "historical_sources": [
+        "skills/ecc-skills/dashboard-builder"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "html-presentations",
+      "path": "skills/ui/html-presentations",
+      "historical_sources": [
+        "skills/ecc-skills/frontend-slides"
+      ]
+    },
+    {
+      "category": "video",
+      "name": "remotion-video",
+      "path": "skills/video/remotion-video",
+      "historical_sources": [
+        "skills/ecc-skills/remotion-video-creation"
+      ]
+    },
+    {
+      "category": "video",
+      "name": "ui-demo-recording",
+      "path": "skills/video/ui-demo-recording",
+      "historical_sources": [
+        "skills/ecc-skills/ui-demo"
+      ]
+    },
+    {
+      "category": "video",
+      "name": "video-style-analysis",
+      "path": "skills/video/video-style-analysis",
+      "historical_sources": [
+        "skills/ecc-skills/taste-distillation"
+      ]
+    },
+    {
+      "category": "video",
+      "name": "video-style-editing",
+      "path": "skills/video/video-style-editing",
+      "historical_sources": [
+        "skills/ecc-skills/taste-application"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "website-art-direction",
+      "path": "skills/ui/website-art-direction",
+      "historical_sources": [
+        "skills/taste-skills/taste-skill"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "cinematic-web-design",
+      "path": "skills/ui/cinematic-web-design",
+      "historical_sources": [
+        "skills/taste-skills/gpt-tasteskill"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "premium-web-design",
+      "path": "skills/ui/premium-web-design",
+      "historical_sources": [
+        "skills/taste-skills/soft-skill"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "minimalist-ui",
+      "path": "skills/ui/minimalist-ui",
+      "historical_sources": [
+        "skills/taste-skills/minimalist-skill"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "industrial-brutalist-ui",
+      "path": "skills/ui/industrial-brutalist-ui",
+      "historical_sources": [
+        "skills/taste-skills/brutalist-skill"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "interface-redesign",
+      "path": "skills/ui/interface-redesign",
+      "historical_sources": [
+        "skills/taste-skills/redesign-skill"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "image-to-website",
+      "path": "skills/ui/image-to-website",
+      "historical_sources": [
+        "skills/taste-skills/image-to-code-skill"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "website-design-images",
+      "path": "skills/ui/website-design-images",
+      "historical_sources": [
+        "skills/taste-skills/imagegen-frontend-web"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "brandkit",
+      "path": "skills/ui/brandkit",
+      "historical_sources": [
+        "skills/taste-skills/brandkit"
+      ]
+    },
+    {
+      "category": "ui",
+      "name": "stitch-design-system",
+      "path": "skills/ui/stitch-design-system",
+      "historical_sources": [
+        "skills/taste-skills/stitch-skill"
+      ]
+    },
+    {
+      "category": "tooling",
+      "name": "complete-output",
+      "path": "skills/tooling/complete-output",
+      "historical_sources": [
+        "skills/taste-skills/output-skill"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "literature-review",
+      "path": "skills/knowledge/literature-review",
+      "historical_sources": [
+        "skills/ecc-skills/scientific-thinking-literature-review"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "scholarly-evaluation",
+      "path": "skills/knowledge/scholarly-evaluation",
+      "historical_sources": [
+        "skills/ecc-skills/scientific-thinking-scholar-evaluation"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "article-writing",
+      "path": "skills/knowledge/article-writing",
+      "historical_sources": [
+        "skills/ecc-skills/article-writing"
+      ]
+    },
+    {
+      "category": "engineering",
+      "name": "data-collection",
+      "path": "skills/engineering/data-collection",
+      "historical_sources": [
+        "skills/ecc-skills/data-scraper-agent"
+      ]
+    },
+    {
+      "category": "knowledge",
+      "name": "osint-investigation",
+      "path": "skills/knowledge/osint-investigation",
+      "historical_sources": [
+        "skills/ecc-skills/osint-investigation"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "name": "engineering",
+      "state": "complete",
+      "skills": 22,
+      "owner": "project_context",
+      "handoff": "consolidation/engineering-handoff.md"
+    },
+    {
+      "name": "languages",
+      "state": "complete",
+      "skills": 3,
+      "owner": "consolidation_infra_ui",
+      "handoff": "consolidation/languages-handoff.md"
+    },
+    {
+      "name": "tooling",
+      "state": "complete",
+      "skills": 16,
+      "owner": "project_context",
+      "handoff": "consolidation/tooling-handoff.md"
+    },
+    {
+      "name": "planning",
+      "state": "complete",
+      "skills": 15,
+      "owner": "skill_inventory",
+      "handoff": "consolidation/planning-handoff.md"
+    },
+    {
+      "name": "knowledge",
+      "state": "complete",
+      "skills": 16,
+      "owner": "skill_inventory",
+      "handoff": "consolidation/knowledge-handoff.md"
+    },
+    {
+      "name": "agents",
+      "state": "complete",
+      "skills": 12,
+      "owner": "consolidation_infra_ui",
+      "handoff": "consolidation/agents-handoff.md"
+    },
+    {
+      "name": "ui",
+      "state": "complete",
+      "skills": 15,
+      "owner": "consolidation_infra_ui",
+      "handoff": "consolidation/ui-handoff.md"
+    },
+    {
+      "name": "video",
+      "state": "complete",
+      "skills": 4,
+      "owner": "consolidation_infra_ui",
+      "handoff": "consolidation/video-handoff.md"
+    }
+  ],
+  "retired_collection_roots": [
+    "skills/agent-skills",
+    "skills/caveman-skills",
+    "skills/ecc-skills",
+    "skills/matt-skills",
+    "skills/taste-skills"
+  ]
+}

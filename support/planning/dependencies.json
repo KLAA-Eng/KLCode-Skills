@@ -1,0 +1,1044 @@
+{
+    "schema_version":  1,
+    "category":  "planning",
+    "files":  [
+                  {
+                      "path":  "support/planning/scripts/plan-canvas.js",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "scripts/plan-canvas.js",
+                      "source_sha256":  "E3BB945047CD5BD0A43479E5D3F0FAD6C06E59A6504B6BB5321CBA11EC1040D1",
+                      "role":  "script",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "plan-review-ui"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Node.js 18+",
+                      "adaptation":  "Standalone version; local docs/plans examples; no package.json runtime dependency",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/scripts/lib/platform-launch.js",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "scripts/lib/platform-launch.js",
+                      "source_sha256":  "953683E8C2A7057AC93AE1BC00979665360529431A08D004BA87876DCFEE983E",
+                      "role":  "module",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "plan-review-ui"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Node.js 18+",
+                      "adaptation":  "Preserved dependency implementation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/scripts/lib/loopback-guard.js",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "scripts/lib/loopback-guard.js",
+                      "source_sha256":  "3EFCC93C9C631876F824E61F97945A8260FBA9AD7EA14BAFFEE3DE0781B74BCB",
+                      "role":  "module",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "plan-review-ui"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Node.js 18+",
+                      "adaptation":  "Preserved dependency implementation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/scripts/lib/plan-canvas/markdown.js",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "scripts/lib/plan-canvas/markdown.js",
+                      "source_sha256":  "BB68DDA565690E3830C93C64FB502DC4DC1ECF036C0CFDBD6D38D78022B58D72",
+                      "role":  "module",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "plan-review-ui"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Node.js 18+",
+                      "adaptation":  "Preserved dependency implementation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/scripts/lib/plan-canvas/sdk.js",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "scripts/lib/plan-canvas/sdk.js",
+                      "source_sha256":  "26C0618591CBF6AAC5CEBF1B9555DC364BA87AD8213876A886318712B0324359",
+                      "role":  "module",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "plan-review-ui"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Node.js 18+",
+                      "adaptation":  "Preserved dependency implementation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/scripts/lib/plan-canvas/server.js",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "scripts/lib/plan-canvas/server.js",
+                      "source_sha256":  "A617D3A0FB0F18B9E7A2257C70E6E585A75615598C087D2D217EFBFE63FA59C3",
+                      "role":  "module",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "plan-review-ui"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Node.js 18+",
+                      "adaptation":  "Preserved dependency implementation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/scripts/lib/plan-canvas/sessions.js",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "scripts/lib/plan-canvas/sessions.js",
+                      "source_sha256":  "AFFE36723656E80CD6313F3DB09572B2C88C964A66151ADDF04D6B25ABA5BACC",
+                      "role":  "module",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "plan-review-ui"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Node.js 18+",
+                      "adaptation":  "Host-neutral OS temporary state directory; no hooks required",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/scripts/lib/plan-canvas/ui.js",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "scripts/lib/plan-canvas/ui.js",
+                      "source_sha256":  "73EE795CB6CE3960B3AC38C1BFDF1CEF9F0ACE8F412A4673280503AC60451D93",
+                      "role":  "module",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "plan-review-ui"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Node.js 18+",
+                      "adaptation":  "Preserved dependency implementation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/scripts/story-ledger.js",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "skills/story-lifecycle/scripts/ledger.js",
+                      "source_sha256":  "552D2059C3D29F7CBB71AC3D1A13B913A82549A4BC2FD5DE998D3455FA33B32D",
+                      "role":  "script",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "implementation-planning"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Node.js 18+",
+                      "adaptation":  "Default docs/plans/story-ledger; reject symlinked nested ancestors; preserve transaction and ID logic",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/agents/planner.md",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "agents/planner.md",
+                      "source_sha256":  "63ABA865206BAC9CB5887542FB01B97656E7701FAFF98E091AA77057BA9860BC",
+                      "role":  "agent",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "implementation-planning"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Host reads prompt; delegation optional",
+                      "adaptation":  "Canonical skills, shared local defaults, proportional rigor; no fixed model or automatic global activation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/agents/architect.md",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "agents/architect.md",
+                      "source_sha256":  "6B8E1E8BD274995F3949691731F4334820C061D3054EAEA3BE2CE163386D1F24",
+                      "role":  "agent",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "architecture-design"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Host reads prompt; delegation optional",
+                      "adaptation":  "Canonical skills, shared local defaults, proportional rigor; no fixed model or automatic global activation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/agents/behavior-miner.md",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "agents/spec-miner.md",
+                      "source_sha256":  "A9270C2012E2DC979F153A481CDFDC7C5413E8774F579ADA0319C00EA8903BA2",
+                      "role":  "agent",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "brownfield-retrospective"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Host reads prompt; delegation optional",
+                      "adaptation":  "Canonical skills, shared local defaults, proportional rigor; no fixed model or automatic global activation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/agents/plan-reviewer.md",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "skills/blueprint/SKILL.md",
+                      "source_sha256":  "878EAE8ED0EA4D46D21C8F88D471F6FFCE7B0815202A43501060A163E7F446F3",
+                      "role":  "agent",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "multi-session-planning"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Host reads prompt; delegation optional",
+                      "adaptation":  "Canonical skills, shared local defaults, proportional rigor; no fixed model or automatic global activation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/commands/plan.md",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "commands/plan.md",
+                      "source_sha256":  "8D0CAA8380EBA2F2550937553C9C8C8F253C627CFF662F0C333E6AD982706E3E",
+                      "role":  "command",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "implementation-planning"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Host reads prompt; delegation optional",
+                      "adaptation":  "Canonical skills, shared local defaults, proportional rigor; no fixed model or automatic global activation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/commands/plan-review.md",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "commands/plan-canvas.md",
+                      "source_sha256":  "7C5869ED155E88A1BF78F760B983D958E913F2594752BD9C5F78134E32EAF1DF",
+                      "role":  "command",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "plan-review-ui"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Host reads prompt; delegation optional",
+                      "adaptation":  "Canonical skills, shared local defaults, proportional rigor; no fixed model or automatic global activation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/tests/lib/plan-canvas-sessions.test.js",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "tests/lib/plan-canvas-sessions.test.js",
+                      "source_sha256":  "033A258264D06FABDEC359190BA9C98B648BFF5A527304AC713F2E3A7E645737",
+                      "role":  "test",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "plan-review-ui"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Node.js 18+",
+                      "adaptation":  "Preserved dependency implementation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/tests/lib/plan-canvas-markdown.test.js",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "tests/lib/plan-canvas-markdown.test.js",
+                      "source_sha256":  "241C47444888698CA317458ED57EAB92405F64AB6E2DB63783638B4415903BE3",
+                      "role":  "test",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "plan-review-ui"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Node.js 18+",
+                      "adaptation":  "Preserved dependency implementation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "support/planning/tests/scripts/plan-canvas.test.js",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "tests/scripts/plan-canvas.test.js",
+                      "source_sha256":  "70D3DF99D73B80C1FA69FB39292688367D53AB27265E610DC42F68F5059F27B4",
+                      "role":  "test",
+                      "license":  "MIT",
+                      "license_file":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "consumers":  [
+                                        "plan-review-ui"
+                                    ],
+                      "activation":  "Selected workflow only; no global registration or hooks",
+                      "external_requirements":  "Node.js 18+",
+                      "adaptation":  "Preserved dependency implementation",
+                      "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+                  },
+                  {
+                      "path":  "skills/planning/change-impact/references/impact-matrix.md",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "skills/change-impact/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/change-impact/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/change-impact/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "change-impact"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/grilling/references/intent-discovery.md",
+                      "source_repo":  "ref.matt-skills",
+                      "source_path":  "skills/productivity/grilling/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/productivity/grilling/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/productivity/grilling/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/productivity/grill-me/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/productivity/grill-me/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/interview-me/SKILL.md",
+                                                   "historical_source":  "skills/agent-skills/interview-me/SKILL.md",
+                                                   "source_repo":  "ref.agent-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/engineering/grill-with-docs/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/grill-with-docs/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "grilling"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/requirements/references/specification.md",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "skills/intent-driven-development/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/intent-driven-development/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/intent-driven-development/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               },
+                                               {
+                                                   "source_path":  "skills/spec-driven-development/SKILL.md",
+                                                   "historical_source":  "skills/agent-skills/spec-driven-development/SKILL.md",
+                                                   "source_repo":  "ref.agent-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/product-capability/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/product-capability/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               },
+                                               {
+                                                   "source_path":  "skills/engineering/to-spec/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/to-spec/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_sha256":  "89493F6C7AC5751517F24060A435844CE2DCEED1F75782F3224BD0DF921CEBD2",
+                                                   "source_path":  "docs/examples/product-capability-template.md",
+                                                   "adaptation":  "Inspected, unique content integrated with approved shared defaults",
+                                                   "source_repo":  "ref.ECC"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "requirements"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/implementation-planning/references/task-ledger.md",
+                      "source_repo":  "ref.agent-skills",
+                      "source_path":  "skills/planning-and-task-breakdown/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/planning-and-task-breakdown/SKILL.md",
+                                                   "historical_source":  "skills/agent-skills/planning-and-task-breakdown/SKILL.md",
+                                                   "source_repo":  "ref.agent-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/engineering/to-tickets/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/to-tickets/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/story-lifecycle/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/story-lifecycle/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "implementation-planning"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/implementation-planning/references/transactional-ledger.md",
+                      "source_repo":  "ref.agent-skills",
+                      "source_path":  "skills/planning-and-task-breakdown/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/planning-and-task-breakdown/SKILL.md",
+                                                   "historical_source":  "skills/agent-skills/planning-and-task-breakdown/SKILL.md",
+                                                   "source_repo":  "ref.agent-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/engineering/to-tickets/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/to-tickets/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/story-lifecycle/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/story-lifecycle/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "implementation-planning"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/multi-session-planning/references/milestones.md",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "skills/blueprint/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/blueprint/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/blueprint/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "multi-session-planning"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/product-discovery/references/discovery-lenses.md",
+                      "source_repo":  "ref.agent-skills",
+                      "source_path":  "skills/idea-refine/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/idea-refine/SKILL.md",
+                                                   "historical_source":  "skills/agent-skills/idea-refine/SKILL.md",
+                                                   "source_repo":  "ref.agent-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/product-lens/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/product-lens/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               },
+                                               {
+                                                   "source_sha256":  "161EBC18FDF2D996BC62A87A2D747CF1BF53548354F8925DE25C732C27F00309",
+                                                   "source_path":  "skills/idea-refine/frameworks.md",
+                                                   "adaptation":  "Inspected, unique content integrated with approved shared defaults",
+                                                   "source_repo":  "ref.agent-skills"
+                                               },
+                                               {
+                                                   "source_sha256":  "1CA2973A4D01B5CB37AB7DDB2EFF77FA4E792634A33D0CE44961C068FC88D51A",
+                                                   "source_path":  "skills/idea-refine/refinement-criteria.md",
+                                                   "adaptation":  "Inspected, unique content integrated with approved shared defaults",
+                                                   "source_repo":  "ref.agent-skills"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "product-discovery"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/domain-modeling/references/glossary.md",
+                      "source_repo":  "ref.matt-skills",
+                      "source_path":  "skills/engineering/domain-modeling/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/engineering/domain-modeling/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/domain-modeling/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/context-and-decisions/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/context-and-decisions/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               },
+                                               {
+                                                   "source_sha256":  "61FA9F6F9231070461DD4F7D4CFAD377C33013C1E5668E1E6C0A8E4500944B3B",
+                                                   "source_path":  "skills/engineering/domain-modeling/GLOSSARY-FORMAT.md",
+                                                   "adaptation":  "Inspected, unique content integrated with approved shared defaults",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_sha256":  "7A13D3C0E0B14797D3503C458FFCE7E7F9B631FEE11CE0A40D4E0EC238628045",
+                                                   "source_path":  "skills/context-and-decisions/templates/context.example.md",
+                                                   "adaptation":  "Inspected, unique content integrated with approved shared defaults",
+                                                   "source_repo":  "ref.ECC"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "domain-modeling"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/architecture-design/references/candidate-pipeline.md",
+                      "source_repo":  "ref.matt-skills",
+                      "source_path":  "skills/engineering/codebase-design/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/engineering/codebase-design/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/codebase-design/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/hexagonal-architecture/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/hexagonal-architecture/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               },
+                                               {
+                                                   "source_path":  "skills/recsys-pipeline-architect/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/recsys-pipeline-architect/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "architecture-design"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/architecture-design/references/design-alternatives.md",
+                      "source_repo":  "ref.matt-skills",
+                      "source_path":  "skills/engineering/codebase-design/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/engineering/codebase-design/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/codebase-design/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/hexagonal-architecture/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/hexagonal-architecture/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               },
+                                               {
+                                                   "source_path":  "skills/recsys-pipeline-architect/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/recsys-pipeline-architect/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               },
+                                               {
+                                                   "source_sha256":  "B6D23731A6FEEA1293CC97E08F983E9FDF48B99275D5D306C93738F06BCDCE92",
+                                                   "source_path":  "skills/engineering/codebase-design/DESIGN-IT-TWICE.md",
+                                                   "adaptation":  "Inspected, unique content integrated with approved shared defaults",
+                                                   "source_repo":  "ref.matt-skills"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "architecture-design"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/architecture-design/references/module-design.md",
+                      "source_repo":  "ref.matt-skills",
+                      "source_path":  "skills/engineering/codebase-design/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/engineering/codebase-design/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/codebase-design/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/hexagonal-architecture/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/hexagonal-architecture/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               },
+                                               {
+                                                   "source_path":  "skills/recsys-pipeline-architect/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/recsys-pipeline-architect/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               },
+                                               {
+                                                   "source_sha256":  "A67260CB384580B60430486EDEB47A6E656EA5F8A42B7196B24461459031F00C",
+                                                   "source_path":  "skills/engineering/codebase-design/DEEPENING.md",
+                                                   "adaptation":  "Inspected, unique content integrated with approved shared defaults",
+                                                   "source_repo":  "ref.matt-skills"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "architecture-design"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/architecture-design/references/ports-and-adapters.md",
+                      "source_repo":  "ref.matt-skills",
+                      "source_path":  "skills/engineering/codebase-design/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/engineering/codebase-design/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/codebase-design/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/hexagonal-architecture/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/hexagonal-architecture/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               },
+                                               {
+                                                   "source_path":  "skills/recsys-pipeline-architect/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/recsys-pipeline-architect/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "architecture-design"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/architecture-assessment/references/visual-report.md",
+                      "source_repo":  "ref.matt-skills",
+                      "source_path":  "skills/engineering/improve-codebase-architecture/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/engineering/improve-codebase-architecture/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/improve-codebase-architecture/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_sha256":  "870ACB4262373AE536AF7D1F4A9B56D33E7E7FAA632BD425C09EDB4F897FB828",
+                                                   "source_path":  "skills/engineering/improve-codebase-architecture/HTML-REPORT.md",
+                                                   "adaptation":  "Inspected, unique content integrated with approved shared defaults",
+                                                   "source_repo":  "ref.matt-skills"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "architecture-assessment"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/brownfield-retrospective/references/gap-register.md",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "skills/brownfield-retrospective/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/brownfield-retrospective/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/brownfield-retrospective/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "brownfield-retrospective"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/decision-exploration/references/decision-map.md",
+                      "source_repo":  "ref.matt-skills",
+                      "source_path":  "skills/engineering/wayfinder/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/engineering/wayfinder/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/wayfinder/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "decision-exploration"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/prototyping/references/logic.md",
+                      "source_repo":  "ref.matt-skills",
+                      "source_path":  "skills/engineering/prototype/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/engineering/prototype/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/prototype/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_sha256":  "8D7E31DE7CE73B8E62F207E3F3ECBD90A7A54FDC728F8965F5F0739976F9959A",
+                                                   "source_path":  "skills/engineering/prototype/LOGIC.md",
+                                                   "adaptation":  "Inspected, unique content integrated with approved shared defaults",
+                                                   "source_repo":  "ref.matt-skills"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "prototyping"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/prototyping/references/ui.md",
+                      "source_repo":  "ref.matt-skills",
+                      "source_path":  "skills/engineering/prototype/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/engineering/prototype/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/prototype/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_sha256":  "5EA83263BA72174C9055D58045F053D6577C0DB6802C1E15BD1468DD16F78A0B",
+                                                   "source_path":  "skills/engineering/prototype/UI.md",
+                                                   "adaptation":  "Inspected, unique content integrated with approved shared defaults",
+                                                   "source_repo":  "ref.matt-skills"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "prototyping"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/work-triage/references/agent-brief.md",
+                      "source_repo":  "ref.matt-skills",
+                      "source_path":  "skills/engineering/triage/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/engineering/triage/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/triage/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/project-flow-ops/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/project-flow-ops/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               },
+                                               {
+                                                   "source_sha256":  "9160800AD5483816F5BCD7F5AA62CFB6DBB16E6343D0754B9BB739815145FA15",
+                                                   "source_path":  "skills/engineering/triage/AGENT-BRIEF.md",
+                                                   "adaptation":  "Inspected, unique content integrated with approved shared defaults",
+                                                   "source_repo":  "ref.matt-skills"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "work-triage"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/work-triage/references/coordination.md",
+                      "source_repo":  "ref.matt-skills",
+                      "source_path":  "skills/engineering/triage/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/engineering/triage/SKILL.md",
+                                                   "historical_source":  "skills/matt-skills/engineering/triage/SKILL.md",
+                                                   "source_repo":  "ref.matt-skills"
+                                               },
+                                               {
+                                                   "source_path":  "skills/project-flow-ops/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/project-flow-ops/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               },
+                                               {
+                                                   "source_sha256":  "A48A2C63F0520EAA08CD68705030A77428E7BA6647834C7A644AD9CDA396E4AE",
+                                                   "source_path":  "skills/engineering/triage/OUT-OF-SCOPE.md",
+                                                   "adaptation":  "Inspected, unique content integrated with approved shared defaults",
+                                                   "source_repo":  "ref.matt-skills"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "work-triage"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "path":  "skills/planning/plan-review-ui/references/review-loop.md",
+                      "source_repo":  "ref.ECC",
+                      "source_path":  "skills/plan-canvas/SKILL.md",
+                      "original_sources":  [
+                                               {
+                                                   "source_path":  "skills/plan-canvas/SKILL.md",
+                                                   "historical_source":  "skills/ecc-skills/plan-canvas/SKILL.md",
+                                                   "source_repo":  "ref.ECC"
+                                               }
+                                           ],
+                      "role":  "adapted-reference",
+                      "license":  "MIT (applicable collection licenses preserved)",
+                      "consumers":  [
+                                        "plan-review-ui"
+                                    ],
+                      "activation":  "Read only for relevant mode",
+                      "external_requirements":  [
+
+                                                ],
+                      "adaptation":  "Focused preservation of unique behavior; contradictory source defaults replaced by approved agreement",
+                      "validation":  "Local links and source trace checked"
+                  },
+                  {
+                      "validation":  "Copied verbatim",
+                      "path":  "support/planning/licenses/ECC-LICENSE.txt",
+                      "source_repo":  "ref.ECC",
+                      "consumers":  [
+                                        "change-impact",
+                                        "grilling",
+                                        "requirements",
+                                        "implementation-planning",
+                                        "multi-session-planning",
+                                        "product-discovery",
+                                        "domain-modeling",
+                                        "architecture-design",
+                                        "architecture-assessment",
+                                        "brownfield-retrospective",
+                                        "decision-exploration",
+                                        "prototyping",
+                                        "questionnaire",
+                                        "work-triage",
+                                        "plan-review-ui"
+                                    ],
+                      "external_requirements":  [
+
+                                                ],
+                      "role":  "license",
+                      "activation":  "Distributed attribution",
+                      "source_path":  "LICENSE"
+                  },
+                  {
+                      "validation":  "Copied verbatim",
+                      "path":  "support/planning/licenses/MATT-LICENSE.txt",
+                      "source_repo":  "ref.matt-skills",
+                      "consumers":  [
+                                        "change-impact",
+                                        "grilling",
+                                        "requirements",
+                                        "implementation-planning",
+                                        "multi-session-planning",
+                                        "product-discovery",
+                                        "domain-modeling",
+                                        "architecture-design",
+                                        "architecture-assessment",
+                                        "brownfield-retrospective",
+                                        "decision-exploration",
+                                        "prototyping",
+                                        "questionnaire",
+                                        "work-triage",
+                                        "plan-review-ui"
+                                    ],
+                      "external_requirements":  [
+
+                                                ],
+                      "role":  "license",
+                      "activation":  "Distributed attribution",
+                      "source_path":  "LICENSE"
+                  },
+                  {
+                      "validation":  "Copied verbatim",
+                      "path":  "support/planning/licenses/AGENT-SKILLS-LICENSE.txt",
+                      "source_repo":  "ref.agent-skills",
+                      "consumers":  [
+                                        "change-impact",
+                                        "grilling",
+                                        "requirements",
+                                        "implementation-planning",
+                                        "multi-session-planning",
+                                        "product-discovery",
+                                        "domain-modeling",
+                                        "architecture-design",
+                                        "architecture-assessment",
+                                        "brownfield-retrospective",
+                                        "decision-exploration",
+                                        "prototyping",
+                                        "questionnaire",
+                                        "work-triage",
+                                        "plan-review-ui"
+                                    ],
+                      "external_requirements":  [
+
+                                                ],
+                      "role":  "license",
+                      "activation":  "Distributed attribution",
+                      "source_path":  "LICENSE"
+                  },
+                  {
+                      "validation":  "Passed: nested default, IDs, atomic refusal, traversal, transitions, derived tables",
+                      "path":  "support/planning/tests/scripts/story-ledger-smoke.test.js",
+                      "source_repo":  "local",
+                      "consumers":  [
+                                        "implementation-planning"
+                                    ],
+                      "external_requirements":  [
+                                                    "Node.js 18+"
+                                                ],
+                      "role":  "test",
+                      "activation":  "Manual verification only",
+                      "source_path":  "KLCode consolidation"
+                  }
+              ],
+    "external_prerequisites":  [
+                                   "Node.js 18+ for optional review UI and story ledger; tested with v24.21.0",
+                                   "Browser and permitted local loopback listener for plan review; no browser launched in tests",
+                                   "Writable hardlink-capable filesystem for optional story ledger; Git optional, local ID registry fallback works",
+                                   "Optional Mermaid CDN or local module mirror; source fallback works offline",
+                                   "Host delegation API only when selecting specialist agents; no fixed provider/model",
+                                   "External tracker and credentials only when explicitly selected and authorized"
+                               ],
+    "dependency_closure":  "Plan Canvas has only bundled relative modules plus Node built-ins; package-version import removed. Story ledger uses Node built-ins and optional Git. No hooks required; commands and agents are unregistered prompts.",
+    "validation":  "Node v24.21.0 syntax; sessions 16/16; Markdown 64/64; server integration 86 passed, 10 skipped (Windows symlink privilege unavailable); optional ledger smoke passed"
+}

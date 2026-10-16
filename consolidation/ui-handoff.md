@@ -1,0 +1,11 @@
+# UI category handoff
+
+Implemented all15 canonical UI workflows, preserving all10 explicitly selected Taste workflows (complete-output belongs tooling). Shared UI foundation, separately callable accessibility and operational monitoring remain differentiated.
+
+Imported full Taste direction library, draw/lint/assets/inspector scripts and CDP/helper closure, neutral CSS/JS, research/style references and eval definitions; frontend evidence checker/tests; HTML deck presets/template/CSS/animation references and conversion/export helpers; Stitch example DESIGN.md.
+
+Adaptations: canonical names and source/license records; explicit style policies; existing brand/accessibility truth preserved; actual deterministic cinematic chooser replaces simulated Python; no fabricated business metrics/dates/legal claims; optional exporter download flag; legacy .ppt conversion limitation explicit; Stitch service prerequisite retained.
+
+Dependency inventory: support/ui/dependencies.json. Resource integration checks pass 5/5: real direction/library draw and reprint with isolated history, lint positive/negative fixtures, offline CLI help/usage, and reproducible cinematic choices. Evidence tests pass 6/6; symlink-specific cases are unavailable because the Windows host denies symlink creation, while the remaining artifact/path/record checks execute. Node syntax, metadata, import closure and local links for the UI category pass the central validator. Python AST and extractor --help pass; actual PPTX extraction is untested because python-pptx is unavailable. Browser screenshot inspection, PDF export, Bash execution, external assets/image services and Google Stitch were not run. No global configuration or hooks activated.
+
+Peer correction: replaced the defective custom dropdown example with a connected-label controlled native select and an explicit caller state example. The ancestor click toggle, stale activeIndex display and ad-hoc keyboard/ARIA handling are removed. The browser owns option popup/focus behavior; onChange updates the caller's selected value. Central Markdown/link checks pass. No React renderer is installed in this repository, so interactive example rendering was not executed or claimed; pointer/keyboard/display/state checks are stated for integration.

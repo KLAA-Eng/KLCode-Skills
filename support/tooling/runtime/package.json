@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "type": "commonjs",
+  "description": "Optional imported GateGuard local module closure. No installation or activation scripts."
+}

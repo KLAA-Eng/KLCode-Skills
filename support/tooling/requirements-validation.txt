@@ -1,0 +1,2 @@
+# Install only in a selected validation environment.
+PyYAML==6.0.3
