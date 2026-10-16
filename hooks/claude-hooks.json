@@ -1,0 +1,78 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/plugin/runtime/hook.cjs",
+              "--host",
+              "claude",
+              "--event",
+              "SessionStart"
+            ],
+            "timeout": 45
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/plugin/runtime/hook.cjs",
+              "--host",
+              "claude",
+              "--event",
+              "PreToolUse"
+            ],
+            "timeout": 45
+          }
+        ],
+        "matcher": "^(Bash|PowerShell|exec_command)$"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/plugin/runtime/hook.cjs",
+              "--host",
+              "claude",
+              "--event",
+              "PostToolUse"
+            ],
+            "timeout": 45
+          }
+        ],
+        "matcher": "^(Write|Edit|MultiEdit|apply_patch)$"
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/plugin/runtime/hook.cjs",
+              "--host",
+              "claude",
+              "--event",
+              "Stop"
+            ],
+            "timeout": 45
+          }
+        ]
+      }
+    ]
+  }
+}

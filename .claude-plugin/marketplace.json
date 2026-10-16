@@ -1,47 +1,15 @@
 {
-  "name": "ecc",
+  "name": "klcode-team",
   "owner": {
-    "name": "Affaan Mustafa",
-    "email": "me@affaanmustafa.com"
-  },
-  "metadata": {
-    "description": "Harness-native ECC skills, hooks, rules, MCP conventions, and operator workflows"
+    "name": "KLCode"
   },
   "plugins": [
     {
-      "name": "ecc",
+      "name": "klcode",
       "source": "./",
-      "description": "Harness-native ECC operator layer - 71 agents, 311 skills, 97 legacy command shims, reusable hooks, rules, selective install profiles, and production-ready workflows for Claude Code, Codex, OpenCode, Cursor, and related agent harnesses",
-      "version": "2.2.3",
-      "author": {
-        "name": "Affaan Mustafa",
-        "email": "me@affaanmustafa.com"
-      },
-      "homepage": "https://ecc.tools",
-      "repository": "https://github.com/affaan-m/ECC",
-      "license": "MIT",
-      "keywords": [
-        "agents",
-        "skills",
-        "hooks",
-        "commands",
-        "tdd",
-        "code-review",
-        "security",
-        "best-practices"
-      ],
-      "category": "workflow",
-      "tags": [
-        "agents",
-        "skills",
-        "hooks",
-        "commands",
-        "tdd",
-        "code-review",
-        "security",
-        "best-practices"
-      ],
-      "strict": false
+      "description": "KLCode team workflows: 103 curated skills, shared rules, focused commands and optional project-scoped Windows hooks.",
+      "version": "0.1.0",
+      "defaultEnabled": false
     }
   ]
 }

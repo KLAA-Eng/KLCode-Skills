@@ -1,0 +1,55 @@
+{
+  "checkedOn": "2026-10-16",
+  "platform": "native Windows",
+  "activationPerformed": false,
+  "codex": {
+    "cliVersion": "0.163.0",
+    "nativeValidation": {
+      "method": "Isolated temporary CODEX_HOME and cwd; app-server initialize then plugin/read against the repository local marketplace. An initial two-skill fixture also established direct-directory array support.",
+      "result": "Actual KLCode 0.1.0 source package returns 118 unique skill identities: 103 canonical workflows plus 15 explicit aliases. The requirements entrypoint reuses the canonical skill to prevent a name collision.",
+      "marketplaceSource": { "source": "local", "path": "./" },
+      "skills": 118,
+      "uniqueSkills": 118,
+      "hookEvents": ["postToolUse", "preToolUse", "sessionStart", "stop"],
+      "pluginInstalled": false,
+      "pluginEnabled": false,
+      "modelRequests": 0,
+      "reproduce": "node plugin/native-validate.cjs --codex <absolute-codex.exe> --package <absolute-package-root>",
+      "scope": "Native read-only source discovery only; not live lifecycle execution, desktop UI verification or installed-package validation."
+    },
+    "launcherFixtures": {
+      "result": "passed",
+      "shells": ["cmd.exe", "Windows PowerShell"],
+      "eventLaunches": 8,
+      "pluginPathCases": ["spaces", "dollar sign", "apostrophe"],
+      "projectHooksEnabled": false,
+      "projectStateCreated": false,
+      "liveCodexLifecycle": false,
+      "reproduce": "node --test plugin/launch.test.cjs"
+    },
+    "limitations": [
+      "The CLI plugin subcommand has no standalone validate or dry-run subcommand in this version.",
+      "Plugin role prompts are not established as native Codex agent registrations by plugin/read; separate reviewed agent configuration is required.",
+      "Non-managed hooks require host review and trust of their current definitions.",
+      "Supported denial output can block observed calls; hook launch failure, host timeout, untrusted hooks and unsupported tool paths are not a complete fail-closed enforcement boundary.",
+      "write_stdin transport does not run PreToolUse again for an existing execution session."
+    ]
+  },
+  "claude": {
+    "nativeValidation": "Not run: no Claude executable available in the inspected environment.",
+    "documentedCapabilities": [
+      "Manifest skills paths accept directories containing skill folders or a SKILL.md directly.",
+      "Manifest commands accept custom directories; agents accept explicit Markdown files.",
+      "Command hooks support direct execution with command and args; Node avoids a Bash dependency.",
+      "onFailure:block requires Claude Code 2.1.295 or later.",
+      "Shell-command matchers must include both Bash and PowerShell on Windows."
+    ]
+  },
+  "sources": [
+    "https://developers.openai.com/plugins/build/plugins",
+    "https://learn.chatgpt.com/docs/hooks",
+    "https://learn.chatgpt.com/docs/app-server",
+    "https://code.claude.com/docs/en/plugins-reference",
+    "https://code.claude.com/docs/en/hooks"
+  ]
+}

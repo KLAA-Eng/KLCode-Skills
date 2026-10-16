@@ -1,0 +1,54 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node.exe -e \"const p=require('node:path'),c=require('node:child_process');const r=c.spawnSync(process.execPath,[p.join(process.env.PLUGIN_ROOT||process.env.CLAUDE_PLUGIN_ROOT,'plugin/runtime/hook.cjs'),'--host','codex','--event','SessionStart'],{stdio:'inherit',windowsHide:true});process.exit(r.status===null?1:r.status);\"",
+            "commandWindows": "node.exe -e \"const p=require('node:path'),c=require('node:child_process');const r=c.spawnSync(process.execPath,[p.join(process.env.PLUGIN_ROOT||process.env.CLAUDE_PLUGIN_ROOT,'plugin/runtime/hook.cjs'),'--host','codex','--event','SessionStart'],{stdio:'inherit',windowsHide:true});process.exit(r.status===null?1:r.status);\"",
+            "timeout": 45
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node.exe -e \"const p=require('node:path'),c=require('node:child_process');const r=c.spawnSync(process.execPath,[p.join(process.env.PLUGIN_ROOT||process.env.CLAUDE_PLUGIN_ROOT,'plugin/runtime/hook.cjs'),'--host','codex','--event','PreToolUse'],{stdio:'inherit',windowsHide:true});process.exit(r.status===null?1:r.status);\"",
+            "commandWindows": "node.exe -e \"const p=require('node:path'),c=require('node:child_process');const r=c.spawnSync(process.execPath,[p.join(process.env.PLUGIN_ROOT||process.env.CLAUDE_PLUGIN_ROOT,'plugin/runtime/hook.cjs'),'--host','codex','--event','PreToolUse'],{stdio:'inherit',windowsHide:true});process.exit(r.status===null?1:r.status);\"",
+            "timeout": 45
+          }
+        ],
+        "matcher": "^(Bash|PowerShell|exec_command)$"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node.exe -e \"const p=require('node:path'),c=require('node:child_process');const r=c.spawnSync(process.execPath,[p.join(process.env.PLUGIN_ROOT||process.env.CLAUDE_PLUGIN_ROOT,'plugin/runtime/hook.cjs'),'--host','codex','--event','PostToolUse'],{stdio:'inherit',windowsHide:true});process.exit(r.status===null?1:r.status);\"",
+            "commandWindows": "node.exe -e \"const p=require('node:path'),c=require('node:child_process');const r=c.spawnSync(process.execPath,[p.join(process.env.PLUGIN_ROOT||process.env.CLAUDE_PLUGIN_ROOT,'plugin/runtime/hook.cjs'),'--host','codex','--event','PostToolUse'],{stdio:'inherit',windowsHide:true});process.exit(r.status===null?1:r.status);\"",
+            "timeout": 45
+          }
+        ],
+        "matcher": "^(Write|Edit|MultiEdit|apply_patch)$"
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node.exe -e \"const p=require('node:path'),c=require('node:child_process');const r=c.spawnSync(process.execPath,[p.join(process.env.PLUGIN_ROOT||process.env.CLAUDE_PLUGIN_ROOT,'plugin/runtime/hook.cjs'),'--host','codex','--event','Stop'],{stdio:'inherit',windowsHide:true});process.exit(r.status===null?1:r.status);\"",
+            "commandWindows": "node.exe -e \"const p=require('node:path'),c=require('node:child_process');const r=c.spawnSync(process.execPath,[p.join(process.env.PLUGIN_ROOT||process.env.CLAUDE_PLUGIN_ROOT,'plugin/runtime/hook.cjs'),'--host','codex','--event','Stop'],{stdio:'inherit',windowsHide:true});process.exit(r.status===null?1:r.status);\"",
+            "timeout": 45
+          }
+        ]
+      }
+    ]
+  }
+}

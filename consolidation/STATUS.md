@@ -16,3 +16,7 @@ The integrator validated all 103 skills and 209 historical source assignments, d
 ## Subsequent rule integration
 
 The [rule integration review](RULES-REVIEW.md) records the later audit, revised testing/review defaults and selected canonical root rules. Its [validation record](rules-validation.json) supplements the historical consolidation validation above. Rule links and explicit consumers are now checked by the repository validator; hook activation and plugin packaging remain deferred.
+
+## Subsequent plugin wiring
+
+[KLCode plugin wiring](../plugin/README.md) is implemented for native Windows, with 16 command names, nine role adapters, private marketplace metadata and disabled project hooks. The [plugin validation record](plugin-validation.json) and [task ledger](../docs/plans/plugin-wiring.md) record source/release checks, independent review and native-host limitations. Installation, trust and activation were explicitly excluded by the user's latest instruction.

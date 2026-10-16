@@ -1,0 +1,16 @@
+{
+  "name": "klcode-team",
+  "plugins": [
+    {
+      "name": "klcode",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      }
+    }
+  ]
+}

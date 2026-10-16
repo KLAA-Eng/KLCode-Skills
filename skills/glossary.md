@@ -256,6 +256,6 @@ Record interfaces, compose videos, measure styles and edit footage.
 | Category-shared agents, commands, hooks and helpers | `support/<category>/` |
 | Canonical shared rules and rule-source coverage | `rules/` |
 
-Current task and repository instructions take precedence over these defaults. Project-specific variants and Claude/Codex plugin lifecycle wiring remain separate work.
+Current task and repository instructions take precedence over these defaults. [KLCode plugin wiring](../plugin/README.md) exposes 16 convenient command names and nine roles. Its 15 alias skills live outside the canonical catalog because `requirements` already has the requested name. Installation, activation and project-specific variants remain separate work.
 
 See the [repository overview](../README.md), [supporting dependency guide](../support/README.md), [source-to-canonical mapping](../consolidation/manifest.json), and [validation record](../consolidation/validation.json). Update this glossary when canonical names, purposes, modes or routing relationships change.

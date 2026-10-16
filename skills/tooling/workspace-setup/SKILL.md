@@ -13,4 +13,6 @@ Use adapted [tracker templates](templates/) for GitHub, GitLab or local issues a
 
 Prepare concrete scoped changes and rollback, apply already-authorized configuration, then verify discovery and selected invocation. No upstream ECC installer is executable here: [upstream lifecycle notes](references/upstream-lifecycle.md) are provenance and capability guidance only. Plugin packaging/publication and global activation remain separate requested work.
 
+[KLCode setup](../../../plugin/README.md) previews disabled project configuration; its explicit write mode preserves existing files and does not register or enable host behavior. Installation and activation need their own task authorization.
+
 For selected delegation use [workspace auditor](../../../support/tooling/agents/workspace-auditor.md); [manual setup prompt](../../../support/tooling/commands/workspace-setup.md) preserves the same scope.

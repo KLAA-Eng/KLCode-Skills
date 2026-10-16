@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "name": "klcode",
+  "version": "0.1.0",
+  "commands": [
+    {
+      "name": "setup",
+      "claude": "commands/setup.md",
+      "codex": "plugin/commands/setup",
+      "skill": "skills/tooling/workspace-setup"
+    },
+    {
+      "name": "doctor",
+      "claude": "commands/doctor.md",
+      "codex": "plugin/commands/doctor",
+      "skill": "skills/tooling/configuration-audit"
+    },
+    {
+      "name": "grill",
+      "claude": "commands/grill.md",
+      "codex": "plugin/commands/grill",
+      "skill": "skills/planning/grilling"
+    },
+    {
+      "name": "plan",
+      "claude": "commands/plan.md",
+      "codex": "plugin/commands/plan",
+      "skill": "skills/planning/implementation-planning"
+    },
+    {
+      "name": "implement",
+      "claude": "commands/implement.md",
+      "codex": "plugin/commands/implement",
+      "skill": "skills/engineering/implementation"
+    },
+    {
+      "name": "review",
+      "claude": "commands/review.md",
+      "codex": "plugin/commands/review",
+      "skill": "skills/engineering/code-review"
+    },
+    {
+      "name": "verify",
+      "claude": "commands/verify.md",
+      "codex": "plugin/commands/verify",
+      "skill": "skills/engineering/verification"
+    },
+    {
+      "name": "commit",
+      "claude": "commands/commit.md",
+      "codex": "plugin/commands/commit",
+      "skill": "skills/engineering/commit-preparation"
+    },
+    {
+      "name": "debug",
+      "claude": "commands/debug.md",
+      "codex": "plugin/commands/debug",
+      "skill": "skills/engineering/debugging"
+    },
+    {
+      "name": "test",
+      "claude": "commands/test.md",
+      "codex": "plugin/commands/test",
+      "skill": "skills/engineering/test-first-development"
+    },
+    {
+      "name": "security",
+      "claude": "commands/security.md",
+      "codex": "plugin/commands/security",
+      "skill": "skills/engineering/application-security"
+    },
+    {
+      "name": "refactor",
+      "claude": "commands/refactor.md",
+      "codex": "plugin/commands/refactor",
+      "skill": "skills/engineering/refactoring"
+    },
+    {
+      "name": "requirements",
+      "claude": "skills/planning/requirements/SKILL.md",
+      "codex": "skills/planning/requirements",
+      "skill": "skills/planning/requirements",
+      "kind": "canonical"
+    },
+    {
+      "name": "docs",
+      "claude": "commands/docs.md",
+      "codex": "plugin/commands/docs",
+      "skill": "skills/knowledge/documentation"
+    },
+    {
+      "name": "handoff",
+      "claude": "commands/handoff.md",
+      "codex": "plugin/commands/handoff",
+      "skill": "skills/knowledge/session-handoff"
+    },
+    {
+      "name": "hooks",
+      "claude": "commands/hooks.md",
+      "codex": "plugin/commands/hooks",
+      "skill": "skills/agents/hook-rules"
+    }
+  ],
+  "agents": [
+    {
+      "name": "planner",
+      "claude": "plugin/agents/claude/planner.md",
+      "codex": "plugin/agents/codex/planner.toml",
+      "skill": "skills/planning/implementation-planning",
+      "source_prompt": "support/planning/agents/planner.md"
+    },
+    {
+      "name": "architect",
+      "claude": "plugin/agents/claude/architect.md",
+      "codex": "plugin/agents/codex/architect.toml",
+      "skill": "skills/planning/architecture-design",
+      "source_prompt": "support/planning/agents/architect.md"
+    },
+    {
+      "name": "implementer",
+      "claude": "plugin/agents/claude/implementer.md",
+      "codex": "plugin/agents/codex/implementer.toml",
+      "skill": "skills/engineering/implementation",
+      "source_prompt": "support/engineering/agents/implementer.md"
+    },
+    {
+      "name": "code-reviewer",
+      "claude": "plugin/agents/claude/code-reviewer.md",
+      "codex": "plugin/agents/codex/code-reviewer.toml",
+      "skill": "skills/engineering/code-review",
+      "source_prompt": "support/agents/agents/code-reviewer.md"
+    },
+    {
+      "name": "security-reviewer",
+      "claude": "plugin/agents/claude/security-reviewer.md",
+      "codex": "plugin/agents/codex/security-reviewer.toml",
+      "skill": "skills/engineering/application-security",
+      "source_prompt": "support/engineering/agents/security-reviewer.md"
+    },
+    {
+      "name": "test-guide",
+      "claude": "plugin/agents/claude/test-guide.md",
+      "codex": "plugin/agents/codex/test-guide.toml",
+      "skill": "skills/engineering/test-first-development",
+      "source_prompt": "support/engineering/agents/test-first-guide.md"
+    },
+    {
+      "name": "python-reviewer",
+      "claude": "plugin/agents/claude/python-reviewer.md",
+      "codex": "plugin/agents/codex/python-reviewer.toml",
+      "skill": "skills/languages/python-development",
+      "source_prompt": "support/languages/agents/python-reviewer.md"
+    },
+    {
+      "name": "csharp-reviewer",
+      "claude": "plugin/agents/claude/csharp-reviewer.md",
+      "codex": "plugin/agents/codex/csharp-reviewer.toml",
+      "skill": "skills/languages/dotnet-development",
+      "source_prompt": "support/languages/agents/csharp-reviewer.md"
+    },
+    {
+      "name": "cpp-reviewer",
+      "claude": "plugin/agents/claude/cpp-reviewer.md",
+      "codex": "plugin/agents/codex/cpp-reviewer.toml",
+      "skill": "skills/languages/cpp-development",
+      "source_prompt": "support/languages/agents/cpp-reviewer.md"
+    }
+  ]
+}

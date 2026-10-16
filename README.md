@@ -21,6 +21,8 @@ Each workflow has a `SKILL.md` entrypoint, focused supporting resources and `SOU
 
 See the [skills and workflow glossary](skills/glossary.md) for the complete linked catalog, common workflow routes and terminology.
 
+KLCode 0.1.0 now includes [Claude/Codex plugin wiring](plugin/README.md), 16 convenient entrypoints, nine role adapters, private marketplace metadata and disabled project-scoped Node hooks. Use `node plugin/cli.cjs validate`, `doctor --project .` or `build` to inspect and package it. Installation, hook trust and activation remain separate; nothing is enabled by this implementation.
+
 ## Shared defaults
 
 - Default to test-first development for new testable logic and bug fixes, with practical exceptions. Target 80% coverage for new or substantially changed testable code; explain measurement gaps instead of imposing a repository-wide gate.

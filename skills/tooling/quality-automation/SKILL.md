@@ -13,4 +13,6 @@ Read [CI and pre-commit patterns](references/ci-and-precommit.md) and [edit-time
 
 Preview exact project configuration and rollback, then make only authorized scoped changes. Run a deliberate failing case and a passing case for the chosen hook/gate; installation is not validation. See [hook configuration examples](../../../support/tooling/templates/hook-profiles.json) for disabled-by-default templates.
 
+For the packaged Windows defaults, use [KLCode's Node checks](../../../plugin/README.md) and its project configuration. The Python helpers remain optional integrations; do not activate both check paths accidentally or duplicate milestone builds after every edit.
+
 Apply the relevant shared rules: [common / hooks](../../../rules/common/hooks.md).

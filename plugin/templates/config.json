@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "hooks": {
+    "enabled": false,
+    "session_guidance": true,
+    "operations": { "mode": "warn" },
+    "quality": { "enabled": true, "checks": [] },
+    "completion": { "mode": "warn", "max_block_attempts": 1 }
+  }
+}

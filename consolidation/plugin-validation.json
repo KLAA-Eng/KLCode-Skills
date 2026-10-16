@@ -1,0 +1,141 @@
+{
+  "status": "passed-for-available-validation-scope",
+  "date": "2026-10-16",
+  "name": "klcode",
+  "version": "0.1.0",
+  "supported_platform": "native Windows",
+  "instruction": "Implement and validate only; do not activate.",
+  "exports": {
+    "canonical_skills": 103,
+    "command_names": 16,
+    "alias_wrappers": 15,
+    "canonical_command_reuse": "requirements",
+    "codex_unique_skills": 118,
+    "roles_per_host": 9,
+    "codex_roles": "Unregistered TOML templates with bounded delegation alternative; no host agent configuration written."
+  },
+  "source_repository": {
+    "status": "passed",
+    "partial": false,
+    "checks": {
+      "expectedSkills": 103,
+      "checkedSkills": 103,
+      "markdown": 615,
+      "localLinks": 1179,
+      "scriptImports": 105,
+      "syntaxChecks": 117,
+      "dependencyFiles": 609,
+      "pluginCommands": 16,
+      "pluginRoles": 9,
+      "ruleSources": 202,
+      "selectedRules": 44
+    },
+    "warnings": [],
+    "errors": []
+  },
+  "built_package_repository": {
+    "status": "passed",
+    "partial": false,
+    "checks": {
+      "expectedSkills": 103,
+      "checkedSkills": 103,
+      "markdown": 614,
+      "localLinks": 1179,
+      "scriptImports": 102,
+      "syntaxChecks": 113,
+      "dependencyFiles": 609,
+      "pluginCommands": 16,
+      "pluginRoles": 9,
+      "ruleSources": 202,
+      "selectedRules": 44
+    },
+    "warnings": [],
+    "errors": []
+  },
+  "tests": {
+    "passed": 27,
+    "failed": 0,
+    "skipped": 0,
+    "windows_launcher_invocations": 8,
+    "scope": "Isolated configuration, checks, guards, state, setup, package integrity and cmd/PowerShell launch fixtures; no real host activation."
+  },
+  "new_code_coverage": {
+    "metric": "line coverage from local behavioral suite; not whole-repository coverage",
+    "cli": 80.88,
+    "package": 96.15,
+    "config": 95.52,
+    "hook": 91.38,
+    "native_discovery_probe": "End-to-end parser checks; not included in the suite's line coverage."
+  },
+  "metadata": {
+    "python_ast": 115,
+    "official_skill_validations": 118,
+    "codex_toml_templates": 9
+  },
+  "upstream_rules": {
+    "fingerprints_verified": 202,
+    "selected_rules": 44,
+    "discovery_candidates": 161
+  },
+  "native_codex": {
+    "version": "0.163.0",
+    "source": "passed",
+    "release": "passed",
+    "unique_skills": 118,
+    "hook_events": 4,
+    "installed": false,
+    "enabled": false,
+    "model_requests": 0,
+    "method": "Isolated temporary CODEX_HOME, initialize and plugin/read only."
+  },
+  "native_claude": {
+    "status": "not-run",
+    "reason": "No Claude executable available; static manifests and direct exec-form hooks checked against current primary documentation."
+  },
+  "release": {
+    "root": ".scratch/dist/klcode-0.1.0-m8AF6R",
+    "package": "plugins/klcode",
+    "indexed_files": 1053,
+    "sha256_index": "plugins/klcode/package-index.json",
+    "private_marketplaces": [
+      ".claude-plugin/marketplace.json",
+      ".agents/plugins/marketplace.json"
+    ],
+    "git_internals_local_overrides_runtime_state_caches_unselected_rules": "excluded"
+  },
+  "independent_review": {
+    "status": "passed",
+    "fixed": [
+      "Concurrent result loss",
+      "Malformed input and cached-state handling",
+      "Result overflow visibility",
+      "Duplicate requirements identity",
+      "Codex Windows path interpolation",
+      "Ignored CLI project option"
+    ],
+    "unresolved_material_findings": 0
+  },
+  "activation": {
+    "performed": false,
+    "project_hooks_enabled": false,
+    "project_state_created": false,
+    "host_settings_written": false,
+    "installed_or_trusted": false,
+    "path_changed": false,
+    "target_development_projects_modified": false
+  },
+  "prerequisites_and_limits": [
+    "node.exe must be on the host PATH before later activation; offline validation used the bundled absolute Node executable.",
+    "Claude native and installed/live host lifecycle checks were not performed.",
+    "Codex can skip untrusted hooks, unsupported calls, failed launches or timed-out hooks; supplemental guards are not a permissions sandbox.",
+    "Configured check programs are trusted executables; timeouts control their direct process, not arbitrary descendants.",
+    "Retained vendor/POSIX-only workflow limits are preserved rather than certified as Windows-compatible."
+  ],
+  "final_document_check": {
+    "status": "passed",
+    "markdown_files": 615,
+    "local_links": 1183,
+    "errors": 0,
+    "note": "Final documentation links checked after recording results; source syntax had already passed117checks."
+  }
+}

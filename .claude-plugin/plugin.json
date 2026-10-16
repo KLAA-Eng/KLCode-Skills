@@ -1,46 +1,174 @@
 {
-  "name": "ecc",
-  "version": "2.2.3",
-  "description": "Harness-native ECC plugin for engineering teams - 71 agents, 311 skills, 97 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+  "name": "klcode",
+  "version": "0.1.0",
+  "description": "KLCode team workflows: 103 curated skills, shared rules, focused commands and optional project-scoped Windows hooks.",
   "author": {
-    "name": "Affaan Mustafa",
-    "url": "https://x.com/affaanmustafa"
+    "name": "KLCode"
   },
-  "homepage": "https://ecc.tools",
-  "repository": "https://github.com/affaan-m/ECC",
-  "license": "MIT",
-  "keywords": [
-    "claude-code",
-    "agents",
-    "skills",
-    "hooks",
-    "rules",
-    "tdd",
-    "code-review",
-    "security",
-    "workflow",
-    "automation",
-    "best-practices"
+  "displayName": "KLCode",
+  "defaultEnabled": false,
+  "skills": [
+    "./skills/engineering/implementation",
+    "./skills/engineering/debugging",
+    "./skills/engineering/test-first-development",
+    "./skills/engineering/code-review",
+    "./skills/engineering/refactoring",
+    "./skills/engineering/verification",
+    "./skills/engineering/commit-preparation",
+    "./skills/engineering/git-workflow",
+    "./skills/engineering/application-security",
+    "./skills/engineering/performance-optimization",
+    "./skills/engineering/release-readiness",
+    "./skills/languages/python-development",
+    "./skills/languages/dotnet-development",
+    "./skills/languages/cpp-development",
+    "./skills/engineering/interface-design",
+    "./skills/engineering/migration",
+    "./skills/engineering/observability",
+    "./skills/tooling/quality-automation",
+    "./skills/tooling/operation-guardrails",
+    "./skills/engineering/test-governance",
+    "./skills/engineering/connector-development",
+    "./skills/engineering/contract-collaboration",
+    "./skills/tooling/github-operations",
+    "./skills/tooling/public-release-preparation",
+    "./skills/tooling/windows-python-packaging",
+    "./skills/tooling/agent-configuration-security",
+    "./skills/engineering/browser-testing",
+    "./skills/engineering/desktop-testing",
+    "./skills/planning/change-impact",
+    "./skills/engineering/mcp-development",
+    "./skills/planning/grilling",
+    "./skills/planning/requirements",
+    "./skills/planning/implementation-planning",
+    "./skills/planning/multi-session-planning",
+    "./skills/planning/product-discovery",
+    "./skills/knowledge/technical-research",
+    "./skills/knowledge/solution-discovery",
+    "./skills/planning/domain-modeling",
+    "./skills/knowledge/architecture-decisions",
+    "./skills/knowledge/documentation",
+    "./skills/planning/architecture-design",
+    "./skills/planning/architecture-assessment",
+    "./skills/knowledge/codebase-onboarding",
+    "./skills/knowledge/code-tours",
+    "./skills/knowledge/session-retrospective",
+    "./skills/planning/brownfield-retrospective",
+    "./skills/tooling/quality-constraints",
+    "./skills/planning/decision-exploration",
+    "./skills/planning/prototyping",
+    "./skills/knowledge/human-setup-guide",
+    "./skills/planning/questionnaire",
+    "./skills/knowledge/teaching",
+    "./skills/knowledge/reexplain",
+    "./skills/planning/work-triage",
+    "./skills/planning/plan-review-ui",
+    "./skills/tooling/workflow-guide",
+    "./skills/tooling/writing-for-agents",
+    "./skills/tooling/workspace-setup",
+    "./skills/tooling/configuration-audit",
+    "./skills/tooling/skill-maintenance",
+    "./skills/agents/skill-compliance-testing",
+    "./skills/agents/hook-rules",
+    "./skills/agents/context-management",
+    "./skills/agents/context-budget",
+    "./skills/knowledge/session-handoff",
+    "./skills/knowledge/knowledge-management",
+    "./skills/agents/continuous-learning",
+    "./skills/agents/agent-orchestration",
+    "./skills/agents/autonomous-operation",
+    "./skills/agents/agent-loop-design",
+    "./skills/agents/agent-tool-design",
+    "./skills/agents/review-team",
+    "./skills/agents/agent-evaluation",
+    "./skills/agents/agent-cost-report",
+    "./skills/tooling/response-depth",
+    "./skills/engineering/llm-cost-optimization",
+    "./skills/tooling/prompt-optimizer",
+    "./skills/tooling/terminal-opener",
+    "./skills/ui/interface-development",
+    "./skills/ui/interface-accessibility",
+    "./skills/ui/design-system",
+    "./skills/ui/monitoring-dashboard",
+    "./skills/ui/html-presentations",
+    "./skills/video/remotion-video",
+    "./skills/video/ui-demo-recording",
+    "./skills/video/video-style-analysis",
+    "./skills/video/video-style-editing",
+    "./skills/ui/website-art-direction",
+    "./skills/ui/cinematic-web-design",
+    "./skills/ui/premium-web-design",
+    "./skills/ui/minimalist-ui",
+    "./skills/ui/industrial-brutalist-ui",
+    "./skills/ui/interface-redesign",
+    "./skills/ui/image-to-website",
+    "./skills/ui/website-design-images",
+    "./skills/ui/brandkit",
+    "./skills/ui/stitch-design-system",
+    "./skills/tooling/complete-output",
+    "./skills/knowledge/literature-review",
+    "./skills/knowledge/scholarly-evaluation",
+    "./skills/knowledge/article-writing",
+    "./skills/engineering/data-collection",
+    "./skills/knowledge/osint-investigation"
   ],
-  "userConfig": {
-    "hooks_enabled": {
-      "type": "boolean",
-      "title": "Enable ECC hooks",
-      "description": "Run ECC's local lifecycle, quality, and safety automation. Disable this to keep skills and commands without local hook automation.",
-      "default": true
+  "commands": {
+    "setup": {
+      "source": "./commands/setup.md"
     },
-    "hook_profile": {
-      "type": "string",
-      "title": "ECC hook profile",
-      "description": "Choose minimal, standard, or strict. Invalid values safely fall back to standard.",
-      "default": "standard"
+    "doctor": {
+      "source": "./commands/doctor.md"
+    },
+    "grill": {
+      "source": "./commands/grill.md"
+    },
+    "plan": {
+      "source": "./commands/plan.md"
+    },
+    "implement": {
+      "source": "./commands/implement.md"
+    },
+    "review": {
+      "source": "./commands/review.md"
+    },
+    "verify": {
+      "source": "./commands/verify.md"
+    },
+    "commit": {
+      "source": "./commands/commit.md"
+    },
+    "debug": {
+      "source": "./commands/debug.md"
+    },
+    "test": {
+      "source": "./commands/test.md"
+    },
+    "security": {
+      "source": "./commands/security.md"
+    },
+    "refactor": {
+      "source": "./commands/refactor.md"
+    },
+    "docs": {
+      "source": "./commands/docs.md"
+    },
+    "handoff": {
+      "source": "./commands/handoff.md"
+    },
+    "hooks": {
+      "source": "./commands/hooks.md"
     }
   },
-  "mcpServers": {},
-  "skills": [
-    "./skills/"
+  "agents": [
+    "./plugin/agents/claude/planner.md",
+    "./plugin/agents/claude/architect.md",
+    "./plugin/agents/claude/implementer.md",
+    "./plugin/agents/claude/code-reviewer.md",
+    "./plugin/agents/claude/security-reviewer.md",
+    "./plugin/agents/claude/test-guide.md",
+    "./plugin/agents/claude/python-reviewer.md",
+    "./plugin/agents/claude/csharp-reviewer.md",
+    "./plugin/agents/claude/cpp-reviewer.md"
   ],
-  "commands": [
-    "./commands/"
-  ]
+  "hooks": "./hooks/claude-hooks.json"
 }

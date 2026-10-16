@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "hooks": {
+    "enabled": false,
+    "session_guidance": true,
+    "operations": {
+      "mode": "warn"
+    },
+    "quality": {
+      "enabled": true,
+      "checks": [
+        {
+          "id": "javascript-syntax",
+          "extensions": [
+            ".js",
+            ".cjs",
+            ".mjs"
+          ],
+          "argv": [
+            "{node}",
+            "--check",
+            "{file}"
+          ],
+          "timeout_ms": 5000
+        }
+      ]
+    },
+    "completion": {
+      "mode": "warn",
+      "max_block_attempts": 1
+    }
+  }
+}
