@@ -1,6 +1,6 @@
 # Skills and Workflow Glossary
 
-A linked catalog of **103 canonical skills across eight categories**, plus common ways to combine them. Skill descriptions below follow the current `SKILL.md` entrypoints. Open an entrypoint for its operating modes, supporting resources and prerequisites.
+A linked catalog of **105 canonical skills across eight categories**, plus common ways to combine them. Skill descriptions below follow the current `SKILL.md` entrypoints. Open an entrypoint for its operating modes, supporting resources and prerequisites.
 
 ## How to use this glossary
 
@@ -32,6 +32,7 @@ Use checks proportional to risk and follow the [shared rules](../rules/README.md
 | Skill or family | Modes and boundaries |
 |---|---|
 | [grilling](planning/grilling/SKILL.md) | Decision-tree rounds ask independent questions together; one-question-at-a-time interviewing is available on request. |
+| [spec-driven-development](planning/spec-driven-development/SKILL.md) / [planning-and-task-breakdown](planning/planning-and-task-breakdown/SKILL.md) | Source-preserving gated alternative: human approvals between phases; separate spec, plan and task artifacts. Existing proportional workflows remain independently callable. |
 | [requirements](planning/requirements/SKILL.md) | Quick acceptance capture, full specification, synthesis of a settled conversation, and review/amendment of an existing spec. |
 | [implementation](engineering/implementation/SKILL.md) | Implement a bounded change or ordered plan; explicitly requested convention extraction captures exemplars and maintains a coding-convention record. |
 | [debugging](engineering/debugging/SKILL.md) | Diagnose-only or implement a fix within the requested scope. Unavailable host behavior remains unverified. |
@@ -94,7 +95,7 @@ Apply implementation and testing guidance compatible with the actual language ru
 
 <a id="planning"></a>
 
-### Planning (15)
+### Planning (17)
 
 Clarify outcomes, model the domain, define requirements and coordinate delivery.
 
@@ -108,6 +109,8 @@ Clarify outcomes, model the domain, define requirements and coordinate delivery.
 | [domain-modeling](planning/domain-modeling/SKILL.md) | Resolve ambiguous domain terminology and relationships into an evidence-backed glossary without mixing task status or architecture rationale into definitions. |
 | [grilling](planning/grilling/SKILL.md) | Clarify a plan or decision through dependency-aware interview rounds; use when the user asks to be grilled or unresolved choices would otherwise be silently assumed. |
 | [implementation-planning](planning/implementation-planning/SKILL.md) | Break settled requirements into ordered, independently verifiable implementation slices and one authoritative task ledger. |
+| [planning-and-task-breakdown](planning/planning-and-task-breakdown/SKILL.md) | Produce a human-approved implementation plan and dependency-ordered tasks in separate plan/task artifacts. Use with spec-driven-development or when settled requirements need vertical slices, checkpoints and mandatory review before implementation. |
+| [spec-driven-development](planning/spec-driven-development/SKILL.md) | Create a human-approved specification before planning or coding, with mandatory Specify, Plan, Tasks and Implement gates. Use for new projects, features or significant changes needing a spec, including multi-capability decomposition. |
 | [multi-session-planning](planning/multi-session-planning/SKILL.md) | Plan a large initiative across multiple sessions or PRs with cold-start context, dependency order, verified milestones and explicit plan evolution. |
 | [plan-review-ui](planning/plan-review-ui/SKILL.md) | Review a local Markdown or HTML artifact in an optional browser canvas with annotations, chat and explicit verdicts. |
 | [product-discovery](planning/product-discovery/SKILL.md) | Explore possible product directions, evaluate user value and prioritize ideas before committing to requirements. |

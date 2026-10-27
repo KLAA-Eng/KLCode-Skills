@@ -6,13 +6,13 @@ Canonical repository: [KLAA-Eng/KLCode-Skills](https://github.com/KLAA-Eng/KLCod
 
 ## Curated workflows
 
-The collection consolidates 209 source skills into 103 canonical workflows, organized by the job they perform.
+The collection contains 105 canonical workflows: the original consolidation of 209 source skills into 103 workflows, plus two source-preserving planning workflows. Skills are organized by the job they perform.
 
 | Category | Skills | Coverage |
 |---|---:|---|
 | [Engineering](skills/engineering/) | 22 | Implementation, debugging, review, tests, security, performance and integrations |
 | [Languages](skills/languages/) | 3 | Python, .NET/C# and C++ development/testing |
-| [Planning](skills/planning/) | 15 | Interviews, requirements, plans, architecture and task coordination |
+| [Planning](skills/planning/) | 17 | Interviews, requirements, plans, architecture and task coordination |
 | [Knowledge](skills/knowledge/) | 16 | Research, documentation, decisions, onboarding and handoffs |
 | [Agent systems](skills/agents/) | 12 | Delegation, evaluation, context and optional learning |
 | [Tooling](skills/tooling/) | 16 | Automation, guardrails, configuration, packaging and skill maintenance |
@@ -25,7 +25,7 @@ See the [skills and workflow glossary](skills/glossary.md) for the complete link
 
 ## Plugin status
 
-KLCode 0.1.0 includes [Claude/Codex plugin wiring](plugin/README.md) for **native Windows only**, private marketplace metadata and disabled project-scoped Node hooks. Its 16 convenient command names use 15 aliases plus the existing `requirements` skill, giving Codex 118 unique skill exports. Nine Claude role adapters are declared in the manifest; nine Codex role adapters are unregistered TOML templates with a documented delegation alternative.
+KLCode 0.1.0 includes [Claude/Codex plugin wiring](plugin/README.md) for **native Windows only**, private marketplace metadata and disabled project-scoped Node hooks. Its 16 convenient command names use 15 aliases plus the existing `requirements` skill, giving Codex 120 unique skill exports. Nine Claude role adapters are declared in the manifest; nine Codex role adapters are unregistered TOML templates with a documented delegation alternative.
 
 Use Node.js 22 or later to inspect and package the plugin:
 
@@ -45,7 +45,7 @@ The initial [plugin validation record](consolidation/plugin-validation.json) rec
 - Obtain independent review for substantive changes when delegation is available and authorized, and focused security review for sensitive changes. Treat size and nesting limits as review prompts.
 - Use `docs/specs/`, `docs/plans/`, `docs/decisions/` and `docs/knowledge/` as default artifact locations, with one authoritative task ledger per initiative.
 - Make local implementation commits at meaningful verified milestones, keeping unrelated changes outside them. Remote mutations follow the requested task scope.
-- Keep requirements, planning, implementation and verification independently callable.
+- Keep requirements, planning, implementation and verification independently callable. The additional [spec-driven development](skills/planning/spec-driven-development/SKILL.md) and [planning and task breakdown](skills/planning/planning-and-task-breakdown/SKILL.md) workflows retain mandatory phase approvals and separate `SPEC.md` / `tasks/plan.md` / `tasks/todo.md` artifacts when selected.
 - Ask independent interview questions together each round; support one-at-a-time interviewing on request.
 - Select autonomous agent infrastructure, persistent memory, continuous learning and visual styles explicitly. Independent review follows the shared review policy; style alternatives do not apply simultaneously.
 - Honor current task and repository instructions. Project-specific variants are a later phase.

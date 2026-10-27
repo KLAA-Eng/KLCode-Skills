@@ -3,7 +3,7 @@
   "status": "complete",
   "scope": "Shared defaults; project-specific variants and plugin publication remain separate work.",
   "source_count": 209,
-  "skill_count": 103,
+  "skill_count": 105,
   "reference_root": "../",
   "reference_repositories": [
     "ref.agent-skills",
@@ -331,6 +331,18 @@
         "skills/ecc-skills/product-capability",
         "skills/matt-skills/engineering/to-spec"
       ]
+    },
+    {
+      "category": "planning",
+      "name": "spec-driven-development",
+      "path": "skills/planning/spec-driven-development",
+      "historical_sources": []
+    },
+    {
+      "category": "planning",
+      "name": "planning-and-task-breakdown",
+      "path": "skills/planning/planning-and-task-breakdown",
+      "historical_sources": []
     },
     {
       "category": "planning",
@@ -983,7 +995,7 @@
     {
       "name": "planning",
       "state": "complete",
-      "skills": 15,
+      "skills": 17,
       "owner": "skill_inventory",
       "handoff": "consolidation/planning-handoff.md"
     },

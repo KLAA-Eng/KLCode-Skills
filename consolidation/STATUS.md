@@ -20,3 +20,9 @@ The [rule integration review](RULES-REVIEW.md) records the later audit, revised 
 ## Subsequent plugin wiring
 
 [KLCode plugin wiring](../plugin/README.md) is implemented for native Windows, with 16 command names, nine role adapters, private marketplace metadata and disabled project hooks. The [plugin validation record](plugin-validation.json) and [task ledger](../docs/plans/plugin-wiring.md) record source/release checks, independent review and native-host limitations. Installation, trust and activation were explicitly excluded by the user's latest instruction.
+
+## Subsequent source-preserving planning imports
+
+The user requested additional, independently callable `spec-driven-development` and `planning-and-task-breakdown` skills with upstream phase approvals, separate spec/plan/task artifacts and inline templates preserved. The current catalog has 105 workflows, including 17 planning skills. Original workflows and all 209 historical consolidation assignments remain intact. Each new skill's SOURCES.md records direct source hashes; the imported Definition of Done is tracked in planning dependencies. Current metadata/exports are distinct from the historical validation and native-discovery records above.
+
+Validation on 2026-10-27: repository structure/links and 117 JavaScript syntax checks passed; package validation and an offline 1,060-file build passed; all 31 plugin/runtime tests passed (the Windows launcher fixture required an unsandboxed rerun); rule audit passed with all 202 upstream fingerprints; Python checked 115 helpers, 120 official skill exports and nine role templates; portability checks passed for all 17 planning skills. Independent read-only review identified and resolved template anchor mismatches. The imported workflows were not executed, and new native discovery or installed-lifecycle validation was not performed.

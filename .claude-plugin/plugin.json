@@ -1,7 +1,7 @@
 {
   "name": "klcode",
   "version": "0.1.0",
-  "description": "KLCode team workflows: 103 curated skills, shared rules, focused commands and optional project-scoped Windows hooks.",
+  "description": "KLCode team workflows: 105 curated skills, shared rules, focused commands and optional project-scoped Windows hooks.",
   "author": {
     "name": "KLAA-Eng",
     "url": "https://github.com/KLAA-Eng"
@@ -41,6 +41,8 @@
     "./skills/engineering/mcp-development",
     "./skills/planning/grilling",
     "./skills/planning/requirements",
+    "./skills/planning/spec-driven-development",
+    "./skills/planning/planning-and-task-breakdown",
     "./skills/planning/implementation-planning",
     "./skills/planning/multi-session-planning",
     "./skills/planning/product-discovery",

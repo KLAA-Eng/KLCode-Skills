@@ -11,7 +11,7 @@
         "source": "github",
         "repo": "KLAA-Eng/KLCode-Skills"
       },
-      "description": "KLCode team workflows: 103 curated skills, shared rules, focused commands and optional project-scoped Windows hooks.",
+      "description": "KLCode team workflows: 105 curated skills, shared rules, focused commands and optional project-scoped Windows hooks.",
       "version": "0.1.0",
       "defaultEnabled": false,
       "repository": "https://github.com/KLAA-Eng/KLCode-Skills",

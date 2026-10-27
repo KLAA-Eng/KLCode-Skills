@@ -3,6 +3,22 @@
     "category":  "planning",
     "files":  [
                   {
+                      "path": "support/planning/references/definition-of-done.md",
+                      "source_repo": "ref.agent-skills",
+                      "source_path": "references/definition-of-done.md",
+                      "source_sha256": "d1c75d2ae65d2c7a9cd01f93fa8de63e00e75f2fe5d08be224d576157054dcee",
+                      "role": "reference",
+                      "license": "MIT",
+                      "license_file": "support/planning/licenses/AGENT-SKILLS-LICENSE.txt",
+                      "consumers": [
+                          "planning-and-task-breakdown"
+                      ],
+                      "activation": "Selected source-preserving gated workflow only; no installation or hooks",
+                      "external_requirements": "None for the reference; project verification toolchain when executing the workflow",
+                      "adaptation": "Preserved checklist; linked catalog equivalents; scoped applicability to selected workflow and actual runtime",
+                      "validation": "Local links, provenance and source fingerprint checked during import"
+                  },
+                  {
                       "path":  "support/planning/scripts/plan-canvas.js",
                       "source_repo":  "ref.ECC",
                       "source_path":  "scripts/plan-canvas.js",

@@ -9,7 +9,7 @@ The canonical repository is [KLAA-Eng/KLCode-Skills](https://github.com/KLAA-Eng
 ## Current phase
 
 - The owner's initial cleanup and the agreed relevance-based removal pass are complete.
-- Consolidation produced 103 canonical workflows from 209 source skills. See `consolidation/manifest.json` and the category handoffs. The subsequent rule audit and updated defaults are recorded under `rules/`.
+- Consolidation produced 103 canonical workflows from 209 source skills; two later source-preserving planning imports bring the current catalog to 105. See `consolidation/manifest.json` and the category handoffs. The subsequent rule audit and updated defaults are recorded under `rules/`.
 - Preserve and adapt imported agents, commands, hooks, scripts, rules, templates, assets, and their licensing when changing a workflow. Missing external prerequisites must be reported honestly.
 - Claude/Codex plugin wiring is implemented and validated within the scope recorded in `consolidation/plugin-validation.json`; see `plugin/README.md`. Installation, enabling, hook trust and activation remain deferred until explicitly requested. Project-specific variants and publication remain separate phases.
 - Keep changes scoped to the current request. Do not proactively reorganize, consolidate, delete skills, or add plugin configuration.
@@ -19,7 +19,7 @@ The canonical repository is [KLAA-Eng/KLCode-Skills](https://github.com/KLAA-Eng
 - `skills/<category>/<skill>/` contains the canonical workflows, grouped by job rather than upstream source.
 - `support/<category>/` contains imported category-shared dependencies and their provenance/dependency manifest.
 - `rules/` is the canonical home for shared rules. Read its README for selected defaults, conditional language rules, precedence and audit coverage; other retained language directories are reference-only.
-- `plugin/` contains host adapters, shortcut/role catalog, runtime, disabled templates and build/diagnostic tools. The 103 canonical skill entrypoints remain under `skills/`; shortcut aliases are packaging resources.
+- `plugin/` contains host adapters, shortcut/role catalog, runtime, disabled templates and build/diagnostic tools. The 105 canonical skill entrypoints remain under `skills/`; shortcut aliases are packaging resources.
 - The plugin exposes 16 convenient command names using 15 aliases and the existing `requirements` skill. Nine Claude role adapters are declared in its manifest; nine Codex TOML adapters are unregistered templates. Marketplace metadata describes available packages and does not install or activate them.
 - Each skill's `SKILL.md` describes its purpose and usage. Supporting scripts, references, and assets belong with that skill.
 - `README.md` is the entry point for repository documentation.
