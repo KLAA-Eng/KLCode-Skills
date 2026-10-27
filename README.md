@@ -25,7 +25,7 @@ See the [skills and workflow glossary](skills/glossary.md) for the complete link
 
 ## Plugin status
 
-KLCode 0.1.0 includes [Claude/Codex plugin wiring](plugin/README.md) for **native Windows only**, private marketplace metadata and disabled project-scoped Node hooks. Its 16 convenient command names use 15 aliases plus the existing `requirements` skill, giving Codex 120 unique skill exports. Nine Claude role adapters are declared in the manifest; nine Codex role adapters are unregistered TOML templates with a documented delegation alternative.
+KLCode 0.2.0 includes [Claude/Codex plugin wiring](plugin/README.md) for **native Windows only**, private marketplace metadata and disabled project-scoped Node hooks. Its 16 convenient command names use 15 aliases plus the existing `requirements` skill, giving Codex 120 unique skill exports. Nine Claude role adapters are declared in the manifest; nine Codex role adapters are unregistered TOML templates with a documented delegation alternative.
 
 Use Node.js 22 or later to inspect and package the plugin:
 

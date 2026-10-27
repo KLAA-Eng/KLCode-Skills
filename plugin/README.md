@@ -1,6 +1,6 @@
 # KLCode plugin
 
-KLCode 0.1.0 packages 105 canonical skills, 16 convenient command names and nine specialist roles for native Windows Claude Code and Codex desktop/CLI. **Implemented and locally validated; not installed or activated.** Project hooks remain disabled in `.klcode/config.json`.
+KLCode 0.2.0 packages 105 canonical skills, 16 convenient command names and nine specialist roles for native Windows Claude Code and Codex desktop/CLI. **Implemented and locally validated; not installed or activated.** Project hooks remain disabled in `.klcode/config.json`.
 
 ## Inspect and build
 
@@ -16,6 +16,8 @@ node plugin/cli.cjs build
 `validate` checks the plugin rooted beside the CLI. `doctor` inspects a selected project's configuration without running its check commands. `setup` previews disabled configuration; `setup --project <path> --write` creates it only when absent and never enables hooks. Existing configuration is preserved. Ensure `.klcode/config.local.json` and `.klcode/state/` are ignored in another project before activation.
 
 `build` creates a fresh release directory under `.scratch/dist/`, containing `plugins/klcode/`, a Claude marketplace and a Codex marketplace. It excludes Git internals, local overrides, runtime state, caches and unselected rule families. The package retains skill resources, supporting dependencies and licensing, and has a SHA-256 file index. Building does not install anything or modify host settings. Rebuilding creates a new directory; it never deletes a previous release.
+
+Version 0.2.0 adds the independently callable `spec-driven-development` and `planning-and-task-breakdown` workflows, preserving their mandatory human phase approvals and separate specification, plan and task artifacts. Existing workflow entrypoints remain available.
 
 ## Commands and roles
 
@@ -82,7 +84,7 @@ Project hooks require separate review of native hook trust and an explicit proje
 
 ## Offline release validation
 
-`node plugin/cli.cjs build` emits a separate release root with local marketplace entries pointing to `plugins/klcode`. These deliberately avoid fetching GitHub. Keep version `0.1.0` and repository identity consistent in the catalog and both manifests; validation detects drift.
+`node plugin/cli.cjs build` emits a separate release root with local marketplace entries pointing to `plugins/klcode`. These deliberately avoid fetching GitHub. Keep version `0.2.0` and repository identity consistent in the catalog and both manifests; validation detects drift.
 
 Inspect native discovery without installation using `node plugin/native-validate.cjs --codex <absolute-codex.exe> --package <release-root>/plugins/klcode --marketplace <release-root>/.agents/plugins/marketplace.json`. Use absolute paths and quote paths containing spaces. The helper requires a local marketplace; the GitHub-backed source catalog is intentionally rejected. It uses an isolated temporary Codex home and only initializes the protocol and reads plugin metadata. Current evidence and limits are recorded in [host-capabilities.json](host-capabilities.json). Offline fixtures and parser discovery do not prove GitHub installation or installed lifecycle behavior. Claude-native validation requires an available Claude executable; it was unavailable in this environment.
 
