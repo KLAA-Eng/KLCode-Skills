@@ -1,6 +1,6 @@
 # KLCode plugin
 
-KLCode 0.2.0 packages 105 canonical skills, 16 convenient command names and nine specialist roles for native Windows Claude Code and Codex desktop/CLI. **Implemented and locally validated; not installed or activated.** Project hooks remain disabled in `.klcode/config.json`.
+KLCode 0.2.0 packages 105 canonical skills, 17 convenient command names and nine specialist roles for native Windows Claude Code and Codex desktop/CLI. **Implemented and locally validated; not installed or activated.** Project hooks remain disabled in `.klcode/config.json`.
 
 ## Inspect and build
 
@@ -26,7 +26,8 @@ Version 0.2.0 adds the independently callable `spec-driven-development` and `pla
 | `setup` | Inspect setup and preview disabled project configuration |
 | `doctor` | Read-only configuration and prerequisite diagnostics |
 | `grill` | Dependency-aware decision interview |
-| `plan` | Implementation planning |
+| `plan` | Human-approved planning and task breakdown through `planning-and-task-breakdown` |
+| `spec` | Human-approved specification through `spec-driven-development` |
 | `implement` | Implement verified task slices |
 | `review` | Evidence-based code review |
 | `verify` | Acceptance and verification evidence |
@@ -40,7 +41,7 @@ Version 0.2.0 adds the independently callable `spec-driven-development` and `pla
 | `handoff` | Session handoff |
 | `hooks` | Configuration preview and hook diagnostics |
 
-Claude uses `/klcode:<name>` entrypoints. Codex exposes explicit shortcut skills; select the plugin-qualified skill shown by the client. There are 15 alias wrappers: `requirements` already has the requested canonical name. The Codex manifest therefore exports 120 unique skills: 105 canonical workflows plus 15 explicit shortcuts. Canonical skills remain independently callable, including the additional source-preserving `spec-driven-development` and `planning-and-task-breakdown` workflows. The `plan` shortcut continues to select `implementation-planning`; use the new skill names to select their mandatory gates and separate artifacts. The historical native-discovery evidence predates these two imports. See [catalog.json](catalog.json) for exact routes.
+Claude uses `/klcode:<name>` entrypoints. Codex exposes explicit shortcut skills; select the plugin-qualified skill shown by the client. There are 16 alias wrappers: `requirements` already has the requested canonical name. The Codex manifest therefore exports 121 unique skills: 105 canonical workflows plus 16 explicit shortcuts. The `spec` shortcut selects `spec-driven-development`; `plan` selects `planning-and-task-breakdown`. Both retain mandatory human phase approvals and separate spec/plan/task artifacts. Canonical skills remain independently callable, including `requirements` and `implementation-planning`. The planner role continues to use `implementation-planning`. The historical native-discovery evidence predates the two source-preserving imports and the `spec` shortcut. See [catalog.json](catalog.json) for exact routes.
 
 The roles are planner, architect, implementer, code reviewer, security reviewer, test guide, and Python/C#/C++ reviewers. Claude's manifest exports their Markdown adapters. Codex TOML adapters are **templates**, not automatically registered agents: use bounded native delegation with the packaged role brief, or separately review project-level native agent configuration later. Copied templates need their plugin root rebound. No model is forced. [Claude's manifest reference](https://code.claude.com/docs/en/plugins-reference) and [Codex's agent configuration](https://learn.chatgpt.com/docs/agent-configuration/subagents) describe those different surfaces.
 

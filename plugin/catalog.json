@@ -25,7 +25,13 @@
       "name": "plan",
       "claude": "commands/plan.md",
       "codex": "plugin/commands/plan",
-      "skill": "skills/planning/implementation-planning"
+      "skill": "skills/planning/planning-and-task-breakdown"
+    },
+    {
+      "name": "spec",
+      "claude": "commands/spec.md",
+      "codex": "plugin/commands/spec",
+      "skill": "skills/planning/spec-driven-development"
     },
     {
       "name": "implement",

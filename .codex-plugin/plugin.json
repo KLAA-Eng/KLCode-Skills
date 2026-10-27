@@ -116,6 +116,7 @@
     "./plugin/commands/doctor",
     "./plugin/commands/grill",
     "./plugin/commands/plan",
+    "./plugin/commands/spec",
     "./plugin/commands/implement",
     "./plugin/commands/review",
     "./plugin/commands/verify",

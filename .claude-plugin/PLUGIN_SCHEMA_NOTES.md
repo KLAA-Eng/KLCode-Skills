@@ -4,7 +4,7 @@ Use the [official Claude manifest reference](https://code.claude.com/docs/en/plu
 
 - `plugin/catalog.json` owns package identity, version, repository and command/role routes. Keep the manifest and marketplace aligned with it.
 - `skills` explicitly lists the 105 canonical skill folders. Keep supporting resources inside the plugin root.
-- `commands` maps 15 aliases to their Markdown sources. The `requirements` canonical skill supplies its own entrypoint; do not add a colliding alias.
+- `commands` maps 16 aliases to their Markdown sources. The `requirements` canonical skill supplies its own entrypoint; do not add a colliding alias.
 - `agents` explicitly lists nine Markdown role adapters. This field is supported by the official manifest schema.
 - `hooks` references the additional `./hooks/claude-hooks.json` file. There is no conventional `hooks/hooks.json` to cause duplicate discovery. Do not add a second declaration of the same hooks.
 - No MCP server configuration is bundled. Imported optional recipes under `support/` are not automatically registered services.

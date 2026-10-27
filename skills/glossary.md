@@ -259,6 +259,6 @@ Record interfaces, compose videos, measure styles and edit footage.
 | Category-shared agents, commands, hooks and helpers | `support/<category>/` |
 | Canonical shared rules and rule-source coverage | `rules/` |
 
-Current task and repository instructions take precedence over these defaults. [KLCode plugin wiring](../plugin/README.md) exposes 16 convenient command names and nine roles. Its 15 alias skills live outside the canonical catalog because `requirements` already has the requested name. Installation, activation and project-specific variants remain separate work.
+Current task and repository instructions take precedence over these defaults. [KLCode plugin wiring](../plugin/README.md) exposes 17 convenient command names and nine roles. Its 16 alias skills live outside the canonical catalog because `requirements` already has the requested name. The `spec` and `plan` shortcuts select [spec-driven development](planning/spec-driven-development/SKILL.md) and [planning and task breakdown](planning/planning-and-task-breakdown/SKILL.md), including their mandatory phase approvals and separate artifacts. Installation, activation and project-specific variants remain separate work.
 
 See the [repository overview](../README.md), [supporting dependency guide](../support/README.md), [source-to-canonical mapping](../consolidation/manifest.json), and [validation record](../consolidation/validation.json). Update this glossary when canonical names, purposes, modes or routing relationships change.

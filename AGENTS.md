@@ -20,7 +20,7 @@ The canonical repository is [KLAA-Eng/KLCode-Skills](https://github.com/KLAA-Eng
 - `support/<category>/` contains imported category-shared dependencies and their provenance/dependency manifest.
 - `rules/` is the canonical home for shared rules. Read its README for selected defaults, conditional language rules, precedence and audit coverage; other retained language directories are reference-only.
 - `plugin/` contains host adapters, shortcut/role catalog, runtime, disabled templates and build/diagnostic tools. The 105 canonical skill entrypoints remain under `skills/`; shortcut aliases are packaging resources.
-- The plugin exposes 16 convenient command names using 15 aliases and the existing `requirements` skill. Nine Claude role adapters are declared in its manifest; nine Codex TOML adapters are unregistered templates. Marketplace metadata describes available packages and does not install or activate them.
+- The plugin exposes 17 convenient command names using 16 aliases and the existing `requirements` skill. The `spec` and `plan` shortcuts select `spec-driven-development` and `planning-and-task-breakdown`. Nine Claude role adapters are declared in its manifest; nine Codex TOML adapters are unregistered templates. Marketplace metadata describes available packages and does not install or activate them.
 - Each skill's `SKILL.md` describes its purpose and usage. Supporting scripts, references, and assets belong with that skill.
 - `README.md` is the entry point for repository documentation.
 
